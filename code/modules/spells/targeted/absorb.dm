@@ -35,12 +35,8 @@
 				if(do_after(holder, target, 5 SECONDS))
 					qdel(P)
 					var/hasAbsorbed = FALSE
-					var/knownspell = FALSE
 					for(var/spell/targetspell in C.spell_list)
-						for(var/spell/holderspell in L.spell_list)
-							if(targetspell.type == holderspell.type)
-							knownspell = TRUE
-						if(!knownspell)
+						if(!is_type_in_list(targetspell, L.spell_list))
 							to_chat(holder, "<span class='notice'>You asborb the magical energies from your foe and have learned [targetspell.name]!</span>")
 							L.attack_log += text("\[[time_stamp()] <font color='orange'>[L.real_name] ([L.ckey]) absorbed the spell [targetspell.name] from [C.real_name] ([C.ckey]).</font>")
 							C.remove_spell(targetspell)
