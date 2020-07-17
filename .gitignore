@@ -76,4 +76,3 @@ Thumbs.db
 
 # Linux users can compile this themselves
 libvg.so
-code/modules/spells/targeted/absorb.dm
