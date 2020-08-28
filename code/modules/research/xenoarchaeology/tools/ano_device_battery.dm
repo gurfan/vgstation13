@@ -3,10 +3,12 @@
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "anobattery0"
 	var/datum/artifact_effect/battery_effect
-	var/capacity = 200
+	var/capacity = 100
 	var/stored_charge = 0
 	var/effect_id = ""
 	var/obj/item/weapon/anodevice/inserted_device
+	starting_materials = list(MAT_IRON = 3500, MAT_GLASS = 3500)
+	origin_tech = Tc_POWERSTORAGE + "=1;" + Tc_ANOMALY + "=1"
 
 /obj/item/weapon/anobattery/New()
 	. = ..()
@@ -16,6 +18,24 @@
 	var/p = (stored_charge/capacity)*100
 	p = min(p, 100)
 	icon_state = "anobattery[round(p,25)]"
+
+/obj/item/weapon/anobattery/high
+	name = "Refined anomaly power battery"
+	capacity = 250
+	starting_materials = list(MAT_IRON = 4500, MAT_GLASS = 3500)
+	origin_tech = Tc_POWERSTORAGE + "=4;" + Tc_ANOMALY + "=3"
+
+/obj/item/weapon/anobattery/hyper
+	name = "Plasma-Lined anomaly power battery"
+	capacity = 500
+	starting_materials = list(MAT_IRON = 5500, MAT_GLASS = 3500, MAT_DIAMOND = 1500, MAT_PLASMA = 15000)
+	origin_tech = Tc_POWERSTORAGE + "=6;" + Tc_ANOMALY + "=5"
+
+/obj/item/weapon/anobattery/ultra
+	name = "Bluespace anomaly power battery"
+	capacity = 1500
+	starting_materials = list(MAT_IRON = 7000, MAT_GLASS = 3500, MAT_SILVER = 5500, MAT_GOLD = 5500, MAT_PHAZON = 3500)
+	origin_tech = Tc_POWERSTORAGE + "=8;" + Tc_ANOMALY + "=6" + Tc_MATEIRALS + "=9"
 
 var/list/anomaly_power_utilizers = list()
 
@@ -30,6 +50,8 @@ var/list/anomaly_power_utilizers = list()
 	var/archived_time = 50
 	var/obj/item/weapon/anobattery/inserted_battery
 	var/turf/archived_loc
+	starting_materials = list(MAT_IRON = 5500, MAT_GLASS = 5500, MAT_DIAMOND = 5500, MAT_URANIUM = 5500)
+	origin_tech = Tc_POWERSTORAGE + "=5;" + Tc_ANOMALY + "=4" + Tc_PROGRAMMING + "=4"
 
 /obj/item/weapon/anodevice/New()
 	. = ..()
