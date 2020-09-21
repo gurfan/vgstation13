@@ -37204,7 +37204,7 @@
 	name = "Custom Channel";
 	pixel_y = 20
 	},
-/obj/item/device/radio/intercom{
+/obj/item/device/radio/intercom/aiprivate{
 	freerange = 1;
 	frequency = 1447;
 	name = "Private Channel";
@@ -37247,7 +37247,7 @@
 	},
 /area/turret_protected/ai)
 "btq" = (
-/obj/item/device/radio/intercom{
+/obj/item/device/radio/intercom/aiprivate{
 	freerange = 1;
 	frequency = 1447;
 	name = "Private Channel";
@@ -37316,7 +37316,7 @@
 	name = "Custom Channel";
 	pixel_y = 19
 	},
-/obj/item/device/radio/intercom{
+/obj/item/device/radio/intercom/aiprivate{
 	freerange = 1;
 	frequency = 1447;
 	name = "Private Channel";
@@ -45775,7 +45775,7 @@
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_upload)
 "bJj" = (
-/obj/item/device/radio/intercom{
+/obj/item/device/radio/intercom/aiprivate{
 	broadcasting = 1;
 	frequency = 1447;
 	name = "Private AI Channel";
@@ -48972,7 +48972,7 @@
 	pixel_x = 8;
 	pixel_y = 24
 	},
-/obj/item/device/radio/intercom{
+/obj/item/device/radio/intercom/aiprivate{
 	broadcasting = 1;
 	frequency = 1447;
 	name = "Private AI Channel";
