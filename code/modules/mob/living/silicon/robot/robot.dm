@@ -557,13 +557,13 @@ var/list/cyborg_list = list()
 				to_chat(user, "The wires get in your way.")
 			else
 				if(prob(50))
-					to_chat(user, "You emag [src]'s interface")
-					message_admins("[key_name_admin(user)] emagged cyborg [key_name_admin(src)].")
 					sleep(6)
-					SetEmagged(TRUE)						
+					SetEmagged(TRUE)
 					SetLockdown(TRUE)
 					lawupdate = FALSE
 					disconnect_AI()
+					to_chat(user, "You emag [src]'s interface")
+					message_admins("[key_name_admin(user)] emagged cyborg [key_name_admin(src)]. Laws overidden.")
 					log_game("[key_name(user)] emagged cyborg [key_name(src)].  Laws overridden.")
 					clear_supplied_laws()
 					clear_inherent_laws()
@@ -1006,10 +1006,8 @@ var/list/cyborg_list = list()
 	overlays.Cut()
 	update_fire()
 	if(!stat && cell != null)
-		var/icon/eyesicon = icon(icon,"eyes-[icon_state]", overlay_layer)
-		eyes = image(eyesicon,"eyes-[icon_state]", overlay_layer)
+		eyes = image(icon,"eyes-[icon_state]", overlay_layer)
 		eyes.plane = overlay_plane
-
 		overlays += eyes
 
 	if(opened)

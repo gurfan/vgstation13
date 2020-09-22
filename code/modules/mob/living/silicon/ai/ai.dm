@@ -115,10 +115,6 @@ var/list/ai_list = list()
 
 	proc_holder_list = new()
 
-	//Action Buttons
-	deploy_action.Grant(src)
-	destroy_action.Grant(src)
-
 	//Determine the AI's lawset
 	if(L && istype(L,/datum/ai_laws))
 		src.laws = L
@@ -163,7 +159,7 @@ var/list/ai_list = list()
 				spawn(1)
 					mind.store_memory("Frequencies list: <br/><b>Command:</b> [COMM_FREQ] <br/> <b>Security:</b> [SEC_FREQ] <br/> <b>Medical:</b> [MED_FREQ] <br/> <b>Science:</b> [SCI_FREQ] <br/> <b>Engineering:</b> [ENG_FREQ] <br/> <b>Service:</b> [SER_FREQ] <b>Cargo:</b> [SUP_FREQ]<br/> <b>AI private:</b> [AIPRIV_FREQ]<br/>")
 				stored_freqs = 1
-			greeted = 1
+
 			job = "AI"
 	ai_list += src
 	..()
