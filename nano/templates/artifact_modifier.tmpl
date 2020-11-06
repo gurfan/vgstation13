@@ -6,13 +6,13 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 
 <h3>Artifact Modifier</h3>
 
-{{if data.modifier.cur_artifact}}
+{{if data.hasArtifact}}
 <div class="item">
 	<div class="itemLabel">
 		Artifact
 	</div>
 	<div class="itemContent">
-		<span class="good">{{:data.modifier.artifact.artifact_id}}</span>		
+		<span class="good">{{:data.artifactID}}</span>		
 	</div>
 </div>
 
@@ -21,27 +21,27 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 		Anomaly Charges
 	</div>
 	<div class="itemContent">
-		{{:data.modifier.stored_charges}}	
+		{{:data.storedCharges}}	
 	</div>
 </div>
 
-{{if data.modifier.isolated_effect}}
+{{if data.hasEffect}}
 <div class="item">
 	<div class="itemLabel">
 		Pulse Energy Signals
 	</div>
 	<div class="itemContent">
-		{{:helper.link("Positive", null, {'switchType': '1'}, !data.modifier.modify_target && !data.modifier.modify_parameter ? null : disabled)}}
-		{{:helper.link("Negative", null, {'switchType': '0'}, !data.modifier.modify_target && data.modifier.modify_parameter ? null : disabled)}}
+		{{:helper.link("Positive", null, {'switchType': '1'}, !data.isModifying && !data.modifyParameter ? null : 'selected')}}
+		{{:helper.link("Negative", null, {'switchType': '0'}, !data.isModifying && data.modifyParameter ? null : 'selected')}}
 		<br> <br>
-		{{:helper.link("Kappa", "radiation", {'modifyEffect': '1'}, data.modifier.modify_target ? disabled : null)}} 		<br>
-		{{:helper.link("Beta", "radiation", {'modifyEffect': '2'}), data.modifier.modify_target ? disabled : null}}			<br>
-		{{:helper.link("Gamma", "radiation", {'modifyEffect': '3'}, data.modifier.modify_target ? disabled : null)}}			<br>
-		{{:helper.link("Sigma", "radiation", {'modifyEffect': '4'}, data.modifier.modify_target ? disabled : null)}}			<br>
-		{{:helper.link("Delta", "radiation", {'modifyEffect': '5'}, data.modifier.modify_target ? disabled : null)}}			<br>
-		{{:helper.link("Alpha", "radiation", {'modifyEffect': '6'}, data.modifier.modify_target ? disabled : null)}}			<br>
-		{{:helper.link("Epsilon", "radiation", {'modifyEffect': '7', '}, data.modifier.modify_target ? disabled : null)}}	<br>
-		{{:helper.link("Omega", "radiation", {'modifyEffect': '8'}, data.modifier.modify_target ? disabled : null)}}			<br>
+		{{:helper.link("Kappa", "radiation", {'modifyEffect': '1'}, data.isModifying ? 'disabled' : null)}} 	
+		{{:helper.link("Beta", "radiation", {'modifyEffect': '2'}, data.isModifying ? 'disabled' : null)}}			
+		{{:helper.link("Gamma", "radiation", {'modifyEffect': '3'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Sigma", "radiation", {'modifyEffect': '4'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Delta", "radiation", {'modifyEffect': '5'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Alpha", "radiation", {'modifyEffect': '6'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Epsilon", "radiation", {'modifyEffect': '7'}, data.isModifying ? 'disabled' : null)}}	
+		{{:helper.link("Omega", "radiation", {'modifyEffect': '8'}, data.isModifying ? 'disabled' : null)}}		
 	</div>
 </div>
 
@@ -50,7 +50,7 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 		Progress
 	</div>
 	<div class="itemContent">
-		{{:helper.displayBar(data.modifier.progress-1, 0, 100)}} <br>
+		{{:helper.displayBar(data.progress, 0, 100)}} <br>
 	</div>
 </div>
 
@@ -64,11 +64,11 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 
 <div class="item">
 	<div class="itemLabel">
-		Isolated Energy Signatures
+		Energy Signatures
 	</div>
 	<div class="itemContent">
 		{{:helper.link("Dominant Energy Signature", null, {'selectEffect': '1'})}} <br>
-		{{if data.modifier.cur_artifact.secondary_effect}}
+		{{if data.hasSecondaryEffect}}
 		{{:helper.link("Lesser Energy Signature", null, {'selectEffect': '2'})}} <br>
 		{{/if}} 
 	</div>
@@ -92,7 +92,7 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 	<div class="itemContent">
 		<span class="bad">NOT FOUND</span>	
 		<br>
-		{{:helper.link("Locate Artifact", null, {'findArtifact': '1'}, data.modifier.owned_scanner ? null : disabled)}}
+		{{:helper.link("Locate Artifact", null, {'findArtifact': '1'}, data.hasScanner  ? null : 'disabled')}}
 	</div>
 </div>
 		

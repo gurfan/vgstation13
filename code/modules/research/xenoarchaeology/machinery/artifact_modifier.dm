@@ -18,7 +18,7 @@
 	light_color = "#E1C400"
 	var/radiation_range = 4
 	var/stored_charges = 0
-	var/modify_parameter		//set this to 1 or 0
+	var/modify_parameter = 1		//set this to 1 or 0
 	var/modify_target = 0		//set this to 1-8
 	var/progress
 
@@ -73,9 +73,37 @@
 
 /obj/machinery/artifact_modifier/ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
 	
-	var/list/data = list(
-		"modifier" = src
-	)
+	var/list/data = list()
+
+
+	if(owned_scanner)
+		data["hasScanner"] = 1
+	else 
+		data["hasScanner"] = 0
+
+	if(cur_artifact)
+		data["hasArtifact"] = 1
+		data["artifactID"] = cur_artifact.artifact_id
+		if(cur_artifact.secondary_effect)
+			data["hasSecondaryEffect"] = 1
+		else 
+			data["hasSecondaryEffect"] = 0
+	else 
+		data["hasArtifact"] = 0
+
+	if(modify_target)
+		data["isModifying"] = 1
+	else 
+		data["isModifying"] = 0
+
+	if(isolated_effect)
+		data["hasEffect"] = 1
+	else 
+		data["hasEffect"] = 0
+
+	data["modifyParameter"] = modify_parameter
+	data["storedCharges"] = stored_charges
+	data["progress"] = progress
 
 	ui = nanomanager.try_update_ui(user, src, ui_key, ui, data, force_open)
 
@@ -94,18 +122,17 @@
 		return
 
 	if(href_list["switchType"])
-		modify_parameter = href_list["switchType"]
+		modify_parameter = text2num(href_list["switchType"])
 		return TRUE
 
 	if(href_list["modifyEffect"])
-		var/number = href_list["modifyEffect"]
+		var/number = text2num(href_list["modifyEffect"])
 		if(stored_charges < number)
-			stored_charges = clamp(stored_charges - number, 0)
+			stored_charges = max(stored_charges, 0)
 			modify_target = number
-			visibile_message("<b>[src]</b> states, \"Now modifying effect.\"")
+			visible_message("<b>[src]</b> states, \"Now modifying effect.\"")
 		else 
-			visibile_message("<b>[src]</b> states, \"Not enough charges stored.\"")
-
+			visible_message("<b>[src]</b> states, \"Not enough charges stored.\"")
 		return TRUE
 
 	if(href_list["releaseEffect"])
@@ -113,12 +140,16 @@
 		return TRUE
 
 	if(href_list["selectEffect"])
+		var/input = text2num(href_list["selectEffect"])
+		to_chat(world, "test")
 		if(!cur_artifact)
+			to_chat(world, "test2")
 			return FALSE
-		if(href_list["selectEffect"] == 1)
+		if(input == 1)
 			isolated_effect = cur_artifact.primary_effect
-		if(href_list["selectEffect"] == 2)
+		if(input == 2)
 			isolated_effect = cur_artifact.secondary_effect
+		to_chat(world, "test3")
 		return TRUE
 
 	if(href_list["findArtifact"])
