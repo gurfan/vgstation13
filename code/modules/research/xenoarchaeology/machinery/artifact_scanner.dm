@@ -34,5 +34,7 @@
 		icon_state = "xenoarch_scanner1"
 	if (harvester_console?.harvesting > 0)
 		icon_state = "xenoarch_scanner2"
+	if (modifier_console)
+		icon_state = "xenoarch_scanner4"
 	if (modifier_console?.modify_target > 0)
-		icon_state = "xenoarch_scanner2"
+		icon_state = "xenoarch_scanner3"

@@ -3,7 +3,7 @@
 	name = "exotic particle modifier"
 	desc = "A device that allows users to send signals to energy signatures. A sticker on the side warns about radioactivity."
 	icon = 'icons/obj/xenoarchaeology.dmi'
-	icon_state = "xenoarch_console"
+	icon_state = "xenoarch_modder"
 	anchored = 1
 	density = 1
 	idle_power_usage = 50
@@ -128,11 +128,12 @@
 	if(href_list["modifyEffect"])
 		var/number = text2num(href_list["modifyEffect"])
 		if(stored_charges > number)
-			stored_charges = max(stored_charges, 0)
+			stored_charges = max(stored_charges - number, 0)
 			modify_target = number
 			visible_message("<b>[src]</b> states, \"Now modifying effect.\"")
 		else 
 			visible_message("<b>[src]</b> states, \"Not enough charges stored.\"")
+		update_icon()
 		return TRUE
 
 	if(href_list["releaseEffect"])
@@ -213,12 +214,18 @@
 /obj/machinery/artifact_modifier/update_icon()
 	overlays.len = 0
 	set_light(0)
+	icon_state = "xenoarch_modder"
 
 	if(stat & (NOPOWER|BROKEN))
+		icon_state = "xenoarch_modder_off"
 		return
 
 	if (modify_target != 0)
 		set_light(2,2)
+		if(modify_parameter)
+			icon_state = "xenoarch_modder_positive"
+		else
+			icon_state = "xenoarch_modder_negative"
 		
 	if (owned_scanner)
 		owned_scanner.update_icon()
@@ -227,8 +234,8 @@
 /obj/machinery/artifact_muncher
 	name = "exotic material decomposer"
 	desc = "A machine that allows takes in small alien artifacts, harvesting any energy within them. The process destroys the artifact. It's useless without a nearby artifact modifier."
-	icon = 'icons/obj/kitchen.dmi'
-	icon_state = "processor"
+	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon_state = "xenoarch_muncher"
 	anchored = 1
 	density = 1
 	idle_power_usage = 50
