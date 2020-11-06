@@ -15,6 +15,7 @@
 	var/list/valid_style_types = list(ARTIFACT_STYLE_ANOMALY)
 	var/triggered = 0 //set to 1 if it has been activated at least once
 	var/activation_sound = null
+	var/list/modify_order = list(1, 2, 3, 4, 5, 6, 7, 8)
 
 //0 = Unknown / none detectable
 //1 = Concentrated energy
@@ -63,6 +64,9 @@
 
 	if(generate_trigger)
 		GenerateTrigger()
+
+	//Randomize the modify order for each effect.
+	shuffle(modify_order)
 
 /datum/artifact_effect/proc/ToggleActivate(var/reveal_toggle = 1)
 	//so that other stuff happens first
@@ -197,3 +201,52 @@ proc/GetAnomalySusceptibility(var/mob/living/carbon/human/H)
 	copy_for_battery = null
 	holder = null
 	..()
+
+
+
+/////////////////////////////////
+//////// EFFECT MODS ////////////
+/////////////////////////////////
+
+//		Procs that allows players to modify artifact effects
+// 		Override each modify# with each effect-specific modification
+
+
+//This is the proc that should be called normally.
+//Number refers to which modify# to call, change refers to the value passed on to modify#
+/datum/artifact_effect/proc/modify_effect(var/number, var/change)
+	switch(number)
+		if (1)
+			modify1(change)
+		if (2)
+			modify2(change)
+		if (3)
+			modify3(change)
+		if (4)
+			modify4(change)
+		if (5)
+			modify5(change)
+		if (6)
+			modify6(change)
+		if (7)
+			modify7(change)
+		if (8)
+			modify8(change)
+
+
+/datum/artifact_effect/proc/modify1(var/mod)
+	return
+/datum/artifact_effect/proc/modify2(var/mod)
+	return
+/datum/artifact_effect/proc/modify3(var/mod)
+	return
+/datum/artifact_effect/proc/modify4(var/mod)
+	return
+/datum/artifact_effect/proc/modify5(var/mod)
+	return
+/datum/artifact_effect/proc/modify6(var/mod)
+	return
+/datum/artifact_effect/proc/modify7(var/mod)
+	return
+/datum/artifact_effect/proc/modify8(var/mod)
+	return

@@ -2435,6 +2435,7 @@
 #include "code\modules\research\xenoarchaeology\machinery\analysis_hyperspectral.dm"
 #include "code\modules\research\xenoarchaeology\machinery\artifact_analyser.dm"
 #include "code\modules\research\xenoarchaeology\machinery\artifact_harvester.dm"
+#include "code\modules\research\xenoarchaeology\machinery\artifact_modifier.dm"
 #include "code\modules\research\xenoarchaeology\machinery\artifact_scanner.dm"
 #include "code\modules\research\xenoarchaeology\tools\ano_device_battery.dm"
 #include "code\modules\research\xenoarchaeology\tools\anomaly_container.dm"

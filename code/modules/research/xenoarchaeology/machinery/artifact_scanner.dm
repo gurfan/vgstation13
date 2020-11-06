@@ -9,6 +9,7 @@
 	plane = ABOVE_OBJ_PLANE
 	var/obj/machinery/artifact_analyser/analyser_console = null
 	var/obj/machinery/artifact_harvester/harvester_console = null
+	var/obj/machinery/artifact_modifier/modifier_console = null
 
 /obj/machinery/artifact_scanpad/New()
 	..()
@@ -17,6 +18,7 @@
 /obj/machinery/artifact_scanpad/Destroy()
 	analyser_console = null
 	harvester_console = null
+	modifier_console = null
 	..()
 
 /obj/machinery/artifact_scanpad/power_change()
@@ -31,4 +33,6 @@
 	if (analyser_console?.scan_in_progress)
 		icon_state = "xenoarch_scanner1"
 	if (harvester_console?.harvesting > 0)
+		icon_state = "xenoarch_scanner2"
+	if (modifier_console?.modify_target > 0)
 		icon_state = "xenoarch_scanner2"
