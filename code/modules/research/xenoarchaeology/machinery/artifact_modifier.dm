@@ -127,7 +127,7 @@
 
 	if(href_list["modifyEffect"])
 		var/number = text2num(href_list["modifyEffect"])
-		if(stored_charges < number)
+		if(stored_charges > number)
 			stored_charges = max(stored_charges, 0)
 			modify_target = number
 			visible_message("<b>[src]</b> states, \"Now modifying effect.\"")
@@ -141,15 +141,12 @@
 
 	if(href_list["selectEffect"])
 		var/input = text2num(href_list["selectEffect"])
-		to_chat(world, "test")
 		if(!cur_artifact)
-			to_chat(world, "test2")
 			return FALSE
 		if(input == 1)
 			isolated_effect = cur_artifact.primary_effect
 		if(input == 2)
 			isolated_effect = cur_artifact.secondary_effect
-		to_chat(world, "test3")
 		return TRUE
 
 	if(href_list["findArtifact"])
@@ -179,6 +176,7 @@
 			cur_artifact.contained = 0
 			cur_artifact = null
 			isolated_effect = null
+		return TRUE
 
 
 /obj/machinery/artifact_modifier/process()

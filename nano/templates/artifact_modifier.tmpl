@@ -31,8 +31,15 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 		Pulse Energy Signals
 	</div>
 	<div class="itemContent">
-		{{:helper.link("Positive", null, {'switchType': '1'}, !data.isModifying && !data.modifyParameter ? null : 'selected')}}
-		{{:helper.link("Negative", null, {'switchType': '0'}, !data.isModifying && data.modifyParameter ? null : 'selected')}}
+
+		{{if data.isModifying}}
+		{{:helper.link("Positive", null, {'switchType': '1'}, 'disabled')}}
+		{{:helper.link("Negative", null, {'switchType': '0'}, 'disabled')}}
+		{{else}}
+		{{:helper.link("Positive", null, {'switchType': '1'}, !data.modifyParameter ? null : 'selected')}}
+		{{:helper.link("Negative", null, {'switchType': '0'}, data.modifyParameter ? null : 'selected')}}
+		{{/if}}
+
 		<br> <br>
 		{{:helper.link("Kappa", "radiation", {'modifyEffect': '1'}, data.isModifying ? 'disabled' : null)}} 	
 		{{:helper.link("Beta", "radiation", {'modifyEffect': '2'}, data.isModifying ? 'disabled' : null)}}			
