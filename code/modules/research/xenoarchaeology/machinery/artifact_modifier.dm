@@ -127,12 +127,13 @@
 
 	if(href_list["modifyEffect"])
 		var/number = text2num(href_list["modifyEffect"])
-		if(stored_charges > number)
+		if(stored_charges >= number)
 			stored_charges = max(stored_charges - number, 0)
 			modify_target = number
-			visible_message("<b>[src]</b> states, \"Now modifying effect.\"")
+			say("Now modifying effect.")
+			playsound(src, cur_artifact.activation_sound, 50, 0)
 		else 
-			visible_message("<b>[src]</b> states, \"Not enough charges stored.\"")
+			say("Not enough charges stored.")
 		update_icon()
 		return TRUE
 
@@ -187,7 +188,7 @@
 	if(modify_target)
 		
 		use_power = 2
-		progress += rand(1,6)
+		progress += rand(4,10)
 
 		// Radiation
 		var/turf/T = get_turf(src)
@@ -200,7 +201,7 @@
 			progress = 0
 			isolated_effect.modify_effect(modify_target, modify_parameter)
 			modify_target = 0
-			visible_message("\The [src] beeps.")
+			visible_message("<b>[src]</b> beeps.")
 
 	else
 		use_power = 1
@@ -243,6 +244,75 @@
 	use_power = 1
 
 	var/obj/machinery/artifact_modifier/modifier_console = null
+	var/list/accepted_items = list(
+
+		//Magic urns
+		/obj/item/weapon/reagent_containers/glass/replenishing = 5,
+		/obj/item/weapon/reagent_containers/glass/xenoviral = 2,
+
+		//Generic wierd items
+		/obj/item/weapon/archaeological_find = 1,
+
+		//Valuable weapons
+		/obj/item/weapon/kitchen/utensil/knife/large/ritual = 2,
+		/obj/item/weapon/claymore = 5,
+		/obj/item/weapon/katana = 5,
+		/obj/item/weapon/nullrod/sword/chaos = 5,
+		/obj/item/device/instrument/guitar/magical = 5,
+
+		//Guns 
+		/obj/item/weapon/gun/energy/laser/alien = 3,	
+		/obj/item/weapon/gun/energy/laser/captain/alien = 5,
+		/obj/item/weapon/gun/energy/bison/alien = 10,
+		/obj/item/weapon/gun/projectile/xenoarch = 3,
+		/obj/item/weapon/gun/projectile/roulette_revolver = 3,
+
+		//Cult clothing
+		/obj/item/weapon/melee/cultblade/nocult = 1,
+		/obj/item/clothing/head/culthood = 1,
+		/obj/item/clothing/suit/cultrobes = 1,
+		/obj/item/clothing/head/culthood/old = 1,
+		/obj/item/clothing/suit/cultrobes/old = 1,
+		/obj/item/clothing/head/magus = 1,
+		/obj/item/clothing/suit/magusred = 1,
+		/obj/item/clothing/head/helmet/space/cult = 3,
+		/obj/item/clothing/suit/space/cult = 3,
+		/obj/item/clothing/head/helmet/space/legacy_cult = 5,
+		/obj/item/clothing/suit/space/legacy_cult = 5,
+
+		//Soulstones
+		/obj/item/soulstone = 10,
+
+		//Fossils
+		/obj/item/weapon/fossil/ = 1,
+
+		//Magic masks
+		/obj/item/clothing/mask/morphing = 10,
+		/obj/item/clothing/mask/happy = 5,
+
+		//Magic dice
+		/obj/item/weapon/dice/d20/cursed = 10,
+
+		//Red ribbon arm
+		/obj/item/red_ribbon_arm = 5,
+
+	)
+
+/obj/machinery/artifact_muncher/attackby(var/obj/item/I, var/mob/user)
+	if (!modifier_console)
+		to_chat(user, "<span class='warning'>The artifact decomposer isn't hooked up to a modifier.</span>")
+		return
+	if(!locate(I) in accepted_items)
+		to_chat(user, "<span class='warning'>The artifact decomposer refuses to process that item!</span>")
+		playsound(src, 'sound/machines/buzz-two.ogg', 75, 0)
+		return
+	else 
+		user.drop_item(I)
+		to_chat(user, "<span class='notice'>You add the [I.name] to the artifact decomposer.</span>")
+		playsound(src, 'sound/machines/blender.ogg', 50, 1)
+		modifier_console.stored_charges += accepted_items[I.type]
+		qdel(I)
+
 
 /obj/machinery/artifact_muncher/Destroy()
 	modifier_console = null

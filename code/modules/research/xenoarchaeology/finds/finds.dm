@@ -1087,7 +1087,6 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Strange rocks
 
-//have all strange rocks be cleared away using welders for now
 /obj/item/weapon/strangerock
 	name = "strange rock"
 	desc = "Seems to have some unusal strata evident throughout it."

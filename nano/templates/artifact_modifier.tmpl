@@ -6,6 +6,15 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 
 <h3>Artifact Modifier</h3>
 
+<div class="item">
+	<div class="itemLabel">
+		Anomaly Charges
+	</div>
+	<div class="itemContent">
+		{{:data.storedCharges}}	
+	</div>
+</div>
+
 {{if data.hasArtifact}}
 <div class="item">
 	<div class="itemLabel">
@@ -16,14 +25,6 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 	</div>
 </div>
 
-<div class="item">
-	<div class="itemLabel">
-		Anomaly Charges
-	</div>
-	<div class="itemContent">
-		{{:data.storedCharges}}	
-	</div>
-</div>
 
 {{if data.hasEffect}}
 <div class="item">
@@ -41,14 +42,14 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 		{{/if}}
 
 		<br> <br>
-		{{:helper.link("Kappa", "radiation", {'modifyEffect': '1'}, data.isModifying ? 'disabled' : null)}} 	
-		{{:helper.link("Beta", "radiation", {'modifyEffect': '2'}, data.isModifying ? 'disabled' : null)}}			
-		{{:helper.link("Gamma", "radiation", {'modifyEffect': '3'}, data.isModifying ? 'disabled' : null)}}		
-		{{:helper.link("Sigma", "radiation", {'modifyEffect': '4'}, data.isModifying ? 'disabled' : null)}}		
-		{{:helper.link("Delta", "radiation", {'modifyEffect': '5'}, data.isModifying ? 'disabled' : null)}}		
-		{{:helper.link("Alpha", "radiation", {'modifyEffect': '6'}, data.isModifying ? 'disabled' : null)}}		
-		{{:helper.link("Epsilon", "radiation", {'modifyEffect': '7'}, data.isModifying ? 'disabled' : null)}}	
-		{{:helper.link("Omega", "radiation", {'modifyEffect': '8'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Kappa (1)", "radiation", {'modifyEffect': '1'}, data.isModifying ? 'disabled' : null)}} 	
+		{{:helper.link("Beta (2)", "radiation", {'modifyEffect': '2'}, data.isModifying ? 'disabled' : null)}}			
+		{{:helper.link("Gamma (3)", "radiation", {'modifyEffect': '3'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Sigma (4)", "radiation", {'modifyEffect': '4'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Delta (5)", "radiation", {'modifyEffect': '5'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Alpha (6)", "radiation", {'modifyEffect': '6'}, data.isModifying ? 'disabled' : null)}}		
+		{{:helper.link("Epsilon (7)", "radiation", {'modifyEffect': '7'}, data.isModifying ? 'disabled' : null)}}	
+		{{:helper.link("Omega (8)", "radiation", {'modifyEffect': '8'}, data.isModifying ? 'disabled' : null)}}		
 	</div>
 </div>
 
