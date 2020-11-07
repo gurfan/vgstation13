@@ -233,7 +233,7 @@
 
 /obj/machinery/artifact_muncher
 	name = "exotic material decomposer"
-	desc = "A machine that allows takes in small alien artifacts, harvesting any energy within them. The process destroys the artifact. It's useless without a nearby artifact modifier."
+	desc = "A machine that takes in small alien artifacts, harvesting any energy within them. The process destroys the artifact. It's useless without a nearby artifact modifier."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "xenoarch_muncher"
 	anchored = 1
