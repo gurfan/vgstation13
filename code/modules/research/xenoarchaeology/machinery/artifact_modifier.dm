@@ -131,7 +131,8 @@
 			stored_charges = max(stored_charges - number, 0)
 			modify_target = number
 			say("Now modifying effect.")
-			playsound(src, cur_artifact.activation_sound, 50, 0)
+			if(isolated_effect.activation_sound)
+				playsound(src, isolated_effect.activation_sound, 50, 0)
 		else 
 			say("Not enough charges stored.")
 		update_icon()
