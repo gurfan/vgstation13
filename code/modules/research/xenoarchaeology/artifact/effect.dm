@@ -66,7 +66,7 @@
 		GenerateTrigger()
 
 	//Randomize the modify order for each effect.
-	shuffle(modify_order)
+	modify_order = shuffle(modify_order)
 
 /datum/artifact_effect/proc/ToggleActivate(var/reveal_toggle = 1)
 	//so that other stuff happens first

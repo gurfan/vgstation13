@@ -140,6 +140,7 @@
 
 	if(href_list["releaseEffect"])
 		isolated_effect = null
+		modify_target = 0
 		return TRUE
 
 	if(href_list["selectEffect"])
@@ -179,11 +180,14 @@
 			cur_artifact.contained = 0
 			cur_artifact = null
 			isolated_effect = null
+		modify_target = 0
 		return TRUE
 
 
 /obj/machinery/artifact_modifier/process()
 	if(stat & (NOPOWER|BROKEN))
+		progress = 0
+		modify_target = 0
 		return
 
 	if(modify_target)
@@ -202,9 +206,11 @@
 			progress = 0
 			isolated_effect.modify_effect(modify_target, modify_parameter)
 			modify_target = 0
+			nanomanager.update_uis(src)
 			visible_message("<b>[src]</b> beeps.")
 
 	else
+		progress = 0
 		use_power = 1
 
 	update_icon()
