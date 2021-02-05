@@ -35,10 +35,10 @@ Used In File(s): \code\game\modules\research\xenoarcheology\machinery\artifact_m
 
 		{{if data.isModifying}}
 		{{:helper.link("Positive", null, {'switchType': '1'}, 'disabled')}}
-		{{:helper.link("Negative", null, {'switchType': '0'}, 'disabled')}}
+		{{:helper.link("Negative", null, {'switchType': '-1'}, 'disabled')}}
 		{{else}}
 		{{:helper.link("Positive", null, {'switchType': '1'}, !data.modifyParameter ? null : 'selected')}}
-		{{:helper.link("Negative", null, {'switchType': '0'}, data.modifyParameter ? null : 'selected')}}
+		{{:helper.link("Negative", null, {'switchType': '-1'}, data.modifyParameter ? null : 'selected')}}
 		{{/if}}
 
 		<br> <br>

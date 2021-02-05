@@ -18,7 +18,7 @@
 	light_color = "#E1C400"
 	var/radiation_range = 4
 	var/stored_charges = 0
-	var/modify_parameter = 1		//set this to 1 or 0
+	var/modify_parameter = 1		//set this to 1 or -1
 	var/modify_target = 0		//set this to 1-8
 	var/progress
 
@@ -204,10 +204,16 @@
 
 		if(progress >= 100)
 			progress = 0
-			isolated_effect.modify_effect(modify_target, modify_parameter)
+			if(isolated_effect.modify_effect(modify_target, modify_parameter))
+				visible_message("<b>[bicon(src)] [src]</b> beeps.")
+				playsound(src, 'sound/machines/twobeep.ogg', 75, 0)
+			else
+				visible_message("<b>[bicon(src)] [src]</b> buzzes.")
+				cur_artifact.visible_message("<span class='warning'>[bicon(cur_artifact)] [toplevelholder] [pick("buzzes softly.", "doesn't react at all.", "vibrates slightly, but quickly settles to a stop.")]</span>")
+				playsound(src, 'sound/machines/buzz-two.ogg', 75, 0)
 			modify_target = 0
 			nanomanager.update_uis(src)
-			visible_message("<b>[src]</b> beeps.")
+			
 
 	else
 		progress = 0
@@ -276,32 +282,32 @@
 
 		//Cult clothing
 		/obj/item/weapon/melee/cultblade/nocult = 1,
-		/obj/item/clothing/head/culthood = 1,
-		/obj/item/clothing/suit/cultrobes = 1,
-		/obj/item/clothing/head/culthood/old = 1,
-		/obj/item/clothing/suit/cultrobes/old = 1,
-		/obj/item/clothing/head/magus = 1,
-		/obj/item/clothing/suit/magusred = 1,
-		/obj/item/clothing/head/helmet/space/cult = 3,
-		/obj/item/clothing/suit/space/cult = 3,
+		/obj/item/clothing/head/culthood = 2,
+		/obj/item/clothing/suit/cultrobes = 4,
+		/obj/item/clothing/head/culthood/old = 3,
+		/obj/item/clothing/suit/cultrobes/old = 6,
+		/obj/item/clothing/head/magus = 2,
+		/obj/item/clothing/suit/magusred = 2,
+		/obj/item/clothing/head/helmet/space/cult = 4,
+		/obj/item/clothing/suit/space/cult = 8,
 		/obj/item/clothing/head/helmet/space/legacy_cult = 5,
-		/obj/item/clothing/suit/space/legacy_cult = 5,
+		/obj/item/clothing/suit/space/legacy_cult = 10,
 
 		//Soulstones
-		/obj/item/soulstone = 10,
+		/obj/item/soulstone = 20,
 
 		//Fossils
 		/obj/item/weapon/fossil/ = 1,
 
 		//Magic masks
-		/obj/item/clothing/mask/morphing = 10,
-		/obj/item/clothing/mask/happy = 5,
+		/obj/item/clothing/mask/morphing = 20,
+		/obj/item/clothing/mask/happy = 10,
 
 		//Magic dice
-		/obj/item/weapon/dice/d20/cursed = 10,
+		/obj/item/weapon/dice/d20/cursed = 20,
 
 		//Red ribbon arm
-		/obj/item/red_ribbon_arm = 5,
+		/obj/item/red_ribbon_arm = 8,
 
 	)
 

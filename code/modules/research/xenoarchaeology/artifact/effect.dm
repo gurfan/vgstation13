@@ -233,20 +233,19 @@ proc/GetAnomalySusceptibility(var/mob/living/carbon/human/H)
 		if (8)
 			modify8(change)
 
-
 /datum/artifact_effect/proc/modify1(var/mod)
-	return
+	return 0
 /datum/artifact_effect/proc/modify2(var/mod)
-	return
+	return 0
 /datum/artifact_effect/proc/modify3(var/mod)
-	return
+	return 0
 /datum/artifact_effect/proc/modify4(var/mod)
-	return
+	return 0
 /datum/artifact_effect/proc/modify5(var/mod)
-	return
+	return 0
 /datum/artifact_effect/proc/modify6(var/mod)
-	return
+	return 0
 /datum/artifact_effect/proc/modify7(var/mod)
-	return
+	return 0
 /datum/artifact_effect/proc/modify8(var/mod)
-	return
+	return 0

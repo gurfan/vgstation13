@@ -9,3 +9,9 @@
 	if(holder)
 		empulse(get_turf(holder), effectrange/2, effectrange)
 		return 1
+
+//Increase or decrease range
+/datum/artifact_effect/emp/modify1(var/num)
+	effectrange += num
+	if(effectrange < 0)
+		effectrange = 0
