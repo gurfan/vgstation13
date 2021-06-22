@@ -454,6 +454,7 @@ var/list/astral_projections = list()
 						M.playsound_local(loc, get_sfx("disappear_sound"), 75, 0, -2)
 			anchor.key = key
 			to_chat(anchor, "<span class='notice'>You reconnect with your body.</span>")
+			anchor.overlays -= image('icons/effects/effects.dmi',src,"summoning", ABOVE_OBJ_LAYER)
 			anchor.ajourn = null
 	//if our body was somehow already destroyed however, we'll become a shade right here
 	else if(client)

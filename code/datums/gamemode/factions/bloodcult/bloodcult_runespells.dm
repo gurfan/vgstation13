@@ -2610,6 +2610,8 @@ var/list/bloodcult_exitportals = list()
 	step(astral,NORTH)
 	astral.dir = SOUTH
 
+	activator.overlays |= image('icons/effects/effects.dmi',src,"summoning", ABOVE_OBJ_LAYER)
+
 	spawn()
 		handle_astral()
 
@@ -2621,6 +2623,7 @@ var/list/bloodcult_exitportals = list()
 
 
 /datum/rune_spell/blood_cult/astraljourney/abort(var/cause)
+	activator.overlays -= image('icons/effects/effects.dmi',src,"summoning", ABOVE_OBJ_LAYER)
 	qdel(astral)
 	..()
 
