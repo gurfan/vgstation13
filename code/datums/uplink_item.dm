@@ -791,8 +791,8 @@ var/list/uplink_items = list()
 	name = "Tesla Cannon"
 	desc = "This device uses stored power to create a devastating orb of electricity that shocks nearly everyone in its path. The device must be loaded with capacitors in order to fire, each charged to at least 1 MW. The amount of damage scales with the power stored in the capacitor. The cannon comes with one free, pre-charged capacitor."
 	item = /obj/item/weapon/gun/tesla/preloaded
-	cost = 18
-	discounted_cost = 14
+	cost = 16
+	discounted_cost = 12
 	jobs_with_discount = list("Station Engineer", "Chief Engineer")
 
 /datum/uplink_item/jobspecific/engineering/powercreeper_packet
