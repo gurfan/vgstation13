@@ -1,0 +1,315 @@
+"af" = (/obj/machinery/atmospherics/pipe/simple/general/visible{dir = 4},/obj/machinery/meter,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"ap" = (/obj/machinery/telecomms/server/presets/security,/obj/machinery/camera{name = "Telecomms Server Room"},/turf/simulated/floor/server,/area/awaymission/example)
+"aq" = (/obj/machinery/atmospherics/binary/pump{dir = 1; icon_state = "intact_on"; name = "Gas Pump"; on = 1},/turf/simulated/floor/plating,/area/awaymission/example)
+"aF" = (/obj/machinery/power/battery/smes,/obj/structure/cable/white{d2 = 4; icon_state = "0-4"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"aJ" = (/obj/machinery/atmospherics/unary/tank/oxygen{starting_volume = 3200},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"bd" = (/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"bf" = (/obj/structure/rack{dir = 8},/obj/item/weapon/circuitboard/rdconsole,/obj/item/weapon/circuitboard/rdserver{pixel_x = 3; pixel_y = -3},/obj/item/weapon/circuitboard/destructive_analyzer,/obj/item/weapon/circuitboard/protolathe,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/effect/decal/warning_stripes{icon_state = "bot"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"bg" = (/obj/machinery/door/airlock/maintenance{name = "Construction Area"; req_one_access_txt = "12"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/awaymission/example)
+"bh" = (/obj/machinery/atmospherics/unary/portables_connector{dir = 8},/obj/machinery/light{dir = 4},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"bm" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor/plating,/area/awaymission/example)
+"bx" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/he_manifold{dir = 1},/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"ca" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible{dir = 4},/obj/machinery/door_control{id_tag = "disvent"; name = "Incinerator Vent Control"; pixel_y = -24; req_access_txt = "12"},/obj/machinery/meter,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"cq" = (/obj/structure/catwalk/invulnerable/hive,/obj/item/weapon/paper/lamprey/blue,/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"cF" = (/turf/simulated/floor/plating,/area/awaymission/example)
+"cK" = (/obj/machinery/atmospherics/unary/cold_sink/freezer{current_temperature = 60; dir = 4; on = 1},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"cO" = (/obj/structure/closet/emcloset,/turf/simulated/floor/plating,/area/awaymission/example)
+"cY" = (/obj/structure/bed/chair,/turf/simulated/floor/plating,/area/awaymission/example)
+"df" = (/obj/machinery/door/airlock/external{req_access_txt = "13"; req_one_access_txt = "13"},/turf/simulated/floor/plating,/area/awaymission/example)
+"dk" = (/turf/unsimulated/floor/fake_supermatter,/area)
+"dx" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"dJ" = (/obj/structure/disposalpipe/segment,/turf/simulated/floor/plating,/area/awaymission/example)
+"dX" = (/obj/machinery/door/airlock/highsecurity{name = "Telecommunications Storage"; req_access_txt = "61"; req_one_access_txt = ""},/obj/structure/cable/white{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"dY" = (/obj/structure/bed/chair,/obj/item/toy/gooncode,/turf/simulated/floor/plating,/area/awaymission/example)
+"ed" = (/obj/structure/window/barricade/full,/turf/simulated/floor/plating,/area/awaymission/example)
+"ey" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/obj/machinery/vending/snack,/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"eP" = (/obj/structure/ore_box,/turf/simulated/floor/plating,/area/awaymission/example)
+"eT" = (/obj/machinery/telecomms/bus/preset_two,/turf/simulated/floor/server,/area/awaymission/example)
+"eX" = (/obj/structure/reagent_dispensers/silicate,/turf/simulated/floor/plating,/area/awaymission/example)
+"fd" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"fe" = (/obj/machinery/atmospherics/pipe/simple/insulated/hidden/blue{dir = 4},/turf/simulated/wall/r_wall,/area/awaymission/example)
+"fj" = (/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/abstract/map/spawner/pick_spawner/yellowgloves/tcomms_storage,/obj/structure/bed/chair,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"fH" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/obj/structure/window/full/reinforced,/turf/simulated/floor/plating,/area/awaymission/example)
+"fJ" = (/obj/item/toy/gasha/hoptard,/turf/space,/area/awaymission/example)
+"fT" = (/obj/structure/closet/crate,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example)
+"gk" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"gn" = (/obj/effect/decal/warning_stripes{icon_state = "all"; tag = "icon-all"},/obj/machinery/turret{dir = 4},/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 9},/turf/simulated/floor/plating,/area/awaymission/example)
+"gB" = (/obj/machinery/computer/telecomms/server{network = "tcommsat"},/obj/machinery/newscaster{dir = 4; pixel_x = -28},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"gK" = (/obj/structure/sign/securearea{desc = "A warning sign which reads 'HIGH VOLTAGE'"; icon_state = "shock"; name = "HIGH VOLTAGE"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/wall/r_wall,/area/awaymission/example)
+"gO" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/landmark{name = "xeno_spawn"; pixel_x = -1},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"hl" = (/obj/machinery/telecomms/server/presets/command,/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"hD" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/structure/sign/poster{icon_state = "poster7"; pixel_x = -32},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor/plating,/area/awaymission/example)
+"hP" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible/blue{dir = 9; tag = "icon-intact (NORTHWEST)"},/obj/structure/bed/chair/office{dir = 8},/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"hW" = (/obj/structure/closet/crate{name = "Camera Assembly Crate"},/obj/item/weapon/camera_assembly,/obj/item/weapon/camera_assembly,/obj/item/weapon/camera_assembly,/obj/item/weapon/camera_assembly,/obj/item/weapon/camera_assembly,/obj/structure/cable/white{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/abstract/map/spawner/pick_spawner/yellowgloves/tcomms_storage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"hY" = (/obj/machinery/telecomms/receiver/preset_left,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor/server,/area/awaymission/example)
+"ic" = (/obj/machinery/power/apc{dir = 8; pixel_x = -24},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/plating,/area/awaymission/example)
+"id" = (/obj/structure/grille,/obj/structure/window/reinforced/tinted{dir = 1},/obj/structure/window/reinforced/tinted,/obj/structure/window/reinforced/tinted{dir = 8},/turf/simulated/floor/plating,/area/awaymission/example)
+"im" = (/obj/structure/reagent_dispensers/watertank,/turf/simulated/floor/plating,/area/awaymission/example)
+"ip" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/turf/simulated/floor/plating,/area/awaymission/example)
+"iS" = (/obj/machinery/atmospherics/unary/portables_connector{dir = 8},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"jf" = (/obj/machinery/recharge_station,/turf/simulated/floor/plating,/area/awaymission/example)
+"jg" = (/obj/machinery/telecomms/receiver/preset_right,/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 10},/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/server,/area/awaymission/example)
+"jh" = (/obj/machinery/atmospherics/pipe/simple/general/visible{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"jD" = (/obj/machinery/atmospherics/unary/vent_pump{canSpawnMice = 0; dir = 4; on = 1},/turf/simulated/floor/server,/area/awaymission/example)
+"jS" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"jU" = (/obj/machinery/power/terminal,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/abstract/map/spawner/pick_spawner/yellowgloves/tcomms_storage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"kf" = (/obj/structure/closet/crate{icon_state = "crateopen"; opened = 1},/turf/simulated/floor/plating,/area/awaymission/example)
+"kj" = (/obj/structure/catwalk,/turf/simulated/floor/plating,/area/awaymission/example)
+"km" = (/obj/structure/lattice,/turf/simulated/floor/plating,/area/awaymission/example)
+"kq" = (/turf/space,/area/awaymission/example)
+"lB" = (/obj/structure/table,/obj/item/device/aicard,/obj/item/weapon/aiModule/reset,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/effect/decal/warning_stripes{icon_state = "bot"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"lC" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/obj/effect/decal/warning_stripes{icon_state = "nitrogen"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"lL" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"lZ" = (/obj/machinery/light/small,/turf/simulated/floor/plating,/area/awaymission/example)
+"mk" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor/border_only{dir = 8; name = "Firelock West"},/obj/machinery/door/airlock/maintenance{name = "Incinerator"; req_access_txt = "12"},/turf/simulated/floor/plating,/area/awaymission/example)
+"mn" = (/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/plating,/area/awaymission/example)
+"mr" = (/obj/machinery/telecomms/broadcaster/preset_left,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 6},/turf/simulated/floor/server,/area/awaymission/example)
+"my" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor/plating,/area/awaymission/example)
+"mI" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"mO" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/space_heater/air_conditioner,/turf/simulated/floor/plating,/area/awaymission/example)
+"nE" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"nR" = (/obj/machinery/door/airlock/maintenance{req_access_txt = "12"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/awaymission/example)
+"ot" = (/obj/machinery/telecomms/processor/preset_four,/turf/simulated/floor/server,/area/awaymission/example)
+"oz" = (/obj/structure/disposalpipe/segment,/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"oO" = (/obj/structure/closet,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/mounted/poster,/turf/simulated/floor/plating,/area/awaymission/example)
+"po" = (/obj/machinery/door/airlock/maintenance{name = "Incinerator"; req_access_txt = "12"},/turf/simulated/floor/plating,/area/awaymission/example)
+"px" = (/obj/machinery/camera{name = "Secure Technical Storage"},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"qm" = (/obj/machinery/telecomms/hub/preset,/turf/simulated/floor/server,/area/awaymission/example)
+"qZ" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/alarm{dir = 1; pixel_y = -22},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"re" = (/obj/effect/forcefield{alpha = 0; name = "invisible force wall"},/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"rw" = (/obj/abstract/map/spawner/maint/lowchance,/obj/abstract/map/spawner/maint/lowchance,/turf/space,/area/awaymission/example)
+"rN" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 8; on = 1},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"sF" = (/obj/structure/rack,/obj/item/airbag,/obj/item/clothing/glasses/science,/turf/simulated/floor/plating,/area/awaymission/example)
+"sM" = (/obj/item/device/mining_scanner,/turf/simulated/floor/plating,/area/awaymission/example)
+"sN" = (/obj/machinery/space_heater,/turf/simulated/floor/plating,/area/awaymission/example)
+"tb" = (/obj/machinery/telecomms/server/presets/engineering,/turf/simulated/floor/server,/area/awaymission/example)
+"to" = (/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"tp" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible,/obj/machinery/computer/telecomms/traffic{network = "tcommsat"},/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/white{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"ut" = (/obj/machinery/door/airlock/highsecurity{name = "Secure Technical Storage"; req_access_txt = "19;23"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/awaymission/example)
+"uC" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible{dir = 4},/obj/item/device/radio/intercom{name = "Station Intercom (General)"; pixel_y = -29},/obj/structure/table,/obj/item/weapon/pen,/turf/simulated/floor/plating,/area/awaymission/example)
+"uF" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"vD" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"wj" = (/obj/machinery/gateway/center/away,/turf/simulated/floor/plating,/area/awaymission/example)
+"wv" = (/obj/machinery/atmospherics/trinary/tvalve/digital/mirrored{dir = 8; icon_state = "tvalvem1"; state = 1; tag = "icon-tvalvem1 (WEST)"},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"wE" = (/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"wK" = (/mob/living/simple_animal/mouse/common,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"xi" = (/obj/structure/sign/nosmoking_2,/obj/machinery/atmospherics/pipe/simple/yellow/hidden{dir = 4},/turf/simulated/wall/r_wall,/area/awaymission/example)
+"xv" = (/obj/structure/sign/securearea{desc = "A warning sign which reads 'EXTERNAL AIRLOCK'"; icon_state = "space"; name = "EXTERNAL AIRLOCK"; pixel_y = 32},/turf/simulated/floor/plating,/area/awaymission/example)
+"xy" = (/obj/structure/table,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/abstract/map/spawner/pick_spawner/yellowgloves/tcomms_storage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"xB" = (/obj/structure/rack{dir = 8},/obj/item/weapon/storage/toolbox/electrical{pixel_x = 1; pixel_y = -1},/obj/item/device/t_scanner,/obj/item/clothing/glasses/scanner/meson,/obj/item/device/multitool,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/effect/decal/warning_stripes{icon_state = "bot"},/obj/abstract/map/spawner/pick_spawner/yellowgloves/technicalstorage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"xG" = (/turf/simulated/wall/r_wall,/area/awaymission/example)
+"xI" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/awaymission/example)
+"xQ" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/mob/living/simple_animal/mouse/common,/turf/simulated/floor/plating,/area/awaymission/example)
+"yj" = (/turf/simulated/floor/server,/area/awaymission/example)
+"yB" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/awaymission/example)
+"yP" = (/obj/structure/table,/obj/item/weapon/circuitboard/power_control,/obj/item/weapon/circuitboard/airlock,/obj/effect/decal/warning_stripes{icon_state = "bot"},/obj/abstract/map/spawner/pick_spawner/yellowgloves/technicalstorage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"yY" = (/obj/structure/cable/white{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"zd" = (/obj/machinery/telecomms/bus/preset_three,/turf/simulated/floor/server,/area/awaymission/example)
+"zg" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible,/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"zv" = (/obj/structure/cable/white{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"Ab" = (/obj/item/stack/cable_coil{amount = 5},/turf/simulated/floor/plating,/area/awaymission/example)
+"Am" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"Av" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 5},/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"AD" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating,/area/awaymission/example)
+"AH" = (/obj/machinery/gateway/away,/turf/simulated/floor/plating,/area/awaymission/example)
+"AK" = (/obj/machinery/atmospherics/binary/pump,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"AM" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible,/obj/structure/cable/white{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"AT" = (/obj/machinery/telecomms/broadcaster/preset_right,/turf/simulated/floor/server,/area/awaymission/example)
+"Bg" = (/obj/structure/rack{dir = 1},/obj/item/clothing/suit/fire/firefighter,/obj/item/weapon/tank/oxygen,/obj/item/clothing/mask/gas,/obj/item/weapon/extinguisher,/obj/item/clothing/head/hardhat/red,/obj/item/clothing/glasses/scanner/meson,/turf/simulated/floor/plating,/area/awaymission/example)
+"Bq" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"Bv" = (/obj/structure/grille,/obj/structure/window/reinforced/tinted{dir = 1},/obj/structure/window/reinforced/tinted,/turf/simulated/floor/plating,/area/awaymission/example)
+"Bw" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"BE" = (/obj/machinery/telecomms/relay/preset/station,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor/server,/area/awaymission/example)
+"BG" = (/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"; pixel_y = 1},/turf/simulated/floor/plating,/area/awaymission/example)
+"BZ" = (/obj/machinery/telecomms/server/presets/command,/turf/simulated/floor/server,/area/awaymission/example)
+"CV" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/simulated/wall,/area/awaymission/example)
+"Db" = (/obj/machinery/atmospherics/pipe/manifold/general/visible,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"Dl" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible{dir = 4},/obj/structure/closet/emcloset,/turf/simulated/floor/plating,/area/awaymission/example)
+"Dp" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible/blue{dir = 4; tag = "icon-intact (EAST)"},/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Dv" = (/obj/machinery/atmospherics/unary/tank/toxins{starting_volume = 3200},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"DN" = (/obj/machinery/telecomms/bus/preset_four,/turf/simulated/floor/server,/area/awaymission/example)
+"Ec" = (/obj/structure/closet/emcloset,/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"Ee" = (/obj/structure/bed/chair,/obj/effect/decal/cleanable/cobweb,/obj/item/weapon/newspaper,/obj/effect/decal/cleanable/dirt,/obj/abstract/map/spawner/maint/lowchance,/turf/simulated/floor/plating,/area/awaymission/example)
+"Eu" = (/obj/structure/rack{dir = 8},/obj/item/weapon/circuitboard/robotics{pixel_x = -2; pixel_y = 2},/obj/item/weapon/circuitboard/mecha_control{pixel_x = 1; pixel_y = -1},/turf/simulated/floor{icon_state = "dark-markings"},/area/awaymission/example)
+"EB" = (/obj/structure/cable/white{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/table,/obj/abstract/map/spawner/pick_spawner/yellowgloves/tcomms_storage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"EW" = (/obj/structure/grille/broken,/obj/item/weapon/shard,/obj/item/tape/engineering{icon_state = "engineering_door"},/obj/structure/window/reinforced/tinted{dir = 1},/turf/simulated/floor/plating,/area/awaymission/example)
+"Fv" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating,/area/awaymission/example)
+"FP" = (/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"FR" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"; pixel_y = 1},/obj/structure/window/full/reinforced,/turf/simulated/floor/plating,/area/awaymission/example)
+"Gh" = (/obj/structure/sign/poster{icon_state = "poster3"; pixel_y = 32},/turf/simulated/floor/plating,/area/awaymission/example)
+"Gi" = (/obj/machinery/camera{dir = 8; name = "Abandoned Warehouse"},/turf/simulated/floor/plating,/area/awaymission/example)
+"GJ" = (/obj/machinery/telecomms/processor/preset_three,/turf/simulated/floor/server,/area/awaymission/example)
+"GQ" = (/obj/machinery/telecomms/processor/preset_one,/turf/simulated/floor/server,/area/awaymission/example)
+"Hm" = (/obj/machinery/door/airlock/maintenance{req_access_txt = "12"},/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"Hr" = (/obj/structure/rack,/obj/item/clothing/suit/storage/hazardvest,/turf/simulated/floor/plating,/area/awaymission/example)
+"Hx" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/wall/r_wall,/area/awaymission/example)
+"HX" = (/obj/machinery/atmospherics/pipe/simple/general/visible{dir = 4},/obj/machinery/atmospherics/pipe/simple/insulated/visible,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"It" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating,/area/awaymission/example)
+"Iv" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/cable/yellow,/obj/structure/window/full/reinforced,/turf/simulated/floor/plating,/area/awaymission/example)
+"Iw" = (/obj/machinery/atmospherics/unary/tank/nitrogen{dir = 4; initialize_directions = 4},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"IC" = (/obj/structure/cable/white{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/computer/general_air_control/large_tank_control{name = "Telecomms Room Monitoring"; sensors = list("tcomms_sensor"="Server Room")},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"IT" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/server,/area/awaymission/example)
+"IZ" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6},/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"Jo" = (/obj/structure/cable/white{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Kf" = (/turf/simulated/floor/plating{icon_state = "platingdmg3"; tag = "icon-platingdmg3"},/area/awaymission/example)
+"Kg" = (/obj/structure/sign/securearea,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/simulated/wall/r_wall,/area/awaymission/example)
+"Kk" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 6},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating,/area/awaymission/example)
+"Kq" = (/obj/structure/table,/obj/item/device/t_scanner,/turf/simulated/floor/plating,/area/awaymission/example)
+"KW" = (/obj/machinery/vending,/turf/simulated/floor/plating,/area/awaymission/example)
+"Lb" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/simulated/wall/r_wall,/area/awaymission/example)
+"Lm" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating,/area/awaymission/example)
+"Lq" = (/obj/structure/catwalk/invulnerable,/obj/structure/catwalk/invulnerable/hive,/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"MK" = (/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"MM" = (/obj/structure/rack{dir = 8},/obj/item/weapon/circuitboard/cloning,/obj/item/weapon/circuitboard/med_data{pixel_x = 3; pixel_y = -3},/obj/item/weapon/circuitboard/clonescanner,/obj/item/weapon/circuitboard/clonepod,/obj/item/weapon/circuitboard/scan_consolenew,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/effect/decal/warning_stripes{icon_state = "bot"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"MS" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible{dir = 4},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"Ny" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{dir = 1},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/awaymission/example)
+"ND" = (/obj/structure/rack{dir = 8},/obj/item/weapon/circuitboard/crew{pixel_x = -1; pixel_y = 1},/obj/item/weapon/circuitboard/card{pixel_x = 2; pixel_y = -2},/obj/item/weapon/circuitboard/communications{pixel_x = 5; pixel_y = -5},/obj/machinery/light/small{dir = 8},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "dark-markings"},/area/awaymission/example)
+"NE" = (/obj/effect/forcefield{alpha = 0; name = "invisible force wall"},/obj/effect/forcefield{alpha = 0; name = "invisible force wall"},/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"Oq" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating,/area/awaymission/example)
+"Ot" = (/obj/structure/catwalk/invulnerable/hive,/obj/effect/landmark/corpse/engineer/old,/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"OM" = (/obj/machinery/light_switch{pixel_x = 27},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"Pi" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible{dir = 4},/obj/machinery/firealarm{dir = 1; pixel_y = -24},/obj/structure/table,/obj/item/weapon/book/manual/engineering_guide,/obj/item/weapon/paper,/obj/item/weapon/paper,/obj/item/weapon/paper,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"Pj" = (/obj/machinery/camera{dir = 8; name = "Abandoned Warehouse"},/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"Py" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible/blue,/obj/machinery/computer/message_monitor,/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"PN" = (/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"PR" = (/turf/simulated/wall,/area/awaymission/example)
+"Qd" = (/obj/machinery/camera{name = "Technical Storage"},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/structure/table,/obj/item/device/flashlight{pixel_x = 1; pixel_y = 5},/obj/item/device/flashlight{pixel_x = 1; pixel_y = 5},/obj/item/device/flash,/obj/item/device/flash,/obj/effect/decal/warning_stripes{icon_state = "bot"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Qn" = (/obj/structure/girder,/turf/simulated/floor/plating,/area/awaymission/example)
+"Rj" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/plating,/area/awaymission/example)
+"Ru" = (/obj/structure/rack{dir = 8},/obj/item/weapon/storage/toolbox/electrical{pixel_x = 1; pixel_y = -1},/obj/item/device/multitool,/obj/item/clothing/glasses/scanner/meson,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/machinery/light/small,/obj/effect/decal/warning_stripes{icon_state = "bot"},/obj/item/clothing/head/welding,/obj/abstract/map/spawner/pick_spawner/yellowgloves/technicalstorage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"RQ" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/awaymission/example)
+"RX" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/obj/machinery/meter,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Sy" = (/obj/structure/closet,/obj/machinery/light/small,/turf/simulated/floor/plating,/area/awaymission/example)
+"SB" = (/obj/structure/cable/white{d2 = 4; icon_state = "0-4"},/obj/effect/decal/warning_stripes{icon_state = "plasma"},/obj/machinery/atmospherics/pipe/simple/insulated/visible/blue{dir = 10; tag = "icon-intact (NORTHWEST)"},/obj/abstract/map/spawner/pick_spawner/yellowgloves/tcomms_storage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"SQ" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/awaymission/example)
+"Tk" = (/obj/structure/table,/obj/machinery/cell_charger{pixel_y = 5},/obj/machinery/status_display{pixel_x = -32},/obj/item/weapon/cell/high{charge = 100; maxcharge = 15000},/obj/effect/decal/warning_stripes{icon_state = "bot"},/obj/abstract/map/spawner/pick_spawner/yellowgloves/technicalstorage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Tq" = (/obj/machinery/atmospherics/binary/pump{dir = 4; icon_state = "intact_on"; name = "Nitrogen Pump"; on = 1},/obj/machinery/light/small{dir = 4},/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/camera{dir = 8; name = "Telecomms Auxiliary Storage"},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"TF" = (/turf/space,/area)
+"Uh" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/effect/decal/cleanable/cobweb2,/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"UO" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/obj/machinery/atmospherics/pipe/simple/yellow/visible,/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/server/bluegrid,/area/awaymission/example)
+"UQ" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 4; on = 1},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"UU" = (/obj/structure/catwalk/invulnerable/hive,/turf/unsimulated/floor/fake_supermatter,/area/awaymission/example)
+"Vj" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible/blue{dir = 4; tag = "icon-intact (EAST)"},/obj/structure/table/reinforced,/obj/item/weapon/pen,/obj/item/weapon/pen,/obj/item/weapon/folder/yellow,/obj/machinery/requests_console{announcementConsole = 1; department = "Telecoms Admin"; departmentType = 5; name = "Telecoms RC"; pixel_x = -32},/obj/machinery/camera{dir = 4; name = "Telecomms Control Room"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/item/weapon/paper_bin/yellow{pixel_x = -3; pixel_y = 7},/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"Wa" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible{dir = 10},/obj/structure/closet,/turf/simulated/floor/plating,/area/awaymission/example)
+"Wh" = (/obj/machinery/atmospherics/pipe/simple/insulated/visible/blue{dir = 4; tag = "icon-intact (EAST)"},/obj/machinery/meter,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Wj" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/obj/machinery/vending/coffee,/turf/simulated/floor{icon_state = "white"},/area/awaymission/example)
+"Wl" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area/awaymission/example)
+"Wq" = (/obj/effect/decal/cleanable/blood/oil,/obj/machinery/atmospherics/pipe/manifold/insulated/visible/blue,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Ws" = (/obj/structure/catwalk,/obj/machinery/door/airlock/external{req_access_txt = "13"; req_one_access_txt = "13"},/turf/simulated/floor/plating,/area/awaymission/example)
+"WL" = (/obj/machinery/telecomms/relay/preset/telecomms,/obj/structure/cable/white{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/server,/area/awaymission/example)
+"WX" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/machinery/atmospherics/pipe/simple/yellow/visible,/obj/structure/cable/white{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area/awaymission/example)
+"Xb" = (/obj/machinery/atmospherics/unary/tank/toxins{dir = 4},/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Xd" = (/obj/machinery/telecomms/bus/preset_one,/turf/simulated/floor/server,/area/awaymission/example)
+"Xe" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/closet/malf/suits,/obj/item/toy/gasha/AI/malf,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Xf" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/camera{dir = 8; name = "Incinerator"},/turf/simulated/floor{icon_state = "floorgrime"},/area/awaymission/example)
+"XD" = (/obj/machinery/light/small{dir = 1},/obj/machinery/alarm{pixel_y = 23},/obj/structure/table,/obj/item/stack/cable_coil{pixel_x = -3; pixel_y = 3},/obj/item/stack/cable_coil,/obj/item/weapon/cell/high{charge = 100; maxcharge = 15000},/obj/effect/decal/warning_stripes{icon_state = "bot"},/obj/abstract/map/spawner/pick_spawner/yellowgloves/technicalstorage,/turf/simulated/floor{icon_state = "dark"},/area/awaymission/example)
+"Yd" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor/plating,/area/awaymission/example)
+"Yp" = (/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/disposalpipe/segment{dir = 4; icon_state = "pipe-c"},/turf/simulated/floor/plating,/area/awaymission/example)
+"YF" = (/obj/structure/rack{dir = 8},/obj/item/weapon/circuitboard/borgupload{pixel_x = -1; pixel_y = 1},/obj/item/weapon/circuitboard/aiupload{pixel_x = 2; pixel_y = -2},/turf/simulated/floor{icon_state = "dark-markings"},/area/awaymission/example)
+"Ze" = (/obj/machinery/disposal,/obj/structure/disposalpipe/trunk{dir = 8},/turf/simulated/floor/plating,/area/awaymission/example)
+"Zk" = (/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/awaymission/example)
+"Zy" = (/obj/structure/rack,/obj/item/weapon/circuitboard/airlock,/turf/simulated/floor/plating,/area/awaymission/example)
+"ZZ" = (/obj/machinery/telecomms/processor/preset_two,/turf/simulated/floor/server,/area/awaymission/example)
+
+(1,1,1) = {"
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+TFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrerererererererererererererererererererererererererererererererererererererererererererererererereNEredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNozPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNozPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNcFPNPNPNPRozPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNcFcFPNcFcFPNPNPRdJcFPNPNHmHmcFPNcFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPRePsMPRcFcFcFPRYpZkxIxIxInRxIxIxIxIBwBwBwBwPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNQnePdYPRKqSyBgPRipcFxGxGxGxGxGxGxGxGhlPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPRPRPRPRPRPRPRPRipcFxGxGGQXdbdtbapBZPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNBwBwxIxIxIxIbgxIxIxIOqcFxGxGnEbdIZBqBqBqPNyjPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNcFcFcFPjGiGiGiGiGiPRcFAbcFipsFxGxGZZeTuFmrITATyjyjPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNcFcFcFcFcFcFcFPRimRjPRipoOxGxGGJzduFBEqmWLPNyjPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNcFcFcFcFcFcFPRPRPRPRipePxGxGnEbduFhYjDjgbdPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNcFcFcFcFkfPREeItGhipePxGxGotDNAvAmbxUOPNcFPNPNPNPNPNPNPNPNPNPNUUPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPRPRPRPRPRcFKfcFipxGxGxGidBvEWyBNyWXwEcFPNPNPNPNPNPNPNPNPNUULqUUPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNWsdfxvcFdfcFcFcFipxGXbSBEBhWxGgBPytpPNwEPNPNPNPNPNPNPNPNUUUUcFUUUUPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNkjPRlZcOPRcFcFcFxQxGcKWqWhDpfeVjhPzgwEcFPNPNPNPNPNPNPNUUUUcFwjcFUUUUPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNcFcFPRPRPRPRPRicxIKkLbxyrNdxJodXyYzvAMcFwEPNPNPNPNPNPNPNPNUUUUAHUUUUPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNRQCVZeADBGPReXcFmyxGIwlCRXTqxiWjeygnPNPNPNPNPNPNPNPNPNPNPNOtUUUUPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNkmPRMKcFXfPRimcFbmHxXeqZjUfjxGxGxGxGPNcFPNPNPNPNPNPNPNPNPNPNcqPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPRPRPRPRedWlPRPRcFmyxGxGxGaFICxGTkXDQdcFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNEcDlWaDvaJfdUhPRmOmyxGrwxGxGxGxGyPFPlLPNPNcFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNcFaqAKAKfdOMPRsNmyLmkqFRYFpxgKlBmIbfcFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNafafafHXDbDbjhbhPRcFmyFvfJfHNDjSutjSgOtocFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNMKMKMKgkMKwKmnvDmkxIYdSQkqIvEuUQKgxBRuMMcFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNMScawvPiuCMSiSPRfTmyxGxGxGxGxGxGPRPRPRPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPRpoPRPRPRPRPRPRhDcFcYHrZyimRjPRKWjfPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPRPRPNcFcFcFcFcFPNcFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPRcFcFcFcFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNcFPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrePNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNPNredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkrererererererererererererererererererererererererererererererererererererererererereNENErererererereredkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+dkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkdkTFTFTFTF
+"}

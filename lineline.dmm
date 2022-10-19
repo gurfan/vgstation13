@@ -1,0 +1,108 @@
+"ah" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{icon_state = "1-8"},/turf/simulated/floor{dir = 9; icon_state = "escape"},/area)
+"aT" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,/obj/structure/bed/chair{dir = 4},/turf/simulated/floor,/area)
+"bi" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor{dir = 8; icon_state = "red"},/area)
+"dc" = (/obj/structure/grille,/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area)
+"dp" = (/obj/machinery/hologram/holopad,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 9},/turf/simulated/floor,/area)
+"dH" = (/obj/structure/cable/yellow{icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{dir = 1; icon_state = "escape"},/area)
+"dQ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{scrub_CO2 = 0},/turf/simulated/floor,/area)
+"dY" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating,/area)
+"eg" = (/obj/machinery/atmospherics/unary/vent_pump{on = 1},/turf/simulated/floor{dir = 8; icon_state = "red"},/area)
+"eA" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"; pixel_y = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"eD" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/sign/securearea{desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'."; name = "KEEP CLEAR: DOCKING AREA"},/turf/simulated/floor/plating,/area)
+"gv" = (/obj/effect/decal/warning_stripes{dir = 6; icon_state = "warning"; tag = "icon-warning (SOUTHEAST)"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/simulated/floor{dir = 6; icon_state = "escape"},/area)
+"gR" = (/obj/item/beacon/bluespace_beacon,/turf/simulated/floor,/area)
+"hg" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/simulated/floor{dir = 8; icon_state = "escape"},/area)
+"hn" = (/turf/simulated/floor/plating,/area)
+"jh" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 4},/turf/simulated/floor{dir = 8; icon_state = "escape"},/area)
+"kr" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"; req_access_txt = "1"},/obj/docking_port/destination/escape/shuttle/station{dir = 4},/turf/simulated/floor/plating,/area)
+"lo" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor,/area)
+"ls" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor,/area)
+"lQ" = (/obj/machinery/power/apc{dir = 8; pixel_x = -24},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/obj/structure/bed/chair{dir = 4},/obj/machinery/light{dir = 8},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/turf/simulated/floor{dir = 8; icon_state = "escape"},/area)
+"nq" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"nD" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/bed/chair{dir = 8},/turf/simulated/floor,/area)
+"nQ" = (/obj/structure/bed/chair{dir = 1},/obj/machinery/status_display{pixel_y = -32},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "escape"},/area)
+"on" = (/obj/machinery/door/airlock{name = "Fore Starboard Emergency Storage"},/obj/machinery/door/firedoor/border_only{dir = 1; name = "Firelock North"},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area)
+"oB" = (/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor{dir = 5; icon_state = "red"},/area)
+"pc" = (/obj/structure/closet/emcloset,/obj/machinery/alarm{dir = 1; pixel_y = -22},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "escape"},/area)
+"qu" = (/obj/structure/bed/chair{dir = 1},/turf/simulated/floor{icon_state = "red"},/area)
+"qQ" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area)
+"rH" = (/obj/structure/bed/chair,/obj/machinery/camera{name = "Escape Holding Cells"},/turf/simulated/floor{dir = 9; icon_state = "red"},/area)
+"rP" = (/turf/simulated/wall,/area)
+"rY" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating,/area)
+"se" = (/turf/simulated/floor,/area)
+"ss" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/structure/cable/yellow{icon_state = "1-8"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{dir = 1; icon_state = "escape"},/area)
+"sw" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/simulated/floor,/area)
+"tf" = (/obj/machinery/camera{dir = 8; name = "Escape Arm Airlocks"},/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor{dir = 4; icon_state = "escape"},/area)
+"tv" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area)
+"tN" = (/obj/machinery/door/airlock/glass_security{name = "Holding Area"; req_access_txt = "1"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor,/area)
+"uV" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor{dir = 10; icon_state = "red"},/area)
+"vl" = (/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor{dir = 4; icon_state = "escape"},/area)
+"wD" = (/obj/machinery/door/airlock/maintenance{req_access_txt = "12"},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor/plating,/area)
+"wJ" = (/obj/structure/bed/chair,/turf/simulated/floor{dir = 1; icon_state = "red"},/area)
+"xY" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"; req_access_txt = "1"},/obj/structure/sign/securearea{desc = "A warning sign which reads 'EXTERNAL AIRLOCK'"; icon_state = "space"; name = "EXTERNAL AIRLOCK"; pixel_y = 32},/turf/simulated/floor/plating,/area)
+"Ag" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/obj/structure/sign/securearea{desc = "A warning sign which reads 'EXTERNAL AIRLOCK'"; icon_state = "space"; name = "EXTERNAL AIRLOCK"; pixel_y = 32},/turf/simulated/floor/plating,/area)
+"Au" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 5},/turf/simulated/floor,/area)
+"Cd" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"Co" = (/obj/machinery/camera{dir = 1; name = "Escape Arm South"},/obj/machinery/light,/obj/structure/bed/chair{dir = 1},/obj/machinery/media/receiver/boombox/wallmount/muzak{pixel_y = -22},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "escape"},/area)
+"CQ" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/turf/simulated/floor,/area)
+"DE" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/floor,/area)
+"Ec" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor{dir = 1; icon_state = "escape"},/area)
+"EP" = (/obj/machinery/navbeacon{codes_txt = "patrol;next_patrol=0"; location = "4"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 6},/turf/simulated/floor,/area)
+"GR" = (/obj/structure/bed/chair{dir = 8},/turf/simulated/floor,/area)
+"GZ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor,/area)
+"Hb" = (/obj/machinery/navbeacon{codes_txt = "patrol;next_patrol=4"; location = "3"},/obj/structure/bed/chair{dir = 4},/turf/simulated/floor,/area)
+"Ij" = (/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor{dir = 4; icon_state = "red"},/area)
+"Ja" = (/turf/space,/area)
+"Jd" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"JT" = (/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/structure/bed/chair{dir = 1},/turf/simulated/floor{dir = 6; icon_state = "red"},/area)
+"Ke" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{icon_state = "1-8"},/turf/simulated/floor{dir = 1; icon_state = "escape"},/area)
+"KD" = (/obj/machinery/firealarm{dir = 8; pixel_x = -24},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor{dir = 8; icon_state = "escape"},/area)
+"KF" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/machinery/light{dir = 8},/obj/structure/transit_tube/station/reverse,/turf/simulated/floor{dir = 8; icon_state = "escape"},/area)
+"Ms" = (/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor,/area)
+"NB" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/sign/securearea{desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'."; name = "KEEP CLEAR: DOCKING AREA"},/turf/simulated/floor/plating,/area)
+"NI" = (/obj/structure/bed/chair{dir = 4},/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"; tag = ""},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor{dir = 8; icon_state = "escape"},/area)
+"NQ" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area)
+"NS" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor,/area)
+"OF" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor,/area)
+"Pj" = (/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/machinery/light{dir = 4},/obj/machinery/computer/pda_terminal,/turf/simulated/floor{dir = 4; icon_state = "escape"},/area)
+"PF" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating,/area)
+"Qr" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"; pixel_y = 1},/turf/simulated/floor/plating,/area)
+"QI" = (/obj/structure/bed/chair,/obj/machinery/light{dir = 1},/turf/simulated/floor{dir = 1; icon_state = "red"},/area)
+"QW" = (/obj/structure/bed/chair{dir = 1},/obj/machinery/newscaster{pixel_y = -28},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "escape"},/area)
+"QZ" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating,/area)
+"Rg" = (/turf/simulated/wall/r_wall,/area)
+"Rh" = (/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/structure/cable/yellow{icon_state = "1-8"},/turf/simulated/floor{dir = 5; icon_state = "escape"},/area)
+"Ry" = (/obj/item/device/radio/intercom{pixel_x = -25},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor{dir = 8; icon_state = "escape"},/area)
+"Sr" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 8; on = 1},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor,/area)
+"Tg" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area)
+"TP" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"Ux" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"; pixel_y = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"UJ" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/structure/bed/chair{dir = 1},/turf/simulated/floor{icon_state = "red"},/area)
+"Ve" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/obj/structure/sign/securearea{desc = "A warning sign which reads 'KEEP CLEAR OF DOCKING AREA'."; name = "KEEP CLEAR: DOCKING AREA"},/turf/simulated/floor/plating,/area)
+"Xq" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor{dir = 8; icon_state = "escape"},/area)
+"Xs" = (/obj/machinery/door/airlock/external{name = "Escape Airlock"},/turf/simulated/floor/plating,/area)
+"Zp" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"ZX" = (/obj/structure/sign/poster{icon_state = "bsposter10"; pixel_x = -32},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 4; icon_state = "1-4"; tag = ""},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor{dir = 10; icon_state = "escape"},/area)
+
+(1,1,1) = {"
+JaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+JaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+JaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+TPrPrPrPrPrPZptvtveDJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaTPrPrPrPrPrPZptvtveDJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+CdrHQIwJwJoBxYQZhnkrJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaCdrHQIwJwJoBxYQZhnkrJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+CdegsesedQIjJdtvtvPFJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaCdegsesedQIjJdtvtvPFJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+CdbiseseOFIjCdJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaCdbiseseOFIjCdJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+CduVququUJJTCdJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaCduVququUJJTCdJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+UxtNeAQrQrQrdctvtvNBJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaUxtNeAQrQrQrdctvtvNBJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+ahEcdHKessRhAgQZhnXsJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaahEcdHKessRhAgQZhnXsJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+hglsGRHbOFvlJdrYrYdYJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJahglsGRHbOFvlJdrYrYdYJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+KFCQGRNSOFPjCdJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaKFCQGRNSOFPjCdJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+XqAuswswSrtfnqrYrYNBJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaXqAuswswSrtfnqrYrYNBJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+jhlogREPdpvlAgQZhnXsJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJajhlogREPdpvlAgQZhnXsJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+lQDEnDaTGZvlJdrYrYqQJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJalQDEnDaTGZvlJdrYrYqQJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+NIMsGRNSsevlCdJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaNIMsGRNSsevlCdJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+KDseGRNSsevlNQrYrYVeJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaKDseGRNSsevlNQrYrYVeJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+RysesesesevlAgQZhnXsJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaRysesesesevlAgQZhnXsJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+ZXQWnQCopcgvTgrYrYqQJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaZXQWnQCopcgvTgrYrYqQJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+wDrPrPrPrPonRgJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJawDrPrPrPrPonRgJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJaJa
+"}
