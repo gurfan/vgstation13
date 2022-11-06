@@ -137,11 +137,11 @@
 			var/revs_percentage = round((living_revs * 100)/total_valid_living)
 			if(revs_percentage >= warning_threshold && !warned)
 				for (var/datum/role/revolutionary/leader/comrade in members)
-					to_chat(comrade.antag.current, "<span class='danger'>Our numbers are growing! As more comrades join us, Nanotrasen might notice our presence! We must act carefully and decisively!</span>")
+					to_chat(comrade.antag.current, "<span class='warning'>Our numbers are growing! As more comrades join us, Nanotrasen might notice our presence! We must act carefully and decisively!</span>")
 				warned = TRUE
 			if(revs_percentage >= threshold && !discovered)
 				for (var/datum/role/revolutionary/leader/comrade in members)
-					to_chat(comrade.antag.current, "<span class='danger'>The time to act is upon us. Nanotrasen must have noticed us by now. Let's waste no time!</span>")
+					to_chat(comrade.antag.current, "<span class='warning'>The time to act is upon us. Nanotrasen must have noticed us by now. Let's waste no time!</span>")
 				discovered = TRUE
 				spawn(60 SECONDS)
 					stage(FACTION_ENDGAME)
