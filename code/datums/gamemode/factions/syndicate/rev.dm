@@ -14,7 +14,8 @@
 	playlist = "nukesquad"
 	default_admin_voice = "Union Boss"
 	admin_voice_style = "secradio"
-	var/discovered = 0
+	var/discovered = FALSE
+	var/warned = FALSE
 
 /datum/faction/revolution/HandleRecruitedMind(var/datum/mind/M)
 	if(M.assigned_role in command_positions)
@@ -131,12 +132,17 @@
 				living_revs++
 			total_valid_living++
 		var/threshold = 50 //the percentage of living revs at which point the announcement is triggered
+		var/warning_threshold = 40	// the percentage of living revs at which point the warning is given
 		if(living_revs > 0 && total_valid_living > 0)
 			var/revs_percentage = round((living_revs * 100)/total_valid_living)
+			if(revs_percentage >= warning_threshold && !warned)
+				for (var/datum/role/revolutionary/leader/comrade in members)
+					to_chat(comrade.antag.current, "<span class='danger'>Our numbers are growing! As more comrades join us, Nanotrasen might notice our presence! We must act carefully and decisively!</span>")
+				warned = TRUE
 			if(revs_percentage >= threshold && !discovered)
 				for (var/datum/role/revolutionary/leader/comrade in members)
-					to_chat(comrade.antag.current, "<span class='warning'>The time to act is upon us. Nanotrasen must have noticed us by now. Let's waste no time!</span>")
-				discovered = 1
+					to_chat(comrade.antag.current, "<span class='danger'>The time to act is upon us. Nanotrasen must have noticed us by now. Let's waste no time!</span>")
+				discovered = TRUE
 				spawn(60 SECONDS)
 					stage(FACTION_ENDGAME)
 					command_alert(/datum/command_alert/revolution)
