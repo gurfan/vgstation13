@@ -2,6 +2,7 @@
 #define PIXEL_MULTIPLIER WORLD_ICON_SIZE/32
 
 var/world_startup_time
+var/date_string
 
 /world
 	mob = /mob/new_player
@@ -51,7 +52,7 @@ var/auxtools_path
 		WORLD_Y_OFFSET += rand(-50,50)
 
 	// logs
-	var/date_string = time2text(world.realtime, "YYYY/MM-Month/DD-Day")
+	date_string = time2text(world.realtime, "YYYY/MM-Month/DD-Day")
 
 	investigations[I_HREFS] = new /datum/log_controller(I_HREFS, filename="data/logs/[date_string] hrefs.htm", persist=TRUE)
 	investigations[I_ATMOS] = new /datum/log_controller(I_ATMOS, filename="data/logs/[date_string] atmos.htm", persist=TRUE)
@@ -202,11 +203,7 @@ var/auxtools_path
 	stop_all_media()
 
 	end_credits.on_world_reboot_start()
-	testing("[time_stamp()] - World reboot is now sleeping.")
-
 	sleep(max(10, end_credits.audio_post_delay))
-
-	testing("[time_stamp()] - World reboot is done sleeping.")
 	end_credits.on_world_reboot_end()
 
 	for(var/client/C in clients)

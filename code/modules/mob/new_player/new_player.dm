@@ -95,7 +95,7 @@
 					stat("[player.key]", (player.ready)?("(Playing)"):(null))
 					totalPlayers++
 					if(player.ready)
-						totalPlayersReady++	
+						totalPlayersReady++
 		else
 			stat("Time To Start:", "LOADING...")
 
@@ -389,7 +389,10 @@
 
 	if(job && character.mind.assigned_role != "MODE")
 		job_master.PostJobSetup(character)
-		job.equip(character, job.priority) // Outfit datum.
+		if(job.department_prioritized) // If Department is Prioritized, equip them with priority equipment.
+			job.equip(character, TRUE)
+		else
+			job.equip(character, job.priority) // Outfit datum.
 
 	for(var/role in character.mind.antag_roles)
 		var/datum/role/R = character.mind.antag_roles[role]
@@ -434,7 +437,6 @@
 	if(character.mind.assigned_role != "MODE")
 		if(character.mind.assigned_role != "Cyborg")
 			data_core.manifest_inject(character)
-			ticker.minds += character.mind//Cyborgs and AIs handle this in the transform proc.	//TODO!!!!! ~Carn
 			if(character.mind.assigned_role == "Trader")
 				//If we're a trader, instead send a message to PDAs with the trader cartridge
 				for (var/obj/item/device/pda/P in PDAs)
@@ -507,6 +509,7 @@
 		.manifest tr.alt td {background-color: #DEF}
 		.manifest tr.striked td {background-color: #999}
 		.manifest tr.request td {background-color: #F99}
+		.manifest tr.requested_department td {background-color: #00FF00}
 		.manifest th.reqhead td {background-color: #844}
 		.manifest tr.reqalt td {background-color: #FCC}
 		</style></head><body><center>Round Duration: [round(hours)]h [round(mins)]m<br>"}
@@ -563,7 +566,9 @@
 			if((job.species_whitelist.len && !job.species_whitelist.Find(client.prefs.species)) || (job.species_blacklist.len && job.species_blacklist.Find(client.prefs.species)))
 				dat += "<tr class='striked'><td><s>[job.title]</s></td><td><s>[job.current_positions]</s></td><td><s>[highprior[job]]</s></td></tr>"
 				continue
-
+			if(job.department_prioritized)
+				dat += "<tr class='requested_department'><td><a href='byond://?src=\ref[src];SelectedJob=[job.title]'>[job.title]</a></td><td>[job.current_positions]</td><td>[heads[job]]</td></tr>"
+				continue
 			dat += "<tr[color ? " class='alt'" : ""]><td><a href='byond://?src=\ref[src];SelectedJob=[job.title]'>[job.title]</a></td><td>[job.current_positions]</td><td>[heads[job]]</td></tr>"
 			color = !color
 
@@ -613,7 +618,9 @@
 			if((job.species_whitelist.len && !job.species_whitelist.Find(client.prefs.species)) || (job.species_blacklist.len && job.species_blacklist.Find(client.prefs.species)))
 				dat += "<tr class='striked'><td><s>[job.title]</s></td><td><s>[job.current_positions]</s></td><td><s>[highprior[job]]</s></td></tr>"
 				continue
-
+			if(job.department_prioritized)
+				dat += "<tr class='requested_department'><td><a href='byond://?src=\ref[src];SelectedJob=[job.title]'>[job.title]</a></td><td>[job.current_positions]</td><td>[cgo[job]]</td></tr>"
+				continue
 			dat += "<tr[color ? " class='alt'" : ""]><td><a href='byond://?src=\ref[src];SelectedJob=[job.title]'>[job.title]</a></td><td>[job.current_positions]</td><td>[cgo[job]]</td></tr>"
 			color = !color
 
@@ -662,8 +669,7 @@
 	if(prefs.language)
 		chosen_language = all_languages["[prefs.language]"]
 	if(chosen_language)
-		if(chosen_language.flags & WHITELISTED)
-			new_character.add_language("[prefs.language]")
+		new_character.add_language("[prefs.language]")
 	if(ticker.random_players || appearance_isbanned(src)) //disabling ident bans for now
 		new_character.setGender(pick(MALE, FEMALE))
 		prefs.real_name = random_name(new_character.gender, new_character.species.name)
@@ -722,7 +728,7 @@
 	domutcheck(new_character, null, MUTCHK_FORCED)
 
 	var/rank = new_character.mind.assigned_role
-	if(!late_join)
+	if(!late_join && rank != "MODE")
 		var/obj/S = null
 		// Find a spawn point that wasn't given to anyone
 		for(var/obj/effect/landmark/start/sloc in landmarks_list)
@@ -786,7 +792,7 @@
 		message_admins("WARNING! Couldn't find a spawn location for a [type]. They will spawn at the arrival shuttle.")
 
 	//Create the robot and move over prefs
-	
+
 	if(type == "AI")
 		var/mob/living/silicon/new_character
 		new_character = AIize()
@@ -799,7 +805,7 @@
 		else
 			new_character = Robotize()
 		new_character.mmi.create_identity(prefs) //Uses prefs to create a brain mob
-	
+
 		return new_character
 
 /mob/new_player/proc/ViewPrediction()

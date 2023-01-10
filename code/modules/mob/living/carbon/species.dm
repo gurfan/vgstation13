@@ -170,6 +170,9 @@ var/global/list/playable_species = list("Human")
 	..()
 
 /datum/species/proc/gib(var/mob/living/carbon/human/H)
+	if(H.status_flags & BUDDHAMODE)
+		H.adjustBruteLoss(200)
+		return
 	H.death(1)
 	H.monkeyizing = 1
 	H.canmove = 0
@@ -1272,7 +1275,7 @@ var/list/has_died_as_golem = list()
 	deform = 'icons/mob/human_races/r_mushman.dmi'
 	eyes = "mushroom_eyes"
 	known_languages = list(LANGUAGE_VOX)
-	meat_type = /obj/item/weapon/reagent_containers/food/snacks/hugemushroomslice/mushroom_man
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/hugemushroomslice/mushroom_man
 
 	flags = WHITELISTED | PLAYABLE | NO_BREATHE | IS_PLANT | SPECIES_NO_MOUTH
 	anatomy_flags = NO_BALD

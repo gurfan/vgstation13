@@ -82,14 +82,6 @@
 	high_population_requirement = 40
 	repeatable = TRUE
 
-/datum/dynamic_ruleset/latejoin/raginmages/ready(var/forced = 0)
-	if(wizardstart.len == 0)
-		log_admin("Cannot accept Wizard ruleset. Couldn't find any wizard spawn points.")
-		message_admins("Cannot accept Wizard ruleset. Couldn't find any wizard spawn points.")
-		return 0
-
-	return ..()
-
 /datum/dynamic_ruleset/latejoin/raginmages/execute()
 	var/mob/M = pick(assigned)
 	if(!latejoinprompt(M))
@@ -155,7 +147,7 @@
 	required_candidates = 1
 	weight = BASE_RULESET_WEIGHT
 	cost = 25
-	requirements = list(5,5,15,15,20,20,20,20,40,70)
+	requirements = list(70,40,20,20,20,20,15,15,5,5)
 	high_population_requirement = 10
 	logo = "pulsedemon-logo"
 

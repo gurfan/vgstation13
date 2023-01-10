@@ -1,9 +1,9 @@
 //BITES
-/mob/living/carbon/human/bite_act(mob/living/carbon/human/M as mob)
+/mob/living/carbon/human/bite_act(mob/living/carbon/human/M as mob, arcaneoverride = FALSE)
 
 	var/dam_check = !(istype(loc, /turf) && istype(loc.loc, /area/start)) // 0 or 1
 
-	if(M == src)
+	if(M == src && !arcaneoverride)
 		return //Can't bite yourself
 
 	//Vampire code
@@ -86,7 +86,7 @@
 	else
 		LAssailant = M
 		assaulted_by(M)
-	log_attack("[M.name] ([M.ckey]) bitten by [src.name] ([src.ckey])")
+	log_attack("[src.name] ([src.ckey]) bitten by [M.name] ([M.ckey])")
 
 	return
 

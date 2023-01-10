@@ -334,9 +334,9 @@
 
 /atom/movable/proc/get_lock_cat(var/category = /datum/locking_category)
 	locking_init()
-	. = locking_categories_name[category]
-
-	if (!.)
+	if(locking_categories_name[category])
+		. = locking_categories_name[category]
+	else
 		if (istext(category))
 			return
 
@@ -1228,8 +1228,8 @@
 
 /atom/movable/border_dummy
 	#ifdef DEBUG_BORDER_DUMMY
-	icon = 'icons/obj/structures.dmi'
-	icon_state = "window"
+	icon = 'icons/obj/structures/window.dmi'
+	icon_state = "window0"
 	color = "red"
 	#else
 	invisibility = 101

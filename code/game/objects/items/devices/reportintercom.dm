@@ -7,7 +7,6 @@
 	w_class = W_CLASS_TINY
 	flags = FPRINT
 	siemens_coefficient = 1
-	autoignition_temperature = AUTOIGNITION_METAL
 
 	var/used = 0
 
@@ -37,7 +36,7 @@
 
 	switch(alert("Should this be announced to the general population?",,"Yes","No"))
 		if("Yes")
-			command_alert(input, customname,1);
+			command_alert(input, customname,1); //input and customname get sanitized in this proc, so there is no need to do it again in this item's proc
 		if("No")
 			to_chat(world, "<span class='warning'>New Nanotrasen Update available at all communication consoles.</span>")
 

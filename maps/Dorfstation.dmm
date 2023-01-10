@@ -5837,13 +5837,6 @@
 	},
 /turf/space,
 /area/hallway/secondary/entry)
-"cYF" = (
-/obj/item/clothing/shoes/kneesocks{
-	desc = "A pair of socks. They are made of spider silk.";
-	name = "xcave spider silk socksx"
-	},
-/turf/unsimulated/floor/asteroid,
-/area/wizard_station)
 "cZk" = (
 /obj/machinery/light{
 	dir = 8
@@ -6353,9 +6346,6 @@
 /area/derelictparts/library{
 	holomap_draw_override = 1
 	})
-"drO" = (
-/turf/space/void,
-/area)
 "drQ" = (
 /obj/machinery/telecomms/server/presets/common/ministation,
 /turf/simulated/floor/bluegrid,
@@ -6478,10 +6468,6 @@
 	icon_state = "carpet"
 	},
 /area/shuttle/salvage/start)
-"dvi" = (
-/obj/effect/step_trigger/teleporter/random/shuttle_transit,
-/turf/space/void,
-/area)
 "dvy" = (
 /obj/effect/decal/cleanable/soot,
 /turf/simulated/floor{
@@ -6535,9 +6521,6 @@
 	icon_state = "asteroidplating"
 	},
 /area/maintenance/fpmaint)
-"dxL" = (
-/turf/unsimulated/mineral/hyperdense,
-/area/wizard_station)
 "dxV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable,
@@ -6915,16 +6898,6 @@
 	icon_state = "carpetside"
 	},
 /area/centcom/control)
-"dLp" = (
-/obj/structure/bookcase{
-	name = "Forbidden Knowledge"
-	},
-/obj/effect/decal/cleanable/cobweb,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "dLN" = (
 /obj/machinery/atmospherics/miner/nitrogen,
 /obj/effect/decal/warning_stripes{
@@ -7358,21 +7331,6 @@
 	},
 /turf/simulated/floor,
 /area/security/lobby)
-"dZi" = (
-/obj/structure/bookcase{
-	name = "Forbidden Knowledge"
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
-"dZD" = (
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "dZI" = (
 /obj/effect/decal/warning_stripes{
 	dir = 1;
@@ -7543,14 +7501,6 @@
 	icon_state = "white"
 	},
 /area/shuttle/salvage/start)
-"eeh" = (
-/obj/machinery/computer/library/checkout,
-/obj/structure/table/woodentable,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "eel" = (
 /obj/structure/disposalpipe/segment,
 /turf/unsimulated/mineral/internal,
@@ -8123,13 +8073,6 @@
 	icon_state = "dark"
 	},
 /area/security/checkpoint2)
-"etk" = (
-/obj/machinery/vending/magivend,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "etA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -8558,13 +8501,6 @@
 /area/derelictparts/library{
 	holomap_draw_override = 1
 	})
-"eFy" = (
-/obj/machinery/vending/snack,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "eFQ" = (
 /turf/unsimulated/mineral/random,
 /area/hallway/primary/aft)
@@ -8875,18 +8811,6 @@
 	},
 /turf/unsimulated/floor/asteroid,
 /area/centcom/control)
-"eOw" = (
-/obj/structure/closet{
-	icon_closed = "cabinet_closed";
-	icon_opened = "cabinet_open";
-	icon_state = "cabinet_closed"
-	},
-/obj/item/weapon/storage/backpack/satchel,
-/turf/unsimulated/floor{
-	dir = 9;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "eOE" = (
 /mob/living/carbon/monkey/punpun{
 	name = "Deempisi Jnr"
@@ -9052,15 +8976,6 @@
 /obj/structure/extinguisher_cabinet/empty,
 /turf/unsimulated/wall,
 /area/centcom/suppy)
-"eTd" = (
-/obj/structure/mirror/magic{
-	pixel_y = 28
-	},
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "eTg" = (
 /obj/item/weapon/pickaxe,
 /obj/effect/decal/cleanable/dirt,
@@ -9377,17 +9292,6 @@
 	icon_state = "carpetside"
 	},
 /area/centcom/test)
-"fbZ" = (
-/obj/structure/bed{
-	desc = "A bed made of wood.";
-	icon_state = "dorf_bed";
-	name = "wooden bed"
-	},
-/turf/unsimulated/floor{
-	dir = 5;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "fcc" = (
 /turf/unsimulated/wall{
 	icon_state = "plasma6"
@@ -9604,15 +9508,6 @@
 /area/crew_quarters/bar{
 	name = "Cafeteria"
 	})
-"fiM" = (
-/obj/effect/landmark/start{
-	name = "wizard"
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "fiQ" = (
 /obj/structure/table,
 /obj/item/weapon/dice/d20,
@@ -9639,14 +9534,6 @@
 /area/derelictparts/aft{
 	holomap_draw_override = 1
 	})
-"fke" = (
-/obj/effect/landmark/start{
-	name = "wizard"
-	},
-/turf/unsimulated/floor{
-	icon_state = "carpet"
-	},
-/area/wizard_station)
 "fks" = (
 /obj/effect/decal/cleanable/soot,
 /turf/simulated/floor{
@@ -10028,15 +9915,6 @@
 /area/derelictparts/apderelict{
 	holomap_draw_override = 1
 	})
-"fwc" = (
-/obj/effect/landmark/start{
-	name = "wizard"
-	},
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "fwi" = (
 /obj/machinery/turret/centcomm{
 	dir = 8
@@ -10539,15 +10417,6 @@
 	icon_state = "asteroidfloor"
 	},
 /area/hallway/primary/starboard)
-"fJf" = (
-/obj/structure/bookcase{
-	name = "bookcase (Tactics)"
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "fJF" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/simulated/floor{
@@ -10753,21 +10622,6 @@
 /area/vault{
 	name = "cave"
 	})
-"fRr" = (
-/obj/item/device/radio/intercom{
-	desc = "Talk through this. Evilly";
-	freerange = 1;
-	frequency = 1213;
-	name = "Syndicate Intercom";
-	pixel_x = 32;
-	subspace_transmission = 1;
-	syndie = 1
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "fRv" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -10793,15 +10647,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/floor/asteroid,
 /area/centcom/living)
-"fSl" = (
-/obj/structure/table/woodentable,
-/obj/item/trash/tray,
-/obj/item/weapon/reagent_containers/food/snacks/plumphelmetbiscuit,
-/turf/unsimulated/floor{
-	dir = 10;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "fSK" = (
 /obj/machinery/door/airlock/glass_security{
 	name = "Security Equipment Storage";
@@ -11001,14 +10846,6 @@
 /area/mine/explored{
 	holomap_draw_override = 1
 	})
-"fWE" = (
-/obj/effect/landmark/start{
-	name = "wizard"
-	},
-/turf/unsimulated/floor{
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "fWQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -11019,16 +10856,6 @@
 	icon_state = "asteroidplating"
 	},
 /area/engineering/engineering_auxiliary)
-"fXI" = (
-/obj/structure/table/woodentable,
-/obj/effect/landmark{
-	name = "Teleport-Scroll"
-	},
-/turf/unsimulated/floor{
-	dir = 6;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "fYi" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
@@ -11821,13 +11648,6 @@
 /area/vox_trading_post/atmos{
 	holomap_color = "#FF69B4"
 	})
-"guF" = (
-/obj/structure/bed/chair,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "guY" = (
 /obj/machinery/atmospherics/unary/cryo_cell,
 /turf/unsimulated/floor{
@@ -11845,11 +11665,6 @@
 	icon_state = "asteroidfloor"
 	},
 /area/mine/production)
-"gwO" = (
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "gwS" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on/layered{
 	dir = 8
@@ -12221,9 +12036,6 @@
 	icon_state = "asteroidfloor"
 	},
 /area/hallway/primary/port)
-"gGE" = (
-/turf/unsimulated/mineral/hyperdense,
-/area)
 "gGJ" = (
 /turf/simulated/wall/r_rock,
 /area/engineering/break_room)
@@ -12807,13 +12619,6 @@
 /area/derelictparts/aft{
 	holomap_draw_override = 1
 	})
-"gWO" = (
-/obj/structure/bookcase,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "gWQ" = (
 /turf/unsimulated/floor{
 	icon = 'icons/turf/snow.dmi';
@@ -12959,15 +12764,6 @@
 "hba" = (
 /turf/simulated/wall,
 /area/storage/primary)
-"hbu" = (
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "hbQ" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -13256,14 +13052,6 @@
 	},
 /turf/space,
 /area/shuttle/nuclearops)
-"hmu" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/reagent_containers/food/snacks/plumphelmetbiscuit,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "hnw" = (
 /obj/machinery/light{
 	dir = 8
@@ -13563,14 +13351,6 @@
 	name = "reinforced floor"
 	},
 /area/shuttle/salvage/start)
-"huM" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/reagent_containers/food/drinks/cult/gamer,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "huS" = (
 /obj/structure/grille,
 /obj/structure/window/full/reinforced,
@@ -14996,16 +14776,6 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/vox/station)
-"iic" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/marisa,
-/obj/item/clothing/shoes/sandal/marisa,
-/obj/item/clothing/head/wizard/marisa,
-/obj/item/weapon/staff/broom,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "iiv" = (
 /turf/simulated/wall/r_wall,
 /area/derelictparts/diner{
@@ -15096,15 +14866,6 @@
 	icon_state = "asteroidfloor"
 	},
 /area/hallway/primary/starboard)
-"ikE" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/magusblue,
-/obj/item/clothing/head/wizard/magus,
-/obj/item/weapon/staff,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "ilc" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 6
@@ -15138,21 +14899,6 @@
 	holomap_color = null;
 	holomap_draw_override = 1
 	})
-"imt" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/reagent_containers/food/drinks/ale,
-/obj/item/weapon/reagent_containers/food/drinks/beer{
-	pixel_x = 9
-	},
-/obj/item/weapon/reagent_containers/food/drinks/drinkingglass{
-	pixel_x = -5;
-	pixel_y = 2
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "imF" = (
 /obj/structure/bed/chair/shuttle/red{
 	dir = 1
@@ -15194,13 +14940,6 @@
 /area/vault{
 	name = "Nazi Hideout"
 	})
-"ine" = (
-/obj/structure/table/woodentable,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "ing" = (
 /obj/structure/rack{
 	dir = 8
@@ -15785,16 +15524,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/asteroid/air,
 /area/hallway/secondary/entry)
-"iCG" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/red,
-/obj/item/clothing/shoes/sandal,
-/obj/item/clothing/head/wizard/red,
-/obj/item/weapon/staff,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "iCR" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -15924,15 +15653,6 @@
 /area/derelictparts/aft{
 	holomap_draw_override = 1
 	})
-"iFH" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/necro,
-/obj/item/clothing/head/wizard/necro,
-/obj/item/clothing/shoes/sandal,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "iFM" = (
 /obj/machinery/light{
 	dir = 8
@@ -16281,15 +16001,6 @@
 /area/derelictparts/asderelict{
 	holomap_draw_override = 1
 	})
-"iKu" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/magusred,
-/obj/item/clothing/head/wizard/magus,
-/obj/item/weapon/staff,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "iKO" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -16346,10 +16057,6 @@
 	icon_state = "white"
 	},
 /area/medical/medbay)
-"iMi" = (
-/obj/effect/forcefield,
-/turf/unsimulated/floor/asteroid,
-/area)
 "iMy" = (
 /obj/structure/closet/walllocker/defiblocker/north,
 /obj/effect/decal/cleanable/dirt,
@@ -16456,18 +16163,6 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/nuclearops)
-"iOR" = (
-/obj/effect/forcefield{
-	alpha = 0;
-	invisibility = 0;
-	name = "invisible force wall"
-	},
-/obj/structure/grille/cult,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "iOW" = (
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/yellow,
@@ -17275,24 +16970,6 @@
 	tag = "icon-dark loading (NORTH)"
 	},
 /area/centcom/suppy)
-"jlE" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/grille,
-/obj/structure/window/full/reinforced,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "jlG" = (
 /turf/simulated/floor{
 	dir = 1;
@@ -17405,12 +17082,6 @@
 	},
 /turf/unsimulated/floor/asteroid,
 /area/centcom/living)
-"jqn" = (
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jqz" = (
 /obj/effect/decal/cleanable/soot,
 /turf/simulated/floor{
@@ -17448,14 +17119,6 @@
 	icon_state = "darkblue"
 	},
 /area/bridge)
-"jrz" = (
-/obj/structure/table/reinforced,
-/obj/structure/kitchenspike,
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jrR" = (
 /obj/effect/decal/warning_stripes{
 	dir = 8;
@@ -17471,14 +17134,6 @@
 /area/vault{
 	name = "SME Shuttle Crash"
 	})
-"jsq" = (
-/obj/structure/table/reinforced,
-/obj/structure/kitchenspike,
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jth" = (
 /obj/machinery/turret{
 	dir = 1
@@ -17787,17 +17442,6 @@
 /area/derelictparts/asderelict{
 	holomap_draw_override = 1
 	})
-"jBC" = (
-/obj/effect/decal/cleanable/cobweb2,
-/mob/living/simple_animal/hostile/gremlin{
-	desc = "An intelligent, evil, aggressive humanoid creatures that live in dark pits. It is naked right now.";
-	name = "goblin"
-	},
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jBF" = (
 /obj/structure/disposalpipe/segment,
 /turf/unsimulated/mineral/internal,
@@ -18012,16 +17656,6 @@
 	holomap_draw_override = 1;
 	name = "Derelict Toxins"
 	})
-"jEY" = (
-/mob/living/simple_animal/hostile/gremlin{
-	desc = "An intelligent, evil, aggressive humanoid creatures that live in dark pits. It is naked right now.";
-	name = "goblin"
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jFm" = (
 /obj/machinery/mech_bay_recharge_port,
 /turf/unsimulated/floor{
@@ -18035,12 +17669,6 @@
 /obj/structure/table/reinforced,
 /turf/unsimulated/floor/asteroid,
 /area/centcom/control)
-"jFH" = (
-/obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jFW" = (
 /obj/machinery/power/terminal{
 	dir = 1
@@ -18450,12 +18078,6 @@
 	icon_state = "solarpanel"
 	},
 /area/djstation/solars)
-"jQC" = (
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jQJ" = (
 /obj/structure/table,
 /obj/structure/vendomatpack/mining,
@@ -18635,11 +18257,6 @@
 	icon_state = "white"
 	},
 /area/centcom/test)
-"jUT" = (
-/turf/unsimulated/floor{
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jVl" = (
 /obj/structure/bed/chair/wood/throne,
 /turf/simulated/floor/mineral/silver{
@@ -18708,10 +18325,6 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/tdome)
-"jYd" = (
-/obj/effect/forcefield,
-/turf/space/void,
-/area)
 "jYj" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/item/weapon/reagent_containers/glass/fuelcan,
@@ -19192,11 +18805,6 @@
 /area/vox_trading_post/vault{
 	holomap_color = "#FF69B4"
 	})
-"klQ" = (
-/obj/effect/step_trigger/teleporter/random/shuttle_transit,
-/obj/effect/forcefield,
-/turf/space/void,
-/area)
 "klS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -19339,10 +18947,6 @@
 /obj/structure/window/barricade/full,
 /turf/unsimulated/mineral/internal,
 /area/hallway/secondary/entry)
-"kpB" = (
-/obj/effect/forcefield,
-/turf/unsimulated/mineral/hyperdense,
-/area)
 "kqf" = (
 /obj/structure/closet/vox_raiders/trader,
 /obj/item/weapon/crossbow,
@@ -19487,12 +19091,6 @@
 /area/derelictparts/aft{
 	holomap_draw_override = 1
 	})
-"ktW" = (
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "kuc" = (
 /obj/machinery/light,
 /turf/simulated/floor/shuttle,
@@ -20213,10 +19811,6 @@
 	tag = "icon-dark (NORTH)"
 	},
 /area/bridge)
-"kJz" = (
-/obj/effect/forcefield,
-/turf/unsimulated/mineral/hyperdense,
-/area/wizard_station)
 "kKg" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -20440,10 +20034,6 @@
 	icon_state = "floor"
 	},
 /area/tdome/tdomeadmin)
-"kPS" = (
-/obj/effect/forcefield,
-/turf/unsimulated/floor/asteroid,
-/area/wizard_station)
 "kQp" = (
 /obj/docking_port/destination/supply/centcom,
 /turf/unsimulated/floor{
@@ -20486,13 +20076,6 @@
 /area/vault{
 	name = "Nazi Hideout"
 	})
-"kRo" = (
-/obj/item/trash/chips,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "kRJ" = (
 /obj/structure/rack,
 /obj/item/weapon/pickaxe,
@@ -20584,14 +20167,6 @@
 "kTR" = (
 /turf/simulated/wall,
 /area/security/lobby)
-"kTS" = (
-/obj/structure/rack,
-/obj/item/weapon/kitchen/utensil/knife/large/ritual,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "kUc" = (
 /obj/item/weapon/paper{
 	info = "Some stuff is missing...";
@@ -20913,13 +20488,6 @@
 /area/vox_trading_post/vault{
 	holomap_color = "#FF69B4"
 	})
-"len" = (
-/obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "leo" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced,
@@ -21036,13 +20604,6 @@
 /area/derelictparts/fore{
 	holomap_draw_override = 1
 	})
-"liI" = (
-/obj/structure/rack,
-/obj/item/weapon/kitchen/utensil/knife/large/ritual,
-/turf/unsimulated/floor{
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "liK" = (
 /obj/machinery/vending/voxseeds,
 /obj/effect/decal/cleanable/dirt,
@@ -23766,14 +23327,6 @@
 	icon_state = "asteroidplating"
 	},
 /area/engineering/break_room)
-"mCv" = (
-/obj/effect/decal/remains/human/noskull{
-	desc = "They look like human remains, but smaller and more compact.";
-	icon_state = "dwarf";
-	name = "dead dwarf"
-	},
-/turf/unsimulated/floor/asteroid,
-/area/wizard_station)
 "mCK" = (
 /obj/machinery/sleeper{
 	dir = 1
@@ -24703,9 +24256,6 @@
 /area/derelictparts/apderelict{
 	holomap_draw_override = 1
 	})
-"nco" = (
-/turf/unsimulated/floor/asteroid,
-/area/wizard_station)
 "ncq" = (
 /obj/machinery/station_map/strategic,
 /turf/unsimulated/floor{
@@ -27459,13 +27009,6 @@
 /obj/structure/boulder,
 /turf/simulated/floor/asteroid/air,
 /area/hallway/primary/port)
-"owc" = (
-/mob/living/simple_animal/hostile/creature{
-	desc = "A great shapeless creature with a vertical mouth. It undulates rythmically. It's skin is slimy and green. Beware its sharp teeth!";
-	name = "Omli Adothusel"
-	},
-/turf/unsimulated/floor/asteroid,
-/area/wizard_station)
 "owE" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/unsimulated/beach/sand,
@@ -30935,10 +30478,6 @@
 /area/crew_quarters/bar{
 	name = "Cafeteria"
 	})
-"qmQ" = (
-/obj/effect/decal/cleanable/molten_item,
-/turf/unsimulated/floor/asteroid,
-/area/wizard_station)
 "qmS" = (
 /obj/structure/cable{
 	d1 = 4;
@@ -403006,45 +402545,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -403508,45 +403047,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -404010,45 +403549,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -404512,45 +404051,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -405014,45 +404553,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -405516,45 +405055,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -406018,45 +405557,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -406520,45 +406059,45 @@ aLJ
 aLJ
 aLJ
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -407022,45 +406561,45 @@ eKH
 eKH
 aLJ
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -407524,45 +407063,45 @@ bjY
 bjY
 qnF
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-klQ
-klQ
-klQ
-klQ
-klQ
-klQ
-klQ
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -408026,45 +407565,45 @@ jbr
 jbr
 aLJ
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-gGE
-gGE
-kpB
-kJz
-kJz
-kJz
-kJz
-kJz
-klQ
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -408528,45 +408067,45 @@ aLJ
 aLJ
 aLJ
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-gGE
-gGE
-gGE
-iMi
-iMi
-kPS
-mCv
-owc
-mCv
-kJz
-klQ
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -409030,45 +408569,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-gGE
-gGE
-iMi
-iMi
-iMi
-iMi
-kPS
-cYF
-nco
-qmQ
-kJz
-klQ
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -409532,45 +409071,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-iOR
-iOR
-iMi
-iMi
-kPS
-kPS
-kPS
-kJz
-kJz
-klQ
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -410034,45 +409573,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-dLp
-dZD
-fJf
-dZD
-gWO
-dZD
-dZD
-iOR
-iMi
-iMi
-iMi
-iMi
-iMi
-kpB
-jYd
-klQ
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -410536,45 +410075,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-dZi
-dZD
-fJf
-dZD
-gWO
-dZD
-dZD
-iOR
-iMi
-iMi
-iMi
-iMi
-iMi
-gGE
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -411038,45 +410577,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-dZD
-dZD
-dZD
-dZD
-dZD
-dZD
-dZD
-iOR
-iOR
-iOR
-iOR
-iOR
-iMi
-gGE
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -411540,45 +411079,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-eeh
-dZD
-dZD
-dZD
-hbu
-hbu
-dZD
-dZD
-dZD
-dZD
-dZD
-iOR
-iMi
-gGE
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -412042,45 +411581,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-etk
-dZD
-dZD
-guF
-hmu
-imt
-dZD
-dZD
-dZD
-dZD
-kRo
-dxL
-gGE
-gGE
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -412544,45 +412083,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-eFy
-dZD
-fRr
-guF
-huM
-ine
-dxL
-jlE
-dZD
-dZD
-jlE
-dxL
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -413046,45 +412585,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-dxL
-dZD
-dxL
-dxL
-dxL
-dxL
-dxL
-jqn
-jEY
-jqn
-kTS
-dxL
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -413548,45 +413087,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-eOw
-fiM
-fSl
-dxL
-iic
-iCG
-dxL
-jrz
-jFH
-ktW
-jUT
-dxL
-jYd
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -414050,45 +413589,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-eTd
-fke
-fWE
-gwO
-gwO
-iFH
-dxL
-jsq
-jQC
-jqn
-len
-dxL
-jYd
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -414552,45 +414091,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-fbZ
-fwc
-fXI
-dxL
-ikE
-iKu
-dxL
-jBC
-jUT
-ktW
-liI
-dxL
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -415054,45 +414593,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-dxL
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -415556,45 +415095,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-jYd
-jYd
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -416058,45 +415597,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -416560,45 +416099,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -417062,45 +416601,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-dvi
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -417564,45 +417103,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -418066,45 +417605,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -418568,45 +418107,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -419070,45 +418609,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -419572,45 +419111,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -420074,45 +419613,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -420576,45 +420115,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -421078,45 +420617,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR
@@ -421580,45 +421119,45 @@ bSR
 bSR
 bSR
 bSR
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
-drO
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
+bSR
 bSR
 bSR
 bSR

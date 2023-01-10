@@ -1,4 +1,7 @@
 /mob/living/carbon/human/gib(animation = FALSE, meat = TRUE)
+	if(status_flags & BUDDHAMODE)
+		adjustBruteLoss(200)
+		return
 	if(!isUnconscious())
 		forcesay("-")
 	if(species)
@@ -29,7 +32,6 @@
 	anim(target = src, a_icon = 'icons/mob/mob.dmi', flick_anim = "gibbed-h", sleeptime = 15)
 	hgibs(loc, virus2, dna, species.flesh_color, species.blood_color, gib_radius)
 	qdel(src)
-
 
 /mob/living/carbon/human/dust(var/drop_everything = FALSE)
 	death(1)
@@ -91,7 +93,7 @@
 	obj_overlays = null
 
 /mob/living/carbon/human/death(gibbed)
-	if(stat == DEAD)
+	if((status_flags & BUDDHAMODE) || stat == DEAD)
 		return
 	if(healths)
 		healths.icon_state = "health7"

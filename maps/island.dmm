@@ -18,13 +18,6 @@
 /obj/structure/lattice,
 /turf/space,
 /area)
-"aav" = (
-/obj/item/trash/raisins,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "aaB" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -833,9 +826,6 @@
 "aip" = (
 /turf/simulated/floor/carpet,
 /area/library)
-"ait" = (
-/turf/unsimulated/wall,
-/area/wizard_station)
 "aiv" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -2254,9 +2244,6 @@
 	icon_state = "dark"
 	},
 /area/vox_trading_post/hallway)
-"axp" = (
-/turf/space/void,
-/area)
 "axq" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -3681,15 +3668,6 @@
 	icon_state = "wood"
 	},
 /area/centcom/control)
-"aML" = (
-/obj/effect/landmark/start{
-	name = "wizard"
-	},
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "aMN" = (
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -10068,7 +10046,7 @@
 	input_tag = "vox_in";
 	name = "Nitrogen Supply Control";
 	output_tag = "vox_out";
-	sensors = list("vox_sensor" = "Tank")
+	sensors = list("vox_sensor"="Tank")
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/vox{
@@ -13310,10 +13288,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fore_port_struct)
-"cJi" = (
-/obj/effect/step_trigger/teleporter/random/shuttle_transit,
-/turf/space/void,
-/area)
 "cJm" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -16147,7 +16121,7 @@
 	},
 /obj/item/clothing/under/custom/N3X15/robotics,
 /obj/item/clothing/head/helmet/space/syndicate/black/red{
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 30, "energy" = 15, "bomb" = 30, "bio" = 30, "rad" = 30);
+	armor = list("melee"=20,"bullet"=20,"laser"=30,"energy"=15,"bomb"=30,"bio"=30,"rad"=30);
 	desc = "A copy of a popular combat helmet, this has less protection, but it will protect you in your mech.";
 	pixel_x = 20;
 	pixel_y = 5
@@ -16950,12 +16924,6 @@
 	},
 /turf/simulated/floor,
 /area/mine/north_outpost)
-"dux" = (
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "duy" = (
 /turf/simulated/wall,
 /area/mine/production)
@@ -18132,18 +18100,6 @@
 	icon_state = "fmaint";
 	name = "Derelict Fore Maintenance"
 	})
-"dGS" = (
-/obj/effect/forcefield{
-	alpha = 0;
-	invisibility = 0;
-	name = "invisible force wall"
-	},
-/obj/structure/grille/cult,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "dGU" = (
 /obj/effect/decal/warning_stripes{
 	dir = 6;
@@ -21791,14 +21747,6 @@
 /obj/machinery/portable_atmospherics/canister/nitrogen,
 /turf/simulated/floor/plating,
 /area/maintenance/medical_island_fore_maintenance)
-"eoZ" = (
-/mob/living/simple_animal/hostile/creature{
-	name = "Experiment 35b"
-	},
-/turf/unsimulated/floor{
-	icon_state = "freezerfloor"
-	},
-/area/wizard_station)
 "epb" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -25322,24 +25270,6 @@
 	icon_state = "floorgrime"
 	},
 /area/derelict/arrival)
-"eYx" = (
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/grille,
-/obj/structure/window/full/reinforced,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "eYD" = (
 /obj/item/device/flashlight/lantern/on/dim,
 /turf/simulated/floor/mineral/gold,
@@ -26462,7 +26392,7 @@
 	input_tag = "o2_in";
 	name = "Oxygen Supply Control";
 	output_tag = "o2_out";
-	sensors = list("o2_sensor" = "Tank")
+	sensors = list("o2_sensor"="Tank")
 	},
 /turf/simulated/floor/plating/airless,
 /area/derelict/atmos)
@@ -26795,12 +26725,6 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating/vox,
 /area/vox_trading_post/hallway)
-"fof" = (
-/obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "fog" = (
 /obj/machinery/light,
 /obj/machinery/recharge_station,
@@ -30765,7 +30689,7 @@
 /obj/machinery/computer/general_air_control{
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor" = "Nitrogen", "o2_sensor" = "Oxygen", "co2_sensor" = "Carbon Dioxide", "tox_sensor" = "Toxins", "n2o_sensor" = "Nitrous Oxide", "waste_sensor" = "Gas Mix Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous Oxide","waste_sensor"="Gas Mix Tank")
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -34190,7 +34114,7 @@
 	name = "Mixed Air Supply Control";
 	output_tag = "air_out";
 	pressure_setting = 2000;
-	sensors = list("air_sensor" = "Tank")
+	sensors = list("air_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 6
@@ -34439,12 +34363,6 @@
 	icon_state = "ramptop"
 	},
 /area/turret_protected/goonroom)
-"gLg" = (
-/obj/effect/decal/remains/human,
-/turf/unsimulated/floor{
-	icon_state = "freezerfloor"
-	},
-/area/wizard_station)
 "gLw" = (
 /obj/machinery/door/firedoor/border_only{
 	dir = 1;
@@ -35983,21 +35901,6 @@
 	tag = "icon-checker (NORTHEAST)"
 	},
 /area/crew_quarters/kitchen)
-"hcL" = (
-/obj/item/device/radio/intercom{
-	desc = "Talk through this. Evilly";
-	freerange = 1;
-	frequency = 1213;
-	name = "Syndicate Intercom";
-	pixel_x = 32;
-	subspace_transmission = 1;
-	syndie = 1
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "hcQ" = (
 /obj/machinery/light{
 	dir = 1
@@ -36872,15 +36775,6 @@
 	tag = "icon-dark floor stripe (NORTH)"
 	},
 /area/research_outpost/breakroom)
-"hms" = (
-/obj/structure/mirror/magic{
-	pixel_y = 28
-	},
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "hmx" = (
 /obj/structure/sign/securearea{
 	desc = "A warning sign which reads 'INTERNALS REQUIRED'.";
@@ -38434,15 +38328,6 @@
 	icon_state = "fmaint";
 	name = "Derelict Fore Maintenance"
 	})
-"hDF" = (
-/obj/structure/bookcase{
-	name = "bookcase (Tactics)"
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "hDL" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -38902,14 +38787,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/ert)
-"hHl" = (
-/obj/machinery/computer/library/checkout,
-/obj/structure/table/woodentable,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "hHr" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on/layered{
 	dir = 1
@@ -39888,15 +39765,6 @@
 	tag = "icon-yellowsiding"
 	},
 /area/hallway/central_fore_hallway)
-"hRe" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/magusred,
-/obj/item/clothing/head/wizard/magus,
-/obj/item/weapon/staff,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "hRf" = (
 /turf/simulated/floor/shuttle,
 /area/shuttle/medical)
@@ -40969,14 +40837,6 @@
 	name = "plating"
 	},
 /area/tdome/tdome1)
-"ibW" = (
-/obj/structure/bed,
-/obj/item/weapon/bedsheet/rd,
-/turf/unsimulated/floor{
-	dir = 5;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "icj" = (
 /obj/effect/landmark/spacepod/random,
 /turf/space,
@@ -42374,14 +42234,6 @@
 	tag = "icon-yellowsiding"
 	},
 /area/crew_quarters/bar)
-"iqo" = (
-/obj/structure/table/reinforced,
-/obj/structure/kitchenspike,
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "iqw" = (
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/rd,
@@ -46449,12 +46301,6 @@
 "jfi" = (
 /turf/simulated/floor/plating,
 /area)
-"jfv" = (
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jfE" = (
 /obj/structure/bed/chair,
 /obj/effect/decal/warning_stripes{
@@ -46792,16 +46638,6 @@
 	icon_state = "asteroidwarning"
 	},
 /area/mine/explored)
-"jjL" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/red,
-/obj/item/clothing/shoes/sandal,
-/obj/item/clothing/head/wizard/red,
-/obj/item/weapon/staff,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "jjN" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 8;
@@ -49482,13 +49318,6 @@
 	},
 /turf/simulated/floor,
 /area/hallway/primary/aft)
-"jIz" = (
-/mob/living/carbon/monkey,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "jIC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	req_access_txt = 1
@@ -50203,15 +50032,6 @@
 	tag = "icon-yellowsiding"
 	},
 /area/crew_quarters/bar)
-"jNe" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/necro,
-/obj/item/clothing/head/wizard/necro,
-/obj/item/clothing/shoes/sandal,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "jNk" = (
 /obj/effect/overlay/palmtree_l,
 /turf/unsimulated/beach/sand,
@@ -51734,15 +51554,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/chapel/office)
-"kad" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/dice/d20,
-/obj/item/weapon/dice,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "kae" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layered,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -52379,14 +52190,6 @@
 	icon_state = "dark"
 	},
 /area/hydroponics)
-"kfz" = (
-/obj/structure/rack,
-/obj/item/weapon/kitchen/utensil/knife/large/ritual,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "kfA" = (
 /obj/structure/bed/chair/office/dark,
 /obj/machinery/atmospherics/unary/vent_scrubber/on/layered{
@@ -54170,7 +53973,7 @@
 	input_tag = "co2_in";
 	name = "Carbon Dioxide Supply Control";
 	output_tag = "co2_out";
-	sensors = list("co2_sensor" = "Tank")
+	sensors = list("co2_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/filtering/visible{
 	dir = 4
@@ -55164,7 +54967,7 @@
 	input_tag = "waste_in";
 	name = "Gas Mix Tank Control";
 	output_tag = "waste_out";
-	sensors = list("waste_sensor" = "Tank")
+	sensors = list("waste_sensor"="Tank")
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -56535,13 +56338,6 @@
 	icon_state = "green"
 	},
 /area/centcom/control)
-"kXZ" = (
-/obj/item/trash/chips,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "kYe" = (
 /obj/structure/rack,
 /obj/item/weapon/storage/backpack/satchel,
@@ -56667,12 +56463,6 @@
 	icon_state = "white"
 	},
 /area/centcom/test)
-"lae" = (
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "lah" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -56850,12 +56640,6 @@
 	icon_state = "wall3"
 	},
 /area/syndicate_mothership)
-"lbU" = (
-/obj/effect/decal/cleanable/molten_item,
-/turf/unsimulated/floor{
-	icon_state = "freezerfloor"
-	},
-/area/wizard_station)
 "lbW" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -57391,7 +57175,7 @@
 	frequency = 1443;
 	level = 3;
 	name = "Distribution and Waste Monitor";
-	sensors = list("mair_in_meter" = "Mixed Air In", "air_sensor" = "Mixed Air Supply Tank", "mair_out_meter" = "Mixed Air Out", "dloop_atm_meter" = "Distribution Loop", "wloop_atm_meter" = "Waste Loop")
+	sensors = list("mair_in_meter"="Mixed Air In","air_sensor"="Mixed Air Supply Tank","mair_out_meter"="Mixed Air Out","dloop_atm_meter"="Distribution Loop","wloop_atm_meter"="Waste Loop")
 	},
 /obj/machinery/firealarm{
 	dir = 4;
@@ -57535,13 +57319,6 @@
 "liw" = (
 /turf/unsimulated/wall/blastdoor,
 /area/centcom/striketeam)
-"liA" = (
-/obj/structure/bookcase,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "liF" = (
 /obj/structure/window/barricade,
 /obj/machinery/portable_atmospherics/hydroponics/soil,
@@ -58381,7 +58158,7 @@
 "lru" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/tool{
-	contraband = list(/obj/item/tool/weldingtool/hugetank = 2, /obj/item/clothing/gloves/yellow/vox = 2);
+	contraband = list(/obj/item/tool/weldingtool/hugetank=2,/obj/item/clothing/gloves/yellow/vox=2);
 	name = "Outpost YouTool"
 	},
 /turf/simulated/floor/vox{
@@ -59970,7 +59747,7 @@
 	input_tag = "n2_in";
 	name = "Nitrogen Supply Control";
 	output_tag = "n2_out";
-	sensors = list("n2_sensor" = "Tank")
+	sensors = list("n2_sensor"="Tank")
 	},
 /turf/simulated/floor/plating/airless,
 /area/derelict/atmos)
@@ -60712,14 +60489,6 @@
 	tag = "icon-yellowsiding"
 	},
 /area/hallway/secondary/entry)
-"lPq" = (
-/obj/structure/table/woodentable,
-/obj/item/trash/tray,
-/turf/unsimulated/floor{
-	dir = 10;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "lPr" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 4
@@ -63051,7 +62820,7 @@
 	input_tag = "n2o_in";
 	name = "Nitrous Oxide Supply Control";
 	output_tag = "n2o_out";
-	sensors = list("n2o_sensor" = "Tank")
+	sensors = list("n2o_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/filtering/visible{
 	dir = 4
@@ -63144,10 +62913,6 @@
 	},
 /turf/simulated/floor,
 /area/security/brig)
-"mof" = (
-/obj/effect/forcefield,
-/turf/space/void,
-/area)
 "mog" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -63747,12 +63512,6 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/escape/centcom)
-"muS" = (
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "muT" = (
 /obj/machinery/smartfridge/bloodbank/filled,
 /turf/simulated/floor{
@@ -63925,12 +63684,6 @@
 	icon_state = "asteroidwarning"
 	},
 /area/shuttle/trade/start)
-"mwS" = (
-/obj/effect/forcefield,
-/turf/unsimulated/floor{
-	icon_state = "freezerfloor"
-	},
-/area/wizard_station)
 "mwV" = (
 /obj/machinery/egg_incubator,
 /obj/machinery/atmospherics/unary/vent_pump{
@@ -64491,7 +64244,7 @@
 	input_tag = "n2_in";
 	name = "Nitrogen Supply Control";
 	output_tag = "n2_out";
-	sensors = list("n2_sensor" = "Tank")
+	sensors = list("n2_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/filtering/visible{
 	dir = 4
@@ -66365,11 +66118,6 @@
 	dir = 2
 	},
 /turf/space,
-/area)
-"mTJ" = (
-/obj/effect/step_trigger/teleporter/random/shuttle_transit,
-/obj/effect/forcefield,
-/turf/space/void,
 /area)
 "mTM" = (
 /obj/structure/flora/pottedplant/random,
@@ -68322,16 +68070,6 @@
 	},
 /turf/simulated/floor/shuttle,
 /area/shuttle/transport1/centcom)
-"noq" = (
-/obj/structure/table/woodentable,
-/obj/effect/landmark{
-	name = "Teleport-Scroll"
-	},
-/turf/unsimulated/floor{
-	dir = 6;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "nor" = (
 /obj/machinery/light{
 	dir = 8
@@ -70624,7 +70362,7 @@
 	input_tag = "tox_in";
 	name = "Toxin Supply Control";
 	output_tag = "tox_out";
-	sensors = list("tox_sensor" = "Tank")
+	sensors = list("tox_sensor"="Tank")
 	},
 /obj/structure/catwalk,
 /turf/space,
@@ -72516,11 +72254,6 @@
 /obj/structure/girder,
 /turf/simulated/floor/plating,
 /area/maintenance/central_island_aft_starboard_maintenance)
-"oew" = (
-/turf/unsimulated/floor{
-	icon_state = "freezerfloor"
-	},
-/area/wizard_station)
 "oeC" = (
 /turf/simulated/floor/plating,
 /area/maintenance/fore_port_struct)
@@ -72547,13 +72280,6 @@
 /obj/machinery/station_map,
 /turf/simulated/floor/plating,
 /area/maintenance/aft_starboard_struct)
-"oeQ" = (
-/obj/structure/rack,
-/obj/item/weapon/kitchen/utensil/knife/large/ritual,
-/turf/unsimulated/floor{
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "oeV" = (
 /obj/structure/closet/walllocker{
 	pixel_x = 30
@@ -73811,7 +73537,7 @@
 	input_tag = "coolant_in";
 	name = "Coolant Control";
 	output_tag = "coolant_out";
-	sensors = list("sme_sensor" = "Engine")
+	sensors = list("sme_sensor"="Engine")
 	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "unloading"
@@ -75960,15 +75686,6 @@
 	icon_state = "redyellowfull"
 	},
 /area/centcom/living)
-"oMG" = (
-/obj/effect/landmark/start{
-	name = "wizard"
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "oMQ" = (
 /obj/structure/lattice,
 /obj/machinery/docklight{
@@ -78744,14 +78461,6 @@
 	tag = "icon-yellowsiding"
 	},
 /area/hallway/outpost_starboard_hallway)
-"plQ" = (
-/obj/effect/decal/cleanable/cobweb2,
-/obj/machinery/showcase,
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "plT" = (
 /obj/structure/window/full/reinforced/plasma,
 /obj/structure/window/reinforced/plasma{
@@ -81843,14 +81552,6 @@
 	},
 /turf/simulated/floor,
 /area/crew_quarters/hop)
-"pNE" = (
-/obj/structure/table/reinforced,
-/obj/structure/kitchenspike,
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "pNF" = (
 /obj/structure/table/woodentable,
 /turf/unsimulated/floor{
@@ -84722,13 +84423,6 @@
 /obj/effect/landmark/start,
 /turf/unsimulated/floor,
 /area)
-"qqi" = (
-/obj/machinery/vending/snack,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "qqj" = (
 /obj/structure/bed,
 /obj/item/weapon/bedsheet/green,
@@ -88264,13 +87958,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/supermatter_room)
-"qVw" = (
-/obj/machinery/vending/magivend,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "qVG" = (
 /turf/unsimulated/wall,
 /area/centcom)
@@ -89883,15 +89570,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/central_island_fore_starboard_maintenance)
-"rjE" = (
-/obj/structure/bookcase{
-	name = "Forbidden Knowledge"
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "rjI" = (
 /obj/machinery/computer/robotics,
 /obj/machinery/light{
@@ -90630,14 +90308,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
-"rqb" = (
-/obj/effect/landmark/start{
-	name = "wizard"
-	},
-/turf/unsimulated/floor{
-	icon_state = "carpet"
-	},
-/area/wizard_station)
 "rqj" = (
 /turf/simulated/wall/r_wall,
 /area/science/xenobiology)
@@ -93048,13 +92718,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
 /area/maintenance/medical_island_aft_maintenance)
-"rKl" = (
-/obj/structure/bed/chair,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "rKo" = (
 /obj/machinery/mech_bay_recharge_port,
 /obj/structure/cable/yellow,
@@ -93198,11 +92861,6 @@
 	},
 /turf/simulated/floor,
 /area/engineering/atmos)
-"rLB" = (
-/obj/structure/lattice,
-/obj/effect/forcefield,
-/turf/space/void,
-/area)
 "rLC" = (
 /turf/simulated/wall/r_wall,
 /area/crew_quarters/hop)
@@ -94033,7 +93691,7 @@
 	frequency = 1443;
 	level = 3;
 	name = "Distribution and Waste Monitor";
-	sensors = list("mair_in_meter" = "Mixed Air In", "air_sensor" = "Mixed Air Supply Tank", "mair_out_meter" = "Mixed Air Out", "dloop_atm_meter" = "Distribution Loop", "wloop_atm_meter" = "Waste Loop")
+	sensors = list("mair_in_meter"="Mixed Air In","air_sensor"="Mixed Air Supply Tank","mair_out_meter"="Mixed Air Out","dloop_atm_meter"="Distribution Loop","wloop_atm_meter"="Waste Loop")
 	},
 /turf/simulated/floor{
 	dir = 5;
@@ -94152,15 +93810,6 @@
 	icon_state = "whiteblue"
 	},
 /area/medical/medbay2)
-"rVa" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/magusblue,
-/obj/item/clothing/head/wizard/magus,
-/obj/item/weapon/staff,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "rVd" = (
 /obj/structure/shuttle/engine/heater{
 	dir = 4
@@ -97276,14 +96925,6 @@
 	},
 /turf/simulated/floor,
 /area/engineering/supermatter_room)
-"syi" = (
-/obj/effect/landmark/start{
-	name = "wizard"
-	},
-/turf/unsimulated/floor{
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "syj" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced{
@@ -99451,7 +99092,7 @@
 	frequency = 1449;
 	input_tag = "inc_in";
 	output_tag = "inc_out";
-	sensors = list("inc_sensor" = "Tank")
+	sensors = list("inc_sensor"="Tank")
 	},
 /turf/simulated/floor{
 	dir = 8;
@@ -100590,14 +100231,6 @@
 	},
 /turf/space,
 /area/shuttle/trade/start)
-"tav" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/spacecash,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "taz" = (
 /obj/machinery/light{
 	dir = 4;
@@ -104515,14 +104148,6 @@
 	},
 /turf/simulated/floor/engine,
 /area/science/xenobiology/specimen_2)
-"tEI" = (
-/obj/structure/table/woodentable,
-/obj/item/trash/cheesie,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "tEW" = (
 /obj/structure/table/reinforced,
 /obj/item/weapon/reagent_containers/glass/rag{
@@ -106039,11 +105664,6 @@
 	},
 /turf/simulated/floor,
 /area/hallway/secondary/exit)
-"tSs" = (
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "tSw" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -106412,7 +106032,7 @@
 	},
 /obj/item/clothing/under/psysuit,
 /obj/item/clothing/head/helmet/space/syndicate/orange{
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 30, "energy" = 15, "bomb" = 30, "bio" = 30, "rad" = 30);
+	armor = list("melee"=20,"bullet"=20,"laser"=30,"energy"=15,"bomb"=30,"bio"=30,"rad"=30);
 	desc = "A copy of a popular combat helmet, it has less protection, but it should help protect you in your mech.";
 	pixel_x = -20;
 	pixel_y = 5
@@ -107677,15 +107297,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/research_outpost/power)
-"ugt" = (
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "ugC" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
@@ -108265,7 +107876,7 @@
 	input_tag = "plasma_in";
 	name = "Plasma Supply Control";
 	output_tag = "plasma_out";
-	sensors = list("plasma_sensor" = "Tank")
+	sensors = list("plasma_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/filtering/visible{
 	dir = 4
@@ -109090,16 +108701,6 @@
 /obj/machinery/door/airlock/external,
 /turf/simulated/floor/plating,
 /area/research_outpost/entry)
-"utG" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/wizrobe/marisa,
-/obj/item/clothing/shoes/sandal/marisa,
-/obj/item/clothing/head/wizard/marisa,
-/obj/item/weapon/staff/broom,
-/turf/unsimulated/floor{
-	icon_state = "grimy"
-	},
-/area/wizard_station)
 "utN" = (
 /turf/simulated/floor{
 	dir = 4;
@@ -115768,7 +115369,7 @@
 	input_tag = "o2_in";
 	name = "Oxygen Supply Control";
 	output_tag = "o2_out";
-	sensors = list("o2_sensor" = "Tank")
+	sensors = list("o2_sensor"="Tank")
 	},
 /obj/machinery/atmospherics/pipe/simple/filtering/visible{
 	dir = 6
@@ -117696,11 +117297,6 @@
 /obj/structure/grille,
 /turf/simulated/floor/plating,
 /area/security/vacantoffice)
-"vRO" = (
-/turf/unsimulated/floor{
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "vRP" = (
 /obj/machinery/computer/fluff/shuttle_control,
 /turf/unsimulated/floor{
@@ -121016,16 +120612,6 @@
 	icon_state = "dark"
 	},
 /area/medical/storage)
-"wtC" = (
-/obj/structure/bookcase{
-	name = "Forbidden Knowledge"
-	},
-/obj/effect/decal/cleanable/cobweb,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "wtP" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -121207,13 +120793,6 @@
 	icon_state = "white"
 	},
 /area/medical/cmo)
-"wvQ" = (
-/obj/effect/decal/cleanable/blood,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "wvR" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -122292,13 +121871,6 @@
 	},
 /turf/simulated/floor,
 /area/engineering/break_room)
-"wDU" = (
-/obj/machinery/showcase,
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "chapel"
-	},
-/area/wizard_station)
 "wEj" = (
 /obj/docking_port/destination/vox/mining_south,
 /turf/space,
@@ -128934,13 +128506,6 @@
 	icon_state = "whitebluecorner"
 	},
 /area/medical/medbay)
-"xKO" = (
-/obj/structure/table/woodentable,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "wood"
-	},
-/area/wizard_station)
 "xKV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layered{
 	dir = 4;
@@ -130772,18 +130337,6 @@
 "ybQ" = (
 /turf/simulated/floor/carpet,
 /area/crew_quarters/bar)
-"ybZ" = (
-/obj/structure/closet{
-	icon_closed = "cabinet_closed";
-	icon_opened = "cabinet_open";
-	icon_state = "cabinet_closed"
-	},
-/obj/item/weapon/storage/backpack/satchel,
-/turf/unsimulated/floor{
-	dir = 9;
-	icon_state = "carpetside"
-	},
-/area/wizard_station)
 "yce" = (
 /obj/machinery/firealarm{
 	pixel_y = 24
@@ -551357,45 +550910,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -551859,45 +551412,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -552361,45 +551914,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -552863,45 +552416,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -553365,45 +552918,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -553867,45 +553420,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -554369,45 +553922,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -554871,45 +554424,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -555373,45 +554926,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -555875,45 +555428,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-mTJ
-mTJ
-mTJ
-mTJ
-mTJ
-mTJ
-mTJ
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -556377,45 +555930,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-mof
-mwS
-mwS
-mwS
-mwS
-mwS
-mTJ
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -556879,45 +556432,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-mof
-mwS
-gLg
-eoZ
-gLg
-mwS
-mTJ
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -557381,45 +556934,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-mof
-mof
-mof
-mof
-mwS
-oew
-oew
-lbU
-mwS
-mTJ
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -557883,45 +557436,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-ait
-ait
-ait
-ait
-ait
-ait
-dGS
-dGS
-rLB
-rLB
-mwS
-mwS
-mwS
-mwS
-mwS
-mTJ
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -558385,45 +557938,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-wtC
-dux
-hDF
-dux
-liA
-dux
-dux
-dGS
-mof
-mof
-mof
-rLB
-mof
-mof
-mof
-mTJ
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -558887,45 +558440,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-rjE
-dux
-hDF
-dux
-liA
-dux
-dux
-dGS
-mof
-mof
-mof
-rLB
-mof
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -559389,45 +558942,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-dux
-dux
-dux
-dux
-dux
-dux
-dux
-dGS
-dGS
-dGS
-dGS
-dGS
-mof
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -559891,45 +559444,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-hHl
-dux
-dux
-dux
-ugt
-ugt
-dux
-aav
-dux
-dux
-dux
-dGS
-mof
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -560393,45 +559946,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-qVw
-dux
-dux
-rKl
-xKO
-tEI
-dux
-dux
-dux
-dux
-kXZ
-ait
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -560895,45 +560448,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-qqi
-dux
-hcL
-rKl
-kad
-tav
-ait
-eYx
-dux
-dux
-eYx
-ait
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -561397,45 +560950,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-ait
-dux
-ait
-ait
-ait
-ait
-ait
-wDU
-jfv
-lae
-kfz
-ait
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -561899,45 +561452,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-ybZ
-oMG
-lPq
-ait
-utG
-jjL
-ait
-iqo
-fof
-muS
-vRO
-dGS
-mof
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -562401,45 +561954,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-hms
-rqb
-syi
-tSs
-tSs
-jNe
-ait
-pNE
-jIz
-lae
-wvQ
-dGS
-mof
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -562903,45 +562456,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-ibW
-aML
-noq
-ait
-rVa
-hRe
-ait
-plQ
-vRO
-muS
-oeQ
-ait
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -563405,45 +562958,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-ait
-ait
-ait
-ait
-ait
-ait
-ait
-ait
-ait
-dGS
-dGS
-ait
-ait
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -563907,45 +563460,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-mof
-mof
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -564409,45 +563962,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -564911,45 +564464,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -565413,45 +564966,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-cJi
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -565915,45 +565468,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -566417,45 +565970,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -566919,45 +566472,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -567421,45 +566974,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -567923,45 +567476,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -568425,45 +567978,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -568927,45 +568480,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -569429,45 +568982,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw
@@ -569931,45 +569484,45 @@ xKw
 xKw
 xKw
 xKw
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
-axp
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
+xKw
 xKw
 xKw
 xKw

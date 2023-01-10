@@ -140,11 +140,15 @@ var/global/datum/controller/occupations/job_master
 		if(job.priority)
 			job.priority = FALSE
 			priority_jobs_remaining++
+			if(!job.head_position)
+				DePrioritzeDeparmentHead(job)
 		else
 			if(priority_jobs_remaining < 1)
 				return 0
 			job.priority = TRUE
 			priority_jobs_remaining--
+			if(!job.head_position)
+				PrioritzeDeparmentHead(job)
 		if(user)
 			log_admin("[key_name(user)] has set the priority of the [rank] job to [job.priority].")
 			message_admins("[key_name_admin(user)] has set the priority of the [rank] job to [job.priority].")
@@ -152,6 +156,21 @@ var/global/datum/controller/occupations/job_master
 			to_chat(player, "<span class='notice'>The [rank] job is [job.priority ? "now highly requested!" : "no longer highly requested."]</span>")
 		return 1
 	return 0
+
+/datum/controller/occupations/proc/PrioritzeDeparmentHead(var/datum/job/job)
+	if(job.department == "Civilian")
+		return
+	var/datum/job/head = locate(job.department_head) in job_master.occupations
+	head.department_prioritized = TRUE
+
+/datum/controller/occupations/proc/DePrioritzeDeparmentHead(var/datum/job/job)
+	var/datum/job/head = locate(job.department_head) in job_master.occupations
+	var/list/remaining_prioritized_jobs = job_master.GetPrioritizedJobs()
+	for(var/datum/job/J in remaining_prioritized_jobs)
+		// If there is still a job from that department prioritized
+		if(J.department == job.department)
+			return
+	head.department_prioritized = FALSE
 
 /datum/controller/occupations/proc/IsJobPrioritized(var/rank)
 	var/datum/job/job = GetJob(rank)
@@ -439,9 +458,10 @@ var/global/datum/controller/occupations/job_master
 		var/balance_wallet = rand(100,250)
 		var/bank_pref_number = H.client.prefs.bank_security
 		var/bank_pref = bank_security_num2text(bank_pref_number)
+		var/pref_wage_ratio = H.client.prefs.wage_ratio
 		if(centcomm_account_db)
 			var/wage = job.get_wage()
-			var/datum/money_account/M = create_account(H.real_name, balance_bank, null, wage_payout = wage, security_pref = bank_pref_number)
+			var/datum/money_account/M = create_account(H.real_name, balance_bank, null, wage_payout = wage, security_pref = bank_pref_number, ratio_pref = pref_wage_ratio)
 
 			if (joined_late)
 				latejoiner_allowance += wage + round(wage/10)
@@ -490,13 +510,8 @@ var/global/datum/controller/occupations/job_master
 	if(job)
 		job.introduce(H, (alt_title ? alt_title : rank))
 	else
-		to_chat(H, "<B>You are the [alt_title ? alt_title : rank].</B>")
-		to_chat(H, "<b>As the [alt_title ? alt_title : rank] you answer directly to [job.supervisors]. Special circumstances may change this.</b>")
-		if(job.req_admin_notify)
-			to_chat(H, "<b>You are playing a job that is important for Game Progression. If you have to disconnect, please notify the admins via adminhelp.</b>")
+		to_chat(H, "<B>You are the [alt_title ? alt_title : rank]. Special circumstances may change this.</B>")
 
-	if(job.priority)
-		to_chat(H, "<span class='notice'>You've been granted a little bonus for filling a high-priority job. Enjoy!</span>")
 	return 1
 
 /datum/controller/occupations/proc/LoadJobs(jobsfile) //ran during round setup, reads info from jobs.txt -- Urist
