@@ -174,7 +174,8 @@
 	user.visible_message("<span class='notice'>[user] has made an incision on [target]'s [affected.display_name] with \the [tool].</span>", \
 	"<span class='notice'>You have made an incision on [target]'s [affected.display_name] with \the [tool].</span>",)
 	affected.open = 1
-	affected.status |= ORGAN_BLEEDING
+	if(target.species && (target.species.anatomy_flags & !(NO_BLOOD|FAKE_NO_BLOOD)))
+		affected.status |= ORGAN_BLEEDING		// Vampire plasmamen/diona/skeletons can still be operated on like normal
 	affected.createwound(CUT, 1)
 
 /datum/surgery_step/generic/cut_open/fail_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -198,7 +199,7 @@
 
 /datum/surgery_step/generic/clamp_bleeders/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	if(..())
-		if(target.species && (target.species.anatomy_flags & NO_BLOOD))
+		if(target.species && (target.species.anatomy_flags & (NO_BLOOD|FAKE_NO_BLOOD)))
 			to_chat(user, "<span class='info'>[target] has no vessels to clamp!</span>")
 			return 0
 

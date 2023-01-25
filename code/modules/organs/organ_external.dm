@@ -681,7 +681,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 		clamped |= W.clamped
 		number_wounds += W.amount
 
-	if(open && !clamped && is_organic() && !(species.anatomy_flags & NO_BLOOD)) //Things tend to bleed if they are CUT OPEN
+	if(open && !clamped && is_organic() && !(species.anatomy_flags & (NO_BLOOD|FAKE_NO_BLOOD))) //Things tend to bleed if they are CUT OPEN
 		if(!owner.reagents.has_reagent(CLOTTING_AGENT))
 			status |= ORGAN_BLEEDING
 

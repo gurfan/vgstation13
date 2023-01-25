@@ -1001,6 +1001,7 @@ var/list/RESTRICTED_CAMERA_NETWORKS = list( //Those networks can only be accesse
 #define ACID4WATER 4096 //Acid now acts like water, and vice versa.
 #define NO_BALD 8192 //cannot lose hair through being shaved/radiation/etc
 #define RGBSKINTONE 16384
+#define FAKE_NO_BLOOD 32768		// For vampires: appear to posess no blood supply to basic tests (health scanner, syringes, surgery)
 
 var/default_colour_matrix = list(1,0,0,0,\
 								 0,1,0,0,\

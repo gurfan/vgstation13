@@ -142,7 +142,7 @@
 		return
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
-		if(H.species && H.species.anatomy_flags & NO_BLOOD)
+		if(H.species && H.species.anatomy_flags & (NO_BLOOD|FAKE_NO_BLOOD))
 			to_chat(src, "<span class='warning'>That donor has no blood!</span>")
 			return
 	if(donors.Find(M.real_name))

@@ -19,7 +19,7 @@ var/global/obj/abstract/screen/clicker/catcher = new()
 	var/hotkey_ui_hidden = FALSE	//This is to hide the buttons that can be used via hotkeys. (hotkeybuttons list of buttons)
 
 	var/obj/abstract/screen/lingchemdisplay
-	var/obj/abstract/screen/vampire_blood_display // /vg/
+	var/obj/abstract/screen/vampire_blood_display // /vg/  (ALSO USED BY XENOS FOR SOME REASON)
 	var/obj/abstract/screen/spider_food_display // /vg/
 	var/obj/abstract/screen/spiderling_growth_display // /vg/
 	var/obj/abstract/screen/spider_queen_counter // /vg/

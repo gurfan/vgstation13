@@ -66,6 +66,14 @@
 
 /datum/role/vampire/OnPostSetup()
 	. = ..()
+
+	// Humanoids which don't normally posess a blood supply will have one if they are a vampire.
+	var/mob/living/carbon/human/H = antag.current
+	if(H.species && H.species.anatomy_flags & NO_BLOOD)
+		H.species.anatomy_flags |= FAKE_NO_BLOOD		// They will still appear to be bloodless to the most rudimentary of tests.
+		H.species.anatomy_flags &= ~NO_BLOOD
+		H.vessel.add_reagent(BLOOD,560)
+
 	update_vamp_hud()
 	ForgeObjectives()
 	for(var/type_VP in roundstart_powers)
@@ -77,6 +85,14 @@
 		V.name_clan(src)
 
 /datum/role/vampire/RemoveFromRole(var/datum/mind/M)
+
+	// Bloodless humanoids become properly bloodless again
+	var/mob/living/carbon/human/H = antag.current
+	if(H.species && H.species.anatomy_flags & FAKE_NO_BLOOD)
+		H.species.anatomy_flags |= NO_BLOOD
+		H.species.anatomy_flags &= ~FAKE_NO_BLOOD
+		H.vessel.remove_reagent(BLOOD,600)
+
 	var/list/vamp_spells = getAllVampSpells()
 	for(var/spell/spell in antag.current.spell_list)
 		if (is_type_in_list(spell, vamp_spells))
@@ -85,6 +101,12 @@
 		if(antag.current.hud_used.vampire_blood_display)
 			antag.current.client.screen -= list(antag.current.hud_used.vampire_blood_display)
 	..()
+
+/datum/role/vampire/CanBeAssigned(datum/mind/M)
+	. = ..()
+	if(!ishuman(M.current))
+		stack_trace("[M.name] was assigned the vampire role but is not a human!")
+		return FALSE
 
 /datum/role/vampire/AdminPanelEntry(var/show_logo = FALSE,var/datum/admins/A)
 	var/dat = ..()
@@ -275,7 +297,7 @@
 	handle_smite(H)
 	handle_deadspeak(H)
 	if(istype(H.loc, /turf/space))
-		H.check_sun()
+		check_sun()
 	if(istype(H.loc, /obj/structure/closet/coffin))
 		H.adjustBruteLoss(-4)
 		H.adjustFireLoss(-4)
@@ -512,9 +534,10 @@
 		M.hud_used.vampire_blood_display.maptext_height = WORLD_ICON_SIZE
 		M.hud_used.vampire_blood_display.maptext = "<div align='left' valign='top' style='position:relative; top:0px; left:6px'>U:<font color='#33FF33'>[blood_usable]</font><br> T:<font color='#FFFF00'>[blood_total]</font></div>"
 
-/mob/living/carbon/human/proc/check_sun()
-	var/ax = x
-	var/ay = y
+/datum/role/vampire/proc/check_sun()
+	var/mob/M = antag.current
+	var/ax = M.x
+	var/ay = M.y
 
 	for(var/i = 1 to 20)
 		ax += sun.dx
@@ -528,7 +551,8 @@
 		if(T.density)
 			return
 
-	if(prob(45))
+
+
 		switch(health)
 			if(80 to 100)
 				to_chat(src, "<span class='warning'>Your skin flakes away...</span>")

@@ -372,7 +372,7 @@
 		"stoxin_amount" = H.reagents.get_reagent_amount(STOXIN),
 		"bicaridine_amount" = H.reagents.get_reagent_amount(BICARIDINE),
 		"dermaline_amount" = H.reagents.get_reagent_amount(DERMALINE),
-		"blood_amount" = H.vessel.get_reagent_amount(BLOOD),
+		"blood_amount" = H.species && H.species.anatomy_flags & FAKE_NO_BLOOD ? 0 : H.vessel.get_reagent_amount(BLOOD),
 		"all_chems" = H.reagents.reagent_list,
 		"btype" = H.dna.b_type,
 		"disabilities" = H.sdisabilities,

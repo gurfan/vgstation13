@@ -33,7 +33,7 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 	vessel = new/datum/reagents/vessel(600)
 	vessel.my_atom = src
 
-	if(species && species.anatomy_flags & NO_BLOOD) //We want the var for safety but we can do without the actual blood.
+	if((species && species.anatomy_flags & NO_BLOOD)) //We want the var for safety but we can do without the actual blood.
 		return
 
 	vessel.add_reagent(BLOOD,560)
@@ -205,7 +205,7 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 	var/blood_factor = 1
 	if(species && species.anatomy_flags & NO_BLOOD) //Things that do not bleed do not bleed
 		return 0
-		
+
 	if(lying) //Lying down slows blood loss
 		blood_factor -= 0.3
 
@@ -214,16 +214,16 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 
 	if(reagents.has_reagent(INAPROVALINE)) //Inaprov and Bicard slow bleeding, and stack
 		blood_factor -= 0.3
-		
+
 	if(reagents.has_reagent(BICARIDINE))
 		blood_factor -= 0.3
-		
+
 	if(reagents.has_reagent(CLOTTING_AGENT) || reagents.has_reagent(BIOFOAM)) //Clotting agent and biofoam stop bleeding entirely
 		blood_factor = 0
-	
+
 	if(bodytemperature < 170) //Cryo stops bleeding entirely
 		blood_factor = 0
-		
+
 	return max(0, blood_factor) //Do not return a negative percent, we don't want free blood healing!
 
 //Makes a blood drop, leaking amt units of blood from the mob
@@ -232,10 +232,10 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 		return 0
 
 	amt = max(0, amt * calcbloodloss()) //determines how much blood to lose based on human's situation
-	
+
 	if(!amt)
 		return 0
-	
+
 	vessel.remove_reagent(BLOOD,amt)
 	blood_splatter(src,src)
 	stat_collection.blood_spilled += amt
@@ -377,7 +377,7 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 //For humans, blood does not appear from blue, it comes from vessels.
 /mob/living/carbon/human/take_blood(obj/item/weapon/reagent_containers/container, var/amount)
 
-	if(species && species.anatomy_flags & NO_BLOOD)
+	if(species && species.anatomy_flags & (NO_BLOOD|FAKE_NO_BLOOD))
 		return null
 
 	if(vessel.get_reagent_amount(BLOOD) < amount)
@@ -439,6 +439,9 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 	else if (blood_incompatible(injected.data["blood_type"],our.data["blood_type"]))
 		toxic = 1
 
+	if(isvampire(src))	// Vampires get a small healing effect from drinking blood.
+		reagents.add_reagent(TRICORDRAZINE, amount * 0.5)
+
 	switch (toxic)
 		if (2)
 			new /obj/effect/cult_ritual/confusion(src,100,25,src)
@@ -463,6 +466,9 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 /proc/blood_incompatible(donor,receiver)
 	if(!donor || !receiver)
 		return 0
+
+	if(!isvampire(receiver))	// Why would a vampire care about blood types?
+		return 1
 
 	var/donor_antigen = copytext(donor, 1, -1)
 	var/receiver_antigen = copytext(receiver, 1, -1)

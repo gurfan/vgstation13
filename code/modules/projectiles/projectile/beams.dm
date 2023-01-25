@@ -495,7 +495,7 @@ var/list/beam_master = list()
 			var/mob/living/carbon/human/H = M
 			var/datum/organ/external/head/head_organ = H.get_organ(LIMB_HEAD)
 			if (H.isDead())
-				if (H.species.anatomy_flags & NO_BLOOD) // This way it should only apply to the more fleshy species (To-Do: Add animations for mushmen, catbeasts, skrell, and unathi)
+				if (H.species.anatomy_flags & (NO_BLOOD|FAKE_NO_BLOOD)) // This way it should only apply to the more fleshy species (To-Do: Add animations for mushmen, catbeasts, skrell, and unathi)
 					return 0
 				if(isgrey(H))
 					H.visible_message("<span class='danger'>[H.name]'s body disintegrates into ash!</span>")
@@ -576,7 +576,7 @@ var/list/beam_master = list()
 			var/mob/living/carbon/human/H = M
 			var/datum/organ/external/head/head_organ = H.get_organ(LIMB_HEAD)
 			if (H.isDead())
-				if (H.species.anatomy_flags & NO_BLOOD) // This way it should only apply to the more fleshy species (To-Do: Add animations for mushmen, catbeasts, skrell, and unathi)
+				if (H.species.anatomy_flags & (NO_BLOOD|FAKE_NO_BLOOD)) // This way it should only apply to the more fleshy species (To-Do: Add animations for mushmen, catbeasts, skrell, and unathi)
 					return 0
 				if(isgrey(H))
 					H.visible_message("<span class='danger'>[H.name]'s body disintegrates into ash!</span>")
@@ -660,7 +660,7 @@ var/list/beam_master = list()
 			var/mob/living/carbon/human/H = M
 			var/datum/organ/external/head/head_organ = H.get_organ(LIMB_HEAD)
 			if (H.isDead())
-				if (H.species.anatomy_flags & NO_BLOOD) // This way it should only apply to the more fleshy species (To-Do: Add animations for mushmen, catbeasts, skrell, and unathi)
+				if (H.species.anatomy_flags & (NO_BLOOD|FAKE_NO_BLOOD)) // This way it should only apply to the more fleshy species (To-Do: Add animations for mushmen, catbeasts, skrell, and unathi)
 					return 0
 				if(isgrey(H))
 					H.visible_message("<span class='danger'>[H.name]'s body disintegrates into ash!</span>")
