@@ -105,7 +105,6 @@
 /datum/role/vampire/CanBeAssigned(datum/mind/M)
 	. = ..()
 	if(!ishuman(M.current))
-		stack_trace("[M.name] was assigned the vampire role but is not a human!")
 		return FALSE
 
 /datum/role/vampire/AdminPanelEntry(var/show_logo = FALSE,var/datum/admins/A)
@@ -297,7 +296,10 @@
 	handle_smite(H)
 	handle_deadspeak(H)
 	if(istype(H.loc, /turf/space))
-		check_sun()
+		handle_sun()
+	else
+		antag.current.clear_alert(SCREEN_ALARM_VAMPIRE_SUN)
+
 	if(istype(H.loc, /obj/structure/closet/coffin))
 		H.adjustBruteLoss(-4)
 		H.adjustFireLoss(-4)
@@ -441,6 +443,11 @@
 			H.fire_stacks += 5
 			H.IgniteMob()
 
+/datum/role/vampire/proc/handle_sun()
+	var/mob/living/M = antag.current
+	M.throw_alert(SCREEN_ALARM_VAMPIRE_SUN, /obj/abstract/screen/alert/vampire/sun)
+	M.adjustFireLoss(1)
+
 /datum/role/vampire/proc/remove_blood(var/amount)
 	blood_usable = max(0, blood_usable - amount)
 	update_vamp_hud()
@@ -534,46 +541,10 @@
 		M.hud_used.vampire_blood_display.maptext_height = WORLD_ICON_SIZE
 		M.hud_used.vampire_blood_display.maptext = "<div align='left' valign='top' style='position:relative; top:0px; left:6px'>U:<font color='#33FF33'>[blood_usable]</font><br> T:<font color='#FFFF00'>[blood_total]</font></div>"
 
-/datum/role/vampire/proc/check_sun()
-	var/mob/M = antag.current
-	var/ax = M.x
-	var/ay = M.y
 
-	for(var/i = 1 to 20)
-		ax += sun.dx
-		ay += sun.dy
-
-		var/turf/T = locate( round(ax,0.5),round(ay,0.5),z)
-
-		if(T.x == 1 || T.x==world.maxx || T.y==1 || T.y==world.maxy)
-			break
-
-		if(T.density)
-			return
+// The orientation of the nearby sun doesn't really matter since there are thousands of stars shining upon the vampire.
 
 
-
-		switch(health)
-			if(80 to 100)
-				to_chat(src, "<span class='warning'>Your skin flakes away...</span>")
-				adjustFireLoss(1)
-			if(60 to 80)
-				to_chat(src, "<span class='warning'>Your skin sizzles!</span>")
-				adjustFireLoss(1)
-			if((-INFINITY) to 60)
-				if(!on_fire)
-					to_chat(src, "<span class='danger'>Your skin catches fire!</span>")
-				else
-					to_chat(src, "<span class='danger'>You continue to burn!</span>")
-				fire_stacks += 5
-				IgniteMob()
-		audible_scream()
-	else
-		switch(health)
-			if((-INFINITY) to 60)
-				fire_stacks++
-				IgniteMob()
-	adjustFireLoss(3)
 
 /*
  -- Thralls --

@@ -441,22 +441,22 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 
 	if(isvampire(src))	// Vampires get a small healing effect from drinking blood.
 		reagents.add_reagent(TRICORDRAZINE, amount * 0.5)
-
-	switch (toxic)
-		if (2)
-			new /obj/effect/cult_ritual/confusion(src,100,25,src)
-			reagents.add_reagent(TOXIN,amount * 0.5)
-			reagents.add_reagent(INCENSE_MOONFLOWERS,amount * 0.5)
-			hallucination = max(30,hallucination)
-			Dizzy(10)
-			Jitter(10)
-			reagents.update_total()
-		if (1)
-			reagents.add_reagent(TOXIN,amount * 0.5)
-			reagents.update_total()
-		else
-			vessel.add_reagent(BLOOD, amount, injected.data)
-			vessel.update_total()
+	else
+		switch (toxic)
+			if (2)
+				new /obj/effect/cult_ritual/confusion(src,100,25,src)
+				reagents.add_reagent(TOXIN,amount * 0.5)
+				reagents.add_reagent(INCENSE_MOONFLOWERS,amount * 0.5)
+				hallucination = max(30,hallucination)
+				Dizzy(10)
+				Jitter(10)
+				reagents.update_total()
+			if (1)
+				reagents.add_reagent(TOXIN,amount * 0.5)
+				reagents.update_total()
+			else
+				vessel.add_reagent(BLOOD, amount, injected.data)
+				vessel.update_total()
 	..()
 
 //Gets human's own blood.
@@ -466,9 +466,6 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 /proc/blood_incompatible(donor,receiver)
 	if(!donor || !receiver)
 		return 0
-
-	if(!isvampire(receiver))	// Why would a vampire care about blood types?
-		return 1
 
 	var/donor_antigen = copytext(donor, 1, -1)
 	var/receiver_antigen = copytext(receiver, 1, -1)

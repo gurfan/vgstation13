@@ -132,6 +132,8 @@ var/global/list/screen_alarms_locs = list(
 #define SCREEN_ALARM_FOOD "mob_food"
 #define SCREEN_ALARM_SLEEP "mob_sleep"
 
+#define SCREEN_ALARM_VAMPIRE_SUN "vamp_sun"
+
 #define SCREEN_ALARM_ROBOT_CELL "robot_cell"
 #define SCREEN_ALARM_ROBOT_LAW "robot_law"
 #define SCREEN_ALARM_ROBOT_HACK "robot_hack"
@@ -322,6 +324,12 @@ var/global/list/screen_alarms_locs = list(
 /obj/abstract/screen/alert/carbon/burn/fire/construct
 	icon_state = "construct_burn"
 	desc = "The heat is too intense even for your obsidian body."
+
+//Vampire Alarms
+/obj/abstract/screen/alert/vampire/sun
+	icon_state = "vamp_sun"
+	desc = "The harsh starlight is burning your body!"
+
 
 //Spider Alarms
 /obj/abstract/screen/alert/carbon/burn/fire/spider
