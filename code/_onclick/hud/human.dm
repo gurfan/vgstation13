@@ -330,13 +330,13 @@
 	mymob.internals.icon = ui_style
 	mymob.internals.icon_state = "internal0"
 	mymob.internals.name = "internal"
-	mymob.internals.screen_loc = ui_internal
+	mymob.internals.screen_loc = isvampire(mymob) ? ui_internal_vamp : ui_internal
 
 	mymob.healths = new /obj/abstract/screen
 	mymob.healths.icon = ui_style
 	mymob.healths.icon_state = "health0"
 	mymob.healths.name = "health"
-	mymob.healths.screen_loc = ui_health
+	mymob.healths.screen_loc = isvampire(mymob) ? ui_health_vamp : ui_health
 
 	mymob.pullin = new /obj/abstract/screen
 	mymob.pullin.icon = ui_style

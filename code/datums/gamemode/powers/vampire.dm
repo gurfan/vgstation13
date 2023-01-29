@@ -1,7 +1,11 @@
-/datum/power/vampire
-	name = "Vampire Power"
-	desc = "Vampire Power"
-	granttext = "" // Displays the granttext if needed
+
+
+
+
+
+
+
+
 
 //List of all vampire spells
 /datum/power/vampire/rejuvenate

@@ -111,62 +111,66 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 		vessel.update_total()
 
 		//Effects of bloodloss
-		switch(blood_volume)
-			if(BLOOD_VOLUME_SAFE to 10000)
-				if(pale)
-					pale = 0
-					//update_body()
-			if(BLOOD_VOLUME_OKAY to BLOOD_VOLUME_SAFE)
-				if(!pale)
-					pale = 1
-					//update_body()
-					var/word = pick("dizzy","woosey","faint")
-					to_chat(src, "<span class='danger'>You feel [word].</span>")
-				if(blood_volume > BLOOD_VOLUME_WARN)
-					if(prob(1))
+		var/datum/role/vampire/V = isvampire(src)
+		if(V)
+			V.handle_blood_volume(blood_volume)
+		else
+			switch(blood_volume)
+				if(BLOOD_VOLUME_SAFE to 10000)
+					if(pale)
+						pale = 0
+						//update_body()
+				if(BLOOD_VOLUME_OKAY to BLOOD_VOLUME_SAFE)
+					if(!pale)
+						pale = 1
+						//update_body()
 						var/word = pick("dizzy","woosey","faint")
 						to_chat(src, "<span class='danger'>You feel [word].</span>")
-				else
-					if(prob(3))
-						var/word = pick("dizzy","woosey","faint")
-						to_chat(src, "<span class='danger'>You feel very [word].</span>")
-				if(oxyloss < 20)
-					adjustOxyLoss(2)
-			if(BLOOD_VOLUME_BAD to BLOOD_VOLUME_OKAY)
-				if(!pale)
-					pale = 1
-					//update_body()
-				eye_blurry = max(eye_blurry,2)
-				if(oxyloss < 40)
+					if(blood_volume > BLOOD_VOLUME_WARN)
+						if(prob(1))
+							var/word = pick("dizzy","woosey","faint")
+							to_chat(src, "<span class='danger'>You feel [word].</span>")
+					else
+						if(prob(3))
+							var/word = pick("dizzy","woosey","faint")
+							to_chat(src, "<span class='danger'>You feel very [word].</span>")
+					if(oxyloss < 20)
+						adjustOxyLoss(2)
+				if(BLOOD_VOLUME_BAD to BLOOD_VOLUME_OKAY)
+					if(!pale)
+						pale = 1
+						//update_body()
+					eye_blurry = max(eye_blurry,2)
+					if(oxyloss < 40)
+						adjustOxyLoss(3)
 					adjustOxyLoss(3)
-				adjustOxyLoss(3)
-				if(prob(15))
-					Paralyse(1)
-					var/word = pick("dizzy","woosey","faint")
-					to_chat(src, "<span class='danger'>You feel extremely [word].</span>")
-			if(BLOOD_VOLUME_SURVIVE to BLOOD_VOLUME_BAD)
-				if(!pale)
-					pale = 1
-					//update_body()
-				eye_blurry = max(eye_blurry,4)
-				if(oxyloss < 60)
+					if(prob(15))
+						Paralyse(1)
+						var/word = pick("dizzy","woosey","faint")
+						to_chat(src, "<span class='danger'>You feel extremely [word].</span>")
+				if(BLOOD_VOLUME_SURVIVE to BLOOD_VOLUME_BAD)
+					if(!pale)
+						pale = 1
+						//update_body()
+					eye_blurry = max(eye_blurry,4)
+					if(oxyloss < 60)
+						adjustOxyLoss(5)
 					adjustOxyLoss(5)
-				adjustOxyLoss(5)
-				adjustToxLoss(1)
-				if(prob(15))
-					Paralyse(rand(1,3))
-					var/word = pick("dizzy","woosey","faint")
-					to_chat(src, "<span class='danger'>You feel deathly [word].</span>")
-			if(0 to BLOOD_VOLUME_SURVIVE)
-				// Kill then pretty fast, but don't overdo it
-				// I SAID DON'T OVERDO IT
-				if(!pale) //Somehow
-					pale = 1
-					//update_body()
-				adjustOxyLoss(8)
-				adjustToxLoss(2)
-				//cloneloss += 1
-				Paralyse(5) //Keep them on the ground, that'll teach them
+					adjustToxLoss(1)
+					if(prob(15))
+						Paralyse(rand(1,3))
+						var/word = pick("dizzy","woosey","faint")
+						to_chat(src, "<span class='danger'>You feel deathly [word].</span>")
+				if(0 to BLOOD_VOLUME_SURVIVE)
+					// Kill then pretty fast, but don't overdo it
+					// I SAID DON'T OVERDO IT
+					if(!pale) //Somehow
+						pale = 1
+						//update_body()
+					adjustOxyLoss(8)
+					adjustToxLoss(2)
+					//cloneloss += 1
+					Paralyse(5) //Keep them on the ground, that'll teach them
 
 		// Without enough blood you slowly go hungry.
 		// This is supposed to synergize with nutrients being used up to boost blood regeneration

@@ -13,6 +13,17 @@
 	default_admin_voice = "Vampire Overlord"
 	admin_voice_style = "danger"
 
+	var/datum/reagents/vessel/blood_vessel
+	var/blood_consumed
+
+	var/mutation_points = 5
+	var/list/mutations = list()			// Mutations are purchased upgrades. They may include an ability. Caste abilities count as mutations.
+	var/list/abilities = list()			// Abilities are activated powers with a UI button.
+
+
+
+
+
 	var/iscloaking = FALSE
 	var/silentbite = FALSE
 	var/deadchat_timer = 0
@@ -73,6 +84,8 @@
 		H.species.anatomy_flags |= FAKE_NO_BLOOD		// They will still appear to be bloodless to the most rudimentary of tests.
 		H.species.anatomy_flags &= ~NO_BLOOD
 		H.vessel.add_reagent(BLOOD,560)
+
+	blood_vessel = H.vessel
 
 	update_vamp_hud()
 	ForgeObjectives()
@@ -443,10 +456,17 @@
 			H.fire_stacks += 5
 			H.IgniteMob()
 
+// The orientation of the nearby sun doesn't really matter since there are thousands of stars shining upon the vampire.
 /datum/role/vampire/proc/handle_sun()
 	var/mob/living/M = antag.current
 	M.throw_alert(SCREEN_ALARM_VAMPIRE_SUN, /obj/abstract/screen/alert/vampire/sun)
 	M.adjustFireLoss(1)
+
+/datum/role/vampire/proc/handle_blood_volume(var/blood_volume)
+	switch(blood_volume)
+		if(0)
+			to_chat(antag.current, "<span class='danger big'>As the last drops of blood leave your body, you find yourself unable to hold on to this mortal plane!</span>")
+			antag.current.dust(TRUE)		// Losing all your blood as a vampire turns you to dust.
 
 /datum/role/vampire/proc/remove_blood(var/amount)
 	blood_usable = max(0, blood_usable - amount)
@@ -454,7 +474,6 @@
 
 /datum/role/vampire/PostMindTransfer(var/mob/living/new_character, var/mob/living/old_character)
 	. = ..()
-	current_powers.Cut()
 	if (issilicon(new_character) || isbrain(new_character)) // No, borgs shouldn't be able to spawn bats
 		logo_state = "" // Borgos don't get the vampire icon.
 	else
@@ -532,18 +551,7 @@
 	update_vamp_hud()
 
 /datum/role/vampire/proc/update_vamp_hud()
-	var/mob/M = antag.current
-	if(M && M.client && M.hud_used)
-		if(!M.hud_used.vampire_blood_display)
-			M.hud_used.vampire_hud()
-			//hud_used.human_hud(hud_used.ui_style)
-		M.hud_used.vampire_blood_display.maptext_width = WORLD_ICON_SIZE*2
-		M.hud_used.vampire_blood_display.maptext_height = WORLD_ICON_SIZE
-		M.hud_used.vampire_blood_display.maptext = "<div align='left' valign='top' style='position:relative; top:0px; left:6px'>U:<font color='#33FF33'>[blood_usable]</font><br> T:<font color='#FFFF00'>[blood_total]</font></div>"
-
-
-// The orientation of the nearby sun doesn't really matter since there are thousands of stars shining upon the vampire.
-
+	antag.DisplayUI("Vampire")
 
 
 /*

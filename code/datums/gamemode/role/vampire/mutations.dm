@@ -44,7 +44,8 @@
 		stack_trace("A vampire ability was created, but no vampire role was set in New()!")
 		qdel(src)
 	vamp_role.abilities.Add(src)
-mind_ui_ID2type
+
+
 
 
 
