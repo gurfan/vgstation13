@@ -20,7 +20,7 @@
 ////////////////////////////////////////////////////////////////////
 
 /datum/mind_ui/vampire_right_panel
-	uniqueID = "vampire Right Panel"
+	uniqueID = "Vampire Right Panel"
 	x = "RIGHT"
 	element_types_to_spawn = list(
 		/obj/abstract/mind_ui_element/vampire_blood_gauge,
@@ -118,7 +118,12 @@
 	var/datum/vampire_ability/my_ability
 
 /obj/abstract/mind_ui_element/hoverable/vampire_ability/Click()
+	if(!my_ability)
+		return
 	var/mob/camera/vampire/M = GetUser()
 	if(!istype(M))
 		return
-	M.callvampires()
+	var/datum/role/vampire/V = isvampire(M)
+	if(!istype(V))
+		return
+	my_ability.Activate()

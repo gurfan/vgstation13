@@ -113,7 +113,7 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 		//Effects of bloodloss
 		var/datum/role/vampire/V = isvampire(src)
 		if(V)
-			V.handle_blood_volume(blood_volume)
+			V.HandleBloodVolume(blood_volume)
 		else
 			switch(blood_volume)
 				if(BLOOD_VOLUME_SAFE to 10000)
@@ -443,8 +443,9 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 	else if (blood_incompatible(injected.data["blood_type"],our.data["blood_type"]))
 		toxic = 1
 
-	if(isvampire(src))	// Vampires get a small healing effect from drinking blood.
-		reagents.add_reagent(TRICORDRAZINE, amount * 0.5)
+	var/datum/role/vampire/V = isvampire(src)
+	if(V)	// Vampires get a small healing effect from drinking blood.
+		V.HandleBloodInjection(amount)
 	else
 		switch (toxic)
 			if (2)

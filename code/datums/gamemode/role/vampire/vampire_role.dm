@@ -309,7 +309,7 @@
 	handle_smite(H)
 	handle_deadspeak(H)
 	if(istype(H.loc, /turf/space))
-		handle_sun()
+		HandleSun()
 	else
 		antag.current.clear_alert(SCREEN_ALARM_VAMPIRE_SUN)
 
@@ -457,16 +457,48 @@
 			H.IgniteMob()
 
 // The orientation of the nearby sun doesn't really matter since there are thousands of stars shining upon the vampire.
-/datum/role/vampire/proc/handle_sun()
+/datum/role/vampire/proc/HandleSun()
 	var/mob/living/M = antag.current
 	M.throw_alert(SCREEN_ALARM_VAMPIRE_SUN, /obj/abstract/screen/alert/vampire/sun)
 	M.adjustFireLoss(1)
 
-/datum/role/vampire/proc/handle_blood_volume(var/blood_volume)
+/datum/role/vampire/proc/HandleBloodVolume(var/blood_volume)
 	switch(blood_volume)
 		if(0)
 			to_chat(antag.current, "<span class='danger big'>As the last drops of blood leave your body, you find yourself unable to hold on to this mortal plane!</span>")
 			antag.current.dust(TRUE)		// Losing all your blood as a vampire turns you to dust.
+
+/datum/role/vampire/proc/HandleBloodInjection(var/blood_amount)
+	antag.current.reagents.add_reagent(TRICORDRAZINE, blood_amount * 0.5)
+	antag.current.vessel.add_reagent(BLOOD, blood_amount, injected.data)
+	antag.current.vessel.update_total()
+
+/datum/role/vampire/proc/HasMutation(var/type)
+	if(locate(type) in mutation)
+		return TRUE
+	else
+		return FALSE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /datum/role/vampire/proc/remove_blood(var/amount)
 	blood_usable = max(0, blood_usable - amount)
