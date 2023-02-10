@@ -745,6 +745,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 	trace_chemicals = list()
 	wounds = list()
 	wound_update_accuracy = 1
+	owner.update_body()
 
 /****************************************************
 			   DISMEMBERMENT

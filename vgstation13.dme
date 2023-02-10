@@ -172,6 +172,7 @@
 #include "code\_onclick\mindUI\blob.dm"
 #include "code\_onclick\mindUI\malf.dm"
 #include "code\_onclick\mindUI\soulblade.dm"
+#include "code\_onclick\mindUI\vampire.dm"
 #include "code\_onclick\mindUI\bloodcult\cultist.dm"
 #include "code\_onclick\mindUI\bloodcult\draw_runes.dm"
 #include "code\ATMOSPHERICS\atmospherics.dm"

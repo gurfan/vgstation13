@@ -104,7 +104,7 @@
 
 /datum/faction/bloodcult/AdminPanelEntry(var/datum/admins/A)
 	var/list/dat = ..()
-	
+
 	dat += "<br>"
 	dat += "<a href='?src=\ref[src];unlockRitual=1'>\[Unlock Ritual\]</A><br>"
 	dat += "<br>"
@@ -119,10 +119,10 @@
 		return
 
 	if(href_list["unlockRitual"])
-		var/datum/bloodcult_ritual/R = input(usr,"Select a ritual to unlock.", "Unlock", null) as null|anything in locked_rituals
+		var/datum/bloodcult_ritual/R = input(usr,"Select a ritual to unlock.", "Unlock", null) as null|anything in subtypesof(/datum/vampire_mutation)
 		if(R)
 			R.Unlock(TRUE)
-			
+
 
 /datum/faction/bloodcult/HandleNewMind(var/datum/mind/M)
 	..()

@@ -122,7 +122,8 @@
 
 /datum/role/vampire/AdminPanelEntry(var/show_logo = FALSE,var/datum/admins/A)
 	var/dat = ..()
-	dat += "  - <a href='?src=\ref[src]&mind=\ref[antag]&giveblood=1'>Give blood</a>"
+	dat += "  - <a href='?src=\ref[src]&mind=\ref[antag]&giveblood=1'>Give blood</a><br>"
+	dat += "  - <a href='?src=\ref[src];mutate=1'>\[Give Mutation\]</A><br>"
 	return dat
 
 /datum/role/vampire/RoleTopic(href, href_list, var/datum/mind/M, var/admin_auth)
@@ -134,6 +135,10 @@
 		if (!amount)
 			return FALSE
 		give_blood(amount)
+	if (href_list["mutate"])
+		var/muttype = input(usr,"Select a mutation to unlock.", "Unlock", null) as null|anything in subtypesof(/datum/vampire_mutation)
+		if(muttype)
+			AddMutation(muttype)
 
 /datum/role/vampire/proc/give_blood(var/amount)
 	blood_total += amount
@@ -468,13 +473,39 @@
 			to_chat(antag.current, "<span class='danger big'>As the last drops of blood leave your body, you find yourself unable to hold on to this mortal plane!</span>")
 			antag.current.dust(TRUE)		// Losing all your blood as a vampire turns you to dust.
 
-/datum/role/vampire/proc/HandleBloodInjection(var/blood_amount)
+/datum/role/vampire/proc/HandleBloodInjection(var/blood_amount, var/data)
 	antag.current.reagents.add_reagent(TRICORDRAZINE, blood_amount * 0.5)
-	antag.current.vessel.add_reagent(BLOOD, blood_amount, injected.data)
-	antag.current.vessel.update_total()
+	blood_vessel.add_reagent(BLOOD, blood_amount, data)
+	blood_vessel.update_total()
+
+	if(HasMutation(/datum/vampire_mutation/regeneration))
+		antag.current.reagents.add_reagent(DOCTORSDELIGHT, blood_amount * 0.5)		// Give the vampire DD for extra healing.
+
+		// Small chance to regenerate a missing/prosthetic limb.
+		if(prob(blood_amount))
+			var/mob/living/carbon/human/H = antag.current
+			var/list/possible_organs
+			for(var/organ_name in H.organs_by_name)
+				if(organ_name == LIMB_CHEST || organ_name == LIMB_GROIN || organ_name == LIMB_HEAD)		// not these though
+					continue
+				var/datum/organ/external/O = H.organs_by_name[organ_name]
+				if(O.status & (ORGAN_DESTROYED|ORGAN_ROBOT|ORGAN_PEG))
+					possible_organs += O
+			if(!possible_organs.len)
+				return				// stop here
+			var/datum/organ/external/chosen_organ = pick(possible_organs)
+
+			// If the parent organ is destroyed, heal that instead
+			if(chosen_organ.parent.status & ORGAN_DESTROYED && (chosen_organ.parent.name != LIMB_CHEST || chosen_organ.parent.name != LIMB_GROIN))
+				chosen_organ = chosen_organ.parent
+
+			chosen_organ.rejuvenate_limb()
+			H.visible_message("<span class='warning'>\The [H] sprouts a new [chosen_organ.display_name]!</span>", "<span class='notice'>You sprout a new [chosen_organ.display_name]!</span>")
+			playsound(H, 'sound/effects/flesh_squelch.ogg', 30, 1)
+
 
 /datum/role/vampire/proc/HasMutation(var/type)
-	if(locate(type) in mutation)
+	if(locate(type) in mutations)
 		return TRUE
 	else
 		return FALSE

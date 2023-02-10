@@ -100,11 +100,16 @@
 /datum/mind_ui/vampire_left_panel
 	uniqueID = "Vampire Left Panel"
 	x = "LEFT"
-	element_types_to_spawn = list(
-
-		/obj/abstract/mind_ui_element/hoverable/vampire_power/vampire_spawn_core,
-		)
+	element_types_to_spawn = list()
 	display_with_parent = TRUE
+
+
+/datum/mind_ui/vampire_left_panel/proc/SortElements()
+	var/off_y = 120 - elements.len*20
+	for(var/obj/abstract/mind_ui_element/E in elements)
+		E.offset_y = off_y
+		off_y = off_y + 40
+		E.UpdateUIScreenLoc()
 
 //------------------------------------------------------------
 
@@ -112,18 +117,18 @@
 	name = "Vampire Ability"
 	icon = 'icons/ui/vampire/32x32.dmi'
 	icon_state = "background"
-	offset_x = -8
-	offset_y = 117
+
+	offset_y = 120
 
 	var/datum/vampire_ability/my_ability
 
 /obj/abstract/mind_ui_element/hoverable/vampire_ability/Click()
 	if(!my_ability)
 		return
-	var/mob/camera/vampire/M = GetUser()
-	if(!istype(M))
+	var/mob/living/carbon/human/H = GetUser()
+	if(!istype(H))
 		return
-	var/datum/role/vampire/V = isvampire(M)
+	var/datum/role/vampire/V = isvampire(H)
 	if(!istype(V))
 		return
 	my_ability.Activate()

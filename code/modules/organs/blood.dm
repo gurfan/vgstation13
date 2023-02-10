@@ -445,7 +445,7 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 
 	var/datum/role/vampire/V = isvampire(src)
 	if(V)	// Vampires get a small healing effect from drinking blood.
-		V.HandleBloodInjection(amount)
+		V.HandleBloodInjection(amount, injected.data)
 	else
 		switch (toxic)
 			if (2)
