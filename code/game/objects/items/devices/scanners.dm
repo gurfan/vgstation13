@@ -534,6 +534,8 @@ Subject's pulse: ??? BPM"})
 		var/dat = ""
 		if(O.reagents.reagent_list.len)
 			for(var/datum/reagent/R in O.reagents.reagent_list)
+				if(R.hidden)
+					continue
 				var/reagent_percent = (R.volume/O.reagents.total_volume)*100
 				dat += "<br><span class='notice'>[R][details ? " ([R.volume] units, [reagent_percent]%, time in system: [R.real_tick*2] seconds" : ""]</span>"
 		if(dat)

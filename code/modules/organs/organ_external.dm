@@ -739,6 +739,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 	hidden = null
 	number_wounds = 0
 	open = 0
+	destspawn = 0
 	perma_injury = 0
 	stage = 0
 	status = 0

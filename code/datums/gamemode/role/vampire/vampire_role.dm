@@ -123,7 +123,7 @@
 /datum/role/vampire/AdminPanelEntry(var/show_logo = FALSE,var/datum/admins/A)
 	var/dat = ..()
 	dat += "  - <a href='?src=\ref[src]&mind=\ref[antag]&giveblood=1'>Give blood</a><br>"
-	dat += "  - <a href='?src=\ref[src];mutate=1'>\[Give Mutation\]</A><br>"
+	dat += "  - <a href='?src=\ref[src]&mind=\ref[antag]&mutate=1'>\[Give Mutation\]</A><br>"
 	return dat
 
 /datum/role/vampire/RoleTopic(href, href_list, var/datum/mind/M, var/admin_auth)
@@ -474,35 +474,9 @@
 			antag.current.dust(TRUE)		// Losing all your blood as a vampire turns you to dust.
 
 /datum/role/vampire/proc/HandleBloodInjection(var/blood_amount, var/data)
-	antag.current.reagents.add_reagent(TRICORDRAZINE, blood_amount * 0.5)
+	antag.current.reagents.add_reagent(VAMPSERUM, blood_amount * 0.5)
 	blood_vessel.add_reagent(BLOOD, blood_amount, data)
 	blood_vessel.update_total()
-
-	if(HasMutation(/datum/vampire_mutation/regeneration))
-		antag.current.reagents.add_reagent(DOCTORSDELIGHT, blood_amount * 0.5)		// Give the vampire DD for extra healing.
-
-		// Small chance to regenerate a missing/prosthetic limb.
-		if(prob(blood_amount))
-			var/mob/living/carbon/human/H = antag.current
-			var/list/possible_organs
-			for(var/organ_name in H.organs_by_name)
-				if(organ_name == LIMB_CHEST || organ_name == LIMB_GROIN || organ_name == LIMB_HEAD)		// not these though
-					continue
-				var/datum/organ/external/O = H.organs_by_name[organ_name]
-				if(O.status & (ORGAN_DESTROYED|ORGAN_ROBOT|ORGAN_PEG))
-					possible_organs += O
-			if(!possible_organs.len)
-				return				// stop here
-			var/datum/organ/external/chosen_organ = pick(possible_organs)
-
-			// If the parent organ is destroyed, heal that instead
-			if(chosen_organ.parent.status & ORGAN_DESTROYED && (chosen_organ.parent.name != LIMB_CHEST || chosen_organ.parent.name != LIMB_GROIN))
-				chosen_organ = chosen_organ.parent
-
-			chosen_organ.rejuvenate_limb()
-			H.visible_message("<span class='warning'>\The [H] sprouts a new [chosen_organ.display_name]!</span>", "<span class='notice'>You sprout a new [chosen_organ.display_name]!</span>")
-			playsound(H, 'sound/effects/flesh_squelch.ogg', 30, 1)
-
 
 /datum/role/vampire/proc/HasMutation(var/type)
 	if(locate(type) in mutations)

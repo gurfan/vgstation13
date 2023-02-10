@@ -95,6 +95,7 @@
 #define DEXALIN 			"dexalin"
 #define DEXALINP 			"dexalinp"
 #define TRICORDRAZINE 			"tricordrazine"
+#define VAMPSERUM			"vampserum"
 #define SIMPOLINOL			"simpolinol"
 #define ADMINORDRAZINE 			"adminordrazine"
 #define PROCIZINE 			"procizine"

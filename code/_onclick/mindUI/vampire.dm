@@ -54,7 +54,7 @@
 	gauge.transform = gauge_matrix
 	gauge.layer = MIND_UI_BUTTON
 	//gauge.pixel_x = -3
-	gauge.pixel_y = round(-64 + 100 * (blood_volume/H.vessel.maximum_volume))
+	gauge.pixel_y = round(4 * (blood_volume/H.vessel.maximum_volume))
 	overlays += gauge
 
 	var/image/cover = image(icon, src, "bloodcount_cover")
@@ -68,7 +68,7 @@
 	icon_state = ""
 	layer = MIND_UI_FRONT+1
 	mouse_opacity = 0
-	offset_y = -100
+	offset_y = -94
 
 /obj/abstract/mind_ui_element/vampire_blood_count/UpdateIcon()
 	var/mob/living/carbon/human/H = GetUser()
@@ -80,11 +80,11 @@
 
 	overlays += String2Image("[blood_volume]")
 	if(blood_volume >= 100)
-		offset_x = 3
+		offset_x = 7
 	else if(blood_volume >= 10)
-		offset_x = 6
+		offset_x = 10
 	else
-		offset_x = 9
+		offset_x = 13
 	UpdateUIScreenLoc()
 
 

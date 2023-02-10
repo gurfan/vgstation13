@@ -207,6 +207,8 @@
 			var/dat = ""
 			if(O.reagents.reagent_list.len)
 				for(var/datum/reagent/R in O.reagents.reagent_list)
+					if(R.hidden)
+						continue
 					var/reagent_percent = (R.volume/O.reagents.total_volume)*100
 					chems += "<br><span class='notice'>[R] ["([R.volume] units, [reagent_percent]%)"]</span>"
 			if(chems)

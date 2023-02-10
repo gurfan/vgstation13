@@ -50,6 +50,7 @@
 	var/mug_desc = null
 	var/addictive = FALSE
 	var/tolerance_increase = null  //for tolerance, if set above 0, will increase each by that amount on tick.
+	var/hidden = FALSE				// is it hidden from reagent scanners
 
 /datum/reagent/proc/reaction_mob(var/mob/living/M, var/method = TOUCH, var/volume, var/list/zone_sels = ALL_LIMBS)
 	set waitfor = 0
@@ -2930,6 +2931,60 @@
 	if(M.getToxLoss())
 		M.adjustToxLoss(-REM)
 
+/datum/reagent/vampserum
+	name = "Strange Serum"  // todo: better name
+	id = VAMPSERUM
+	description = "The blood is the life!"
+	reagent_state = REAGENT_STATE_LIQUID
+	custom_metabolism = REAGENTS_METABOLISM * 2
+	nutriment_factor = 1 * REAGENTS_METABOLISM
+	color = "#cf3e57"
+	hidden = TRUE
+
+/datum/reagent/vampserum/on_mob_life(var/mob/living/M)
+	if(..())
+		return 1
+
+	var/potency = REM
+	var/datum/role/vampire/V = isvampire(M)
+	if(V && V.HasMutation(/datum/vampire_mutation/regeneration))
+		potency = potency * 4 		// Four times as effective for vampires with the regneration mutation.
+
+		// Vampires with this ability also have a chance to regenerate a missing/prosthetic limb.
+		if(prob(2) && ishuman(M))
+			var/mob/living/carbon/human/H = M
+			var/list/possible_organs = list()
+			for(var/organ_name in H.organs_by_name)
+				if(organ_name == LIMB_CHEST || organ_name == LIMB_GROIN || organ_name == LIMB_HEAD)		// not these though
+					continue
+				var/datum/organ/external/O = H.organs_by_name[organ_name]
+				if(O.status & (ORGAN_DESTROYED|ORGAN_ROBOT|ORGAN_PEG))
+					possible_organs += O
+			if(possible_organs.len)
+				var/datum/organ/external/chosen_organ = pick(possible_organs)
+
+				// If the parent organ is destroyed, heal that instead
+				if(chosen_organ.parent.status & ORGAN_DESTROYED && (chosen_organ.parent.name != LIMB_CHEST || chosen_organ.parent.name != LIMB_GROIN))
+					chosen_organ = chosen_organ.parent
+
+				chosen_organ.rejuvenate_limb()
+				H.visible_message("<span class='warning'>\The [H] sprouts a new [chosen_organ.display_name]!</span>", "<span class='notice'>You sprout a new [chosen_organ.display_name]!</span>")
+				playsound(H, 'sound/effects/flesh_squelch.ogg', 30, 1)
+
+	if(M.getOxyLoss())
+		M.adjustOxyLoss(potency)
+	if(M.getBruteLoss())
+		M.heal_organ_damage(potency, 0)
+	if(M.getFireLoss())
+		M.heal_organ_damage(potency, 2)
+	if(M.getToxLoss())
+		M.adjustToxLoss(potency)
+	if(M.dizziness != 0)
+		M.dizziness = max(0, M.dizziness - 15)
+	if(M.confused != 0)
+		M.remove_confused(5)
+
+
 /datum/reagent/simpolinol
 	name = "Simpolinol"
 	id = SIMPOLINOL
@@ -5494,7 +5549,7 @@ var/procizine_tolerance = 0
 	nutriment_factor = 20 * REAGENTS_METABOLISM
 	color = "#302000" //rgb: 48, 32, 0
 	density = 0.9185
-	specheatcap = 2.402	
+	specheatcap = 2.402
 	var/has_had_heart_explode = 0
 
 /datum/reagent/cornoil/on_mob_life(var/mob/living/M)
@@ -7734,6 +7789,7 @@ var/procizine_tolerance = 0
 		M.dizziness = max(0, M.dizziness - 15)
 	if(M.confused != 0)
 		M.remove_confused(5)
+
 
 /datum/reagent/ethanol/drink/irish_cream
 	name = "Irish Cream"

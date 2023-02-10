@@ -25,6 +25,13 @@ var/const/BLOOD_VOLUME_SURVIVE = 122
 			amount_cache += list(R.id = R.volume)
 	return 0
 
+/datum/reagents/vessel/remove_reagent(var/reagent, var/amount, var/safety)
+	..()
+	var/mob/living/carbon/human/H = my_atom
+	if(isvampire(H))
+		H.DisplayUI("Vampire")
+
+
 //Initializes blood vessels
 /mob/living/carbon/human/proc/make_blood()
 	if(vessel)
