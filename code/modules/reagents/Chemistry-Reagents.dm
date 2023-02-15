@@ -6707,7 +6707,7 @@ var/procizine_tolerance = 0
 
 	//Sobering multiplier
 	//Sober block makes it more difficult to get drunk
-	var/sober_str =! (M_SOBER in M.mutations) ? 1 : 2
+	var/sober_str =! (M_SOBER in M.mutations || M.HasVampireMutation(/datum/vampire_mutation/dwarf)) ? 1 : 2
 
 	tick /= sober_str
 

@@ -184,7 +184,7 @@
 	if(mind && mind.suiciding)
 		msg += "<span class='warning'>[t_He] appear[t_s] to have committed suicide... there is no hope of recovery.</span>\n"
 
-	if(M_DWARF in mutations)
+	if(M_DWARF in mutations || HasVampireMutation(/datum/vampire_mutation/dwarf))
 		msg += "[t_He] [t_is] a short, sturdy creature fond of drink and industry.\n"
 
 	if (isUnconscious())

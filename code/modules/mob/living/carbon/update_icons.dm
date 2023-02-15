@@ -28,11 +28,11 @@
 
 		lying_prev = lying // so we don't try to animate until there's been another change.
 
-
-	if(shrunken != shrunken_prev)
+	var/shrinkem = (shrunken || HasVampireMutation(/datum/vampire_mutation/dwarf))
+	if(shrinkem != shrunken_prev)
 		animate = TRUE
 
-		if(!shrunken)
+		if(!shrinkem)
 			final_pixel_y += 4 * PIXEL_MULTIPLIER
 			if(!lying)
 				final_transform *= matrix().Scale(1, 1 / SHRINK_SCALE_FACTOR)
@@ -45,9 +45,9 @@
 					final_transform *= matrix().Scale(1, SHRINK_SCALE_FACTOR)
 				else
 					final_transform *= matrix().Scale(SHRINK_SCALE_FACTOR, 1)
-					
 
-		shrunken_prev = shrunken // so we don't try to animate until there's been another change.
-	
+
+		shrunken_prev = shrinkem // so we don't try to animate until there's been another change.
+
 	if(animate)
 		animate(src, transform = final_transform, pixel_y = final_pixel_y, dir = final_dir, time = 2, easing = EASE_IN | EASE_OUT)

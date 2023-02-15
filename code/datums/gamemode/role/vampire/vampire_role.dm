@@ -106,6 +106,11 @@
 		H.species.anatomy_flags &= ~FAKE_NO_BLOOD
 		H.vessel.remove_reagent(BLOOD,600)
 
+	for(var/datum/vampire_mutation/mut in mutations)
+		mutations -= mut
+		qdel(mut)
+
+
 	var/list/vamp_spells = getAllVampSpells()
 	for(var/spell/spell in antag.current.spell_list)
 		if (is_type_in_list(spell, vamp_spells))
@@ -478,12 +483,18 @@
 	blood_vessel.add_reagent(BLOOD, blood_amount, data)
 	blood_vessel.update_total()
 
+
 /datum/role/vampire/proc/HasMutation(var/type)
 	if(locate(type) in mutations)
 		return TRUE
 	else
 		return FALSE
 
+/mob/living/proc/HasVampireMutation(var/type)
+	var/datum/role/vampire/V = isvampire(src)
+	if(!V)
+		return FALSE
+	return V.HasMutation(type)
 
 
 

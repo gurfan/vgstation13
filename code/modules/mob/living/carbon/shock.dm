@@ -4,7 +4,7 @@
 
 // proc to find out in how much pain the mob is at the moment
 /mob/living/carbon/proc/update_pain_level()
-	if(pain_numb)
+	if(pain_numb || HasVampireMutation(/datum/vampire_mutation/dwarf))
 		pain_level = 0
 		return
 
@@ -52,5 +52,7 @@
 	if(reagents.has_reagent(TRAMADOL))
 		return TRUE
 	if(reagents.has_reagent(OXYCODONE))
+		return TRUE
+	if(HasVampireMutation(/datum/vampire_mutation/dwarf))
 		return TRUE
 	return FALSE
