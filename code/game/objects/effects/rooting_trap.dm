@@ -11,6 +11,7 @@
 	layer = CLOSED_CURTAIN_LAYER
 	var/atom/stuck_to = null
 	var/duration = 10 SECONDS
+	var/resist_time = 1.5 SECONDS
 
 /obj/effect/rooting_trap/cultify()
 	return
@@ -52,7 +53,7 @@
 	unstick_attempt(user)
 
 /obj/effect/rooting_trap/proc/unstick_attempt(var/mob/user)
-	if (do_after(user,src,1.5 SECONDS))
+	if (do_after(user,src,resist_time))
 		unstick()
 
 /obj/effect/rooting_trap/proc/unstick()

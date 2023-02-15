@@ -56,3 +56,8 @@
 	vamp_role.current.update_transform()
 
 ///////////////////////////////////////////
+
+/datum/vampire_mutation/web
+	name = "Spinnerets"
+	desc = "Contained within this kind of Vampire's blood is the power to make webs composed of congealed plasma. These are invisible in low-light environments, and will trap anyone (besides anybody with Spinnerets) who steps into them until they resist out, requiring about 10 seconds of effort. However, spinning a web takes a full 2 seconds in of itself. Make note that while trapped subjects cannot move, they are able to use anything that's already in their hands, and should do their best to eliminate a Vampire threat nearby if possible."
+	my_ability_type = /datum/vampire_ability/web

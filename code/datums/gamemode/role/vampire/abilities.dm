@@ -29,3 +29,13 @@
 
 /datum/vampire_ability/proc/Activate()
 	return
+
+
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/web
+	name = "Spin Web"
+	desc = "Spin a web of congealed plasma to trap your enemies.
+
+

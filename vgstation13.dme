@@ -516,6 +516,7 @@
 #include "code\datums\gamemode\role\malf\shunt.dm"
 #include "code\datums\gamemode\role\vampire\abilities.dm"
 #include "code\datums\gamemode\role\vampire\mutations.dm"
+#include "code\datums\gamemode\role\vampire\vampire_objects.dm"
 #include "code\datums\gamemode\role\vampire\vampire_role.dm"
 #include "code\datums\helper_datums\butchering.dm"
 #include "code\datums\helper_datums\command_alerts.dm"
