@@ -50,10 +50,10 @@
 	desc = "An odd affliction of Vampiric flesh that transforms their form to become more industrious, short, and fond of alcohol-flavored blood. They are compact enough to climb on tables (though this will show as a normal 'Dwarf' mutation). In addition, the Vampiric curse affects them in a peculiar way-- they are immune to *all* oxygen damage, and cannot feel pain."
 
 /datum/vampire_mutation/dwarf/OnPurchase()
-	vamp_role.current.update_transform()
+	vamp_role.antag.current.update_transform()
 
 /datum/vampire_mutation/dwarf/OnRemoval()
-	vamp_role.current.update_transform()
+	vamp_role.antag.current.update_transform()
 
 ///////////////////////////////////////////
 

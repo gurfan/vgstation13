@@ -482,7 +482,21 @@
 	antag.current.reagents.add_reagent(VAMPSERUM, blood_amount * 0.5)
 	blood_vessel.add_reagent(BLOOD, blood_amount, data)
 	blood_vessel.update_total()
+	antag.DisplayUI("Vampire")
 
+
+/datum/role/vampire/proc/UseBlood(var/amount)
+	if(!amount)
+		return TRUE
+	if(!blood_vessel)
+		to_chat(antag.current, "<span class='warning'>You have no blood to use!</span>")	// THIS SHOULDNT APPEAR
+		return FALSE
+	var/amount_left = blood_vessel.get_reagent_amount(BLOOD)
+	if(amount_left <= amount)
+		to_chat(antag.current, "<span class='warning'>You don't have enough blood!</span>")
+		return FALSE
+	blood_vessel.remove_reagent(BLOOD, amount)
+	return TRUE
 
 /datum/role/vampire/proc/HasMutation(var/type)
 	if(locate(type) in mutations)

@@ -54,7 +54,7 @@
 	gauge.transform = gauge_matrix
 	gauge.layer = MIND_UI_BUTTON
 	//gauge.pixel_x = -3
-	gauge.pixel_y = round(4 * (blood_volume/H.vessel.maximum_volume))
+	gauge.pixel_y = round(4 * (blood_volume/H.vessel.maximum_volume) - 6)
 	overlays += gauge
 
 	var/image/cover = image(icon, src, "bloodcount_cover")
@@ -121,6 +121,14 @@
 	offset_y = 120
 
 	var/datum/vampire_ability/my_ability
+
+
+/obj/abstract/mind_ui_element/hoverable/vampire_ability/UpdateIcon()
+	..()
+	if(my_ability)
+		overlays = 0
+		overlays += image(icon, src, my_ability.ui_icon_state)
+
 
 /obj/abstract/mind_ui_element/hoverable/vampire_ability/Click()
 	if(!my_ability)
