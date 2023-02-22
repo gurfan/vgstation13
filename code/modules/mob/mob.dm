@@ -981,8 +981,6 @@ Use this proc preferably at the end of an equipment loadout
 		return 0
 
 	if(!(A in (tview(src) + get_all_slots())))
-		message_admins("<span class='warning'><B>WARNING: </B><A href='?src=\ref[usr];priv_msg=\ref[src]'>[key_name_admin(src)]</A> just pointed at something ([A]) they can't currently see. Are they using a macro to cheat?</span>", 1)
-		log_admin("[key_name_admin(src)] just pointed at something ([A]) they can't currently see. Are they using a macro to cheat?")
 		return 0
 
 	if(istype(A, /obj/effect/decal/point))
