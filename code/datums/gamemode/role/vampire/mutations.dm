@@ -61,3 +61,10 @@
 	name = "Spinnerets"
 	desc = "Contained within this kind of Vampire's blood is the power to make webs composed of congealed plasma. These are invisible in low-light environments, and will trap anyone (besides anybody with Spinnerets) who steps into them until they resist out, requiring about 10 seconds of effort. However, spinning a web takes a full 2 seconds in of itself. Make note that while trapped subjects cannot move, they are able to use anything that's already in their hands, and should do their best to eliminate a Vampire threat nearby if possible."
 	my_ability_type = /datum/vampire_ability/web
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/nausea
+	name = "Nausea"
+	desc = "This Vampire becomes an aspect of filth and disgust, and can release this foul odor to disorient and incapacitate unprepared victims. At will, they release a huge 14x14 wave of invisible miasma, which will come to effect and become a visible pinkish mist after 10 seconds. Miasma penetrates internals and will instantly make victims nauseous, meaning that they will need to throw up after a few moments. Visible, active miasma will finally fade after 30 seconds."
+	my_ability_type = /datum/vampire_ability/nausea

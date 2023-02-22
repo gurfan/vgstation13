@@ -47,3 +47,57 @@
 	. = ..()
 	if (.)
 		visible_message("<span class='warning'>\The [src] wraps itself around [A], sticking them to \the [T]!</span>", "<span class='danger'>\The [src] wraps itself around your legs, sticking you to \the [T]!</span>")
+
+
+/////////////////////////////.
+
+
+
+/obj/effect/miasma
+	name = "cloud of miasma"
+	icon_state = "mustard"
+	anchored = TRUE
+	alpha = 0
+	var/active = FALSE
+
+/obj/effect/miasma/New()
+	..()
+	processing_objects += src
+
+	// :)
+	spawn(6 SECONDS)								// Invisible for 6 seconds
+		animate(src, alpha = 255, 4 SECONDS)		// Start to appear for 4 seconds
+		spawn(4 SECONDS)
+			active = TRUE
+			spawn(30 SECONDS)						// Active for 30 seconds
+				animate(src, alpha = 0, 3 SECONDS)	// Fade away for 3 seconds
+				spawn(3 SECONDS)
+					qdel(src)
+
+/obj/effect/miasma/Destroy()
+	processing_objects -= src
+	..()
+
+/obj/effect/miasma/process()
+	if(!active)
+		return
+	for(var/mob/living/carbon/human/H in get_turf(src))
+		ApplyOverlay(H)
+		H.dizziness = max(500, H.dizziness + 10)
+		H.stuttering += 5
+		if(!H.lastpuke)
+			to_chat(H, "<span class='danger'>A nauseating odor washes over you!</span>")
+			H.vomit(0, 0, 4)
+
+
+/obj/effect/miasma/Crossed(atom/movable/AM)
+	if(isliving(AM) && active)
+		ApplyOverlay(AM)
+
+
+/obj/effect/miasma/proc/ApplyOverlay(var/mob/living/M)
+	if(M.screens["miasma"])
+		return
+	var/obj/abstract/screen/fullscreen/miasma/mi = M.overlay_fullscreen("miasma", /obj/abstract/screen/fullscreen/miasma)
+	mi.my_mob = M
+	M.update_fullscreen_alpha("miasma", 255, 2 SECONDS)

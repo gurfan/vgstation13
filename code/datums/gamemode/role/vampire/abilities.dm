@@ -4,6 +4,10 @@
 
 	var/blood_cost = 0
 	var/cast_time = 0 SECONDS
+
+	var/cooldown = 0 SECONDS
+	var/last_activated = 0
+
 	var/ui_icon_state
 	var/element_type = /obj/abstract/mind_ui_element/hoverable/vampire_ability
 
@@ -42,15 +46,20 @@
 	if(!vamp_role)
 		stack_trace("A vampire ability was activated without a vampire role set.")
 		return
+	if(last_activated + cooldown > world.time)
+		to_chat(vamp_role.antag.current, "<span class='warning'>That ability is still on cooldown!</span>")
+		return
 	if(!CheckBloodCost())
 		return
-
 	if(!cast_time)
 		if(vamp_role.UseBlood(blood_cost))
-			Ability()
+			last_activated = world.time
+			Ability(vamp_role.antag.current)
 	else if(do_after(vamp_role.antag.current, vamp_role.antag.current, cast_time))
 		if(vamp_role.UseBlood(blood_cost))
-			Ability()
+			last_activated = world.time
+			Ability(vamp_role.antag.current)
+	vamp_role.antag.DisplayUI("Vampire")
 
 
 // Override this one!
@@ -65,7 +74,21 @@
 	ui_icon_state = "spider"
 	cast_time = 2 SECONDS
 	blood_cost = 5
+	cooldown = 30 SECONDS
 
-/datum/vampire_ability/web/Ability()
-	new /obj/effect/spider/stickyweb/vampire(get_turf(vamp_role.antag.current))
+/datum/vampire_ability/web/Ability(var/mob/living/carbon/human/user)
+	new /obj/effect/spider/stickyweb/vampire(get_turf(user))
 
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/nausea
+	name = "Relase Miasma"
+	desc = "Release miasma to intoxicate your enemies."
+	ui_icon_state = "nausea"
+	blood_cost = 10
+	cooldown = 10 SECONDS
+
+/datum/vampire_ability/nausea/Ability(var/mob/living/carbon/human/user)
+	for(var/turf/simulated/floor/T in view(14, user.loc))
+		new /obj/effect/miasma(T)

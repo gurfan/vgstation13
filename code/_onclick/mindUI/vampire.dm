@@ -123,10 +123,28 @@
 	var/datum/vampire_ability/my_ability
 
 
+/obj/abstract/mind_ui_element/hoverable/vampire_ability/New()
+	..()
+	processing_objects += src
+
+/obj/abstract/mind_ui_element/hoverable/vampire_ability/Destroy()
+	processing_objects -= src
+	..()
+
+/obj/abstract/mind_ui_element/hoverable/vampire_ability/process()
+	UpdateIcon()
+
+
 /obj/abstract/mind_ui_element/hoverable/vampire_ability/UpdateIcon()
 	..()
+
 	if(my_ability)
 		overlays = 0
+		var/icon/charge_meter = icon(icon,"charge-cover")
+		var/charge_count = (world.time - my_ability.last_activated) / my_ability.cooldown
+		if(charge_count < 1)
+			charge_meter.Crop(1, 1, charge_meter.Width(), round(charge_meter.Height() * charge_count))
+		overlays += charge_meter
 		overlays += image(icon, src, my_ability.ui_icon_state)
 
 

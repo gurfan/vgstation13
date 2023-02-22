@@ -25,7 +25,7 @@
 			screen.transform = matrix(scale, 0, 0, 0, scale, 0)
 		if(screen.clear_after_length)
 			spawn(screen.clear_after_length)
-				clear_fullscreen(category, animate = 0)
+				clear_fullscreen(category, animate = FALSE)
 	return screen
 
 /mob/proc/update_fullscreen_alpha(category, a = 255, t = 10)
@@ -206,3 +206,23 @@
 /obj/abstract/screen/fullscreen/snowfall_average
 	icon_state = "oxydamageoverlay2"
 	layer = DAMAGE_HUD_LAYER
+
+/obj/abstract/screen/fullscreen/miasma
+	icon_state = "passage7"
+	layer = DAMAGE_HUD_LAYER
+	color = "#9fba1a"
+	alpha = 0
+	var/mob/living/my_mob
+
+/obj/abstract/screen/fullscreen/miasma/New()
+	..()
+	processing_objects += src
+
+/obj/abstract/screen/fullscreen/miasma/Destroy()
+	processing_objects -= src
+	..()
+
+/obj/abstract/screen/fullscreen/miasma/process()
+	var/turf/T = get_turf(my_mob)
+	if(!locate(/obj/effect/miasma) in T)
+		my_mob.clear_fullscreen("miasma", 1 SECONDS)

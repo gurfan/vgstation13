@@ -693,15 +693,15 @@
 			xylophone=0
 	return
 
-/mob/living/carbon/human/proc/vomit(hairball = 0, instant = 0)
+/mob/living/carbon/human/proc/vomit(hairball = 0, instant = 0, time_divisor = 1)
 	if(!lastpuke)
 		lastpuke = 1
 		to_chat(src, "<spawn class='warning'>You feel nauseous...</span>")
 
-		spawn((instant ? 0 : 150))	//15 seconds until second warning
+		spawn((instant ? 0 : 150/time_divisor))	//15 seconds until second warning
 			to_chat(src, "<spawn class='danger'>You feel like you are about to throw up!</span>")
 
-			sleep((instant ? 0 : 100))	//And you have 10 more seconds to move it to the bathrooms
+			sleep((instant ? 0 : 100/time_divisor))	//And you have 10 more seconds to move it to the bathrooms
 
 			if(gcDestroyed)
 				return
@@ -758,7 +758,7 @@
 				nutrition = max(nutrition-40,0)
 				adjustToxLoss(-3)
 
-			sleep((instant ? 0 : 350))	//Wait 35 seconds before next volley
+			sleep((instant ? 0 : 350/time_divisor))	//Wait 35 seconds before next volley
 
 			lastpuke = 0
 
