@@ -499,27 +499,14 @@
 	return TRUE
 
 /datum/role/vampire/proc/HasMutation(var/type)
-	if(locate(type) in mutations)
-		return TRUE
-	else
-		return FALSE
+	var/datum/vampire_mutation/M = locate(type) in mutations
+	return M ? M : null
 
 /mob/living/proc/HasVampireMutation(var/type)
 	var/datum/role/vampire/V = isvampire(src)
 	if(!V)
 		return FALSE
 	return V.HasMutation(type)
-
-
-
-
-
-
-
-
-
-
-
 
 
 

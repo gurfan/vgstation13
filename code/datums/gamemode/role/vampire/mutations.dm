@@ -35,7 +35,7 @@
 /datum/vampire_mutation/proc/AddAbility()
 	if(!my_ability_type)
 		return
-	new my_ability_type(vamp_role)
+	new my_ability_type(vamp_role, src)
 
 //////////////// MUTATIONS  ////////////////
 
@@ -68,3 +68,32 @@
 	name = "Nausea"
 	desc = "This Vampire becomes an aspect of filth and disgust, and can release this foul odor to disorient and incapacitate unprepared victims. At will, they release a huge 14x14 wave of invisible miasma, which will come to effect and become a visible pinkish mist after 10 seconds. Miasma penetrates internals and will instantly make victims nauseous, meaning that they will need to throw up after a few moments. Visible, active miasma will finally fade after 30 seconds."
 	my_ability_type = /datum/vampire_ability/nausea
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/blood_thief
+	name = "Blood Thief / Blood Gift"
+	desc = "One should always be wary of contact with a Vampire, for their ability to secretly dig their teeth into our bodies is ever-present. With this Mutation, a Vampire is granted two abilities-- Blood Thief and Blood Gift. With Blood Thief enabled, a Vampire will secretly suck 10u of blood from anybody that they contact personally, or that personally contacts them-- such as with a hug, head-pat, or handshake. To mask the effect, targets are also injected with 5u of normal Dexalin. With Blood Gift enabled, the Vampire will grant a 'victim' a small quantity of bicaridine, kelotane, and anti-toxin. In all cases, any individual reagent will not be granted if they would lead to overdose. The cooldown is universal between the two, and either (or both) can be enabled at any time."
+	my_ability_type = /datum/vampire_ability/blood_thief
+	var/gifting = FALSE
+	var/stealing = FALSE
+
+/datum/vampire_mutation/blood_thief/AddAbility()
+	..()
+	new /datum/vampire_ability/blood_gift(vamp_role, src)
+
+/datum/vampire_mutation/blood_thief/proc/Touched(var/mob/living/carbon/human/H)
+	if(!istype(H))
+		return
+	if(stealing)
+		H.vessel.remove_reagent(BLOOD, 10)
+		H.reagents.add_reagent(DEXALIN, 5)
+		vamp_role.HandleBloodInjection(10)
+	if(gifting)
+		if(H.reagents.get_reagent_amount(BICARIDINE) < 10)
+			H.reagents.add_reagent(BICARIDINE, 2)
+		if(H.reagents.get_reagent_amount(KELOTANE) < 10	)
+			H.reagents.add_reagent(KELOTANE, 2)
+		if(H.reagents.get_reagent_amount(ANTI_TOXIN) < 10 )
+			H.reagents.add_reagent(ANTI_TOXIN, 2)

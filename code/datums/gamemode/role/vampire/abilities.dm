@@ -14,11 +14,16 @@
 	var/mindUI_id = "Vampire Left Panel"
 
 	var/datum/role/vampire/vamp_role
+	var/datum/vampire_mutation/vamp_mutation
 
-/datum/vampire_ability/New(var/datum/role/vampire/V)
+/datum/vampire_ability/New(var/datum/role/vampire/V, var/datum/vampire_mutation/mut)
 	vamp_role = V
+	vamp_mutation = mut
 	if(!vamp_role)
 		stack_trace("A vampire ability was created, but no vampire role was set in New()!")
+		qdel(src)
+	if(!vamp_mutation)
+		stack_trace("A vampire ability was created, but no vampire mutation was set in New()!")
 		qdel(src)
 	vamp_role.abilities.Add(src)
 	GenerateUIElement()
@@ -27,11 +32,13 @@
 	var/datum/mind_ui/vampire_left_panel/UI = vamp_role.antag.activeUIs[mindUI_id]
 	var/obj/abstract/mind_ui_element/hoverable/vampire_ability/element = new element_type(null, UI)
 	UI.elements += element
+	element.name = name
 	element.my_ability = src
 	if(istype(UI))
 		UI.SortElements()
 	UI.SendToClient()
 	UI.Display()
+	return element
 
 /datum/vampire_ability/proc/CheckBloodCost()
 	if(!blood_cost)
@@ -66,6 +73,10 @@
 /datum/vampire_ability/proc/Ability()
 	return
 
+// And this one!
+/datum/vampire_ability/proc/IsToggled()
+	return FALSE
+
 ///////////////////////////////////////////
 
 /datum/vampire_ability/web
@@ -90,5 +101,39 @@
 	cooldown = 10 SECONDS
 
 /datum/vampire_ability/nausea/Ability(var/mob/living/carbon/human/user)
-	for(var/turf/simulated/floor/T in view(14, user.loc))
+	for(var/turf/simulated/floor/T in dview(14, user.loc))
 		new /obj/effect/miasma(T)
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/blood_thief
+	name = "Blood Thief"
+	desc = "Steal blood from people you touch."
+	ui_icon_state = "blood_thief"
+	element_type = /obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
+
+/datum/vampire_ability/blood_thief/Ability(var/mob/living/carbon/human/user)
+	var/datum/vampire_mutation/blood_thief/BT = vamp_mutation
+	BT.stealing = !BT.stealing
+	to_chat(user, "<span class='notice'>You will [BT.stealing ? "now" : "no longer"] steal blood from people you touch.</span>")
+
+/datum/vampire_ability/blood_thief/IsToggled()
+	var/datum/vampire_mutation/blood_thief/BT = vamp_mutation
+	return BT.stealing
+
+//////
+
+/datum/vampire_ability/blood_gift
+	name = "Blood Thief"
+	desc = "Gift medicine to people you touch."
+	ui_icon_state = "blood_gift"
+	element_type = /obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
+
+/datum/vampire_ability/blood_gift/Ability(var/mob/living/carbon/human/user)
+	var/datum/vampire_mutation/blood_thief/BT = vamp_mutation
+	BT.gifting = !BT.gifting
+	to_chat(user, "<span class='notice'>You will [BT.gifting ? "now" : "no longer"] gift medicine to people you touch.</span>")
+
+/datum/vampire_ability/blood_gift/IsToggled()
+	var/datum/vampire_mutation/blood_thief/BT = vamp_mutation
+	return BT.gifting

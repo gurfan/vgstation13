@@ -120,6 +120,7 @@
 
 	offset_y = 120
 
+	var/toggle = FALSE
 	var/datum/vampire_ability/my_ability
 
 
@@ -140,11 +141,14 @@
 
 	if(my_ability)
 		overlays = 0
-		var/icon/charge_meter = icon(icon,"charge-cover")
-		var/charge_count = (world.time - my_ability.last_activated) / my_ability.cooldown
-		if(charge_count < 1)
-			charge_meter.Crop(1, 1, charge_meter.Width(), round(charge_meter.Height() * charge_count))
-		overlays += charge_meter
+		if(toggle)
+			overlays += image(icon, src, my_ability.IsToggled() ? "toggle-on" : "toggle-off")
+		else
+			var/icon/charge_meter = icon(icon,"charge-cover")
+			var/charge_count = (world.time - my_ability.last_activated) / my_ability.cooldown
+			if(charge_count < 1)
+				charge_meter.Crop(1, 1, charge_meter.Width(), round(charge_meter.Height() * charge_count))
+			overlays += charge_meter
 		overlays += image(icon, src, my_ability.ui_icon_state)
 
 
@@ -158,3 +162,8 @@
 	if(!istype(V))
 		return
 	my_ability.Activate()
+
+
+
+/obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
+	toggle = TRUE

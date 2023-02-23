@@ -322,6 +322,16 @@
 					)
 			reagents.add_reagent(PARACETAMOL, 1)
 
+			var/datum/vampire_mutation/blood_thief/BT1 = M.HasVampireMutation(/datum/vampire_mutation/blood_thief)
+			var/datum/vampire_mutation/blood_thief/BT2 = HasVampireMutation(/datum/vampire_mutation/blood_thief)
+			if(!(BT1 && BT2))	// If both vampires have blood thief, nothing happens.
+				if(BT1)
+					BT1.Touched(src)
+				if(BT2)
+					BT2.Touched(M)
+
+
+
 // ++++ROCKDTBEN++++ MOB PROCS -- Ask me before touching.
 // Stop! ... Hammertime! ~Carn
 
