@@ -70,7 +70,7 @@
 
 
 // Override this one!
-/datum/vampire_ability/proc/Ability()
+/datum/vampire_ability/proc/Ability(var/mob/living/carbon/human/user)
 	return
 
 // And this one!
@@ -137,3 +137,33 @@
 /datum/vampire_ability/blood_gift/IsToggled()
 	var/datum/vampire_mutation/blood_thief/BT = vamp_mutation
 	return BT.gifting
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/viral
+	name = "Spawn Disease"
+	desc = "Infect your blood with a new disease."
+	ui_icon_state = "viral"
+	cooldown = 5 SECONDS
+
+/datum/vampire_ability/viral/Ability(var/mob/living/carbon/human/user)
+	var/datum/disease2/disease/D = get_random_weighted_disease(WINFECTION)
+	var/list/anti = list(
+		ANTIGEN_BLOOD	= 1,
+		ANTIGEN_COMMON	= 1,
+		ANTIGEN_RARE	= 1,
+		ANTIGEN_ALIEN	= 1,
+		)
+	var/list/bad = list(
+		EFFECT_DANGER_HELPFUL	= 1,
+		EFFECT_DANGER_FLAVOR	= 1,
+		EFFECT_DANGER_ANNOYING	= 1,
+		EFFECT_DANGER_HINDRANCE	= 1,
+		EFFECT_DANGER_HARMFUL	= 1,
+		EFFECT_DANGER_DEADLY	= 1,
+		)
+	D.spread = SPREAD_BLOOD			// Only spreads through blood!
+	D.origin = "Vampire Mutation"	// This is for admins only.... I think
+	D.makerandom(list(60,100),list(60,100),anti,bad)
+	user.infect_disease2(D,1, "Vampire Mutation")
+	to_chat(user, "<span class='warning'>You feel diseased.</span>")

@@ -116,7 +116,7 @@ var/global/list/disease2_list = list()
 	stageprob = 30
 	stage_variance = -1
 	allowed_transmission = SPREAD_BLOOD | SPREAD_MEMETIC
-	type_weight = list(0,0,0,0) //rare in dishes and never in mice, very common in people
+	type_weight = list(0,0,0,0)
 	//Note: if more types of creatures become infectable than humans/monkeys/mice, give them HEAR_ALWAYS
 
 /datum/disease2/disease/proc/update_global_log()
@@ -511,6 +511,10 @@ var/global/list/disease2_list = list()
 			enemy_pathogen.cure(mob)
 
 	if (iscatbeast(mob))//Catbeasts were born in the disease, molded by it.
+		ticks += speed
+		return
+
+	if (mob.HasVampireMutation(/datum/vampire_mutation/viral)) // Vampires spread pestilence but aren't affected by disease.
 		ticks += speed
 		return
 

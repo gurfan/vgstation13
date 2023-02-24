@@ -97,3 +97,11 @@
 			H.reagents.add_reagent(KELOTANE, 2)
 		if(H.reagents.get_reagent_amount(ANTI_TOXIN) < 10 )
 			H.reagents.add_reagent(ANTI_TOXIN, 2)
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/viral
+	name = "Viral"
+	desc = " devious affliction of the Vampire's blood that makes it infectious with all manner of disease. When this Mutation is activated, the Vampire will gain a virus of random intensity, but which can only be transmitted through blood. They will be automatically immunized to this disease, and can spread it throughout the Crew as they wish."
+	my_ability_type = /datum/vampire_ability/viral

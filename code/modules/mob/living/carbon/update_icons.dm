@@ -28,7 +28,7 @@
 
 		lying_prev = lying // so we don't try to animate until there's been another change.
 
-	var/shrinkem = (shrunken || HasVampireMutation(/datum/vampire_mutation/dwarf))
+	var/shrinkem = (shrunken || HasVampireMutation(/datum/vampire_mutation/dwarf)) ? TRUE : FALSE
 	if(shrinkem != shrunken_prev)
 		animate = TRUE
 

@@ -514,9 +514,6 @@
 
 
 
-
-
-
 /datum/role/vampire/proc/remove_blood(var/amount)
 	blood_usable = max(0, blood_usable - amount)
 	update_vamp_hud()
