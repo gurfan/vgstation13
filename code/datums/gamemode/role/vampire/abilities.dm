@@ -167,3 +167,44 @@
 	D.makerandom(list(60,100),list(60,100),anti,bad)
 	user.infect_disease2(D,1, "Vampire Mutation")
 	to_chat(user, "<span class='warning'>You feel diseased.</span>")
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/wererat
+	name = "Transform"
+	desc = "Transform into a hideous rat."
+	ui_icon_state = "wererat"
+
+/datum/vampire_ability/wererat/Ability(mob/living/carbon/human/user)
+	var/turf/T = get_turf(user)
+
+	// Puff of smoke
+	var/obj/effect/smoke/S = new(T)
+	S.color = "#444444"
+
+	// Transform the vampire
+	var/mob/living/simple_animal/hostile/wererat/W = new(T)
+	W.vampire_mob = user
+	user.mind.transfer_to(W)
+	user.forceMove(null)
+
+	// Have some decoys follow the player
+	for(var/i = 1 to 3)
+		var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T)
+		WFO.target = W
+		WFO.MoveToTarget()
+
+	// Create some decoy fleeing swarms
+	for(var/i = 1 to 3)
+		var/mob/living/simple_animal/hostile/wererat/illusion/fleeing/WFL = new(T)
+		for(var/j = 1 to 3)
+			var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T)
+			WFO.target = WFL
+			WFO.MoveToTarget()
+
+	// Create one "hostile decoy"
+	var/mob/living/simple_animal/hostile/wererat/illusion/chasing/WC = new(T)
+	for(var/j = 1 to 3)
+		var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T)
+		WFO.target = WC
+		WFO.MoveToTarget()

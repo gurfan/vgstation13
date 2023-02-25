@@ -111,6 +111,9 @@
 		off_y = off_y + 40
 		E.UpdateUIScreenLoc()
 
+/datum/mind_ui/vampire_left_panel/Valid()
+	return ishuman(mind.current) ? TRUE : FALSE
+
 //------------------------------------------------------------
 
 /obj/abstract/mind_ui_element/hoverable/vampire_ability
@@ -143,12 +146,14 @@
 		overlays = 0
 		if(toggle)
 			overlays += image(icon, src, my_ability.IsToggled() ? "toggle-on" : "toggle-off")
-		else
+		else if(my_ability.cooldown)
 			var/icon/charge_meter = icon(icon,"charge-cover")
 			var/charge_count = (world.time - my_ability.last_activated) / my_ability.cooldown
 			if(charge_count < 1)
 				charge_meter.Crop(1, 1, charge_meter.Width(), round(charge_meter.Height() * charge_count))
 			overlays += charge_meter
+		else
+			overlays += image(icon, src, "charge-cover")
 		overlays += image(icon, src, my_ability.ui_icon_state)
 
 

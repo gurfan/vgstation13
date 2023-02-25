@@ -79,13 +79,8 @@
 	. = ..()
 
 	// Humanoids which don't normally posess a blood supply will have one if they are a vampire.
-	var/mob/living/carbon/human/H = antag.current
-	if(H.species && H.species.anatomy_flags & NO_BLOOD)
-		H.species.anatomy_flags |= FAKE_NO_BLOOD		// They will still appear to be bloodless to the most rudimentary of tests.
-		H.species.anatomy_flags &= ~NO_BLOOD
-		H.vessel.add_reagent(BLOOD,560)
+	SetupBlood(antag.current)
 
-	blood_vessel = H.vessel
 
 	update_vamp_hud()
 	ForgeObjectives()
@@ -96,6 +91,15 @@
 	if(faction && istype(faction, /datum/faction/vampire) && faction.leader == src)
 		var/datum/faction/vampire/V = faction
 		V.name_clan(src)
+
+
+/datum/role/vampire/proc/SetupBlood(var/mob/living/carbon/human/H)
+	if(H.species && H.species.anatomy_flags & NO_BLOOD)
+		H.species.anatomy_flags |= FAKE_NO_BLOOD		// They will still appear to be bloodless to the most rudimentary of tests.
+		H.species.anatomy_flags &= ~NO_BLOOD
+		H.vessel.add_reagent(BLOOD,560)
+
+	blood_vessel = H.vessel
 
 /datum/role/vampire/RemoveFromRole(var/datum/mind/M)
 
@@ -277,7 +281,8 @@
 	return TRUE
 
 /datum/role/vampire/proc/check_vampire_upgrade()
-
+	return
+	/*
 	for (var/i in subtypesof(/datum/power/vampire))
 		var/datum/power/vampire/VP_type = i
 		if (blood_total > initial(VP_type.cost) && !(locate(VP_type) in current_powers))
@@ -296,6 +301,7 @@
 	if (locate(/datum/power/vampire/mature) in current_powers)
 		H.change_sight(adding = SEE_TURFS|SEE_OBJS)
 		H.update_perception()
+	*/
 
 /datum/role/vampire/update_perception()
 	return
@@ -510,10 +516,6 @@
 
 
 
-
-
-
-
 /datum/role/vampire/proc/remove_blood(var/amount)
 	blood_usable = max(0, blood_usable - amount)
 	update_vamp_hud()
@@ -522,8 +524,11 @@
 	. = ..()
 	if (issilicon(new_character) || isbrain(new_character)) // No, borgs shouldn't be able to spawn bats
 		logo_state = "" // Borgos don't get the vampire icon.
+	else if(ishuman(new_character))
+		SetupBlood(new_character)
 	else
 		logo_state = initial(logo_state)
+
 		check_vampire_upgrade()
 
 /datum/role/vampire/handle_reagent(var/reagent_id)

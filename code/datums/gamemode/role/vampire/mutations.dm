@@ -105,3 +105,11 @@
 	name = "Viral"
 	desc = " devious affliction of the Vampire's blood that makes it infectious with all manner of disease. When this Mutation is activated, the Vampire will gain a virus of random intensity, but which can only be transmitted through blood. They will be automatically immunized to this disease, and can spread it throughout the Crew as they wish."
 	my_ability_type = /datum/vampire_ability/viral
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/wererat
+	name = "Wererat Form"
+	desc = "Some Vampires possess in them an ability to turn into truly hideous vermin. At will, they become a small rat, frothing at the mouth, which is capable of climbing under tables and people, and which moves considerably faster than a normal person. They are joined by a swarm of 15 other wererat illusions which block projectiles and confuse passers-by. This ability lasts a full thirty seconds or until cancelled manually, at which point the illusions will vanish. Keep in mind that- thankfully- these Wererats are not able to traverse vents, but they do have a fierce bite, and can rip open airlocks by touching them."
+	my_ability_type = /datum/vampire_ability/wererat
