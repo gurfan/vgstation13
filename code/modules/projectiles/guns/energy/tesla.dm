@@ -1,7 +1,7 @@
 #define MIN_TO_FIRE MEGAWATT
 
 /obj/item/weapon/gun/tesla
-	name = "\improper Telsa Cannon"
+	name = "\improper telsa cannon"
 	desc = "It's a tesla cannon."
 	icon = 'icons/obj/gun_experimental.dmi'
 	icon_state = "teslacannon_ready"
@@ -16,9 +16,8 @@
 	fire_delay = 0
 	fire_sound = 'sound/weapons/wave.ogg'
 
-	var/connected = 0
 	var/charging = 0
-	
+
 	var/obj/item/weapon/stock_parts/capacitor/loaded_capacitor = null
 
 /obj/item/weapon/gun/tesla/examine(mob/user, size, show_name)
@@ -37,11 +36,11 @@
 		return 0
 	if(loaded_capacitor.stored_charge < MIN_TO_FIRE)
 		return 0
-	var/obj/item/projectile/teslaball/T 
+	var/obj/item/projectile/teslaball/T
 	if(loaded_capacitor.stored_charge >= GIGAWATT)
-		T = new /obj/item/projectile/teslaball/yellow()
+		T = new /obj/item/projectile/teslaball/yellow(src)
 	else
-		T = new /obj/item/projectile/teslaball()
+		T = new /obj/item/projectile/teslaball(src)
 	in_chamber = T
 	T.charge = loaded_capacitor.stored_charge
 	loaded_capacitor.stored_charge = 0
@@ -55,7 +54,7 @@
 	if(istype(W, /obj/item/weapon/stock_parts/capacitor))
 		if(do_after(user, src, 5 SECONDS))
 			if(user.drop_item(W, src))
-				to_chat(user, "<span class='notice'>You load the [W.name] into the [src].")	
+				to_chat(user, "<span class='notice'>You load the [W.name] into the [src].")
 				loaded_capacitor = W
 				W.forceMove(src)
 				if(loaded_capacitor.stored_charge >= MIN_TO_FIRE)
