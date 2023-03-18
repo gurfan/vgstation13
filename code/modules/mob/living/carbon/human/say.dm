@@ -128,6 +128,11 @@
 		var/datum/role/changeling/changeling = mind.GetRole(CHANGELING)
 		if(changeling && changeling.mimicing)
 			return changeling.mimicing
+
+		var/datum/vampire_mutation/speech/VM = HasVampireMutation(/datum/vampire_mutation/speech)
+		if(VM && VM.mimicing)
+			return VM.mimicing
+
 	if(GetSpecialVoice())
 		return GetSpecialVoice()
 	return real_name

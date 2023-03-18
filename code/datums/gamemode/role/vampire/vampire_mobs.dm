@@ -27,35 +27,51 @@
 	see_in_dark = 7
 
 	var/mob/living/carbon/human/vampire_mob
+	var/list/illusions = list()
 
 /mob/living/simple_animal/hostile/wererat/New()
 	..()
 	pixel_y = rand(-2, 12)
 	pixel_x = rand(-8, 8)
+	spawn(30 SECONDS)
+		untransform()
 
 /mob/living/simple_animal/hostile/wererat/Login()
 	. = ..()
 	client.CAN_MOVE_DIAGONALLY = TRUE
+	DisplayUI("Vampire")
 
 
 /mob/living/simple_animal/hostile/wererat/death()
 	if(vampire_mob)
-		var/turf/T = get_turf(src)
-		vampire_mob.forceMove(T)
-		if(mind)
-			mind.transfer_to(vampire_mob)
+		untransform(TRUE)
+		return
+	..()
+
+/mob/living/simple_animal/hostile/wererat/proc/untransform(var/stun = FALSE)
+	if(!vampire_mob)
+		return
+	var/turf/T = get_turf(src)
+	vampire_mob.forceMove(T)
+	forceMove(null)
+	vampire_mob.timestopped = FALSE
+	if(mind)
+		mind.transfer_to(vampire_mob)
+	if(stun)
 		vampire_mob.Stun(3)
 		vampire_mob.Knockdown(3)
 		vampire_mob.Jitter(20)
-		visible_message("<span class='danger'>\The [src] shifts and contorts!</span>")
+	visible_message("<span class='danger'>\The [src] shifts and contorts!</span>")
+	var/obj/effect/smoke/transparent/S = new(T)
+	S.color = "#444444"
 
-		var/obj/effect/smoke/transparent/S = new(T)
-		S.color = "#444444"
+	vampire_mob = null
 
-		qdel(src)
-		return
+	for(var/mob/living/simple_animal/hostile/wererat/illusion/I in illusions)
+		spawn(rand(1,2))
+			I.death()
 
-	..()
+	qdel(src)
 
 /mob/living/simple_animal/hostile/wererat/Cross(atom/movable/mover, turf/target, height, air_group)
 	return istype(target, type) ? TRUE : ..()
@@ -70,6 +86,15 @@
 	// See get_unarmed_damage for damage
 	health = 1
 	maxHealth = 1
+	var/mob/living/simple_animal/hostile/wererat/master = null
+
+/mob/living/simple_animal/hostile/wererat/illusion/New(loc, var/mob/living/simple_animal/hostile/wererat/rat)
+	..()
+	if(istype(rat))
+		master = rat
+		rat.illusions += src
+		spawn(rand(29 SECONDS, 31 SECONDS))
+			death()
 
 /mob/living/simple_animal/hostile/wererat/illusion/death()
 	if(stat != DEAD)
@@ -80,6 +105,10 @@
 		sleep(1 SECONDS)
 		qdel(src)
 
+/mob/living/simple_animal/hostile/wererat/illusion/Destroy()
+	if(master)
+		master.illusions -= src
+	..()
 
 // Flees immediately upon creation, and runs away from humans
 /mob/living/simple_animal/hostile/wererat/illusion/fleeing

@@ -113,3 +113,29 @@
 	name = "Wererat Form"
 	desc = "Some Vampires possess in them an ability to turn into truly hideous vermin. At will, they become a small rat, frothing at the mouth, which is capable of climbing under tables and people, and which moves considerably faster than a normal person. They are joined by a swarm of 15 other wererat illusions which block projectiles and confuse passers-by. This ability lasts a full thirty seconds or until cancelled manually, at which point the illusions will vanish. Keep in mind that- thankfully- these Wererats are not able to traverse vents, but they do have a fierce bite, and can rip open airlocks by touching them."
 	my_ability_type = /datum/vampire_ability/wererat
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/speech
+	name = "Raven Tongue"
+	desc = "This Mutation gives a Vampire the uncanny ability to replicate sounds and voices, similarly to that of a horrible corvid. If it has heard a person's voice, it may speak with it-- though proper use of this ability may require additional implements, such as a fake ID or gas mask."
+	my_ability_type = /datum/vampire_ability/speech
+	var/mimicing = ""
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/chupacabra
+	name = "Chupacabra"
+	desc = "A Vampire with this mutation may hunt the blood of weak and vulnerable animals, draining them in the night for their own recreation and regeneration. They may latch onto the neck of any simple animal and drain it dry, leaving behind what we call Vampire Residue, an unremovable mote of dust which indicates Vampiric activity. This will rapidly heal all forms of damage, with strength depending on the size of the animal-- tiny like a mouse, small like a chicken, medium like a dog, or large like a goat or Russian."
+	my_ability_type = /datum/vampire_ability/speech
+	var/mimicing = ""
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/burgeoning
+	name = "Burgeoning"
+	desc = "This Vampire has grown a rather insidious relationship with plants, and may exploit their growth to hide its escape. When activated, the Vampire visibly points at a place within its view to quickly grow a large bushel of weeds, resembling kudzu. These weeds cannot spread. A 5x5 inner core blocks visibility, with an outer layer which does not. The vines have a good chance per tile to restrict people moving through them, though this includes the Vampire."
+	my_ability_type = /datum/vampire_ability/burgeoning
+

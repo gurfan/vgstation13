@@ -2,6 +2,9 @@
 	var/name = "Activated Ability"
 	var/desc = "An activated ability usable by a vampire"
 
+	var/channeled = FALSE		// Wait for the user to click on something after activation.
+	var/channeling = FALSE
+
 	var/blood_cost = 0
 	var/cast_time = 0 SECONDS
 
@@ -49,7 +52,7 @@
 		return FALSE
 	return TRUE
 
-/datum/vampire_ability/proc/Activate()
+/datum/vampire_ability/proc/Activate(atom/atom)
 	if(!vamp_role)
 		stack_trace("A vampire ability was activated without a vampire role set.")
 		return
@@ -58,24 +61,39 @@
 		return
 	if(!CheckBloodCost())
 		return
+	if(channeled)
+		if(!channeling)
+			if(!CanChannel())
+				return
+			channeling = TRUE
+			vamp_role.antag.DisplayUI("Vampire")
+			vamp_role.antag.current.register_event(/event/uattack, src, .proc/Activate)
+			return
+		else
+			channeling = FALSE
+			vamp_role.antag.current.unregister_event(/event/uattack, src, .proc/Activate)
 	if(!cast_time)
 		if(vamp_role.UseBlood(blood_cost))
 			last_activated = world.time
-			Ability(vamp_role.antag.current)
+			Ability(vamp_role.antag.current, atom)
 	else if(do_after(vamp_role.antag.current, vamp_role.antag.current, cast_time))
 		if(vamp_role.UseBlood(blood_cost))
 			last_activated = world.time
-			Ability(vamp_role.antag.current)
+			Ability(vamp_role.antag.current, atom)
 	vamp_role.antag.DisplayUI("Vampire")
-
+	return
 
 // Override this one!
-/datum/vampire_ability/proc/Ability(var/mob/living/carbon/human/user)
+/datum/vampire_ability/proc/Ability(var/mob/living/carbon/human/user, var/atom/target)
 	return
 
 // And this one!
 /datum/vampire_ability/proc/IsToggled()
 	return FALSE
+
+// And this one too!
+/datum/vampire_ability/proc/CanChannel()
+	return TRUE
 
 ///////////////////////////////////////////
 
@@ -175,7 +193,7 @@
 	desc = "Transform into a hideous rat."
 	ui_icon_state = "wererat"
 
-/datum/vampire_ability/wererat/Ability(mob/living/carbon/human/user)
+/datum/vampire_ability/wererat/Ability(var/mob/living/carbon/human/user)
 	var/turf/T = get_turf(user)
 
 	// Puff of smoke
@@ -187,24 +205,64 @@
 	W.vampire_mob = user
 	user.mind.transfer_to(W)
 	user.forceMove(null)
+	user.timestopped = TRUE
 
 	// Have some decoys follow the player
 	for(var/i = 1 to 3)
-		var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T)
+		var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T,W)
 		WFO.target = W
 		WFO.MoveToTarget()
 
 	// Create some decoy fleeing swarms
 	for(var/i = 1 to 3)
-		var/mob/living/simple_animal/hostile/wererat/illusion/fleeing/WFL = new(T)
+		var/mob/living/simple_animal/hostile/wererat/illusion/fleeing/WFL = new(T,W)
 		for(var/j = 1 to 3)
-			var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T)
+			var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T,W)
 			WFO.target = WFL
 			WFO.MoveToTarget()
 
 	// Create one "hostile decoy"
-	var/mob/living/simple_animal/hostile/wererat/illusion/chasing/WC = new(T)
+	var/mob/living/simple_animal/hostile/wererat/illusion/chasing/WC = new(T,W)
 	for(var/j = 1 to 3)
-		var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T)
+		var/mob/living/simple_animal/hostile/wererat/illusion/following/WFO = new(T,W)
 		WFO.target = WC
 		WFO.MoveToTarget()
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/speech
+	name = "Mimic Speech"
+	desc = "Replicate the voice of anyone you've heard."
+	ui_icon_state = "raven"
+	element_type = /obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
+
+/datum/vampire_ability/speech/Ability(var/mob/living/carbon/human/user)
+	var/datum/vampire_mutation/speech/VM = vamp_mutation
+	if(VM.mimicing)
+		VM.mimicing = ""
+		to_chat(user, "<span class='notice'>You will now speak in your normal voice.</span>")
+	else if(user.mind.heard_before.len == 0)
+		to_chat(user, "<span class='warning'>You haven't heard anyone's voice yet!</span>")
+	else
+		var/mob/target = input(user, "Choose the target, from those whose voices you've heard before.", "Targeting") as null|anything in user.mind.heard_before
+		if(!target)
+			return
+		VM.mimicing = target
+		to_chat(user, "<span class='notice'>You will now mimic [target].</span>")
+
+
+/datum/vampire_ability/speech/IsToggled()
+	var/datum/vampire_mutation/speech/VM = vamp_mutation
+	return VM.mimicing ? TRUE : FALSE
+
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/burgeoning
+	name = "Spread Vines"
+	desc = "Spread vines to ensare your enemies."
+	ui_icon_state = "vines"
+	channeled = TRUE
+
+/datum/vampire_ability/burgeoning/Ability(var/mob/living/carbon/human/user, var/atom/target)
+	user.pointed(target)

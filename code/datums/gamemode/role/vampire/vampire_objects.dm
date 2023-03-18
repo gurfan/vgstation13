@@ -49,7 +49,7 @@
 		visible_message("<span class='warning'>\The [src] wraps itself around [A], sticking them to \the [T]!</span>", "<span class='danger'>\The [src] wraps itself around your legs, sticking you to \the [T]!</span>")
 
 
-/////////////////////////////.
+/////////////////////////////
 
 
 
@@ -101,3 +101,54 @@
 	var/obj/abstract/screen/fullscreen/miasma/mi = M.overlay_fullscreen("miasma", /obj/abstract/screen/fullscreen/miasma)
 	mi.my_mob = M
 	M.update_fullscreen_alpha("miasma", 255, 2 SECONDS)
+
+
+
+/////////////////////////////
+
+#define RESIDUE_FADE_TIME 10 SECONDS
+
+/obj/effect/vampire_residue
+	name = "vampire residue"
+	anchored = TRUE
+	var/strength = 3
+
+/obj/effect/vampire_residue/New(var/loc, var/set_strength)
+	..()
+	strength = set_strength ? set_strength : 3
+	icon_state = "residue[strength]"
+	pulse()
+	spawn(RESIDUE_FADE_TIME)
+		fade_away()
+
+/obj/effect/vampire_residue/proc/fade_away()
+	strength -= 1
+	if(!strength)
+		animate(alpha = 0, time = 2 SECONDS)
+		spawn(2 SECONDS)
+			qdel(src)
+	else
+		icon_state = "residue[strength]"
+		spawn(RESIDUE_FADE_TIME)
+			fade_away()
+
+
+/obj/effect/vampire_residue/proc/pulse()
+	animate(src, color = list(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,0), time = 10, loop = -1)//1
+	animate(color = list(1.125,0.06,0,0,0,1.125,0.06,0,0.06,0,1.125,0,0,0,0,1,0,0,0,0), time = 2)//2
+	animate(color = list(1.25,0.12,0,0,0,1.25,0.12,0,0.12,0,1.25,0,0,0,0,1,0,0,0,0), time = 2)//3
+	animate(color = list(1.375,0.19,0,0,0,1.375,0.19,0,0.19,0,1.375,0,0,0,0,1,0,0,0,0), time = 1.5)//4
+	animate(color = list(1.5,0.27,0,0,0,1.5,0.27,0,0.27,0,1.5,0,0,0,0,1,0,0,0,0), time = 1.5)//5
+	animate(color = list(1.625,0.35,0.06,0,0.06,1.625,0.35,0,0.35,0.06,1.625,0,0,0,0,1,0,0,0,0), time = 1)//6
+	animate(color = list(1.75,0.45,0.12,0,0.12,1.75,0.45,0,0.45,0.12,1.75,0,0,0,0,1,0,0,0,0), time = 1)//7
+	animate(color = list(1.875,0.56,0.19,0,0.19,1.875,0.56,0,0.56,0.19,1.875,0,0,0,0,1,0,0,0,0), time = 1)//8
+	animate(color = list(2,0.67,0.27,0,0.27,2,0.67,0,0.67,0.27,2,0,0,0,0,1,0,0,0,0), time = 5)//9
+	animate(color = list(1.875,0.56,0.19,0,0.19,1.875,0.56,0,0.56,0.19,1.875,0,0,0,0,1,0,0,0,0), time = 1)//8
+	animate(color = list(1.75,0.45,0.12,0,0.12,1.75,0.45,0,0.45,0.12,1.75,0,0,0,0,1,0,0,0,0), time = 1)//7
+	animate(color = list(1.625,0.35,0.06,0,0.06,1.625,0.35,0,0.35,0.06,1.625,0,0,0,0,1,0,0,0,0), time = 1)//6
+	animate(color = list(1.5,0.27,0,0,0,1.5,0.27,0,0.27,0,1.5,0,0,0,0,1,0,0,0,0), time = 1)//5
+	animate(color = list(1.375,0.19,0,0,0,1.375,0.19,0,0.19,0,1.375,0,0,0,0,1,0,0,0,0), time = 1)//4
+	animate(color = list(1.25,0.12,0,0,0,1.25,0.12,0,0.12,0,1.25,0,0,0,0,1,0,0,0,0), time = 1)//3
+	animate(color = list(1.125,0.06,0,0,0,1.125,0.06,0,0.06,0,1.125,0,0,0,0,1,0,0,0,0), time = 1)//2
+	sleep(10 SECONDS)
+	pulse()

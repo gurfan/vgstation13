@@ -3,6 +3,7 @@
 	sub_uis_to_spawn = list(
 		/datum/mind_ui/vampire_right_panel,
 		/datum/mind_ui/vampire_left_panel,
+		/datum/mind_ui/vampire_rat_panel,
 		)
 
 /datum/mind_ui/vampire/Valid()
@@ -112,7 +113,7 @@
 		E.UpdateUIScreenLoc()
 
 /datum/mind_ui/vampire_left_panel/Valid()
-	return ishuman(mind.current) ? TRUE : FALSE
+	return ishuman(mind.current)
 
 //------------------------------------------------------------
 
@@ -155,20 +156,58 @@
 		else
 			overlays += image(icon, src, "charge-cover")
 		overlays += image(icon, src, my_ability.ui_icon_state)
+		if(my_ability.channeling)
+			overlays += image(icon, src, "channeled")
 
 
 /obj/abstract/mind_ui_element/hoverable/vampire_ability/Click()
 	if(!my_ability)
 		return
-	var/mob/living/carbon/human/H = GetUser()
-	if(!istype(H))
-		return
-	var/datum/role/vampire/V = isvampire(H)
-	if(!istype(V))
+	if(my_ability.channeling)			// Cancel channeling if the button is clicked a second time
+		my_ability.channeling = FALSE
+		UpdateIcon()
 		return
 	my_ability.Activate()
 
-
-
 /obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
 	toggle = TRUE
+
+
+////////////////////////////////////////////////////////////////////
+//																  //
+//					  WERERAT PANEL							      //
+//																  //
+////////////////////////////////////////////////////////////////////
+
+/datum/mind_ui/vampire_rat_panel
+	uniqueID = "Vampire Wererat Panel"
+	y = "TOP"
+	x = "CENTER"
+	element_types_to_spawn = list(
+		/obj/abstract/mind_ui_element/hoverable/wererat_untransform
+	)
+	display_with_parent = TRUE
+
+
+/datum/mind_ui/vampire_rat_panel/Valid()
+	return istype(mind.current, /mob/living/simple_animal/hostile/wererat)
+
+//------------------------------------------------------------
+
+
+/obj/abstract/mind_ui_element/hoverable/wererat_untransform
+	icon = 'icons/ui/vampire/32x32.dmi'
+	icon_state = "background"
+
+	offset_x = 120
+
+/obj/abstract/mind_ui_element/hoverable/wererat_untransform/UpdateIcon()
+	..()
+
+	overlays = 0
+	overlays += image(icon, src, "wererat")
+
+
+/obj/abstract/mind_ui_element/hoverable/wererat_untransform/Click()
+	var/mob/living/simple_animal/hostile/wererat/W = GetUser()
+	W.untransform()
