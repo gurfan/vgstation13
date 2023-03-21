@@ -106,20 +106,24 @@
 				sleep(rand(3,5))
 				if(gcDestroyed || !neighbors.len)
 					break
-				var/turf/target_turf = pick(neighbors)
-				var/obj/effect/plantsegment/child = new(get_turf(src),seed,epicenter)
-				// Update neighboring squares.
-				for(var/obj/effect/plantsegment/neighbor in range(1,target_turf))
-					neighbor.neighbors -= target_turf
-				spawn(1) // This should do a little bit of animation.
-					child.forceMove(target_turf)
-					child.update_icon()
+				do_spread()
 
 	// We shouldn't have spawned if the controller doesn't exist.
 	try_break()
 	// Keep processing us until we've done all there is for us to do in life.
 	if(!neighbors.len && (health == maxHealth || health <= 0) && harvest && !is_locking(/datum/locking_category))
 		SSplant.remove_plant(src)
+
+/obj/effect/plantsegment/proc/do_spread()
+	var/turf/target_turf = pick(neighbors)
+	var/obj/effect/plantsegment/child = new type(get_turf(src),seed,epicenter)
+	// Update neighboring squares.
+	for(var/obj/effect/plantsegment/neighbor in range(1,target_turf))
+		neighbor.neighbors -= target_turf
+	spawn(1) // This should do a little bit of animation.
+		child.forceMove(target_turf)
+		child.update_icon()
+
 
 /obj/effect/plantsegment/proc/die_off()
 	if(seed && harvest)

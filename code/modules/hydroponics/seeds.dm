@@ -1018,6 +1018,21 @@
 
 	large = 0
 
+/datum/seed/flower/rose
+	name = "roses"
+	seed_name = "rose"
+	display_name = "rose bush"
+	plant_dmi = 'icons/obj/hydroponics/rose.dmi'
+	products = list(/obj/item/weapon/reagent_containers/food/snacks/grown/rose)
+	chems = list(NUTRIMENT = list(1,20), BLOOD = list(1,1))
+
+	lifespan = 100
+	maturation = 6
+	production = 4
+	yield = 3
+	growth_stages = 5
+	nutrient_consumption = 2
+
 /datum/seed/flower/sunflower
 	name = "sunflowers"
 	seed_name = "sunflower"

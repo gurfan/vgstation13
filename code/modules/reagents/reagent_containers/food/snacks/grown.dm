@@ -311,6 +311,13 @@ var/list/strange_seed_product_blacklist = subtypesof(/obj/item/weapon/reagent_co
 	plantname = "harebells"
 	fragrance = INCENSE_HAREBELLS
 
+/obj/item/weapon/reagent_containers/food/snacks/grown/rose
+	name = "rose"
+	desc = "\"The rose looks fair, but fairer we it deem for that sweet odour which doth in it live.\""
+	potency = 1
+	filling_color = "#c7151b"
+	plantname = "roses"
+
 /obj/item/weapon/reagent_containers/food/snacks/grown/moonflower
 	name = "moonflower"
 	desc = "Store in a location at least 50 yards away from werewolves."

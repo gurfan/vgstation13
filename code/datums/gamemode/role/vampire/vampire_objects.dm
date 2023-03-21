@@ -152,3 +152,50 @@
 	animate(color = list(1.125,0.06,0,0,0,1.125,0.06,0,0.06,0,1.125,0,0,0,0,1,0,0,0,0), time = 1)//2
 	sleep(10 SECONDS)
 	pulse()
+
+#undef RESIDUE_FADE_TIME
+
+
+/////////////////////////////
+
+/obj/effect/plantsegment/vampire
+	desc = "An extremely expansionistic species of vine. It has a metallic scent."
+
+
+/obj/effect/plantsegment/vampire/New(var/newloc, var/datum/seed/newseed, var/turf/newepicenter, var/start_fully_mature = TRUE)
+	if(!newseed)
+		newseed = new /datum/seed/flower/rose
+		newseed.potency = 200
+		newseed.endurance = 200
+		newseed.spread = 2
+	..()
+	spread_distance_limit = 5		// Only expand up to five tiles.
+	spread_chance = 0				// Won't spread once they finish growing.
+
+	if(!newepicenter)	 // We're the first vine. Play an animation.
+		flick("vinespawn", src)
+		sleep(5)
+
+	update_icon()
+	spawn(2)	// To ensure that the new segment is at its final location.
+		update_neighbors()
+		spread_rapidly()
+
+/obj/effect/plantsegment/vampire/proc/spread_rapidly()
+	if(!gcDestroyed && neighbors.len)
+		spawn(rand(3,7))
+			do_spread()
+			update_neighbors()
+			spread_rapidly()
+
+/obj/effect/plantsegment/vampire/at_fringe()
+	if(spread_distance_limit)
+		if(get_dist(src,epicenter) >= round(spread_distance_limit*0.7))
+			limited_growth = TRUE
+			harvest = FALSE
+			return 1
+		else if(get_dist(src,epicenter) >= round(spread_distance_limit*0.9))
+			limited_growth = TRUE
+			harvest = FALSE
+			return 2
+	return 0

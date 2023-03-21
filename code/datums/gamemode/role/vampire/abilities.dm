@@ -72,6 +72,11 @@
 		else
 			channeling = FALSE
 			vamp_role.antag.current.unregister_event(/event/uattack, src, .proc/Activate)
+			vamp_role.antag.DisplayUI("Vampire")
+
+	if(!CanCast(vamp_role.antag.current, atom))
+		return
+
 	if(!cast_time)
 		if(vamp_role.UseBlood(blood_cost))
 			last_activated = world.time
@@ -93,6 +98,10 @@
 
 // And this one too!
 /datum/vampire_ability/proc/CanChannel()
+	return TRUE
+
+// ...and this one too
+/datum/vampire_ability/proc/CanCast(var/mob/living/user, var/atom/atom)
 	return TRUE
 
 ///////////////////////////////////////////
@@ -264,5 +273,19 @@
 	ui_icon_state = "vines"
 	channeled = TRUE
 
+/datum/vampire_ability/burgeoning/CanCast(var/mob/living/carbon/human/user, var/atom/target)
+	var/turf/T = get_turf(target)
+	if(T.density)
+		to_chat(user, "<span class='warning'>Vines can't grow there!</span>")
+		return FALSE
+	return TRUE
+
 /datum/vampire_ability/burgeoning/Ability(var/mob/living/carbon/human/user, var/atom/target)
-	user.pointed(target)
+	var/turf/T = get_turf(target)
+	user.pointed(T)
+//	var/obj/effect/plantsegment/vampire/P = new(T, null, T, TRUE)
+//	P.spread_rapidly()
+	new /obj/effect/plantsegment/vampire(T, null, null, TRUE)
+	T.visible_message("<span class='danger'>Vines sprout from \the [T]!</span>")
+
+

@@ -89,7 +89,9 @@
 
 	if(start_fully_mature)
 		health = maxHealth
+		age = 1
 		mature_time = 0
+		harvest = TRUE
 
 	register_event(/event/before_move, src, /obj/effect/plantsegment/proc/before_moving)
 	register_event(/event/after_move, src, /obj/effect/plantsegment/proc/after_moving)
@@ -136,12 +138,8 @@
 	else
 		arbitrary_measurement_of_how_lush_I_am_right_now = 1
 
-	if(spread_distance_limit)
-		var/at_fringe = get_dist(src,epicenter)
-		if(at_fringe >= round(spread_distance_limit*0.9))
-			arbitrary_measurement_of_how_lush_I_am_right_now--
-		if(at_fringe >= round(spread_distance_limit*0.7))
-			arbitrary_measurement_of_how_lush_I_am_right_now--
+
+	arbitrary_measurement_of_how_lush_I_am_right_now -= at_fringe()
 
 	if(health < maxHealth)
 		arbitrary_measurement_of_how_lush_I_am_right_now -= round(-(health - maxHealth)/(maxHealth/3))
@@ -178,6 +176,16 @@
 		return
 	else
 		set_light(0)
+
+/obj/effect/plantsegment/proc/at_fringe()
+	var/fringe = 0
+	if(spread_distance_limit)
+		var/at_fringe = get_dist(src,epicenter)
+		if(at_fringe >= round(spread_distance_limit*0.9))
+			fringe++
+		if(at_fringe >= round(spread_distance_limit*0.7))
+			fringe++
+	return fringe
 
 /obj/effect/plantsegment/attackby(var/obj/item/weapon/W, var/mob/user)
 	if(user.a_intent == I_HELP && is_type_in_list(W, list(/obj/item/tool/wirecutters, /obj/item/tool/scalpel)))
