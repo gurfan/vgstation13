@@ -749,3 +749,42 @@
 // If the target is weakened, the spells take less time to complete.
 /mob/living/carbon/proc/get_vamp_enhancements()
 	return ((knockdown ? 2 : 0) + (stunned ? 1 : 0) + (sleeping || paralysis ? 3 : 0))
+
+
+// A wierd hybrid of a wizard blink and a wizard jaunt.
+/mob/living/carbon/human/proc/bloodwarp(var/turf/target_turf)
+	var/turf/old_turf = get_turf(src)
+
+	unlock_from() //Unbuckle them from whatever they were stuck to.
+
+	// Make the vampire invisible and play the animation.
+	anim(location = old_turf, a_icon = 'icons/mob/mob.dmi', flick_anim = "bloodify", direction = dir, name = name, lay = layer+1, plane = plane)
+	make_invisible(ETHEREAL, 0, TRUE, 0, INVISIBILITY_MAXIMUM)
+
+	// Ensure that the vampire can't get hit or use items
+	flags |= INVULNERABLE
+	var/old_density = density
+	setDensity(FALSE)
+	candrop = FALSE
+	for(var/obj/abstract/screen/movable/spell_master/SM in spell_masters)
+		SM.silence_spells(16)
+	delayNextAttack(16)
+	delayNextMove(16)
+	click_delayer.setDelay(16)
+
+	// Wait for the animation to finish, then move the vampire and play the reappearing animation. Also add a blood puddle.
+	sleep(6)
+	new /obj/effect/decal/cleanable/blood/splatter(old_turf)
+	playsound(old_turf, 'sound/effects/splat.ogg', 50, 1)
+	forceMove(target_turf)
+	anim(location = target_turf, a_icon = 'icons/mob/mob.dmi', flick_anim = "unbloodify", direction = dir, name = name, lay = layer+1, plane = plane)
+
+	// Make the vampire visible after the second animation has finished. And reset everything else.
+	sleep(7)
+	make_visible(ETHEREAL)
+	for(var/obj/abstract/screen/movable/spell_master/SM in spell_masters)
+		SM.silence_spells(0)
+	flags &= ~INVULNERABLE
+	setDensity(old_density)
+	candrop = TRUE
+

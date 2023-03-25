@@ -139,3 +139,33 @@
 	desc = "This Vampire has grown a rather insidious relationship with plants, and may exploit their growth to hide its escape. When activated, the Vampire visibly points at a place within its view to quickly grow a large bushel of weeds, resembling kudzu. These weeds cannot spread. A 5x5 inner core blocks visibility, with an outer layer which does not. The vines have a good chance per tile to restrict people moving through them, though this includes the Vampire."
 	my_ability_type = /datum/vampire_ability/burgeoning
 
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/reactive_blood
+	name = "Reactive Blood"
+	desc = "The blood of a Vampire with this Mutation is scared very easily. If a projectile comes within a tile's distance of the Vampire, including ones that it shot, it will immediately blink away to a random place between 14 and 28 tiles from its original location. It will leave behind 80u of its blood on the ground where they were hit. This is a drastic effect, and makes a Vampire's identity immediately obvious."
+	var/last_blink = 0
+
+/datum/vampire_mutation/reactive_blood/proc/AttemptBlink()
+	if(!last_blink || world.time > last_blink + 10 SECONDS)
+		var/mob/living/carbon/human/H = vamp_role.antag.current
+		if(!isturf(H.loc))	// Don't attempt to blink when not on a turf.
+			return
+		if(H.timestopped)	// No.
+			return
+
+		if(vamp_role.UseBlood(80))
+			last_blink = world.time
+			var/list/floors = circlerangeturfs(H, 28) - circlerangeturfs(H, 14)
+			for(var/turf/T in floors)
+				if(!istype(T, /turf/simulated/floor))
+					floors -= T
+
+			var/turf/target_turf = pick(floors)
+			if(!target_turf) // Oh well...
+				return
+
+			H.bloodwarp(target_turf)
+

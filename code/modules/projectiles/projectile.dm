@@ -646,6 +646,14 @@ var/list/impact_master = list()
 			tS = 0
 	return
 
+/obj/item/projectile/Move(NewLoc, Dir, step_x, step_y, glide_size_override)
+	..()
+	for(var/mob/living/carbon/human/H in orange(1, loc))
+		var/datum/vampire_mutation/reactive_blood/RB = H.HasVampireMutation(/datum/vampire_mutation/reactive_blood)
+		spawn()
+			RB.AttemptBlink()
+
+
 /obj/item/projectile/proc/dumbfire(var/dir) // for spacepods, go snowflake go
 	if(!dir)
 		//del(src)
