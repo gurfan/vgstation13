@@ -1,0 +1,261 @@
+"ac" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{dir = 8; icon_state = "whitered"},/area)
+"ag" = (/obj/machinery/door/airlock/medical{name = "Overflow Operating Room"; req_access_txt = "45"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/holosign/surgery,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "showroomfloor"},/area)
+"av" = (/obj/item/device/radio/intercom/medbay{pixel_y = -30},/turf/simulated/floor{icon_state = "white"},/area)
+"bh" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"bF" = (/obj/structure/catwalk/invulnerable/hive,/obj/structure/railing{dir = 4},/obj/structure/railing{dir = 8},/turf/unsimulated/floor/fake_supermatter,/area)
+"bR" = (/obj/machinery/computer/operating,/turf/simulated/floor{icon_state = "white"},/area)
+"bS" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"bT" = (/obj/machinery/atmospherics/binary/volume_pump{icon_state = "intact_on"; name = "Waste In Total"; on = 1},/turf/simulated/floor,/area)
+"bW" = (/obj/structure/rack{dir = 1},/obj/item/weapon/extinguisher,/obj/item/clothing/head/hardhat/red,/turf/simulated/floor/plating,/area)
+"bZ" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor/plating,/area)
+"cy" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 1; on = 1},/turf/simulated/floor,/area)
+"cQ" = (/obj/machinery/door/poddoor{id_tag = "mixing_vent"; name = "Mixing Tank Emergency Vent"},/turf/simulated/floor/plating/airless,/area)
+"eh" = (/obj/structure/bed,/obj/item/weapon/bedsheet/medical,/obj/machinery/alarm{dir = 4; pixel_x = -22},/obj/item/toy/gasha/doctor,/turf/simulated/floor{icon_state = "white"},/area)
+"et" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{dir = 8},/obj/machinery/meter{frequency = 1443; id_tag = "wloop_atm_meter"; name = "Waste Loop"},/turf/simulated/floor,/area)
+"eA" = (/obj/effect/decal/warning_stripes{dir = 9; icon_state = "warning"; tag = "icon-warning (NORTHWEST)"},/turf/simulated/floor{dir = 1; icon_state = "whiteblue"},/area)
+"eX" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/plating,/area)
+"fc" = (/turf/simulated/floor{icon_state = "white"},/area)
+"fs" = (/obj/machinery/optable,/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"fy" = (/obj/machinery/atmospherics/pipe/manifold/yellow/visible{dir = 1},/turf/simulated/floor,/area)
+"fI" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/machinery/atmospherics/pipe/simple/filtering/visible{dir = 10},/turf/simulated/floor/plating,/area)
+"fR" = (/obj/structure/sink{dir = 4; pixel_x = 11},/turf/simulated/floor{icon_state = "white"},/area)
+"gp" = (/obj/machinery/atmospherics/pipe/simple/cyan/visible{dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor,/area)
+"hO" = (/obj/machinery/bioprinter,/turf/simulated/floor{icon_state = "white"},/area)
+"iw" = (/obj/structure/table,/obj/item/stack/medical/bruise_pack,/obj/item/tool/retractor{pixel_y = 6},/obj/item/tool/scalpel,/turf/simulated/floor{icon_state = "white"},/area)
+"iU" = (/obj/structure/closet/wardrobe/pjs,/obj/machinery/camera{dir = 1; name = "Surgery Operating"; pixel_x = 22},/turf/simulated/floor{icon_state = "white"},/area)
+"jc" = (/obj/structure/dispenser/oxygen,/obj/effect/decal/warning_stripes{dir = 10; icon_state = "warning"; tag = "icon-warning (SOUTHWEST)"},/turf/simulated/floor{icon_state = "whiteblue"},/area)
+"kr" = (/obj/structure/closet/secure_closet/medical2,/turf/simulated/floor{icon_state = "white"},/area)
+"kA" = (/obj/machinery/light,/turf/unsimulated/floor/fake_supermatter,/area)
+"kE" = (/obj/structure/catwalk/invulnerable/hive,/obj/structure/railing{dir = 8},/obj/structure/railing{dir = 4},/turf/unsimulated/floor/fake_supermatter,/area)
+"kX" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"lm" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating,/area)
+"lQ" = (/obj/machinery/alarm{dir = 1; pixel_y = -22},/turf/simulated/floor{icon_state = "white"},/area)
+"lT" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/door/firedoor/border_only{dir = 4; name = "Firelock East"},/obj/machinery/door/airlock/medical{name = "Operating Theatre"; req_access_txt = "45"},/obj/machinery/holosign/surgery,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor,/area)
+"mo" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/obj/machinery/atmospherics/pipe/manifold/filtering/visible{dir = 4},/turf/simulated/floor/plating,/area)
+"mJ" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor/plating,/area)
+"nk" = (/turf/simulated/wall/r_wall,/area)
+"nt" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/turf/space,/area)
+"nD" = (/obj/structure/disposalpipe/segment,/obj/structure/sink{dir = 4; pixel_x = 11},/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor{icon_state = "white"},/area)
+"nJ" = (/turf/unsimulated/floor/fake_supermatter,/area)
+"nL" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 8},/obj/structure/disposalpipe/segment{dir = 2; icon_state = "pipe-c"},/turf/simulated/floor{icon_state = "white"},/area)
+"nM" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/obj/machinery/atmospherics/pipe/simple/filtering/visible,/turf/simulated/floor/plating,/area)
+"nT" = (/turf/space,/area)
+"ob" = (/obj/machinery/atmospherics/pipe/manifold4w/scrubbers/visible,/turf/simulated/floor,/area)
+"od" = (/obj/machinery/atmospherics/binary/volume_pump{dir = 8; name = "Filter to Waste"},/turf/simulated/floor,/area)
+"of" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"on" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{dir = 4; icon_state = "whitered"},/area)
+"oZ" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/wall/r_wall,/area)
+"pb" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 1},/turf/simulated/floor/plating,/area)
+"pI" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor,/area)
+"pS" = (/obj/structure/table,/obj/item/weapon/folder/white,/obj/item/clothing/accessory/stethoscope,/obj/machinery/vending/wallmed1{pixel_y = 28},/obj/machinery/camera{dir = 4; name = "Patient Room 1"},/obj/machinery/light{dir = 8},/turf/simulated/floor{icon_state = "white"},/area)
+"pY" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 10},/turf/simulated/floor/plating,/area)
+"qu" = (/obj/machinery/atmospherics/binary/pump{dir = 1; name = "Mix to Distro"},/turf/simulated/floor,/area)
+"rb" = (/turf/simulated/floor,/area)
+"rl" = (/obj/machinery/computer/general_air_control/large_tank_control{frequency = 1441; input_tag = "waste_in"; name = "Gas Mix Tank Control"; output_tag = "waste_out"; sensors = list("waste_sensor"="Tank")},/obj/machinery/atmospherics/pipe/simple/filtering/visible{dir = 4},/turf/simulated/floor{dir = 4; icon_state = "green"},/area)
+"rQ" = (/obj/structure/sign/nosmoking_2{pixel_x = -28},/obj/structure/bed/roller,/turf/simulated/floor{dir = 1; icon_state = "whiteredcorner"},/area)
+"sz" = (/obj/machinery/camera{name = "Atmospherics Waste Tank"},/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"sB" = (/obj/structure/table,/obj/item/tool/bonegel{pixel_x = 4; pixel_y = 3},/obj/item/tool/bonesetter,/turf/simulated/floor{icon_state = "white"},/area)
+"te" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"ty" = (/obj/structure/table,/obj/item/tool/hemostat{pixel_y = 4},/obj/item/tool/cautery{pixel_y = 4},/obj/item/tool/FixOVein{pixel_x = -6; pixel_y = 1},/turf/simulated/floor{icon_state = "white"},/area)
+"tG" = (/obj/structure/grille,/obj/structure/window/reinforced/plasma{dir = 8},/obj/structure/window/reinforced/plasma,/obj/structure/window/reinforced/plasma{dir = 4},/obj/structure/window/reinforced/plasma{dir = 1},/obj/structure/window/full/reinforced/plasma,/turf/simulated/floor/plating,/area)
+"tY" = (/obj/machinery/atmospherics/unary/outlet_injector{dir = 8; frequency = 1441; icon_state = "on"; id_tag = "waste_in"; on = 1; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "bot"},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"uL" = (/obj/structure/catwalk/invulnerable/hive,/obj/structure/railing,/obj/structure/railing{dir = 1},/turf/unsimulated/floor/fake_supermatter,/area)
+"uP" = (/obj/machinery/camera{name = "Surgery Overflow"},/obj/machinery/computer/operating,/turf/unsimulated/floor/fake_supermatter,/area)
+"uS" = (/obj/machinery/atmospherics/pipe/simple/general/visible{dir = 4},/obj/structure/grille,/obj/machinery/meter,/turf/simulated/wall/r_wall,/area)
+"vd" = (/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor{icon_state = "showroomfloor"},/area)
+"vQ" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 6},/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor{icon_state = "showroomfloor"},/area)
+"wf" = (/obj/machinery/atmospherics/binary/pump{dir = 8; icon_state = "intact_on"; name = "Air to Distro"; on = 1},/obj/machinery/camera{name = "Atmospherics North East"},/turf/simulated/floor,/area)
+"wo" = (/obj/structure/rack{dir = 1},/obj/item/clothing/mask/gas,/turf/simulated/floor/plating,/area)
+"wS" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/floor/plating,/area)
+"xf" = (/obj/machinery/air_sensor{frequency = 1441; id_tag = "waste_sensor"; output = 63},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"xv" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/turf/simulated/floor,/area)
+"xR" = (/obj/structure/window/reinforced,/obj/structure/grille/broken,/turf/simulated/floor/plating,/area)
+"yi" = (/obj/structure/table,/obj/item/weapon/storage/box/masks,/obj/item/weapon/storage/box/gloves{pixel_x = 3; pixel_y = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/simulated/floor{icon_state = "whiteredcorner"},/area)
+"yl" = (/obj/structure/catwalk/invulnerable/hive,/obj/structure/catwalk/invulnerable/hive,/obj/structure/railing{dir = 8},/obj/structure/railing,/turf/unsimulated/floor/fake_supermatter,/area)
+"ys" = (/obj/machinery/atmospherics/binary/valve/digital{dir = 4; name = "Gas Mix Outlet Valve"},/turf/simulated/floor{dir = 5; icon_state = "green"},/area)
+"zL" = (/obj/machinery/firealarm{dir = 1; pixel_y = -24},/turf/simulated/floor{icon_state = "white"},/area)
+"Ag" = (/obj/effect/landmark/start{name = "Medical Doctor"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/obj/structure/disposalpipe/segment{dir = 4; icon_state = "pipe-c"},/turf/simulated/floor{icon_state = "white"},/area)
+"AX" = (/obj/structure/closet/crate/freezer/surgery,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/machinery/computer/security/telescreen/entertainment{pixel_x = -32},/turf/simulated/floor{icon_state = "white"},/area)
+"Bj" = (/obj/structure/catwalk/invulnerable/hive,/obj/machinery/gateway/away,/turf/unsimulated/floor/fake_supermatter,/area)
+"Bn" = (/obj/machinery/atmospherics/binary/valve/digital{dir = 4; name = "Gas Mix Inlet Valve"},/turf/simulated/floor{dir = 6; icon_state = "green"},/area)
+"Bq" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/grille,/obj/machinery/atmospherics/pipe/simple/filtering/visible,/turf/simulated/floor/plating,/area)
+"BF" = (/obj/structure/catwalk/invulnerable/hive,/obj/machinery/gateway/center/away,/turf/unsimulated/floor/fake_supermatter,/area)
+"BI" = (/obj/structure/table,/obj/item/weapon/storage/box/monkeycubes,/obj/item/weapon/reagent_containers/glass/bottle/stoxin,/obj/item/weapon/reagent_containers/glass/bottle/toxin{pixel_x = 4; pixel_y = 2},/obj/item/weapon/reagent_containers/glass/bottle/inaprovaline{pixel_x = 7; pixel_y = -3},/obj/item/weapon/reagent_containers/glass/bottle/antitoxin{pixel_x = -4; pixel_y = -3},/obj/item/weapon/reagent_containers/syringe/inaprovaline{pixel_x = 3; pixel_y = -2},/obj/item/weapon/reagent_containers/syringe/inaprovaline{pixel_x = 5; pixel_y = -2},/turf/simulated/floor{icon_state = "whiteblue"},/area)
+"BR" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 1},/obj/structure/disposalpipe/sortjunction/Medbay{dir = 8; icon_state = "pipe-j2s"},/turf/simulated/floor{icon_state = "white"},/area)
+"Ca" = (/obj/machinery/iv_drip,/turf/simulated/floor{dir = 4; icon_state = "whiteredcorner"},/area)
+"Do" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area)
+"DB" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 10},/turf/simulated/floor/plating,/area)
+"DW" = (/obj/machinery/atmospherics/unary/vent_pump{canSpawnMice = 0; dir = 8; external_pressure_bound = 0; frequency = 1441; icon_state = "in"; id_tag = "waste_out"; initialize_directions = 1; internal_pressure_bound = 4000; on = 1; pressure_checks = 2; pump_direction = 0},/obj/effect/decal/warning_stripes{icon_state = "bot"},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"EX" = (/obj/machinery/computer/security/telescreen/entertainment{pixel_y = -32},/turf/simulated/floor{icon_state = "white"},/area)
+"Fn" = (/obj/machinery/vending/wallmed2{pixel_y = -28},/obj/machinery/light,/turf/simulated/floor{icon_state = "white"},/area)
+"Fy" = (/obj/structure/table,/obj/item/clothing/suit/strait_jacket,/obj/item/clothing/suit/strait_jacket,/obj/item/clothing/mask/muzzle,/obj/item/clothing/mask/muzzle,/obj/item/weapon/cane,/obj/item/weapon/cane,/obj/item/clothing/accessory/stethoscope,/obj/machinery/light{dir = 8},/turf/simulated/floor{icon_state = "white"},/area)
+"FA" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/machinery/light_switch{pixel_x = -28},/turf/simulated/floor{icon_state = "white"},/area)
+"FZ" = (/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 4},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"Ga" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/fire{pixel_x = 2; pixel_y = 6},/obj/item/weapon/storage/firstaid/fire{pixel_x = -2; pixel_y = 4},/obj/item/device/radio/intercom/medbay{pixel_y = -30},/turf/simulated/floor{icon_state = "whiteblue"},/area)
+"Gg" = (/obj/structure/sink{dir = 4; pixel_x = 11},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 9},/turf/simulated/floor{icon_state = "showroomfloor"},/area)
+"Gu" = (/obj/structure/grille,/turf/simulated/wall/r_wall,/area)
+"GN" = (/obj/machinery/atmospherics/pipe/manifold/filtering/visible{dir = 1},/obj/machinery/meter,/turf/simulated/floor,/area)
+"GT" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/wall/r_wall,/area)
+"Hi" = (/obj/machinery/optable,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/light/small{dir = 1},/turf/unsimulated/floor/fake_supermatter,/area)
+"Hn" = (/obj/effect/landmark/start{name = "Medical Doctor"},/turf/simulated/floor{icon_state = "white"},/area)
+"HM" = (/obj/machinery/atmospherics/pipe/simple/cyan/visible{dir = 4},/turf/simulated/floor,/area)
+"HT" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/disposalpipe/sortjunction/Chemistry{dir = 8},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/unsimulated/floor/fake_supermatter,/area)
+"Ig" = (/obj/structure/lattice,/turf/space,/area)
+"Ih" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/simulated/floor/plating,/area)
+"Ik" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/regular{pixel_x = 2; pixel_y = 6},/obj/item/weapon/storage/firstaid/regular{pixel_x = -2; pixel_y = 4},/obj/machinery/firealarm{dir = 1; pixel_y = -24},/turf/simulated/floor{icon_state = "whiteblue"},/area)
+"Ix" = (/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/engine{name = "vacuum floor"; nitrogen = 0.01; oxygen = 0.01},/area)
+"IO" = (/obj/structure/closet/l3closet/general,/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 1},/obj/item/weapon/storage/bag/trash/bio,/obj/item/taperoll/viro,/turf/simulated/floor{dir = 1; icon_state = "whiteblue"},/area)
+"JP" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/supply/hidden{dir = 1},/turf/simulated/floor/plating,/area)
+"Ke" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/o2{pixel_x = 2; pixel_y = 6},/obj/item/weapon/storage/firstaid/o2{pixel_x = -2; pixel_y = 4},/turf/simulated/floor{icon_state = "whiteblue"},/area)
+"Kl" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 4; on = 1},/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"KE" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area)
+"KG" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"Lc" = (/obj/structure/catwalk/invulnerable/hive,/turf/unsimulated/floor/fake_supermatter,/area)
+"Ls" = (/obj/item/device/radio/intercom{dir = 1; name = "Station Intercom (General)"; pixel_y = 20},/obj/machinery/atmospherics/binary/volume_pump{dir = 8; name = "Distro to Waste"},/turf/simulated/floor,/area)
+"LX" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/simulated/floor/plating,/area)
+"MD" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/visible{dir = 8},/turf/simulated/floor,/area)
+"Ns" = (/obj/machinery/atmospherics/pipe/simple/cyan/visible{dir = 4},/obj/machinery/light{dir = 1},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor,/area)
+"NP" = (/obj/machinery/atmospherics/pipe/manifold/cyan/visible{dir = 1},/obj/machinery/meter,/turf/simulated/floor,/area)
+"Op" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/closet/secure_closet/medical3,/turf/simulated/floor{icon_state = "white"},/area)
+"Oq" = (/obj/machinery/atmospherics/pipe/manifold/yellow/visible,/obj/machinery/meter,/turf/simulated/floor,/area)
+"Ou" = (/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 8},/turf/simulated/floor{icon_state = "showroomfloor"},/area)
+"OX" = (/obj/machinery/atmospherics/binary/volume_pump{dir = 8; name = "Mix tank to Waste"},/turf/simulated/floor,/area)
+"PC" = (/obj/machinery/vending/wallmed1{pixel_x = 28},/obj/machinery/camera{dir = 8; name = "Medbay Recovery Room"},/obj/structure/bed,/obj/item/weapon/bedsheet/medical,/obj/machinery/light{dir = 4},/turf/simulated/floor{icon_state = "white"},/area)
+"PF" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced,/turf/simulated/floor/plating,/area)
+"PJ" = (/obj/machinery/power/apc{dir = 4; pixel_x = 24},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/structure/cable/yellow,/turf/simulated/floor{icon_state = "showroomfloor"},/area)
+"PK" = (/obj/machinery/door_control{desc = "A remote control-switch for the engineering security doors."; id_tag = "mixing_vent"; name = "EMERGENCY VENT"; pixel_x = 25; req_access_txt = "24"},/turf/simulated/floor,/area)
+"PL" = (/obj/machinery/alarm{dir = 8; pixel_x = 24},/obj/machinery/bioprinter/prosthetics,/turf/simulated/floor{icon_state = "white"},/area)
+"QA" = (/obj/structure/table,/obj/item/weapon/storage/firstaid/toxin{pixel_x = 2; pixel_y = 6},/obj/item/weapon/storage/firstaid/toxin{pixel_x = -2; pixel_y = 4},/obj/machinery/requests_console{department = "Medbay"; departmentType = 1; name = "Medbay RC"; pixel_y = -30},/turf/simulated/floor{icon_state = "whiteblue"},/area)
+"QJ" = (/obj/machinery/atmospherics/pipe/simple/cyan/visible,/obj/machinery/atmospherics/pipe/simple/filtering/visible{dir = 4},/turf/simulated/floor,/area)
+"Rr" = (/obj/machinery/atmospherics/pipe/simple/filtering/visible{dir = 4},/turf/simulated/floor,/area)
+"RJ" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/simulated/floor/plating,/area)
+"Sr" = (/obj/machinery/alarm{dir = 4; pixel_x = -22},/turf/unsimulated/floor/fake_supermatter,/area)
+"Ss" = (/turf/simulated/wall,/area)
+"SG" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 1; on = 1},/obj/structure/disposalpipe/segment{dir = 4; icon_state = "pipe-c"},/turf/simulated/floor{icon_state = "showroomfloor"},/area)
+"SU" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"SY" = (/obj/structure/catwalk/invulnerable/hive,/obj/structure/railing{dir = 1},/turf/unsimulated/floor/fake_supermatter,/area)
+"Tj" = (/obj/structure/sign/poster{icon_state = "bsposter10"; pixel_x = -32},/turf/unsimulated/floor/fake_supermatter,/area)
+"Ts" = (/obj/structure/table,/obj/machinery/holosign_switch{id_tag = "surgery"; pixel_x = -7; pixel_y = -24},/obj/machinery/firealarm{dir = 4; pixel_x = 24},/obj/item/weapon/reagent_containers/spray/cleaner{desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back."; name = "Surgery Cleaner"},/turf/simulated/floor{icon_state = "white"},/area)
+"Ty" = (/turf/simulated/floor/plating,/area)
+"TG" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"Uk" = (/obj/machinery/meter{frequency = 1443; id_tag = "dloop_atm_meter"; name = "Distribution Loop"},/obj/machinery/atmospherics/pipe/manifold4w/supply/visible,/turf/simulated/floor,/area)
+"Un" = (/obj/structure/table,/obj/item/weapon/folder/white,/obj/item/clothing/accessory/stethoscope,/obj/machinery/camera{dir = 4; name = "Patient Room 2"},/obj/machinery/light{dir = 8},/turf/simulated/floor{icon_state = "white"},/area)
+"Uv" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/turf/simulated/floor{icon_state = "white"},/area)
+"UH" = (/obj/machinery/atmospherics/pipe/simple/cyan/visible,/turf/simulated/floor,/area)
+"Vc" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/simulated/floor/plating,/area)
+"Vg" = (/obj/structure/disposalpipe/trunk{dir = 1},/obj/machinery/disposal,/turf/simulated/floor{icon_state = "white"},/area)
+"Vq" = (/obj/machinery/door_control{id_tag = "medsuits"; name = "Medical EVA Control"; pixel_x = -24; pixel_y = -24},/turf/unsimulated/floor/fake_supermatter,/area)
+"Vr" = (/obj/machinery/atmospherics/unary/vent_pump{dir = 1; on = 1},/turf/simulated/floor{icon_state = "white"},/area)
+"Vt" = (/obj/machinery/atmospherics/binary/pump{dir = 8; name = "Filter to Distro"},/turf/simulated/floor,/area)
+"Wa" = (/obj/machinery/atmospherics/binary/volume_pump{dir = 8; name = "Mix to Waste"},/turf/simulated/floor,/area)
+"We" = (/obj/effect/decal/cleanable/ash,/turf/simulated/floor/plating,/area)
+"Wk" = (/obj/machinery/door/firedoor/border_only{dir = 8; name = "Firelock West"},/obj/machinery/door/airlock/glass_medical{name = "Medbay Storage"; req_access_txt = "5"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor{icon_state = "white"},/area)
+"Xd" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/obj/machinery/atmospherics/pipe/simple/cyan/visible,/turf/simulated/floor,/area)
+"Xl" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/unsimulated/floor/fake_supermatter,/area)
+"Xx" = (/obj/machinery/door/airlock/maintenance{name = "Surgery Maintenance"; req_access_txt = "45"},/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/turf/simulated/floor/plating,/area)
+"Yn" = (/obj/machinery/atmospherics/pipe/simple/yellow/visible{dir = 4},/obj/machinery/atmospherics/pipe/simple/filtering/visible,/turf/simulated/floor,/area)
+"YH" = (/obj/structure/catwalk/invulnerable/hive,/obj/structure/railing,/obj/structure/railing{dir = 4},/turf/unsimulated/floor/fake_supermatter,/area)
+"ZE" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/full/reinforced,/turf/simulated/floor/plating/airless,/area)
+
+(1,1,1) = {"
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJXlnJnJAXtyiwsBnJnJnJnJnLyiVcIOnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJHiuPSsFAfcHnfcfcnJnJAgHTonWkSUOpnJnJBRnJVqnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJSGvQagbSbhfsKlKGlTacTGFZCaKEVrfcfcnJnDnkfcnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJvdPJSskrfcbRfcfRSsrQUvVrPCSsFyfcfcfcVgtGeAnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJOuGgSsiUlQFnzLTsSshOavEXPLSsKeGaQAIkBInkjcnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJXxSsSsSsSsSsSsSsSsSsSsSsSsSsSsSsSsSsSsnknknJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJbZLXLXJPLXLXLXJPLXLXLXLXLXLXLXLXLXLXDBSspSnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJLcLcLcLcLcpbwSIhwSpYTyRJwobWTyTyTyTyTyTyWexRmJSsSrnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJLcLcLcnJnkGTnkoZnkGTnkoZnknkSsSstePFPFDoSsSsmJSsnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJofetLsUkwfNsHMgpNPVtfIIgnTnTnTnTnTSsmJSsehnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJkXbTrbqurbpIrbcyUHPKBqIgGuGuGuGuIgSsmJSsUnnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJkXMDOXOqxvxvxvxvXdysnMntuSDWszcQIgSsmJSsSsnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJkXMDodRrGNRrRrRrQJrlmoIgZExfIxcQIgSseXSsTjnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJnJobWafyYnkAnJnJnJBnnMntuStYIxcQIgSsLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJnJnJnJnJnJnJnJnJnJnJlmnTnTnTnTnTnTSsLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJnJnJnJnJnJnJnJnJnJnJlmnJnTnJnJnTnTSsLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJbFnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJbFnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJkEnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJbFnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJyluLuLuLuLuLuLuLuLSYSYSYSYSYuLuLuLuLuLuLuLYHnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJLcLcLcLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJLcLcLcLcLcLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJLcLcLcBFLcLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJLcLcLcBjLcLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJLcLcLcLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJLcLcLcnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnJnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+nTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnTnT
+"}
