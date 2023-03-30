@@ -456,6 +456,8 @@ Attach to transfer valve and open. BOOM.
 /mob/living/carbon/human/FireBurn(var/firelevel, var/last_temperature, var/pressure)
 	//Burns mobs due to fire. Respects heat transfer coefficients on various body parts.
 	//Due to TG reworking how fireprotection works, this is kinda less meaningful.
+	if(HasVampireMutation(/datum/vampire_mutation/cold))
+		return
 
 	var/head_exposure = 1
 	var/chest_exposure = 1

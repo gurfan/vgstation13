@@ -11,6 +11,10 @@
 	var/cooldown = 0 SECONDS
 	var/last_activated = 0
 
+	var/toggle = FALSE
+	var/toggle_bg_off = "toggle-off"
+	var/toggle_bg_on = "toggle-on"
+
 	var/ui_icon_state
 	var/element_type = /obj/abstract/mind_ui_element/hoverable/vampire_ability
 
@@ -137,7 +141,7 @@
 	name = "Blood Thief"
 	desc = "Steal blood from people you touch."
 	ui_icon_state = "blood_thief"
-	element_type = /obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
+	toggle = TRUE
 
 /datum/vampire_ability/blood_thief/Ability(var/mob/living/carbon/human/user)
 	var/datum/vampire_mutation/blood_thief/BT = vamp_mutation
@@ -154,7 +158,7 @@
 	name = "Blood Thief"
 	desc = "Gift medicine to people you touch."
 	ui_icon_state = "blood_gift"
-	element_type = /obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
+	toggle = TRUE
 
 /datum/vampire_ability/blood_gift/Ability(var/mob/living/carbon/human/user)
 	var/datum/vampire_mutation/blood_thief/BT = vamp_mutation
@@ -243,7 +247,7 @@
 	name = "Mimic Speech"
 	desc = "Replicate the voice of anyone you've heard."
 	ui_icon_state = "raven"
-	element_type = /obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
+	toggle = TRUE
 
 /datum/vampire_ability/speech/Ability(var/mob/living/carbon/human/user)
 	var/datum/vampire_mutation/speech/VM = vamp_mutation
@@ -287,5 +291,15 @@
 //	P.spread_rapidly()
 	new /obj/effect/plantsegment/vampire(T, null, null, TRUE)
 	T.visible_message("<span class='danger'>Vines sprout from \the [T]!</span>")
+
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/burgeoning
+	name = "Blood Sense"
+	desc = "Close your eyes to sense nearby entities."
+	ui_icon_state = "sense"
+	toggle = TRUE
+	toggle_bg_off = "charge-cover"
 
 

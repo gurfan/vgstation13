@@ -145,8 +145,8 @@
 
 	if(my_ability)
 		overlays = 0
-		if(toggle)
-			overlays += image(icon, src, my_ability.IsToggled() ? "toggle-on" : "toggle-off")
+		if(my_ability.toggle)
+			overlays += image(icon, src, my_ability.IsToggled() ? my_ability.toggle_bg_on : my_ability.toggle_bg_off)
 		else if(my_ability.cooldown)
 			var/icon/charge_meter = icon(icon,"charge-cover")
 			var/charge_count = (world.time - my_ability.last_activated) / my_ability.cooldown
@@ -156,6 +156,8 @@
 		else
 			overlays += image(icon, src, "charge-cover")
 		overlays += image(icon, src, my_ability.ui_icon_state)
+
+
 		if(my_ability.channeling)
 			overlays += image(icon, src, "channeled")
 
@@ -168,9 +170,6 @@
 		UpdateIcon()
 		return
 	my_ability.Activate()
-
-/obj/abstract/mind_ui_element/hoverable/vampire_ability/toggle
-	toggle = TRUE
 
 
 ////////////////////////////////////////////////////////////////////

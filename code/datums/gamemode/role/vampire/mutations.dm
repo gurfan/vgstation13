@@ -179,7 +179,6 @@
 	for(var/mob/living/silicon/S in player_list)
 		S.HideVampire(vamp_role.antag.current)
 
-
 /mob/living/silicon/proc/HideVampire(var/mob/living/vampire)
 	if(!client)
 		return
@@ -187,4 +186,23 @@
 	blank.override = TRUE
 	blank.loc = vampire
 	client.images += blank
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/cold
+	name = "Deathly Cold"
+	desc = "This Vampire's skin gains a terrible chill that cannot ever be quelled. They are almost completely immune to both the harsh effects of cold temperatures and the scalding temperatures of flames, surviving plasma-fire effortlessly. Unfortunately, this does not save them from the magical burning effects of starlight."
+
+/datum/vampire_mutation/cold/OnPurchase()
+	for(var/mob/living/silicon/S in player_list)
+		S.HideVampire(vamp_role.antag.current)
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/bloodsense
+	name = "Blood Sense"
+	desc = "An ability which grants a Vampire the ability to sense blood-bearing entities through walls, like a form of thermal vision. However, this only functions while the Vampire is concentrating with their eyes closed, which makes them blind until cancelled. Beginning concentration is a free action, but after it is cancelled, the cooldown must be endured before concentration can begin again."
+	my_ability_type = /datum/vampire_ability/bloodsense
+
 
