@@ -222,6 +222,10 @@ cons:
 		if (A.invisibility)
 			if (!isobserver(A) || !camera || !camera.see_ghosts)
 				continue
+		if(isliving(A))
+			var/mob/living/M = A
+			if(M.HasVampireMutation(/datum/vampire_mutation/ephemeral))
+				continue
 		var/list/L = get_content_image_datas(A)
 		if (L)
 			turf_image_datas += L

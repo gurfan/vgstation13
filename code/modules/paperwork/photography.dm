@@ -398,6 +398,8 @@
 	for(var/mob/living/A in the_turf)
 		if(A.invisibility)
 			continue
+		if(A.HasVampireMutation(/datum/vampire_mutation/ephemeral))
+			continue
 		var/holding = null
 		for(var/obj/item/I in A.held_items)
 			var/item_count = 0

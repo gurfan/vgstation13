@@ -169,3 +169,22 @@
 
 			H.bloodwarp(target_turf)
 
+///////////////////////////////////////////
+
+/datum/vampire_mutation/ephemeral
+	name = "Ephemeral"
+	desc = "Vampires that are Ephemeral are easily identified by the fact that they do not show up in pictures, and cannot be seen by any entity using a camera-- including Silicons. This fact makes them immediately obvious in some circumstances, but also makes it radically more difficult for an Artificial Intelligence to track them."
+
+/datum/vampire_mutation/ephemeral/OnPurchase()
+	for(var/mob/living/silicon/S in player_list)
+		S.HideVampire(vamp_role.antag.current)
+
+
+/mob/living/silicon/proc/HideVampire(var/mob/living/vampire)
+	if(!client)
+		return
+	var/image/blank = image(null)
+	blank.override = TRUE
+	blank.loc = vampire
+	client.images += blank
+

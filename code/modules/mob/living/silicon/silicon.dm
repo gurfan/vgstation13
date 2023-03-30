@@ -361,3 +361,9 @@
 		return
 	if(ui_key == "state_laws")
 		return state_laws_ui_interact(user, ui_key, ui, force_open) //state_laws.dm
+
+/mob/living/silicon/Login()
+	..()
+	for(var/mob/living/carbon/human/M in mob_list)		// Silicons use cameras to see, and cameras can't view ephemeral vampires
+		if(M.HasVampireMutation(/datum/vampire_mutation/ephemeral))
+			HideVampire(M)
