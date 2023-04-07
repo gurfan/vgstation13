@@ -60,7 +60,7 @@
 	if(!vamp_role)
 		stack_trace("A vampire ability was activated without a vampire role set.")
 		return
-	if(last_activated + cooldown > world.time)
+	if(!IsToggled() && last_activated + cooldown > world.time)
 		to_chat(vamp_role.antag.current, "<span class='warning'>That ability is still on cooldown!</span>")
 		return
 	if(!CheckBloodCost())
@@ -295,11 +295,37 @@
 
 ///////////////////////////////////////////
 
-/datum/vampire_ability/burgeoning
+/datum/vampire_ability/bloodsense
 	name = "Blood Sense"
 	desc = "Close your eyes to sense nearby entities."
 	ui_icon_state = "sense"
+	cooldown = 1 SECONDS
 	toggle = TRUE
 	toggle_bg_off = "charge-cover"
+
+	var/sensing = FALSE
+
+/datum/vampire_ability/bloodsense/Ability(var/mob/living/carbon/human/user)
+	sensing = !sensing
+	if(sensing)
+		user.overlay_fullscreen("bloodsense", /obj/abstract/screen/fullscreen/bloodsense)
+		user.update_fullscreen_alpha("bloodsense", 255, 5)
+
+		user.client.images += bloodsense_mob
+		user.client.images += bloodsense_human
+		spawn(5)
+			vamp_role.antag.current.update_perception()
+
+	else
+		user.clear_fullscreen("bloodsense", 5)
+		user.client.images -= bloodsense_mob
+		user.client.images -= bloodsense_human
+		vamp_role.antag.current.update_perception()
+		vamp_role.antag.current.handle_regular_hud_updates()
+
+
+
+/datum/vampire_ability/bloodsense/IsToggled()
+	return sensing
 
 

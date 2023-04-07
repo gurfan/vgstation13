@@ -206,3 +206,4 @@
 	my_ability_type = /datum/vampire_ability/bloodsense
 
 
+

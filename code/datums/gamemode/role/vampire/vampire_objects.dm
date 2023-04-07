@@ -199,3 +199,53 @@
 			harvest = FALSE
 			return 2
 	return 0
+
+
+/////////////////////////////
+
+// I really, really, really hate this.
+// Making things visible to *certain* people is probably the worst thing to code
+
+var/image/bloodsense_human
+var/image/bloodsense_mob
+var/obj/effect/bloodsense/bloodsense_mob_effect = new(null)
+var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
+
+/obj/effect/bloodsense
+	name = ""
+	opacity = FALSE
+	vis_flags = VIS_INHERIT_DIR
+
+/obj/effect/bloodsense/New(var/loc, var/mob/vampire)
+	..()
+	GenerateImage()
+
+/obj/effect/bloodsense/proc/GenerateImage()
+	bloodsense_mob = image('icons/effects/effects.dmi', src, "bloodsense_mob", BLIND_LAYER+1)
+	bloodsense_mob.plane = HUD_PLANE
+
+/obj/effect/bloodsense/human/GenerateImage()
+	bloodsense_human = image('icons/effects/effects.dmi', src, "bloodsense_human", BLIND_LAYER+1)
+	bloodsense_human.plane = HUD_PLANE
+
+/mob/living/proc/generate_bloodsense_overlay()
+	if(isvampire(src))
+		return
+	vis_contents += bloodsense_mob_effect
+
+/mob/living/carbon/human/generate_bloodsense_overlay()
+	if(isvampire(src))
+		return
+	vis_contents += bloodsense_human_effect
+
+/mob/living/silicon/generate_bloodsense_overlay()
+	return
+
+/mob/living/proc/destroy_bloodsense_overlay()
+	vis_contents -= bloodsense_mob_effect
+
+/mob/living/carbon/human/destroy_bloodsense_overlay()
+	vis_contents -= bloodsense_human_effect
+
+/mob/living/silicon/destroy_bloodsense_overlay()
+	return

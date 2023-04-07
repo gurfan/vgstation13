@@ -9,6 +9,9 @@
 	immune_system = new (src)
 	oxy_damage_modifier *= (maxHealth / 100) //Scale oxy damage based on the max health of the mob.
 
+	generate_bloodsense_overlay()
+
+
 /mob/living/create_reagents(const/max_vol)
 	..(max_vol)
 	addicted_chems = new /datum/reagents(max_vol)
@@ -29,6 +32,9 @@
 	if(addicted_chems)
 		qdel(addicted_chems)
 		addicted_chems = null
+
+	destroy_bloodsense_overlay()
+
 	. = ..()
 
 /mob/living/examine(var/mob/user, var/size = "", var/show_name = TRUE, var/show_icon = TRUE) //Show the mob's size and whether it's been butchered

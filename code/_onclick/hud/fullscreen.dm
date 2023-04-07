@@ -113,6 +113,11 @@
 	icon_state = "blackimageoverlay"
 	layer = BLIND_LAYER
 
+/obj/abstract/screen/fullscreen/bloodsense
+	icon_state = "blackimageoverlay"
+	layer = BLIND_LAYER
+	alpha = 0
+
 /obj/abstract/screen/fullscreen/impaired
 	icon_state = "impairedoverlay"
 	layer = IMPAIRED_LAYER

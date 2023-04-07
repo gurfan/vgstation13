@@ -81,6 +81,10 @@
 	// Humanoids which don't normally posess a blood supply will have one if they are a vampire.
 	SetupBlood(antag.current)
 
+	// Vampires are "dead" and cannot be bloodsensed by other vampires.
+	var/mob/living/M = antag.current
+	if(istype(M))
+		M.destroy_bloodsense_overlay()
 
 	update_vamp_hud()
 	ForgeObjectives()
@@ -91,6 +95,7 @@
 	if(faction && istype(faction, /datum/faction/vampire) && faction.leader == src)
 		var/datum/faction/vampire/V = faction
 		V.name_clan(src)
+
 
 
 /datum/role/vampire/proc/SetupBlood(var/mob/living/carbon/human/H)
@@ -304,7 +309,11 @@
 	*/
 
 /datum/role/vampire/update_perception()
-	return
+	var/datum/vampire_ability/bloodsense/BS = locate(/datum/vampire_ability/bloodsense) in abilities
+	if(BS && BS.sensing)
+		antag.current.change_sight(adding = SEE_MOBS)
+
+
 
 /datum/role/vampire/proc/is_mature_or_has_vision()
 	return (locate(/datum/power/vampire/vision) in current_powers) || (locate(/datum/power/vampire/mature) in current_powers)

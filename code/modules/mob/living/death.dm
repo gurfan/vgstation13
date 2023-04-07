@@ -5,7 +5,7 @@
 	//Check the global list of butchering drops for our species.
 	//See code/datums/helper_datums/butchering.dm
 	init_butchering_list()
-
+	destroy_bloodsense_overlay()
 	clear_fullscreens(TRUE)
 	handle_symptom_on_death()
 	..()
@@ -40,3 +40,7 @@
 
 		for(var/butchering_type in animal_butchering_products)
 			src.butchering_drops += new butchering_type
+
+/mob/living/resurrect()
+	..()
+	generate_bloodsense_overlay()

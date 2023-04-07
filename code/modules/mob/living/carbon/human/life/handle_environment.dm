@@ -28,7 +28,7 @@
 		return
 
 	// Slimed carbons are protected against heat damage
-	if (bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT || (bodytemperature > BODYTEMP_HEAT_DAMAGE_LIMIT && dna.mutantrace != "slime"))
+	if (bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT || (bodytemperature > BODYTEMP_HEAT_DAMAGE_LIMIT && dna.mutantrace != "slime") && !HasVampireMutation(/datum/vampire_mutation/cold))
 		// Update fire/cold overlay
 		var/temp_alert = (bodytemperature < BODYTEMP_COLD_DAMAGE_LIMIT) ? 1 : 2
 		fire_alert = max(fire_alert, temp_alert)
@@ -69,8 +69,6 @@
 
 // Helper proc to map body temperatures to its corresponding heat/cold damage value
 /mob/living/carbon/human/proc/get_body_temperature_damage(var/temperature)
-	if(HasVampireMutation(/datum/vampire_mutation/cold))
-		return 0
 	if (temperature < species.cold_level_3)
 		return COLD_DAMAGE_LEVEL_3
 	else if (temperature < species.cold_level_2)

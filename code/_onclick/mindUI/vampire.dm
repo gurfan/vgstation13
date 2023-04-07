@@ -145,18 +145,16 @@
 
 	if(my_ability)
 		overlays = 0
-		if(my_ability.toggle)
-			overlays += image(icon, src, my_ability.IsToggled() ? my_ability.toggle_bg_on : my_ability.toggle_bg_off)
-		else if(my_ability.cooldown)
-			var/icon/charge_meter = icon(icon,"charge-cover")
+
+		var/icon/cover = icon(icon, my_ability.toggle ? (my_ability.IsToggled() ? my_ability.toggle_bg_on : my_ability.toggle_bg_off) : "charge-cover")
+
+		if(my_ability.cooldown && !my_ability.IsToggled())
 			var/charge_count = (world.time - my_ability.last_activated) / my_ability.cooldown
 			if(charge_count < 1)
-				charge_meter.Crop(1, 1, charge_meter.Width(), round(charge_meter.Height() * charge_count))
-			overlays += charge_meter
-		else
-			overlays += image(icon, src, "charge-cover")
-		overlays += image(icon, src, my_ability.ui_icon_state)
+				cover.Crop(1, 1, cover.Width(), round(cover.Height() * charge_count))
 
+		overlays += cover
+		overlays += image(icon, src, my_ability.ui_icon_state)
 
 		if(my_ability.channeling)
 			overlays += image(icon, src, "channeled")
