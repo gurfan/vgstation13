@@ -206,4 +206,10 @@
 	my_ability_type = /datum/vampire_ability/bloodsense
 
 
+///////////////////////////////////////////
+
+/datum/vampire_mutation/visit
+	name = "Ethereal Visit"
+	desc = "This Mutation allows for a strange form of teleportation. The Vampire may pick a spot within view, and warps there instantly, leaving a subtle tile of dust behind. After 30 seconds of autonomy, or at any moment when desired, they will warp back to their original location. The ability's rather brief cooldown is initiated after the return teleport."
+	my_ability_type = /datum/vampire_ability/visit
 

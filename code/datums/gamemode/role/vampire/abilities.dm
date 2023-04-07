@@ -65,7 +65,9 @@
 		return
 	if(!CheckBloodCost())
 		return
-	if(channeled)
+	if(!PreCastCheck(vamp_role.antag.current))
+		return
+	if(channeled && !IsToggled())
 		if(!channeling)
 			if(!CanChannel())
 				return
@@ -78,19 +80,15 @@
 			vamp_role.antag.current.unregister_event(/event/uattack, src, .proc/Activate)
 			vamp_role.antag.DisplayUI("Vampire")
 
-	if(!CanCast(vamp_role.antag.current, atom))
+	if(!PostCastCheck(vamp_role.antag.current, atom))
 		return
 
-	if(!cast_time)
-		if(vamp_role.UseBlood(blood_cost))
+	if(!cast_time || IsToggled() || do_after(vamp_role.antag.current, vamp_role.antag.current, cast_time))
+		if(IsToggled() || vamp_role.UseBlood(blood_cost))		// This short-circuits. No blood is spent to un-toggle.
 			last_activated = world.time
 			Ability(vamp_role.antag.current, atom)
-	else if(do_after(vamp_role.antag.current, vamp_role.antag.current, cast_time))
-		if(vamp_role.UseBlood(blood_cost))
-			last_activated = world.time
-			Ability(vamp_role.antag.current, atom)
-	vamp_role.antag.DisplayUI("Vampire")
-	return
+		vamp_role.antag.DisplayUI("Vampire")
+
 
 // Override this one!
 /datum/vampire_ability/proc/Ability(var/mob/living/carbon/human/user, var/atom/target)
@@ -105,7 +103,14 @@
 	return TRUE
 
 // ...and this one too
-/datum/vampire_ability/proc/CanCast(var/mob/living/user, var/atom/atom)
+/datum/vampire_ability/proc/PostCastCheck(var/mob/living/user, var/atom/atom)
+	return TRUE
+
+// ...and this one too
+/datum/vampire_ability/proc/PreCastCheck(var/mob/living/user)
+	if(user.restrained())
+		to_chat(user, "<span class='warning'>You can't do this while restrained!</span>")
+		return FALSE
 	return TRUE
 
 ///////////////////////////////////////////
@@ -210,7 +215,7 @@
 	var/turf/T = get_turf(user)
 
 	// Puff of smoke
-	var/obj/effect/smoke/S = new(T)
+	var/obj/effect/smoke/transparent/S = new(T)
 	S.color = "#444444"
 
 	// Transform the vampire
@@ -277,7 +282,7 @@
 	ui_icon_state = "vines"
 	channeled = TRUE
 
-/datum/vampire_ability/burgeoning/CanCast(var/mob/living/carbon/human/user, var/atom/target)
+/datum/vampire_ability/burgeoning/PostCastCheck(var/mob/living/carbon/human/user, var/atom/target)
 	var/turf/T = get_turf(target)
 	if(T.density)
 		to_chat(user, "<span class='warning'>Vines can't grow there!</span>")
@@ -299,7 +304,7 @@
 	name = "Blood Sense"
 	desc = "Close your eyes to sense nearby entities."
 	ui_icon_state = "sense"
-	cooldown = 1 SECONDS
+	cooldown = 15 SECONDS
 	toggle = TRUE
 	toggle_bg_off = "charge-cover"
 
@@ -329,3 +334,44 @@
 	return sensing
 
 
+///////////////////////////////////////////
+
+/datum/vampire_ability/visit
+	name = "Ethereal Visit"
+	desc = "Warp to a location for thirty seconds."
+	ui_icon_state = "visit"
+	cooldown = 5 SECONDS
+	toggle = TRUE
+	toggle_bg_off = "charge-cover"
+	channeled = TRUE
+
+	var/turf/return_turf
+	var/poofed = FALSE
+
+/datum/vampire_ability/visit/Ability(mob/living/carbon/human/user, atom/target)
+	poofed = !poofed
+
+	if(poofed)
+		return_turf = get_turf(user)
+		var/turf/T = get_turf(target)
+		playsound(return_turf, 'sound/effects/cultjaunt_prepare.ogg', 75, 0, -3)
+		return_turf.turf_animation('icons/effects/effects.dmi',"shadowstep")
+		user.forceMove(T)
+		var/obj/effect/smoke/transparent/S = new(T)
+		S.color = "#444444"
+		spawn(5 SECONDS)
+			if(poofed)
+				last_activated = world.time
+				Ability(user)
+	else
+		var/turf/T = get_turf(user)
+		playsound(T, 'sound/effects/cultjaunt_prepare.ogg', 75, 0, -3)
+		T.turf_animation('icons/effects/effects.dmi',"shadowstep")
+		user.forceMove(return_turf)
+		var/obj/effect/smoke/transparent/S = new(return_turf)
+		S.color = "#444444"
+		return_turf = null
+
+
+/datum/vampire_ability/visit/IsToggled()
+	return poofed
