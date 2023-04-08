@@ -76,12 +76,11 @@
 			vamp_role.antag.current.register_event(/event/uattack, src, .proc/Activate)
 			return
 		else
+			if(!PostCastCheck(vamp_role.antag.current, atom))
+				return
 			channeling = FALSE
 			vamp_role.antag.current.unregister_event(/event/uattack, src, .proc/Activate)
 			vamp_role.antag.DisplayUI("Vampire")
-
-	if(!PostCastCheck(vamp_role.antag.current, atom))
-		return
 
 	if(!cast_time || IsToggled() || do_after(vamp_role.antag.current, vamp_role.antag.current, cast_time))
 		if(IsToggled() || vamp_role.UseBlood(blood_cost))		// This short-circuits. No blood is spent to un-toggle.
@@ -340,7 +339,7 @@
 	name = "Ethereal Visit"
 	desc = "Warp to a location for thirty seconds."
 	ui_icon_state = "visit"
-	cooldown = 5 SECONDS
+	cooldown = 30 SECONDS
 	toggle = TRUE
 	toggle_bg_off = "charge-cover"
 	channeled = TRUE
@@ -359,7 +358,7 @@
 		user.forceMove(T)
 		var/obj/effect/smoke/transparent/S = new(T)
 		S.color = "#444444"
-		spawn(5 SECONDS)
+		spawn(30 SECONDS)
 			if(poofed)
 				last_activated = world.time
 				Ability(user)
@@ -375,3 +374,88 @@
 
 /datum/vampire_ability/visit/IsToggled()
 	return poofed
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/jaunt
+	name = "Mist Form"
+	desc = "Become incorporeal for a brief duration."
+	ui_icon_state = "mist"
+	cooldown = 30 SECONDS
+
+/datum/vampire_ability/jaunt/Ability(mob/living/carbon/human/user, atom/target)
+	ethereal_jaunt(user, 5 SECONDS, "mist", "demist", TRUE, FALSE, /datum/effect/system/steam_spread/black)
+
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/pacify
+	name = "Pacifying Gaze"
+	desc = "Pacify a target for thirty seconds. You yourself will be pacified briefly."
+	ui_icon_state = "pacify"
+	cooldown = 3 SECONDS
+	channeled = TRUE
+
+/datum/vampire_ability/pacify/Ability(mob/living/carbon/human/user, atom/target)
+
+
+	var/mob/living/M = target
+	if(!isvampire(M))	// Vampires don't fear the gaze.
+		to_chat(M, "<span class='danger big'>A terrifying gaze chills your body to the bone!</span>")
+		M.vampire_pacified = TRUE
+		spawn(30 SECONDS)
+			M.vampire_pacified = FALSE
+			to_chat(M, "<span class='warning'>You recover your composure.</span>")
+
+
+	user.vampire_pacified = TRUE
+	to_chat(user, "<span class='warning'>Your senses dull.</span>")
+	spawn(5 SECONDS)
+		user.vampire_pacified = FALSE
+
+
+
+	playsound(target, 'sound/effects/stun_talisman.ogg', 45, 0, 0)
+
+	var/obj/effect/pacifygaze/ray = new(get_turf(target))
+	var/disty = target.y - user.y
+	var/distx = target.x - user.x
+	var/newangle
+	if(!disty)
+		if(distx >= 0)
+			newangle = 90
+		else
+			newangle = 270
+	else
+		newangle = arctan(distx/disty)
+		if(disty < 0)
+			newangle += 180
+		else if(distx < 0)
+			newangle += 360
+	var/matrix/mat = matrix()
+	ray.transform = turn(mat,newangle)
+
+
+
+/datum/vampire_ability/pacify/PostCastCheck(mob/living/user, atom/atom)
+	if(isliving(atom) && atom != user)
+		return TRUE
+
+/obj/effect/pacifygaze
+	icon = 'icons/effects/96x96.dmi'
+	icon_state = "beamin_up"
+	color = DEFAULT_BLOOD
+	anchored = TRUE
+	density = TRUE
+	pixel_x = -32
+	pixel_y = -32
+	alpha = 150
+	plane = ABOVE_HUMAN_PLANE
+
+/obj/effect/pacifygaze/New()
+	..()
+	spawn(10)
+		qdel(src)
+
+/mob
+	var/vampire_pacified= FALSE

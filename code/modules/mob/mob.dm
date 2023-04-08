@@ -2183,6 +2183,13 @@ Use this proc preferably at the end of an equipment loadout
 	if(status_flags & UNPACIFIABLE)
 		return FALSE
 
+	if(vampire_pacified)
+		if(isvampire(src))
+			to_chat(src, "<span class='warning'>Your pacifying gaze prevents you from being violent!</span>")
+		else
+			to_chat(src, "<span class='warning'>You feel some strange force preventing you from being violent!</span>")
+		return TRUE
+
 	var/area/A = get_area(src)
 	if(A && A.flags & NO_PACIFICATION)
 		return FALSE

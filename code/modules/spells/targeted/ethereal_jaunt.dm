@@ -44,7 +44,7 @@
 	spell_levels[Sp_POWER]++
 	empowered = 1
 
-/proc/ethereal_jaunt(var/mob/living/carbon/target, duration, enteranim = "liquify", exitanim = "reappear", mist = 1, var/empowered)
+/proc/ethereal_jaunt(var/mob/living/carbon/target, duration, enteranim = "liquify", exitanim = "reappear", mist = 1, var/empowered, var/steamspread = /datum/effect/system/steam_spread)
 	var/mobloc = get_turf(target)
 	var/previncorp = target.incorporeal_move //This shouldn't ever matter under usual circumstances
 	if(target.incorporeal_move) //they're already jaunting, we have another fix for this but this is sane
@@ -54,7 +54,7 @@
 	anim(location = mobloc, a_icon = 'icons/mob/mob.dmi', flick_anim = enteranim, direction = target.dir, name = target.name,lay = target.layer+1,plane = target.plane)
 	if(mist)
 		target.ExtinguishMob()
-		var/datum/effect/system/steam_spread/steam = new /datum/effect/system/steam_spread()
+		var/datum/effect/system/steam_spread/steam = new steamspread()
 		steam.set_up(10, 0, mobloc)
 		steam.start()
 
@@ -81,7 +81,7 @@
 	//Begin unjaunting
 	mobloc = get_turf(target)
 	if(mist)
-		var/datum/effect/system/steam_spread/steam = new /datum/effect/system/steam_spread()
+		var/datum/effect/system/steam_spread/steam = new steamspread()
 		steam.set_up(10, 0, mobloc)
 		steam.start()
 	target.delayNextMove(25)

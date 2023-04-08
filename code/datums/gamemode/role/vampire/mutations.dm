@@ -213,3 +213,18 @@
 	desc = "This Mutation allows for a strange form of teleportation. The Vampire may pick a spot within view, and warps there instantly, leaving a subtle tile of dust behind. After 30 seconds of autonomy, or at any moment when desired, they will warp back to their original location. The ability's rather brief cooldown is initiated after the return teleport."
 	my_ability_type = /datum/vampire_ability/visit
 
+///////////////////////////////////////////
+
+/datum/vampire_mutation/mist
+	name = "Mist Form"
+	desc = "A more traditional form of passage through walls. So long as this Vampire is not handcuffed or straitjacketed, it may transform to Mist, phasing through all objects and moving slowly for a short duration until it returns to corporeality."
+	my_ability_type = /datum/vampire_ability/jaunt
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/pacify
+	name = "Pacifying Gaze"
+	desc = "Vampires' glare has historically been utterly overpowering. Some types of Gaze have the ability to turn a victim's mind away from violence for a limited time, forcing them to succumb or run for their life. This ability can be used on any victim in view, preventing them from violent acts for 30 seconds and rendering them mute for the duration. The Vampire who uses it is also affected for 5 seconds, which the victim should use to quickly escape."
+	my_ability_type = /datum/vampire_ability/pacify
+
