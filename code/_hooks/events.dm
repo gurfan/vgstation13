@@ -177,6 +177,27 @@
 // mob/attacked: the victim of the attack
 /event/unarmed_attack
 
+// Called by disarm_mob
+// Arguments:
+// mob/attacker: the mob doing the disarm
+// mob/attacked: the victim of the disarm
+/event/disarmed
+
+// Called by disarm_mob
+// Arguments:
+// mob/attacker: the mob doing the shush
+// mob/attacked: the victim of the shush
+/event/shushed
+
+// Called by disarm_mob
+// Arguments:
+// mob/attacker: the mob doing the slap
+// mob/attacked: the victim of the slap
+/event/slapped
+
+
+
+
 // Called by beam_connect
 // Arguments:
 // obj/effect/beam/beam: the beam connecting with the atom

@@ -228,3 +228,9 @@
 	desc = "Vampires' glare has historically been utterly overpowering. Some types of Gaze have the ability to turn a victim's mind away from violence for a limited time, forcing them to succumb or run for their life. This ability can be used on any victim in view, preventing them from violent acts for 30 seconds and rendering them mute for the duration. The Vampire who uses it is also affected for 5 seconds, which the victim should use to quickly escape."
 	my_ability_type = /datum/vampire_ability/pacify
 
+///////////////////////////////////////////
+
+/datum/vampire_mutation/screech
+	name = "Chiropteran Screech"
+	desc = "The vocal chords of a Vampire mutated this way can produce a truly horrifying scream, capable of stunning all nearby victims with ears for around eight seconds, and smashing all windows in sight. This ability, thankfully, has a visible and audible windup period of one second."
+	my_ability_type = /datum/vampire_ability/screech

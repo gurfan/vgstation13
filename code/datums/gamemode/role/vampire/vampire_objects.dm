@@ -249,3 +249,19 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 
 /mob/living/silicon/destroy_bloodsense_overlay()
 	return
+
+/obj/effect/pacifygaze
+	icon = 'icons/effects/96x96.dmi'
+	icon_state = "beamin_up"
+	color = DEFAULT_BLOOD
+	anchored = TRUE
+	density = TRUE
+	pixel_x = -32
+	pixel_y = -32
+	alpha = 150
+	plane = ABOVE_HUMAN_PLANE
+
+/obj/effect/pacifygaze/New()
+	..()
+	spawn(10)
+		qdel(src)

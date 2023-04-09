@@ -20,6 +20,11 @@
 
 	var/mindUI_id = "Vampire Left Panel"
 
+	var/custom_do_after_checks = null
+	var/custom_do_after_ticks = 10
+
+	var/charging = FALSE
+
 	var/datum/role/vampire/vamp_role
 	var/datum/vampire_mutation/vamp_mutation
 
@@ -60,6 +65,8 @@
 	if(!vamp_role)
 		stack_trace("A vampire ability was activated without a vampire role set.")
 		return
+	if(charging)
+		return
 	if(!IsToggled() && last_activated + cooldown > world.time)
 		to_chat(vamp_role.antag.current, "<span class='warning'>That ability is still on cooldown!</span>")
 		return
@@ -76,17 +83,20 @@
 			vamp_role.antag.current.register_event(/event/uattack, src, .proc/Activate)
 			return
 		else
-			if(!PostCastCheck(vamp_role.antag.current, atom))
+			if(!PostChannelCheck(vamp_role.antag.current, atom))
 				return
 			channeling = FALSE
 			vamp_role.antag.current.unregister_event(/event/uattack, src, .proc/Activate)
 			vamp_role.antag.DisplayUI("Vampire")
+	PreCast(vamp_role.antag.current)
 
-	if(!cast_time || IsToggled() || do_after(vamp_role.antag.current, vamp_role.antag.current, cast_time))
+	charging = TRUE
+	if(!cast_time || IsToggled() || do_after(vamp_role.antag.current, vamp_role.antag.current, cast_time, custom_do_after_ticks, custom_checks = custom_do_after_checks ? new /callback(src, custom_do_after_checks) : null))
 		if(IsToggled() || vamp_role.UseBlood(blood_cost))		// This short-circuits. No blood is spent to un-toggle.
 			last_activated = world.time
 			Ability(vamp_role.antag.current, atom)
 		vamp_role.antag.DisplayUI("Vampire")
+	charging = FALSE
 
 
 // Override this one!
@@ -101,16 +111,20 @@
 /datum/vampire_ability/proc/CanChannel()
 	return TRUE
 
-// ...and this one too
-/datum/vampire_ability/proc/PostCastCheck(var/mob/living/user, var/atom/atom)
+// Checks for some other thing after the user has channeled a spell and clicked.
+/datum/vampire_ability/proc/PostChannelCheck(var/mob/living/user, var/atom/atom)
 	return TRUE
 
-// ...and this one too
+// Check for things before attempting to cast/channel
 /datum/vampire_ability/proc/PreCastCheck(var/mob/living/user)
 	if(user.restrained())
 		to_chat(user, "<span class='warning'>You can't do this while restrained!</span>")
 		return FALSE
 	return TRUE
+
+// Ability behavior that fires right before the spell is CASTED (not channeled!)
+/datum/vampire_ability/proc/PreCast(var/mob/living/user, var/atom/atom)
+	return
 
 ///////////////////////////////////////////
 
@@ -281,7 +295,7 @@
 	ui_icon_state = "vines"
 	channeled = TRUE
 
-/datum/vampire_ability/burgeoning/PostCastCheck(var/mob/living/carbon/human/user, var/atom/target)
+/datum/vampire_ability/burgeoning/PostChannelCheck(var/mob/living/carbon/human/user, var/atom/target)
 	var/turf/T = get_turf(target)
 	if(T.density)
 		to_chat(user, "<span class='warning'>Vines can't grow there!</span>")
@@ -436,26 +450,113 @@
 	ray.transform = turn(mat,newangle)
 
 
-
-/datum/vampire_ability/pacify/PostCastCheck(mob/living/user, atom/atom)
+/datum/vampire_ability/pacify/PostChannelCheck(mob/living/user, atom/atom)
 	if(isliving(atom) && atom != user)
 		return TRUE
 
-/obj/effect/pacifygaze
-	icon = 'icons/effects/96x96.dmi'
-	icon_state = "beamin_up"
-	color = DEFAULT_BLOOD
-	anchored = TRUE
-	density = TRUE
-	pixel_x = -32
-	pixel_y = -32
-	alpha = 150
-	plane = ABOVE_HUMAN_PLANE
-
-/obj/effect/pacifygaze/New()
-	..()
-	spawn(10)
-		qdel(src)
-
 /mob
 	var/vampire_pacified= FALSE
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/screech
+	name = "Chiropteran Screech"
+	desc = "Let out a piercing screech, loud enough to shatter windows and stun your enemies."
+	ui_icon_state = "screech"
+	cooldown = 10 SECONDS
+	custom_do_after_checks = /datum/vampire_ability/screech/proc/check_interrupt
+	cast_time = 1 SECONDS
+
+	var/interrupted
+
+/datum/vampire_ability/screech/Ability(mob/living/carbon/human/user)
+	interrupted = FALSE
+
+	var/list/in_view_7 = view(7, user)
+	var/list/in_view_4 = view(4, user)
+
+	playsound(user, Holiday == APRIL_FOOLS_DAY ? 'sound/effects/deletescream.ogg' : 'sound/effects/creepyshriek.ogg', 100, 1)
+	for (var/mob/living/carbon/C in in_view_7)
+		if(isvampire(C))
+			continue
+		if(C.is_deaf())
+			continue
+		to_chat(C, "<span class='danger'><font size='3'>You hear a ear piercing shriek and your senses dull!</font></span>")
+		C.Knockdown(8)
+		C.ear_deaf = 20
+		C.stuttering = 20
+		C.Stun(8)
+		C.Jitter(150)
+
+	// DEATH TO ALL GLASS
+	for(var/obj/structure/window/W in in_view_4)
+		W.shatter()
+	for(var/obj/machinery/light/L in in_view_7)
+		L.broken()
+	for(var/obj/item/weapon/hatchet/tomahawk/T in in_view_7)
+		T.shatter()
+	for(var/obj/structure/mirror/M in in_view_7)
+		M.shatter()
+	for(var/obj/item/weapon/pocket_mirror/P in in_view_7)
+		P.shatter()
+	for(var/obj/item/weapon/virusdish/V in in_view_7)
+		V.shatter()
+	for(var/obj/item/weapon/reagent_containers/glass/beaker/B in in_view_7)
+		B.health = 0
+		B.try_break()
+	for(var/obj/item/weapon/reagent_containers/food/drinks/D in in_view_7)
+		D.create_broken_bottle()
+	for(var/obj/machinery/computer/C in in_view_4)
+		C.stat |= BROKEN
+		C.update_icon()
+
+/datum/vampire_ability/screech/PreCastCheck(mob/living/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.species && H.species.flags & SPECIES_NO_MOUTH)
+			to_chat(H, "<span class='warning'>How are you going to screech without a mouth?</span>")
+			return FALSE
+	return TRUE
+
+
+/datum/vampire_ability/screech/PreCast(var/mob/living/user)
+
+	user.visible_message(user, "<span class='danger'>[user] takes a deep breath...</span>", "<span class='warning'>You suck in air to let out a piercing shriek...</span>")
+
+	// TODO - FIND A BETTER WINDUP SOUND
+	playsound(user, pick('sound/hallucinations/growl1.ogg','sound/hallucinations/growl2.ogg','sound/hallucinations/growl3.ogg'), 35, 1)
+	user.register_event(/event/attacked_by, src, .proc/interrupt)
+	user.register_event(/event/disarmed, src, .proc/interrupt)
+	user.register_event(/event/slapped, src, .proc/interrupt)
+	user.register_event(/event/shushed, src, .proc/interrupt)
+	user.register_event(/event/hitby, src, .proc/interrupt)
+	user.register_event(/event/unarmed_attack, src, .proc/interrupt)
+
+
+/datum/vampire_ability/screech/proc/interrupt(mob/attacker, mob/attacked, obj/item/item)
+	interrupted = TRUE
+
+	if(ishuman(vamp_role.antag.current))
+		var/mob/living/carbon/human/H = vamp_role.antag.current
+		if(H.gender == FEMALE)
+			playsound(H, pick(female_cough_sound), 100, 0)
+		else
+			playsound(H, pick(male_cough_sound), 100, 0)
+
+	vamp_role.antag.current.visible_message("<span class='warning'>[vamp_role.antag.current] sputters!</span>", "<span class='warning'>...and get the wind knocked out of you!</span>")
+
+	// There's a penalty for getting interrupted, but you won't be forced to wait the entire cooldown.
+	last_activated = world.time - cooldown*(2/3)
+
+	vamp_role.antag.current.unregister_event(/event/attacked_by, src, .proc/interrupt)
+	vamp_role.antag.current.unregister_event(/event/disarmed, src, .proc/interrupt)
+	vamp_role.antag.current.unregister_event(/event/slapped, src, .proc/interrupt)
+	vamp_role.antag.current.unregister_event(/event/shushed, src, .proc/interrupt)
+	vamp_role.antag.current.unregister_event(/event/hitby, src, .proc/interrupt)
+	vamp_role.antag.current.unregister_event(/event/unarmed_attack, src, .proc/interrupt)
+
+/datum/vampire_ability/screech/proc/check_interrupt(mob/user, use_user_turf, user_original_location, atom/target, target_original_location, needhand, obj/item/originally_held_item)
+	if(interrupted)
+		interrupted = FALSE
+		return FALSE
+	return TRUE
