@@ -161,3 +161,111 @@
 /mob/living/simple_animal/hostile/wererat/illusion/chasing/CanAttack(atom/the_target)
 	return ishuman(the_target)
 
+
+////////////////////////
+
+#define LOCUST_BRUTE_DAMAGE 	10
+#define LOCUST_TOXIN_DAMAGE 	10
+#define LOCUST_TOXIN_AMOUNT 	1
+#define LOCUST_STOXIN_AMOUNT	3
+
+
+/mob/living/simple_animal/hostile/vampire_locusts
+	name = "locust swarm"
+	desc = "A swarm of swollen, bloodthirsty locusts. Better start running."
+	icon_state = "vamp_bees"
+	icon_living = "vamp_bees"
+
+	density = FALSE
+	minimum_distance = 0
+	hostile_interest = 1
+	stat_attack = 1
+
+/mob/living/simple_animal/hostile/vampire_locusts/CanAttack(atom/the_target)
+	. = ..()
+	if(!.)
+		return FALSE
+	if(isliving(the_target))
+		var/mob/living/M = the_target
+		if(M.HasVampireMutation(/datum/vampire_mutation/pestilence))
+			return FALSE
+	return TRUE
+
+// Start chasing IMMEDIATELY
+/mob/living/simple_animal/hostile/vampire_locusts/New()
+	..()
+	GiveTarget(FindTarget())
+	MoveToTarget()
+
+/mob/living/simple_animal/hostile/vampire_locusts/FindTarget()
+	. = ..()
+	if(.)
+		emote("me",,"swarms after [.]!")
+
+// Similar to /mob/living/simple_animal/bee
+/mob/living/simple_animal/hostile/vampire_locusts/AttackingTarget()
+	var/mob/living/carbon/human/M = target
+	var/sting_prob = 100
+	if(istype(M))
+		var/obj/item/clothing/worn_suit = M.wear_suit
+		var/obj/item/clothing/worn_helmet = M.head
+		if(worn_suit)
+			var/bio_block = min(worn_suit.armor["bio"],70)
+			var/perm_block = 70-70*worn_suit.permeability_coefficient
+			sting_prob -= max(bio_block,perm_block) 	// Is your suit sealed? I can't get to 70% of your body.
+		if(worn_helmet)
+			var/bio_block = min(worn_helmet.armor["bio"],30)
+			var/perm_block = 30-30*worn_helmet.permeability_coefficient
+			sting_prob -= max(bio_block,perm_block) 	// Is your helmet sealed? I can't get to 30% of your body.
+
+	var/brute_dam = LOCUST_BRUTE_DAMAGE
+	var/toxin_dam = LOCUST_TOXIN_DAMAGE
+	var/toxin_amt = LOCUST_TOXIN_AMOUNT
+	var/stoxin_amt = LOCUST_STOXIN_AMOUNT
+
+	if (!prob(sting_prob))
+		M.visible_message("<span class='warning'>\The [src] are stinging \the [M] through their protection!</span>", "<span class='warning'>You have been stung by \the [src] through your protection!</span>")
+		brute_dam = brute_dam/2
+		toxin_dam = toxin_dam/2
+		toxin_amt = toxin_amt/2
+		stoxin_amt = stoxin_amt/2
+	else
+		M.visible_message("<span class='warning'>\The [src] are stinging \the [M]!</span>", "<span class='warning'>You have been stung by \the [src]!</span>")
+
+	if(prob(30))
+		M.audible_scream()
+
+	M.apply_damage(brute_dam BRUTE)
+	M.apply_damage(toxin_dam, TOX)
+	M.reagents.add_reagent(TOXIN, toxin_amt)
+	M.reagents.add_reagent(STOXIN, stoxin_amt)
+	M.flash_pain()
+
+
+
+/mob/living/simple_animal/hostile/vamp_bees/proc/Flail(var/mob/living/M)
+	to_chat(M, "<span class='warning'>You flail helplessly at the [src]!</span>")
+	playsound(M, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
+
+/mob/living/simple_animal/hostile/vamp_bees/bullet_act(obj/item/projectile/Proj)
+	return
+
+/mob/living/simple_animal/hostile/vamp_bees/bite_act(mob/living/carbon/human/M)
+	Flail(M)
+
+/mob/living/simple_animal/hostile/vamp_bees/kick_act(mob/living/carbon/human/M)
+	Flail(M)
+
+/mob/living/simple_animal/hostile/vamp_bees/attackby(obj/item/O, mob/user, no_delay, originator)
+	Flail(user)
+
+/mob/living/simple_animal/hostile/vamp_bees/attack_hand(mob/living/carbon/human/M)
+	Flail(M)
+
+
+
+
+#undef LOCUST_BRUTE_DAMAGE
+#undef LOCUST_TOXIN_DAMAGE
+#undef LOCUST_TOXIN_AMOUNT
+#undef LOCUST_STONIX_AMOUNT

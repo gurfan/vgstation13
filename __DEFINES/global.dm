@@ -313,7 +313,8 @@ var/list/blacklisted_mobs = list(
 		/mob/living/simple_animal/hostile/bunnybot,						// See viscerator
 		/mob/living/carbon/human/NPC,									// Unfinished, with its own AI that conflicts with player movements.
 		/mob/living/simple_animal/hostile/pulse_demon,				// Your motherfucking life ends in 0 seconds.
-		/mob/living/simple_animal/hostile/wererat
+		/mob/living/simple_animal/hostile/wererat,						// Vampire only
+		/mob/living/simple_animal/hostile/vamp_bees						// Vampire only
 		)
 
 //Boss monster list

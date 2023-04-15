@@ -234,3 +234,11 @@
 	name = "Chiropteran Screech"
 	desc = "The vocal chords of a Vampire mutated this way can produce a truly horrifying scream, capable of stunning all nearby victims with ears for around eight seconds, and smashing all windows in sight. This ability, thankfully, has a visible and audible windup period of one second."
 	my_ability_type = /datum/vampire_ability/screech
+
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/pestilence
+	name = "Pestilence"
+	desc = "A plague of locusts infests the body of a Vampire with this Mutation, visible on any normal body scanner. On command, they can release two swarms from their body, seeking out up to two targets and injecting them with a harsh, toxic venom. The blood-tinted swarm cannot be killed traditionally, but victims can run away, and the swarms will fade after fifteen seconds. In addition, the Vampire will receive a significant chunk of brute damage, as the locusts emerge directly from skin or similar body parts."
+	my_ability_type = /datum/vampire_ability/pestilence

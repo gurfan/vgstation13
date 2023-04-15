@@ -560,3 +560,15 @@
 		interrupted = FALSE
 		return FALSE
 	return TRUE
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/pestilence
+	name = "Pestilence"
+	desc = "Release a swarm of locusts from your body."
+	ui_icon_state = "screech"
+	cooldown = 10 SECONDS
+	custom_do_after_checks = /datum/vampire_ability/screech/proc/check_interrupt
+	cast_time = 1 SECONDS
+
+	var/interrupted

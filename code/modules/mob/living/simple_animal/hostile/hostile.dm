@@ -35,7 +35,7 @@
 	var/list/target_rules = list()
 
 	var/can_ventcrawl = FALSE // If the mob can ventcrawl
-	var/mob/living/simple_animal/hostile/asteroid/hivelord/hivelord = null
+	var/mob/living/simple_animal/hostile/asteroid/hivelord/hivelord = null		// Why is this here?
 
 /mob/living/simple_animal/hostile/New()
 	..()
