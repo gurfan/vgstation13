@@ -66,6 +66,9 @@
 		var/datum/effect/system/smoke_spread/S = new/datum/effect/system/smoke_spread()
 		S.set_up(5,0,location,null)
 		S.start()
+
+
+
 /*
 /obj/effect/small_explosion
 	name = "explosion"

@@ -274,7 +274,7 @@
 	var/list/languages[0]
 
 	var/list/alphas = list()
-	var/alpha_override = FALSE	
+	var/alpha_override = FALSE
 	var/spell/spell_channeling // The spell that's currently being channeled
 
 	var/see_in_dark_override = 0	//for general guaranteed modification of these variables
@@ -288,3 +288,5 @@
 	var/old_assigned_role // If they ghosted, what role did they have?
 
 	var/list/crit_rampup = list() // Of the form timestamp/damage
+
+	var/force_projectile_miss = FALSE

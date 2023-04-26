@@ -265,3 +265,59 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 	..()
 	spawn(10)
 		qdel(src)
+
+
+/////////////////////////////
+
+/obj/item/projectile/bloodbolt
+	name = "blood bolt"
+	icon_state = "bloodbolt"
+	animate_movement = 2
+	linear_movement = 0
+	damage = 0
+
+/obj/item/projectile/bloodbolt/bump_original_check()//so players can aim at floors
+	if(!bumped)
+		if(loc == get_turf(original))
+			if(!(original in permutated))
+				to_bump(original)
+
+
+/obj/item/projectile/bloodbolt/OnDeath()
+	var/turf/T = get_turf(src)
+	for(var/mob/living/M in range(1, T))
+
+		var/total_dam = M.loc == T ? 90 : 45
+
+		var/chest_red = M.run_armor_check(def_zone = LIMB_CHEST, attack_flag = "bomb", quiet = TRUE, modifier = 0.75)
+		var/head_red = M.run_armor_check(def_zone = LIMB_HEAD, attack_flag = "bomb", quiet = TRUE, modifier = 0.75)
+
+		M.apply_damage((total_dam*(2/3)*(1-chest_red/100)), BURN, LIMB_CHEST)
+		M.apply_damage((total_dam*(1/3)*(1-head_red/100)), BURN, LIMB_HEAD)
+
+		M.flash_eyes(visual = 1)
+		M.Jitter(10)
+		M.movement_speed_modifier -= 0.25
+		spawn(30)
+			M.movement_speed_modifier += 0.25
+
+
+	for(var/turf/simulated/floor/sooty in range(1,T))
+		new /obj/effect/decal/cleanable/soot(sooty)
+	new /obj/effect/explosion/bloodbolt(T)
+	playsound(T, 'sound/effects/explosion_blood.ogg', 100, 1)
+	bloodmess_splatter(T)
+
+
+/obj/item/projectile/bloodbolt/to_bump(atom/A)
+	if(!A)
+		return
+	var/turf/T = get_turf(A)
+	if(isfloor(T) && isliving(A))
+		forceMove(T)
+	..()
+
+
+/obj/effect/explosion/bloodbolt
+	icon_state = "blood_bolt"
+	opacity = 0

@@ -164,8 +164,8 @@
 
 ////////////////////////
 
-#define LOCUST_BRUTE_DAMAGE 	10
-#define LOCUST_TOXIN_DAMAGE 	10
+#define LOCUST_BRUTE_DAMAGE 	5
+#define LOCUST_TOXIN_DAMAGE 	5
 #define LOCUST_TOXIN_AMOUNT 	1
 #define LOCUST_STOXIN_AMOUNT	3
 
@@ -177,9 +177,12 @@
 	icon_living = "vamp_bees"
 
 	density = FALSE
+	force_projectile_miss = TRUE
 	minimum_distance = 0
 	hostile_interest = 1
-	stat_attack = 1
+	//stat_attack = 1
+
+	var/datum/vampire_ability/pestilence/vamp_ability = null
 
 /mob/living/simple_animal/hostile/vampire_locusts/CanAttack(atom/the_target)
 	. = ..()
@@ -189,13 +192,28 @@
 		var/mob/living/M = the_target
 		if(M.HasVampireMutation(/datum/vampire_mutation/pestilence))
 			return FALSE
+
+	if(vamp_ability)
+		for(var/mob/living/simple_animal/hostile/vampire_locusts/VL in vamp_ability.swarms)
+			if(VL != src && VL.target == the_target)			// Don't attack someone already being attacked by a partner swarm
+				return FALSE
+
 	return TRUE
 
 // Start chasing IMMEDIATELY
-/mob/living/simple_animal/hostile/vampire_locusts/New()
+/mob/living/simple_animal/hostile/vampire_locusts/New(loc, var/datum/vampire_ability/ability)
 	..()
+	vamp_ability = ability
 	GiveTarget(FindTarget())
 	MoveToTarget()
+
+
+/mob/living/simple_animal/hostile/vampire_locusts/Life()
+	..()
+	if(!stat && prob(5))
+		playsound(src, 'sound/effects/bees.ogg', 40, 1)
+	animate(src, pixel_x = rand(-12,12) * PIXEL_MULTIPLIER, pixel_y = rand(-12,12) * PIXEL_MULTIPLIER, time = 10, easing = SINE_EASING)
+
 
 /mob/living/simple_animal/hostile/vampire_locusts/FindTarget()
 	. = ..()
@@ -235,31 +253,33 @@
 	if(prob(30))
 		M.audible_scream()
 
-	M.apply_damage(brute_dam BRUTE)
+	M.apply_damage(brute_dam, BRUTE)
 	M.apply_damage(toxin_dam, TOX)
 	M.reagents.add_reagent(TOXIN, toxin_amt)
 	M.reagents.add_reagent(STOXIN, stoxin_amt)
 	M.flash_pain()
 
+	playsound(src, 'sound/effects/bees.ogg', 60, 1)
 
 
-/mob/living/simple_animal/hostile/vamp_bees/proc/Flail(var/mob/living/M)
-	to_chat(M, "<span class='warning'>You flail helplessly at the [src]!</span>")
+
+/mob/living/simple_animal/hostile/vampire_locusts/proc/Flail(var/mob/living/M)
+	M.visible_message("<span class='warning'>[M] flails helplessly at \the [src]!</span>", "<span class='danger'>You flail helplessly at \the [src]!</span>")
 	playsound(M, 'sound/weapons/punchmiss.ogg', 25, 1, -1)
 
-/mob/living/simple_animal/hostile/vamp_bees/bullet_act(obj/item/projectile/Proj)
+/mob/living/simple_animal/hostile/vampire_locusts/bullet_act(obj/item/projectile/Proj)
 	return
 
-/mob/living/simple_animal/hostile/vamp_bees/bite_act(mob/living/carbon/human/M)
+/mob/living/simple_animal/hostile/vampire_locusts/bite_act(mob/living/carbon/human/M)
 	Flail(M)
 
-/mob/living/simple_animal/hostile/vamp_bees/kick_act(mob/living/carbon/human/M)
+/mob/living/simple_animal/hostile/vampire_locusts/kick_act(mob/living/carbon/human/M)
 	Flail(M)
 
-/mob/living/simple_animal/hostile/vamp_bees/attackby(obj/item/O, mob/user, no_delay, originator)
+/mob/living/simple_animal/hostile/vampire_locusts/attackby(obj/item/O, mob/user, no_delay, originator)
 	Flail(user)
 
-/mob/living/simple_animal/hostile/vamp_bees/attack_hand(mob/living/carbon/human/M)
+/mob/living/simple_animal/hostile/vampire_locusts/attack_hand(mob/living/carbon/human/M)
 	Flail(M)
 
 

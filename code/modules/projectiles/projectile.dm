@@ -280,7 +280,7 @@ var/list/impact_master = list()
 
 			def_zone = get_zone_with_miss_chance(def_zone, M, miss_modifier)
 
-		if(!def_zone)
+		if(!def_zone || M.force_projectile_miss)
 			visible_message("<span class='notice'>\The [src] misses [M] narrowly!</span>")
 			special_collision = PROJECTILE_COLLISION_MISS
 		else
@@ -650,6 +650,8 @@ var/list/impact_master = list()
 	..()
 	for(var/mob/living/carbon/human/H in orange(1, loc))
 		var/datum/vampire_mutation/reactive_blood/RB = H.HasVampireMutation(/datum/vampire_mutation/reactive_blood)
+		if(!RB)
+			return
 		spawn()
 			RB.AttemptBlink()
 

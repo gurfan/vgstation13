@@ -566,9 +566,55 @@
 /datum/vampire_ability/pestilence
 	name = "Pestilence"
 	desc = "Release a swarm of locusts from your body."
-	ui_icon_state = "screech"
+	ui_icon_state = "pest"
 	cooldown = 10 SECONDS
-	custom_do_after_checks = /datum/vampire_ability/screech/proc/check_interrupt
-	cast_time = 1 SECONDS
 
-	var/interrupted
+	var/swarms_to_spawn = 2
+	var/list/swarms = list()
+
+/datum/vampire_ability/pestilence/Ability(mob/living/carbon/human/user)
+	var/turf/T = get_turf(user)
+	for(var/i = 1 to swarms_to_spawn)
+		swarms += new /mob/living/simple_animal/hostile/vampire_locusts(T, src)
+	user.visible_message("<span class='danger'>A swarm of insects emerges from [user]!</span>", "<span class='warning'>The locusts emerge directly from your skin, tearing it apart!</span>")
+
+	// Damage is split this way to ensure that the vampire won't get IB from using this. Bones may still break if the threshold is reached.
+	user.apply_damage(10, BRUTE, LIMB_CHEST)
+	user.apply_damage(10, BRUTE, LIMB_LEFT_ARM)
+	user.apply_damage(10, BRUTE, LIMB_RIGHT_ARM)
+	user.apply_damage(10, BRUTE, LIMB_GROIN)
+
+	bloodmess_splatter(T)
+	playsound(user, 'sound/effects/blobsplatspecial.ogg', 100, 0)
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/bloodbolt
+	name = "Blood Bolt"
+	desc = "Launch a bolt of sanguine energy at your foes."
+	ui_icon_state = "bolt"
+	cooldown = 3 SECONDS
+	channeled = TRUE
+	blood_cost = 50
+
+/datum/vampire_ability/bloodbolt/Ability(mob/living/carbon/human/user, atom/target)
+	. = ..()
+
+	playsound(user, 'sound/weapons/hivehand_empty.ogg', 70, 1)
+	var/obj/item/projectile/projectile = new /obj/item/projectile/bloodbolt(user.loc, user.dir)
+
+	projectile.original = target
+	projectile.starting = get_turf(user)
+	projectile.target = get_turf(target)
+	projectile.shot_from = user //fired from the user
+	projectile.current = projectile.original
+	projectile.yo = target.y - user.y
+	projectile.xo = target.x - user.x
+	spawn()
+		projectile.OnFired()
+		projectile.process()
+
+/datum/vampire_ability/bloodbolt/PostChannelCheck(mob/living/user, atom/atom)
+	if(get_turf(user) != get_turf(atom))
+		return TRUE
+	return FALSE

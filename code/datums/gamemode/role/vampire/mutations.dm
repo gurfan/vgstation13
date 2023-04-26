@@ -242,3 +242,10 @@
 	name = "Pestilence"
 	desc = "A plague of locusts infests the body of a Vampire with this Mutation, visible on any normal body scanner. On command, they can release two swarms from their body, seeking out up to two targets and injecting them with a harsh, toxic venom. The blood-tinted swarm cannot be killed traditionally, but victims can run away, and the swarms will fade after fifteen seconds. In addition, the Vampire will receive a significant chunk of brute damage, as the locusts emerge directly from skin or similar body parts."
 	my_ability_type = /datum/vampire_ability/pestilence
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/bloodbolt
+	name = "Blood Bolt"
+	desc = "This Vampire can channel its sanguine energy into a blast of infernal energy. This bolt is expelled from the fingertips with the speed and force of a rocket, blasting a non-destructive 3x3 area of effect where it lands, dealing up to 90 burn damage at the epicenter. This blood comes directly from the Vampire's veins, draining 50u."
+	my_ability_type = /datum/vampire_ability/bloodbolt
