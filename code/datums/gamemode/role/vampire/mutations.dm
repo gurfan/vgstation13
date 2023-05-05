@@ -249,3 +249,10 @@
 	name = "Blood Bolt"
 	desc = "This Vampire can channel its sanguine energy into a blast of infernal energy. This bolt is expelled from the fingertips with the speed and force of a rocket, blasting a non-destructive 3x3 area of effect where it lands, dealing up to 90 burn damage at the epicenter. This blood comes directly from the Vampire's veins, draining 50u."
 	my_ability_type = /datum/vampire_ability/bloodbolt
+
+///////////////////////////////////////////
+
+/datum/vampire_mutation/lightning
+	name = "Coursing Veins"
+	desc = "An especially sadistic specimen can gain this mutated link to electricity. It stomps forth a line of shocking magic which trails quickly along the ground, finding the first target and zapping them harshly. This effect leaves them at an extremely slow movement speed for 10 seconds and 'pulses' anything they have held or worn. Pulsed equipment will fail to work for a random duration between 30 and 90 seconds."
+	my_ability_type = /datum/vampire_ability/lightning

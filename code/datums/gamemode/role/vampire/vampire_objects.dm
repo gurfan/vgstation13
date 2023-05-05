@@ -321,3 +321,117 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 /obj/effect/explosion/bloodbolt
 	icon_state = "blood_bolt"
 	opacity = 0
+
+
+
+/////////////////////////////
+
+
+/obj/effect/vampire_lightning
+	density = FALSE
+	anchored = TRUE
+	animate_movement = 0
+	var/branch = FALSE
+	var/turf/target
+	var/max_steps = 30
+	var/steps_taken = 0
+	var/list/segments = list()
+	var/delay = 1 SECONDS
+	var/turf/prev = null
+
+/obj/effect/vampire_lightning/New(loc, targ, isbranch = FALSE)
+	..()
+	if(!targ)
+		qdel(src)
+
+	prev = loc
+	target = targ
+	target.color = "blue"
+	branch = isbranch
+
+	MoveToTarget()
+
+/obj/effect/vampire_lightning/proc/MoveToTarget()
+	var/turf/T = get_turf(src)
+	var/turf/next = get_step_to(src, target)
+	T.color = branch ? "red" : "green"
+
+	// Otherwise, keep on moving.
+	if(steps_taken != 0)
+		dir = get_dir(loc, prev)
+		CreateSegment()
+		sleep(delay)
+	if(CheckCollision())
+		Zap()
+		qdel(src)
+		return
+	if(steps_taken % 2)
+		playsound(src, 'sound/effects/eleczap.ogg', 65, 1)
+	dir = get_dir(loc, next)
+	CreateSegment()
+	sleep(delay)
+	prev = loc
+	var/obj/effect/vampire_lightning_segment/S = new(loc, src)
+	segments += S
+	overlays = 0
+	forceMove(next)
+	steps_taken++
+
+	// Select up to two nearby floors to branch off to.
+	if(!branch && steps_taken == 2)
+		var/exclude_dir = get_dir(target, prev)
+		var/list/pos_turfs = orange(3, target) - orange(1, target)
+		for(var/atom/A in pos_turfs)
+			if(!isfloor(A) || (get_dir(target, A) & exclude_dir))	// Exclude turfs that aren't floors, or turfs in the wrong direction.
+				pos_turfs -= A
+		for(var/atom/A in pos_turfs)
+			A.color = "#fcb900"
+		for(var/i = 1 to min(2, pos_turfs.len))
+			var/turf/TU = pick(pos_turfs)
+			TU.color = "blue"
+			spawn()
+				new /obj/effect/vampire_lightning(loc, TU, TRUE)
+
+	// we've gone far enough.
+	if(steps_taken > max_steps)
+		qdel(src)
+		return
+	MoveToTarget()
+
+/obj/effect/vampire_lightning/proc/CheckCollision()
+	if(loc == target)
+		return TRUE
+	for(var/mob/living/M in get_turf(src))
+		if(!M.HasVampireMutation(/datum/vampire_mutation/lightning))
+			return TRUE
+	return FALSE
+
+/obj/effect/vampire_lightning/proc/Zap()
+	for(var/mob/living/M in get_turf(src))
+		playsound(src, pick(lightning_sound), 100, 0)
+
+/obj/effect/vampire_lightning/proc/CreateSegment()
+	var/image/I = image('icons/obj/lightning.dmi', src, "vamplightning_half", BLOOD_LAYER + 1, dir)
+	I.plane = ABOVE_TURF_PLANE
+	overlays += I
+
+/obj/effect/vampire_lightning/Destroy()
+	for(var/segment in segments)
+		qdel(segment)
+	animate(src, alpha = 0, time = 5)
+	spawn(5)
+		..()
+
+// Visual Only
+/obj/effect/vampire_lightning_segment
+	plane = ABOVE_TURF_PLANE
+	layer = BLOOD_LAYER+1
+
+/obj/effect/vampire_lightning_segment/New(loc, var/atom/prev)
+	..()
+	appearance = prev.appearance
+
+/obj/effect/vampire_lightning_segment/Destroy()
+	animate(src, alpha = 0, time = 5)
+	spawn(5)
+		..()

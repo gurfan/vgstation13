@@ -598,8 +598,6 @@
 	blood_cost = 50
 
 /datum/vampire_ability/bloodbolt/Ability(mob/living/carbon/human/user, atom/target)
-	. = ..()
-
 	playsound(user, 'sound/weapons/hivehand_empty.ogg', 70, 1)
 	var/obj/item/projectile/projectile = new /obj/item/projectile/bloodbolt(user.loc, user.dir)
 
@@ -618,3 +616,17 @@
 	if(get_turf(user) != get_turf(atom))
 		return TRUE
 	return FALSE
+
+///////////////////////////////////////////
+
+/datum/vampire_ability/lightning
+	name = "Lightning"
+	desc = "Sample Description."
+	ui_icon_state = "bolt"
+	cooldown = 3 SECONDS
+	channeled = TRUE
+
+/datum/vampire_ability/lightning/Ability(mob/living/carbon/human/user, atom/target)
+	spawn()
+		new /obj/effect/vampire_lightning(get_turf(user), get_turf(target))
+
