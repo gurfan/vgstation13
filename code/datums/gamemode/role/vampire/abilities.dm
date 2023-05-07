@@ -621,12 +621,14 @@
 
 /datum/vampire_ability/lightning
 	name = "Lightning"
-	desc = "Sample Description."
-	ui_icon_state = "bolt"
+	desc = "Lightning"
+	ui_icon_state = "lightning"
 	cooldown = 3 SECONDS
 	channeled = TRUE
 
 /datum/vampire_ability/lightning/Ability(mob/living/carbon/human/user, atom/target)
+	playsound(user, 'sound/weapons/tablehit1.ogg', 70, 1)
+	user.visible_message("<span class='warning'>[user] stomps the ground!</span>")
 	spawn()
 		new /obj/effect/vampire_lightning(get_turf(user), get_turf(target))
 

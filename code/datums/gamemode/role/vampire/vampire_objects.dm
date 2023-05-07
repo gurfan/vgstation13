@@ -297,9 +297,9 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 
 		M.flash_eyes(visual = 1)
 		M.Jitter(10)
-		M.movement_speed_modifier -= 0.25
+		M.movement_speed_modifier -= 0.15
 		spawn(30)
-			M.movement_speed_modifier += 0.25
+			M.movement_speed_modifier += 0.15
 
 
 	for(var/turf/simulated/floor/sooty in range(1,T))
@@ -331,30 +331,37 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 	density = FALSE
 	anchored = TRUE
 	animate_movement = 0
-	var/branch = FALSE
+	plane = ABOVE_TURF_PLANE
+	layer = BLOOD_LAYER+1
+
+	var/obj/effect/vampire_lightning/parent = null
+	var/list/branches = list()
+
 	var/turf/target
+	var/turf/prev = null
 	var/max_steps = 30
 	var/steps_taken = 0
-	var/list/segments = list()
-	var/delay = 1 SECONDS
-	var/turf/prev = null
+	var/stopped = FALSE
 
-/obj/effect/vampire_lightning/New(loc, targ, isbranch = FALSE)
+	var/list/segments = list()
+	var/delay = 0.07 SECONDS
+
+
+/obj/effect/vampire_lightning/New(loc, targ, new_parent)
 	..()
 	if(!targ)
 		qdel(src)
 
 	prev = loc
 	target = targ
-	target.color = "blue"
-	branch = isbranch
+	parent = new_parent
 
-	MoveToTarget()
+	spawn()
+		MoveToTarget()
 
 /obj/effect/vampire_lightning/proc/MoveToTarget()
 	var/turf/T = get_turf(src)
 	var/turf/next = get_step_to(src, target)
-	T.color = branch ? "red" : "green"
 
 	// Otherwise, keep on moving.
 	if(steps_taken != 0)
@@ -363,10 +370,10 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 		sleep(delay)
 	if(CheckCollision())
 		Zap()
-		qdel(src)
+		Stop()
 		return
 	if(steps_taken % 2)
-		playsound(src, 'sound/effects/eleczap.ogg', 65, 1)
+		playsound(src, 'sound/effects/eleczap.ogg', 45, 1)
 	dir = get_dir(loc, next)
 	CreateSegment()
 	sleep(delay)
@@ -374,13 +381,16 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 	var/obj/effect/vampire_lightning_segment/S = new(loc, src)
 	segments += S
 	overlays = 0
+	if(next.density)
+		Stop()
+		return
 	forceMove(next)
 	steps_taken++
 
 	// Select up to two nearby floors to branch off to.
-	if(!branch && steps_taken == 2)
+	if(!parent && steps_taken == 2)
 		var/exclude_dir = get_dir(target, prev)
-		var/list/pos_turfs = orange(3, target) - orange(1, target)
+		var/list/pos_turfs = dview(3, target) - orange(1, target)
 		for(var/atom/A in pos_turfs)
 			if(!isfloor(A) || (get_dir(target, A) & exclude_dir))	// Exclude turfs that aren't floors, or turfs in the wrong direction.
 				pos_turfs -= A
@@ -389,14 +399,25 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 		for(var/i = 1 to min(2, pos_turfs.len))
 			var/turf/TU = pick(pos_turfs)
 			TU.color = "blue"
-			spawn()
-				new /obj/effect/vampire_lightning(loc, TU, TRUE)
+			branches += new /obj/effect/vampire_lightning(loc, TU, src)
 
 	// we've gone far enough.
 	if(steps_taken > max_steps)
-		qdel(src)
+		Stop()
 		return
 	MoveToTarget()
+
+
+/obj/effect/vampire_lightning/proc/Stop()
+	stopped = TRUE
+	parent ? parent.CheckFinished() : CheckFinished()
+
+/obj/effect/vampire_lightning/proc/CheckFinished()
+	for(var/obj/effect/vampire_lightning/branch in branches)
+		if(!branch.stopped)
+			return FALSE
+	if(stopped)
+		qdel(src)
 
 /obj/effect/vampire_lightning/proc/CheckCollision()
 	if(loc == target)
@@ -408,7 +429,13 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 
 /obj/effect/vampire_lightning/proc/Zap()
 	for(var/mob/living/M in get_turf(src))
-		playsound(src, pick(lightning_sound), 100, 0)
+		M.emp_act(2)
+		M.flash_eyes(visual = 1)
+		M.Jitter(10)
+		M.movement_speed_modifier -= 0.75
+		spawn(10 SECONDS)
+			M.movement_speed_modifier += 0.75
+		playsound(src, pick(lightning_sound), 120, 0)
 
 /obj/effect/vampire_lightning/proc/CreateSegment()
 	var/image/I = image('icons/obj/lightning.dmi', src, "vamplightning_half", BLOOD_LAYER + 1, dir)
@@ -416,9 +443,11 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 	overlays += I
 
 /obj/effect/vampire_lightning/Destroy()
+	for(var/branch in branches)
+		qdel(branch)
 	for(var/segment in segments)
 		qdel(segment)
-	animate(src, alpha = 0, time = 5)
+	animate(src, alpha = 0, time = 2)
 	spawn(5)
 		..()
 
@@ -432,6 +461,6 @@ var/obj/effect/bloodsense/human/bloodsense_human_effect = new(null)
 	appearance = prev.appearance
 
 /obj/effect/vampire_lightning_segment/Destroy()
-	animate(src, alpha = 0, time = 5)
+	animate(src, alpha = 0, time = 2)
 	spawn(5)
 		..()
