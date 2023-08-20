@@ -668,9 +668,11 @@
 
 			var/turf/Trajectory = U
 			var/dist = cheap_pythag(U.x - starting.x, U.y - starting.y)
-			while(Trajectory != starting)
+			var/iterations = 0
+			while((Trajectory != starting) && iterations < 500)
 				Trajectory = get_step_towards(Trajectory,starting)
 				dist += CalculateExplosionSingleBlock(Trajectory)
+				iterations++
 
 			if (dist <= heavy_damage_range)
 				heavy_turfs += U
