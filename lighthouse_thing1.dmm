@@ -1,0 +1,387 @@
+"aC" = (/obj/machinery/light/broken{dir = 4},/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"aD" = (/obj/machinery/anomaly,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"aL" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 8; icon_state = "warning"; tag = "icon-warning (WEST)"},/obj/effect/forcefield,/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"bf" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"bi" = (/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"bk" = (/obj/machinery/door/airlock/external,/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"cd" = (/obj/structure/table/glass,/obj/item/weapon/storage/box/mugs,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"cr" = (/obj/item/stack/rods,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"ct" = (/obj/effect/decal/cleanable/dirt,/obj/abstract/map/spawner/assistant,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"cx" = (/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"cQ" = (/turf/unsimulated/floor{name = "plating"},/area/awaymission/example{requires_power = 0})
+"dj" = (/turf/space,/area)
+"dl" = (/obj/structure/bed/chair/office/dark{dir = 1},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"dr" = (/turf/simulated/wall/invulnerable{desc = null; icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"},/area/awaymission/example{requires_power = 0})
+"dC" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 9; icon_state = "4-9"},/turf/space,/area/awaymission)
+"dE" = (/obj/structure/catwalk,/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission/example{requires_power = 0})
+"dF" = (/obj/structure/window/reinforced/plasma{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"dG" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/full/reinforced,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"dR" = (/obj/structure/bed/chair/comfy/red{dir = 8},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"dS" = (/obj/effect/decal/warning_stripes{dir = 8; icon_state = "warning"; tag = "icon-warning (WEST)"},/obj/effect/decal/cleanable/dirt,/obj/machinery/light/burnt{dir = 8},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"dT" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 1; icon_state = "warning"; tag = "icon-warning"},/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"ee" = (/obj/machinery/computer/teleporter,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"eD" = (/obj/structure/bed/chair/office/dark{dir = 4},/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"eF" = (/obj/structure/window/reinforced/plasma,/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"eI" = (/obj/machinery/media/jukebox,/turf/unsimulated/floor{name = "plating"},/area/awaymission/example{requires_power = 0})
+"fr" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"fu" = (/obj/effect/decal/cleanable/blood/stattrack,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"fG" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor,/area/awaymission/example{requires_power = 0})
+"fI" = (/obj/item/stack/rods,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"fT" = (/obj/machinery/light/small/broken,/turf/simulated/floor/carpet,/area/awaymission/example{requires_power = 0})
+"fZ" = (/obj/effect/decal/warning_stripes{color = "#393939"; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 8; icon_state = "warning"; tag = "icon-warning (WEST)"},/obj/effect/forcefield,/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"gp" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"gx" = (/obj/effect/step_trigger/thrower/east,/turf/space,/area/awaymission/example{requires_power = 0})
+"gC" = (/turf/simulated/floor/carpet,/area/awaymission/example{requires_power = 0})
+"gP" = (/obj/machinery/door/airlock{id_tag = "Dorm1"; name = "Dorm 1"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"gS" = (/obj/structure/window/reinforced,/obj/structure/grille/broken,/obj/item/weapon/shard,/obj/item/stack/rods,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"gX" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"gY" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"ha" = (/obj/machinery/light{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"hg" = (/turf/space,/area/awaymission/example{requires_power = 0})
+"hm" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/carpet,/area/awaymission/example{requires_power = 0})
+"hn" = (/obj/structure/window/reinforced/plasma{dir = 1},/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"hr" = (/obj/structure/door_assembly,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"hv" = (/obj/structure/closet/crate/bin,/obj/item/weapon/paper/crumpled,/obj/item/weapon/paper/crumpled,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"hx" = (/obj/structure/computerframe,/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"hO" = (/obj/structure/computerframe,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"hV" = (/turf/simulated/floor/wood{icon_state = "wood-broken3"; tag = "icon-wood-broken3"},/area/awaymission/example{requires_power = 0})
+"ix" = (/obj/structure/lattice,/obj/machinery/telecomms/broadcaster,/turf/space,/area/awaymission)
+"iA" = (/mob/living/simple_animal/hostile/humanoid/supermatter,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"iK" = (/obj/effect/step_trigger/thrower/east,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"jc" = (/obj/effect/decal/warning_stripes{color = "#393939"; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 1; icon_state = "warning"; tag = "icon-warning"},/obj/effect/forcefield,/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"jh" = (/turf/simulated/floor/plating{icon_state = "platingdmg1"; tag = "icon-platingdmg1"},/area/awaymission/example{requires_power = 0})
+"jx" = (/obj/structure/window/barricade,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/abstract/map/spawner/assistant,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"jT" = (/obj/machinery/computer/telescience/broken,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"jX" = (/obj/structure/table,/obj/structure/window/oneway{dir = 1},/obj/machinery/computer/fluff/terminal/old{name = "processing array"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"kt" = (/obj/machinery/atmospherics/unary/vent_pump{canSpawnMice = 0; on = 1},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"kw" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/awaymission/example{requires_power = 0})
+"kB" = (/obj/structure/window/reinforced/plasma{dir = 4},/obj/structure/window/barricade/full,/obj/item/stack/rods,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"kE" = (/obj/structure/table,/obj/abstract/map/spawner/assistant,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"lf" = (/obj/machinery/door/airlock/glass{name = "Dormitories"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"li" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/warning_stripes{icon_state = "warning"},/mob/living/simple_animal/hostile/necro/zombie/ghoul,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"lr" = (/obj/structure/window/reinforced/plasma{dir = 8},/obj/abstract/map/spawner/assistant,/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"lx" = (/obj/structure/bed/chair{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"lB" = (/obj/item/weapon/shard{icon_state = "medium"},/turf/unsimulated/floor{icon_state = "platingdmg3"},/area/awaymission)
+"lE" = (/obj/structure/window/reinforced/plasma{dir = 4},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"lP" = (/obj/structure/lattice,/obj/machinery/account_database,/turf/space,/area/awaymission)
+"ml" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/blue{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = -2},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = 2},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/space,/area/awaymission)
+"mp" = (/obj/structure/window/reinforced/plasma{dir = 4},/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"ms" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/blue{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = -2},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = 2},/turf/space,/area/awaymission)
+"mZ" = (/obj/item/weapon/shard{icon_state = "small"; pixel_x = 5; pixel_y = -5},/obj/item/stack/rods,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"nc" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"nn" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 4; d2 = 9; icon_state = "4-9"},/turf/space,/area/awaymission)
+"no" = (/obj/machinery/vending/coffee,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"nt" = (/obj/structure/window/reinforced/plasma{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/abstract/map/spawner/assistant,/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"nu" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/full/reinforced,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"nw" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/glass/beaker/vial/uranium{pixel_x = -6; pixel_y = 5},/obj/item/weapon/reagent_containers/glass/beaker/vial,/obj/item/weapon/storage/fancy/vials{pixel_y = 12},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"nE" = (/obj/machinery/door/airlock/highsecurity,/turf/unsimulated/floor{name = "plating"},/area/awaymission/example{requires_power = 0})
+"nF" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"nG" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"og" = (/obj/structure/bed/chair/office/light{dir = 8},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"os" = (/obj/structure/lattice,/turf/space,/area/awaymission/example{requires_power = 0})
+"oS" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/turf/unsimulated/floor{icon_state = "panelscorched"},/area/awaymission)
+"oT" = (/obj/machinery/anomaly/hyperspectral,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"oY" = (/obj/structure/window/barricade/full,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"pa" = (/turf/simulated/floor/plating{icon_state = "platingdmg3"; tag = "icon-platingdmg3"},/area/awaymission/example{requires_power = 0})
+"pc" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"pp" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "5-8"},/turf/space,/area/awaymission)
+"pq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/generic,/obj/item/stack/rods,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"pv" = (/obj/structure/window/reinforced/plasma,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"pA" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = 2},/obj/structure/cable/blue{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = -2},/turf/space,/area/awaymission)
+"pB" = (/obj/structure/window/reinforced/plasma{dir = 8},/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"pJ" = (/obj/structure/bed/chair/office/light{dir = 4},/obj/machinery/light/burnt{dir = 4},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"pK" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"pL" = (/obj/structure/bed/chair/comfy/red{dir = 4},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"pQ" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"qc" = (/obj/effect/step_trigger/thrower/east,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"qj" = (/obj/machinery/microwave,/obj/structure/table/glass,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"qq" = (/obj/structure/hanging_lantern{dir = 8},/turf/space,/area/awaymission)
+"qt" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"qO" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "5-8"},/turf/space,/area/awaymission)
+"qY" = (/obj/effect/forcefield,/turf/space,/area/awaymission/example{requires_power = 0})
+"rh" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"rj" = (/obj/machinery/light/burnt{dir = 8},/obj/structure/window/barricade/full,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"rk" = (/obj/structure/bed/chair/office/dark,/turf/unsimulated/floor{icon_state = "platingdmg3"},/area/awaymission/example{requires_power = 0})
+"rt" = (/obj/structure/sign/chinese/caution,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"rB" = (/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"rO" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 8; icon_state = "warning"; tag = "icon-warning (WEST)"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/effect/forcefield,/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"rQ" = (/obj/structure/dispenser/oxygen,/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"rX" = (/obj/machinery/door/airlock/glass{name = "Dormitories"},/turf/simulated/floor/wood,/area/awaymission/example{requires_power = 0})
+"sn" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/shard{icon_state = "small"; pixel_x = 5; pixel_y = -5},/obj/abstract/map/spawner/assistant,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"sF" = (/obj/structure/lattice,/obj/effect/forcefield,/turf/space,/area/awaymission/example{requires_power = 0})
+"tl" = (/obj/structure/window/barricade{dir = 4},/obj/structure/window/barricade,/obj/effect/decal/cleanable/crayon/fuckyou,/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"},/obj/effect/decal/cleanable/blood/stattrack{dir = 4},/obj/machinery/floodlight/on/infinite,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"tD" = (/obj/structure/catwalk,/obj/machinery/light,/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission/example{requires_power = 0})
+"tK" = (/obj/structure/table,/obj/structure/window/oneway,/obj/machinery/computer/fluff/terminal/old{name = "processing array"},/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"ub" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"uh" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"ui" = (/obj/machinery/disease2/diseaseanalyser,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"uE" = (/obj/structure/boulder{color = "#393939"},/obj/effect/forcefield,/turf/simulated/floor/plating{color = "#393939"; icon_state = "asteroidfloor"},/area/awaymission/example{requires_power = 0})
+"uM" = (/obj/machinery/light/small{dir = 4},/obj/machinery/recharger{pixel_x = 29},/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"vh" = (/obj/structure/bed/chair{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/head/hardhat,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"vk" = (/obj/machinery/computer/fluff/starmap,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"vq" = (/obj/machinery/door/airlock{id_tag = "Dorm3"; name = "Dorm 3"},/turf/simulated/floor/plating{icon_state = "platingdmg1"; tag = "icon-platingdmg1"},/area/awaymission/example{requires_power = 0})
+"vx" = (/obj/effect/decal/warning_stripes{dir = 8; icon_state = "warning"; tag = "icon-warning (WEST)"},/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"vz" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"vX" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"wh" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"wi" = (/obj/structure/bed/chair{dir = 8},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/obj/item/weapon/storage/pill_bottle/radiation{name = "pill bottle (my fuckin' bad, man)"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"wl" = (/obj/machinery/computer/telecomms/traffic,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"wI" = (/obj/structure/window/barricade/full,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"xd" = (/obj/structure/sign/directions/evac{dir = 4},/obj/structure/sign/directions/evac{dir = 4; pixel_y = -6},/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"xE" = (/obj/structure/table,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"xL" = (/obj/effect/decal/arrow{icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "???"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"xV" = (/obj/structure/table/glass,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"ym" = (/obj/structure/bed,/obj/structure/curtain/open/bed,/obj/item/weapon/bedsheet/red,/turf/simulated/floor/carpet,/area/awaymission/example{requires_power = 0})
+"yL" = (/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"zh" = (/obj/structure/table,/obj/item/weapon/paper_bin/black,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"zj" = (/obj/structure/bed,/obj/structure/curtain/open/bed,/obj/item/weapon/bedsheet/red,/turf/simulated/floor/plating{icon_state = "platingdmg2"},/area/awaymission/example{requires_power = 0})
+"zA" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/weapon/shard,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"zL" = (/obj/structure/boulder{color = "#393939"},/turf/simulated/floor/plating{color = "#393939"; icon_state = "asteroidfloor"},/area/awaymission/example{requires_power = 0})
+"Ae" = (/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"Am" = (/obj/structure/sign/chinese/access_restricted,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"Aw" = (/obj/item/broken_device,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"AM" = (/obj/structure/window/barricade/full,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"Bb" = (/obj/structure/sign/chinese/evacuation,/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"Bs" = (/turf/simulated/floor/wood,/area/awaymission/example{requires_power = 0})
+"BH" = (/obj/structure/closet/cabinet,/obj/item/clothing/shoes/magboots/vox{desc = "A pair of flexible rubber boots, fitted for vox. Has soft padding on the bottom."; name = "latex vox boots"},/obj/item/clothing/shoes/magboots/vox{desc = "A pair of flexible rubber boots, fitted for vox. Has soft padding on the bottom."; name = "latex vox boots"},/obj/item/clothing/shoes/magboots/vox{desc = "A pair of flexible rubber boots, fitted for vox. Has soft padding on the bottom."; name = "latex vox boots"},/turf/simulated/floor/carpet,/area/awaymission/example{requires_power = 0})
+"BJ" = (/obj/machinery/vending/sovietsoda,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"BU" = (/obj/machinery/suit_storage_unit,/obj/effect/decal/warning_stripes{icon_state = "warning"; tag = "icon-warning"},/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"Cu" = (/obj/machinery/door/airlock{id_tag = "Dorm2"; name = "Dorm 2"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Cv" = (/obj/machinery/disease2/isolator,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Cy" = (/turf/unsimulated/wall/supermatter/no_spread,/area/awaymission/example{requires_power = 0})
+"CA" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/carpet,/area/awaymission/example{requires_power = 0})
+"CD" = (/obj/machinery/recharger{pixel_x = 29},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"CR" = (/obj/structure/closet/cabinet,/turf/unsimulated/floor{icon_state = "panelscorched"},/area/awaymission/example{requires_power = 0})
+"CT" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"CW" = (/obj/structure/bed/chair{dir = 8},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Dl" = (/obj/effect/decal/cleanable/dirt,/obj/item/weapon/shard{icon_state = "small"; pixel_x = 5; pixel_y = -5},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"DD" = (/obj/machinery/light/burnt{dir = 1},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"DQ" = (/turf/unsimulated/wall/supermatter/no_spread,/area)
+"Ei" = (/obj/structure/catwalk,/obj/structure/hanging_lantern{dir = 1; pixel_y = -8},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/blue{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = -2},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = 2},/turf/space,/area/awaymission)
+"Et" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"EN" = (/obj/effect/decal/cleanable/dirt,/obj/abstract/map/spawner/assistant,/turf/simulated/floor/carpet,/area/awaymission/example{requires_power = 0})
+"ES" = (/obj/structure/sign/chinese/engineering,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"Fd" = (/obj/machinery/atmospherics/unary/vent_pump{canSpawnMice = 0; on = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating{nitrogen = 0.01; oxygen = 0.01},/area/awaymission/example{requires_power = 0})
+"Fm" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 1; icon_state = "warning"; tag = "icon-warning"},/obj/effect/forcefield,/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"Ft" = (/turf/unsimulated/floor{icon_state = "panelscorched"},/area/awaymission/example{requires_power = 0})
+"FJ" = (/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"FN" = (/mob/living/simple_animal/hostile/necro/necromorph/leaper,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"FU" = (/obj/machinery/photocopier,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Gg" = (/obj/structure/grille,/obj/structure/window/full/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"Gm" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 1; icon_state = "warning"; tag = "icon-warning"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/obj/effect/forcefield,/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"Go" = (/obj/item/stack/rods,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Gt" = (/obj/effect/forcefield,/turf/unsimulated/floor/fake_supermatter/hive,/area/awaymission/example{requires_power = 0})
+"Gv" = (/obj/structure/lattice,/turf/space,/area/awaymission)
+"Gw" = (/obj/effect/step_trigger/thrower/east,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Gz" = (/turf/simulated/floor/wood{icon_state = "wood-broken"},/area/awaymission/example{requires_power = 0})
+"GF" = (/turf/simulated/floor/plating{color = "#393939"; icon_state = "asteroidfloor"},/area/awaymission/example{requires_power = 0})
+"GX" = (/obj/effect/step_trigger/thrower/east,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Hk" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"HA" = (/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/damaged,/area/awaymission/example{requires_power = 0})
+"HB" = (/obj/structure/window/barricade,/turf/simulated/floor/wood{icon_state = "wood-broken3"; tag = "icon-wood-broken3"},/area/awaymission/example{requires_power = 0})
+"HJ" = (/turf/simulated/wall/invulnerable/r_wall,/area/awaymission)
+"HN" = (/obj/item/stack/cable_coil/yellow{amount = 1},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"HV" = (/mob/living/simple_animal/hostile/necro/zombie/ghoul,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Ia" = (/obj/structure/sign/securearea,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"Id" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Iq" = (/obj/effect/decal/cleanable/crumbs,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"IB" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"IH" = (/obj/machinery/door/airlock/hatch{color = "#777777"},/obj/structure/window/barricade/full/block,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"IW" = (/obj/structure/sign/chinese/notice,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"IY" = (/obj/structure/table/glass,/obj/item/weapon/storage/box/donkpockets,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"Jj" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 8; icon_state = "warning"; tag = "icon-warning (WEST)"},/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"JU" = (/obj/effect/forcefield,/obj/effect/forcefield,/turf/unsimulated/floor/fake_supermatter/hive,/area/awaymission/example{requires_power = 0})
+"Kb" = (/obj/structure/grille,/obj/structure/window/full/reinforced,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"Kq" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"Ku" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/full/reinforced,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"KK" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor,/area/awaymission/example{requires_power = 0})
+"KT" = (/obj/item/weapon/rack_parts,/obj/effect/decal/cleanable/dirt,/obj/item/stack/rods,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Ln" = (/obj/item/tape/engineering{icon_state = "engineering_door"; plane = 16},/turf/unsimulated/wall/supermatter/no_spread,/area/awaymission/example{requires_power = 0})
+"Lr" = (/obj/structure/grille,/obj/structure/window/full/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"Ly" = (/obj/effect/forcefield,/turf/unsimulated/floor/fake_supermatter,/area)
+"LB" = (/obj/structure/curtain/open/bed,/turf/simulated/floor/plating{icon_state = "platingdmg2"},/area/awaymission/example{requires_power = 0})
+"LE" = (/obj/structure/window/reinforced/plasma{dir = 1},/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"LM" = (/obj/structure/grille,/obj/structure/window/full/reinforced,/obj/structure/window/reinforced{dir = 8},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"LO" = (/obj/effect/forcefield,/obj/effect/forcefield,/turf/simulated/floor/plating{color = "#393939"; icon_state = "asteroidfloor"},/area/awaymission/example{requires_power = 0})
+"LP" = (/obj/effect/decal/warning_stripes{color = "#393939"; icon_state = "warning"; tag = "icon-warning (NORTH)"},/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"Mj" = (/turf/simulated/wall/r_wall,/area/awaymission)
+"Mk" = (/turf/simulated/floor/wood{icon_state = "wood-broken4"},/area/awaymission/example{requires_power = 0})
+"Mt" = (/obj/structure/lattice,/obj/machinery/telecomms/receiver,/turf/space,/area/awaymission)
+"Mw" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 1},/obj/item/weapon/shard,/obj/item/stack/rods,/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"MA" = (/obj/effect/decal/cleanable/dirt,/turf/unsimulated/floor{icon_state = "platingdmg1"},/area/awaymission)
+"MK" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"MN" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/disease2/centrifuge,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"MQ" = (/obj/machinery/light/burnt{dir = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"MS" = (/obj/structure/window/reinforced/plasma{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"MW" = (/obj/structure/sign/chinese/electrical_equipment,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"Np" = (/obj/machinery/computer/telecomms/server,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"Nx" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/suspension_gen,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"NC" = (/obj/structure/window/reinforced,/obj/structure/grille/broken,/obj/item/weapon/shard{icon_state = "medium"},/obj/item/stack/rods,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"NP" = (/obj/structure/window/barricade,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"NQ" = (/obj/item/weapon/table_parts,/obj/item/weapon/gun/energy/laser/retro,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"Ow" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"OD" = (/obj/item/broken_device,/obj/effect/decal/cleanable/blood/stattrack{dir = 10},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"OK" = (/obj/structure/grille,/obj/structure/window/full/reinforced,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"OQ" = (/obj/structure/catwalk,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/blue{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = -2},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_x = 2},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/space,/area/awaymission)
+"Pk" = (/obj/effect/decal/cleanable/generic,/turf/unsimulated/floor{icon_state = "panelscorched"},/area/awaymission/example{requires_power = 0})
+"Pm" = (/obj/structure/hanging_lantern{dir = 4},/turf/space,/area/awaymission)
+"PR" = (/obj/structure/table/reinforced,/obj/item/weapon/reagent_containers/glass/beaker/vial/mystery{pixel_x = 3; pixel_y = 6},/obj/item/weapon/reagent_containers/glass/beaker/vial/mystery,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Qc" = (/obj/structure/bed/chair/comfy/red{dir = 8},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Qi" = (/obj/item/stack/cable_coil/yellow{amount = 2; layer = 1},/obj/machinery/door/airlock/external,/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"QC" = (/obj/item/weapon/table_parts/glass,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"QV" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"Rx" = (/obj/effect/decal/cleanable/generic,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"RE" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"RM" = (/obj/structure/lattice,/obj/machinery/telecomms/bus,/turf/space,/area/awaymission)
+"RU" = (/obj/structure/closet/emcloset,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"RX" = (/obj/effect/forcefield,/obj/structure/boulder{color = "#393939"},/turf/simulated/floor/plating{color = "#393939"; icon_state = "asteroidfloor"},/area/awaymission/example{requires_power = 0})
+"Sh" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 8; icon_state = "warning"; tag = "icon-warning (WEST)"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 1; icon_state = "warning"; tag = "icon-warning"},/obj/effect/forcefield,/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"Ss" = (/obj/structure/catwalk,/turf/simulated/wall/r_wall,/area/awaymission)
+"Sv" = (/obj/effect/decal/warning_stripes{dir = 9; icon_state = "warning"; tag = "icon-warning (NORTHWEST)"},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"SY" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/closet/emcloset,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Tk" = (/obj/effect/forcefield,/obj/structure/boulder{color = "#393939"},/obj/effect/forcefield,/turf/simulated/floor/plating{color = "#393939"; icon_state = "asteroidfloor"},/area/awaymission/example{requires_power = 0})
+"Tm" = (/obj/structure/grille,/obj/structure/window/full/reinforced,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"TF" = (/obj/structure/bed/chair/comfy/red{dir = 4},/obj/item/weapon/shard{icon_state = "small"; pixel_x = 5; pixel_y = -5},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"TG" = (/obj/structure/window/barricade/full,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"TI" = (/obj/item/weapon/gun/energy/laser/retro,/obj/structure/rack,/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"TK" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"TO" = (/obj/machinery/atmospherics/unary/vent_pump{canSpawnMice = 0; on = 1},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"TQ" = (/obj/effect/decal/warning_stripes{color = "#393939"; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 8; icon_state = "warning"; tag = "icon-warning (WEST)"},/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"Uc" = (/obj/effect/step_trigger/thrower/east,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"UB" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"UI" = (/obj/structure/sign/chinese/danger,/turf/simulated/wall/invulnerable/r_wall,/area/awaymission/example{requires_power = 0})
+"UP" = (/obj/structure/window/reinforced/plasma{dir = 4},/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"Vb" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "loading_area"; tag = "icon-loading_area"},/turf/simulated/floor/dark,/area/awaymission/example{requires_power = 0})
+"Vo" = (/obj/item/stack/rods,/obj/effect/decal/cleanable/generic,/obj/machinery/light/burnt{dir = 8},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Vu" = (/obj/structure/catwalk,/obj/machinery/telecomms/hub,/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"},/turf/space,/area/awaymission)
+"Vv" = (/obj/structure/lattice,/obj/machinery/telecomms/processor,/turf/space,/area/awaymission)
+"Vy" = (/obj/effect/decal/warning_stripes{color = "#393939"; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/effect/decal/warning_stripes{color = "#393939"; dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"VA" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating{icon_state = "platingdmg1"; tag = ""},/area/awaymission/example{requires_power = 0})
+"VH" = (/obj/structure/lattice,/obj/machinery/telecomms/server,/turf/space,/area/awaymission)
+"VT" = (/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission/example{requires_power = 0})
+"VW" = (/obj/effect/forcefield,/turf/simulated/floor/plating{color = "#393939"; icon_state = "asteroidfloor"},/area/awaymission/example{requires_power = 0})
+"Wa" = (/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"WE" = (/obj/structure/window/reinforced/plasma{dir = 1},/obj/structure/window/reinforced/plasma,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"WH" = (/turf/space,/area/awaymission)
+"WL" = (/obj/machinery/computer/telecomms/monitor,/turf/simulated/floor/engine,/area/awaymission/example{requires_power = 0})
+"WN" = (/obj/machinery/door/airlock/hatch{name = "Secure Storage"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"WQ" = (/obj/effect/decal/warning_stripes{color = "#393939"; dir = 1; icon_state = "warning"; tag = "icon-warning"},/turf/simulated/floor/dark{color = "#393939"},/area/awaymission/example{requires_power = 0})
+"Xl" = (/obj/structure/table,/obj/machinery/computer/fluff/terminal/old{name = "processing array"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Xx" = (/obj/structure/grille,/obj/structure/window/full/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/unsimulated/floor{name = "plating"},/area/awaymission)
+"XE" = (/obj/item/trash/bustanuts,/obj/structure/window/barricade,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"XG" = (/obj/effect/decal/cleanable/generic,/obj/machinery/atmospherics/unary/vent_pump{canSpawnMice = 0; on = 1},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"XU" = (/obj/machinery/power/apc{pixel_y = -24},/obj/machinery/camera{dir = 1; name = "Aft Port Solar Access"},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/plating/airless,/area/awaymission)
+"Yb" = (/obj/structure/lattice,/obj/machinery/pda_multicaster,/turf/space,/area/awaymission)
+"Yc" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/full/reinforced,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Ym" = (/obj/effect/decal/cleanable/generic,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Yw" = (/obj/structure/window/barricade/full,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Yy" = (/obj/structure/window/barricade/full/block,/obj/machinery/door/airlock/hatch{color = "#777777"},/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"YB" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"YI" = (/obj/abstract/map/spawner/assistant,/turf/simulated/floor/wood{icon_state = "wood-broken4"},/area/awaymission/example{requires_power = 0})
+"YW" = (/obj/structure/table,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Za" = (/obj/structure/sign/double/barsign/ghetto{pixel_y = 32},/obj/structure/table/glass,/obj/machinery/chem_dispenser/brewer/mapping,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"Zv" = (/obj/structure/window/barricade/full,/obj/effect/decal/arrow{desc = "???"; icon = 'icons/effects/static.dmi'; icon_state = "1 heavy"; name = "fog"},/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+"ZX" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/plating,/area/awaymission/example{requires_power = 0})
+
+(1,1,1) = {"
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLyLyLyLyLyLyDQDQDQDQDQDQDQDQDQDQLyLyLyLyLyLyLyLyLyDQDQDQDQDQLyLyLyLyLyLyLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjLyLyLyLyLyLyLyLyLyLyLyLydjdjdjdjdjdjdjLyLyLyDQDQLyLydjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjLyLyLyLydjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLyLydjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjdjWHWHWHWHWHWHWHWHWHWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjdjGvWHMtWHGvWHGvWHixWHlPWHWHdjdjdjdjdjdjdjdjLyLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLyLydjdjdjdjdjdjdjdjdjdjdjdjMjWHMjWHMjWHMjWHMjWHMjWHWHdjdjdjdjdjdjdjdjLyDQDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjMjdCSsnnSsVuSsppSsqOMjWHWHdjdjdjdjdjdjdjdjLyDQDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjMjWHMjWHMjmsMjWHMjWHMjWHWHdjdjdjdjdjdjdjdjLyDQDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLyLydjdjdjdjdjdjdjdjdjdjdjdjWHWHWHWHPmEiqqWHWHWHWHWHWHdjdjdjdjdjdjdjdjLyLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjdjRMWHVvWHGvmsGvWHYbWHVHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjMjWHMjWHMjmsMjWHMjWHMjWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjMjdCSsnnSsmlSsppSsqOMjWHWHdjdjdjdjdjdjdjdjLyLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjMjWHMjWHMjmsMjWHMjWHMjWHWHdjdjdjdjdjdjdjdjLyDQDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLyLydjdjdjdjdjdjdjdjdjdjdjWHWHWHWHPmEiqqWHWHWHWHWHWHdjdjdjdjdjdjdjdjLyDQDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjWHWHGvWHXUOQGvWHGvWHWHWHWHdjdjdjdjdjdjdjdjLyDQDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjWHWHMjWHMjmsMjWHMjWHWHWHWHdjdjdjdjdjdjdjdjLyLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjWHWHMjdCSsmlSsqOMjWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjWHWHMjWHMjmsMjWHMjWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLyLydjdjdjdjdjdjdjdjdjdjdjWHWHWHWHPmEiqqWHWHWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjdjWHWHWHWHWHmsWHWHWHWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQLydjdjdjdjdjdjdjdjdjdjdjdjWHWHWHWHWHmsWHWHWHWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLyLydjdjdjdjdjdjdjdjdjdjdjdjWHWHWHWHWHpAWHWHWHWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjWHWHWHWHXxQiLrWHWHWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLydjdjdjdjdjdjdjdjdjdjdjdjdjWHWHWHWHGgHNLMWHWHWHWHWHWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQLyLyLydjdjdjdjdjdjdjdjdjdjdjWHWHWHWHGgbkKbOKOKMwOKHJWHdjdjdjdjdjdjdjdjdjLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQDQDQLyLydjdjdjdjdjdjdjdjdjdjWHWHWHWHTmSvKqhxlBoShxHJWHdjdjdjdjdjdjLyLyLyLyDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjDQDQDQDQbibibibibibibibibibibibibibibibibibidSMAcxgYFJpJHJdjdjdjdjdjdjLyLyDQDQDQDQdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbibibibidrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrbivxFJcxogFJcxHJbibibibibibibibibibidjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbieIcQbidrVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrbinEbibibibibibidrdrdrdrdrdrdrdrdrbibibibidjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbicQcQbidrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdrdrdrdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbicQcQbidrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbicQcQbidrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbicQcQbidrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbicQcQbidrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbibibibidrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghgdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdEVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdEVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdEdEVTVTdEVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTVTdEVTdEdEdEVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrVTVTVTVTVTVTVTVTVTVTVTVTVTdEdEtDdEtDdEVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTVTdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdrdrdrdrdrdrdrdrdrdrdrdrdrdrbibibipKbibibidrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdrdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbivzWayLWaRUbidjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjbikEyLyLWaSYbidjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghghghgbiIaWaWaWaYmWabihghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghghgbibihvuhWauhWaWaIabibibihghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghgCybibirBuhrBpveFeFQVWaTKWabihghghghghghgCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghgCybiVbuhuhmpVWaLVWpByLTKzAWabibibirtbibibibibibibibihghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghgbiWNESNPlETkaLVWMSWabiwIjxwIlfWauhWaMQWaWaWaDDWabihghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghgbiQVbirjmZWEWEWErBaCbibiTGsnlfWaWaMkuhYIgCENhmMkbihghghghghghghghgCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghgbibibibiQVbipqkBuErOVWdFXEnobiKTYwbibibibibibibibihmWabibibibibihghgCyCyCyCyCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghgbibiBUBUBUQVbijXntuEfZjclrAMBJbiDlfIbihghgbizjgCWagPhmuhvqgCgCBHbihghgCTGtGtCyCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghgbirQQVktrBuhbiXlUPVWVWRXpByLbiUIlflfUIbibibiCAFtGzbiuhhVbiCAgCymbihghgCTnGIdGtGtCyCyCyhghghghghgCyhghghgCyhghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghgbiTIWarBrBuMbiXlTOLEhnhnTOyLbiPRWaWazhFUbibibibibibikwuhbibibibibihghgCTnGnGnGnGGtCyCyhghghghgCyhghgCyhghghghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghgbiTIWaHVuhCDbitKWaWauhnFcrWabinwXGWadlvXbihgbiLBpaCuBsuhhrjhgCbihghghgCTxLwivhnGGtCyCyCyCyCyhghgosCyhgCyhghghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghgbibibibibibibiVoctyLyLyLPkHkbibiNxAwYWYWbihgbigCgCbikwYwbigCgCbihghghgCTnGCWlxKKnGGtGtGtGtGtGtJUqYqYqYqYqYqYqYqYqYqYqYqYqYqYqYqYqYqYqY
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghgCyCyCyCyzLzLVWbixEyLrkyLyLyLyLeDNQbiaDWaIqMNbihgbiCRfTbiHBkwbifTymbihghghgwhfGCWlxfroYZvZvqcqcGXGwUciKUciKgxgxgxgxgxgxgxgxgxgxgxgxgxhghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghgCyCyCyzLzLGFVWYcwlWLNpRxvkyLhOjTeebiuifulioTbiIWbibibibilfrXbibfMWEtxdpQwhgXfrKKiAgpnGGtGtGtGtGtGtGtsFsFqYqYqYsFqYqYqYqYqYqYqYqYqYqYqYqYqY
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghgCyCyzLzLGFGFVWnudGdGdGdGdGdGdGKubibiCvODtlLnbiqjIYZacdhanFuhTKWanFuhREREZXIHfrHAKKYBfGGtCyCyCyCyCyCyCyhgoshghghghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghgCyCyGFGFGFGFLOVWVWVWVWShFmFmGmVWuEbibibibibibifIVAFdyLyLWaVATKuhREREnFrhubYyfrfrfrYBIdGtCyhghghghgCyhgCyCyCyhghgCyhghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghgCyCyWQWQWQCyWQWQWQWQWQAeLPLPAedTGFzLzLzLzLVWAmWayLpaFNuhGouhEtpQEtEtbfBbCTIBnGCWlxnGGtCyCyhghghghghghgCyCyCyCyhghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghgCyCyLPCyCyCyCyLPLPLPLPVyGFGFTQAedTGFGFzLzLVWpcpLxVdRWaTFQCQcqtVWVWVWCyCyCywhCTwhGtGtCyCyhghghghghghghghghghghghghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghgCyCyCyCyCyCyCyGFGFGFGFGFGFCyCyTQAedTGFzLzLVWncUBUBNCgSUBUBUBMKVWGFCyCyCyCyCyCyCyCyCyCyCyhghghghghghghghghgCyhghghgCyhghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghgCyCyCyCyCyCyCyCyCyGFzLCyCyCyCyCyJjAedTGFzLuEVWVWVWVWVWCyVWVWVWVWCyCyCyCyCyCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghgCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyOwGFGFGFGFGFGFCyCyCyCyCyGFGFCyCyCyCyCyCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghghgCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyGFGFCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghghghghghghg
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghghghghghghghghghghghghgCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghghghghghghghghghghghghghghghghgCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyCyhghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjhghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghghgdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+djdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdjdj
+"}
