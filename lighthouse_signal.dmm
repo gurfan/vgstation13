@@ -1,0 +1,119 @@
+"ae" = (/turf/simulated/floor{dir = 4; icon_state = "dark vault stripe"},/area/awaymission)
+"aJ" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/awaymission)
+"aT" = (/obj/item/weapon/pen{pixel_x = -12},/obj/effect/decal/cleanable/ash,/turf/simulated/floor,/area/awaymission)
+"bd" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6},/obj/machinery/light{dir = 8},/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"bv" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/plating,/area/awaymission)
+"bK" = (/turf/simulated/floor/dark,/area/awaymission)
+"cR" = (/obj/machinery/vending/coffee,/turf/simulated/floor{dir = 8; icon_state = "dark vault stripe"},/area/awaymission)
+"cT" = (/obj/machinery/power/battery_port,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/plating,/area/awaymission)
+"dx" = (/obj/effect/decal/warning_stripes{dir = 8; icon_state = "loading_area"; tag = "icon-loading_area (WEST)"},/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"eO" = (/obj/effect/decal/arrow{density = 1; desc = "The panels on this part of the machine are flashing red, indicative of some sort of critical failure."; icon = 'icons/obj/mainframe.dmi'; icon_state = "leftb"; name = "damaged panel"},/turf/simulated/floor/dark,/area/awaymission)
+"eZ" = (/obj/structure/grille,/obj/structure/lattice,/turf/space,/area)
+"fc" = (/turf/simulated/wall/r_wall,/area/awaymission)
+"fz" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/structure/table,/obj/item/weapon/paper_bin{name = "emptied paper bin"},/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"fO" = (/obj/machinery/vending/snack,/turf/simulated/floor{dir = 1; icon_state = "dark vault stripe"},/area/awaymission)
+"gm" = (/obj/effect/decal/warning_stripes,/turf/simulated/floor{dir = 8; icon_state = "dark vault stripe"},/area/awaymission)
+"hV" = (/obj/structure/closet{icon_state = "open"; opened = 1},/obj/structure/window/reinforced{dir = 4},/obj/machinery/door/window{dir = 2; name = "device storage"},/turf/simulated/floor,/area/awaymission)
+"ik" = (/obj/machinery/door/airlock/external,/turf/simulated/floor/plating,/area/awaymission)
+"jQ" = (/obj/effect/decal/cleanable/ash,/obj/item/weapon/lighter/red{pixel_y = -9},/turf/simulated/floor,/area/awaymission)
+"jW" = (/obj/machinery/door/airlock/engineering{name = "Power Equipment"},/turf/simulated/floor/plating,/area/awaymission)
+"lg" = (/obj/structure/rack{dir = 8},/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/weapon/tank/emergency_oxygen/engi,/obj/item/weapon/tank/emergency_oxygen/engi,/obj/item/clothing/suit/storage/hazardvest,/obj/item/clothing/suit/storage/hazardvest,/turf/simulated/floor/plating,/area/awaymission)
+"nE" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/obj/item/weapon/screwdriver{pixel_x = 16},/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"nG" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/machinery/light{dir = 8},/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"nZ" = (/obj/structure/closet{icon_state = "open"; opened = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/obj/structure/windoor_assembly{dir = 8},/obj/item/weapon/shard,/obj/item/stack/cable_coil,/obj/item/weapon/circuitboard/airlock,/turf/simulated/floor,/area/awaymission)
+"ow" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/structure/table,/obj/item/weapon/pen{pixel_x = -12},/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"pW" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/structure/computerframe,/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"rA" = (/obj/effect/decal/arrow{density = 1; desc = "An empty frame, with all its innards removed."; icon = 'icons/obj/mainframe.dmi'; icon_state = "right-open"; name = "gutted frame"},/obj/item/weapon/grenade/chem_grenade{desc = "A high-tech explosive grenade. A display on the grip shows the numbers 5:00. On closer inspection, the pin appears to have already been pulled."; icon_state = "syndicate"; layer = 2; name = "explosive device"; pixel_x = 6; pixel_y = 8; plane = 2},/turf/simulated/floor/dark,/area/awaymission)
+"rE" = (/obj/machinery/door/airlock/glass{name = "Office"},/turf/simulated/floor/dark,/area/awaymission)
+"rF" = (/obj/machinery/light{dir = 8},/turf/simulated/floor,/area/awaymission)
+"sa" = (/obj/structure/closet{icon_state = "open"; opened = 1},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor,/area/awaymission)
+"sd" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 10},/obj/machinery/light{dir = 4},/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"sP" = (/obj/structure/closet/walllocker/emerglocker/north,/turf/simulated/floor/plating,/area/awaymission)
+"sV" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/plating,/area/awaymission)
+"tB" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/machinery/computer/telescience/broken{desc = "Whatever circuitry was inside it has been irreversibly broken."; name = "broken computer"},/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"tL" = (/obj/structure/bed/chair/office/light{dir = 1},/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"uj" = (/obj/structure/lattice,/obj/structure/lattice,/turf/space,/area)
+"ux" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 10},/turf/space,/area)
+"uy" = (/obj/item/weapon/folder/red{pixel_x = -16},/turf/simulated/floor,/area/awaymission)
+"vt" = (/obj/structure/bed/chair/comfy/lime,/turf/simulated/floor{dir = 4; icon_state = "dark vault stripe"},/area/awaymission)
+"vO" = (/turf/simulated/floor/plating,/area/awaymission)
+"wc" = (/obj/effect/decal/warning_stripes{dir = 4; icon_state = "warning"; tag = "icon-warning (EAST)"},/turf/simulated/floor/dark,/area/awaymission)
+"wg" = (/obj/structure/table/woodentable,/obj/machinery/newscaster{pixel_y = 30},/turf/simulated/floor{dir = 1; icon_state = "dark vault stripe"},/area/awaymission)
+"xb" = (/obj/structure/table,/obj/item/weapon/paper_bin{name = "emptied paper bin"},/turf/simulated/floor,/area/awaymission)
+"xU" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/turf/simulated/wall/r_wall,/area/awaymission)
+"za" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor/plating,/area/awaymission)
+"zE" = (/obj/structure/table,/turf/simulated/floor,/area/awaymission)
+"zW" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"Ah" = (/obj/structure/closet{icon_state = "open"; opened = 1},/obj/structure/window/reinforced{dir = 8},/turf/simulated/floor,/area/awaymission)
+"AQ" = (/obj/structure/grille,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/plating,/area/awaymission)
+"Bs" = (/obj/machinery/door/airlock/highsecurity{name = "BTD"},/turf/simulated/floor/dark,/area/awaymission)
+"Bx" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 9},/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"CF" = (/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"CN" = (/obj/structure/rack{dir = 8},/obj/item/clothing/mask/gas{pixel_x = -3; pixel_y = -3},/obj/item/clothing/mask/gas{pixel_x = -3; pixel_y = -3},/turf/simulated/floor/plating,/area/awaymission)
+"DN" = (/turf/simulated/floor{dir = 8; icon_state = "dark vault stripe"},/area/awaymission)
+"DV" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/he_manifold{dir = 8},/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"EQ" = (/obj/effect/decal/cleanable/ash,/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"Fa" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/obj/item/weapon/storage/toolbox/syndicate,/obj/item/weapon/crowbar{pixel_y = 12},/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"FG" = (/turf/space,/area)
+"FR" = (/obj/structure/sign/securearea,/turf/simulated/wall/r_wall,/area/awaymission)
+"Gk" = (/obj/structure/grille,/turf/space,/area)
+"Gm" = (/obj/machinery/power/apc{pixel_y = 24},/obj/machinery/power/terminal{dir = 1},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/plating,/area/awaymission)
+"Hx" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"IC" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/structure/table,/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"JD" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 5},/turf/simulated/floor/server/bluegrid,/area/awaymission)
+"Mj" = (/obj/machinery/door/airlock/external,/turf/simulated/floor/dark,/area/awaymission)
+"Nl" = (/obj/structure/lattice,/turf/space,/area)
+"NQ" = (/obj/effect/decal/arrow{density = 1; desc = "The glass panel has been shattered, and its circuitry ripped out wihtout any chance of repair. Whoever did this must have been in a hurry."; icon = 'icons/obj/mainframe.dmi'; icon_state = "aimainframeb"; name = "damaged device"},/turf/simulated/floor/dark,/area/awaymission)
+"Pk" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/turf/space,/area)
+"Qf" = (/obj/structure/closet/walllocker/emerglocker/north,/obj/machinery/portable_atmospherics/canister/air,/turf/simulated/floor/plating,/area/awaymission)
+"Qm" = (/obj/machinery/door/airlock/hatch,/turf/simulated/floor/dark,/area/awaymission)
+"Re" = (/obj/effect/decal/warning_stripes{icon_state = "air"},/turf/simulated/wall/r_wall,/area/awaymission)
+"RD" = (/obj/effect/decal/warning_stripes{dir = 1; icon_state = "warning"; tag = "icon-warning (NORTH)"},/obj/machinery/light{dir = 4},/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"RL" = (/obj/machinery/light{dir = 1},/obj/machinery/camera,/turf/simulated/floor{dir = 1; icon_state = "dark vault stripe"},/area/awaymission)
+"RV" = (/obj/effect/decal/warning_stripes,/turf/simulated/floor/dark,/area/awaymission)
+"TZ" = (/obj/effect/decal/warning_stripes,/turf/simulated/floor{dir = 4; icon_state = "dark vault stripe"},/area/awaymission)
+"Vv" = (/obj/effect/decal/cleanable/ash,/obj/item/weapon/folder/red{pixel_x = -16},/turf/simulated/floor{icon_state = "white"},/area/awaymission)
+"Ws" = (/turf/simulated/floor,/area/awaymission)
+"WE" = (/turf/simulated/floor{dir = 1; icon_state = "dark vault stripe"},/area/awaymission)
+"WH" = (/obj/structure/bed/chair/office/light,/turf/simulated/floor,/area/awaymission)
+"WY" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/dark,/area/awaymission)
+"Xl" = (/obj/machinery/light{dir = 1},/turf/simulated/floor{dir = 1; icon_state = "dark vault stripe"},/area/awaymission)
+"ZD" = (/obj/structure/table,/obj/item/device/flashlight/lamp,/turf/simulated/floor,/area/awaymission)
+
+(1,1,1) = {"
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGNlFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGNlNlNlNlNlNlNlNlNlNlNlFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGNlGkGkGkGkGkGkGkGkGkGkGkNlFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGNlNlNlNlNlGkNlNlNlNlNlFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGGkFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGNlNlNlNlNlGkNlNlNlNlNlFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGNlGkGkGkGkGkGkGkGkGkGkGkNlFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGNlNlNlNlNlGkNlNlNlNlNlFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGGkFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGGkFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGfcfcfcfcfcfcfcfcfcFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGfcfcfcbdHxHxHxHxHxsdfcFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGfcwcQmzWbKeONQrAbKDVxUuxFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGfcwcfcJDHxHxnEFaHxBxfcPkFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGfcWYfczaAQAQAQAQAQsVfcPkFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGNlFGFGFGNlFGFGFGFGFGfcbKRenGfzowICpWtBRDfcPkFGFGFGFGFGFGNlFGFGFGNlFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGNlGkNlFGNlGkNlFGFGFGFGfcbKQmdxtLVvtLCFCFCFfcFGFGFGFGFGFGNlGkFGFGNleZNlFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGNlGkNlFGNlGkNlFGfcfcfcfcfcfcCFEQCFCFCFCFCFfcfcfcfcfcfcFGNlGkNlFGNlGkNlFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGNlGkujFGNlGkNlFGfchVnZsaAhfcfcfcfcBsfcfcfcfcGmaJaJcTfcNlNlGkNlFGNlGkNlFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGNlujGkGkGkGkGkGkGkfcrFWsWsWsfccRfORLWEXlwgvtfcvOvOvObvfcGkGkGkGkGkGkGkNlNlFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGNlGkNlFGNlGkNlFGfcZDWHjQWsrEDNbKbKbKbKbKaejWvOvOvOCNfcFGNlGkNlFGNlGkNlFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGNlGkNlFGNlGkNlFGfcxbzEaTuyfcgmRVRVRVRVRVTZfcvOvOvOlgfcFGNlGkNlFGNlGkNlFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGNlGkNlFGNlGkNlFGfcfcfcfcfcfcfcfcfcMjfcfcfcfcfcfcfcfcfcFGNlGkNlFGNlGkNlFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGNlFGFGFGNlFGFGFGFGFGFGFGFGFGfcsPvOQffcFGFGFGFGFGFGFGFGFGNlFGFGFGNlFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGfcvOvOvOfcFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGfcFRikFRfcFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+FGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFGFG
+"}

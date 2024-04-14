@@ -1,0 +1,71 @@
+"a" = (/turf/unsimulated/wall/supermatter/no_spread,/area/awaymission)
+"b" = (/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission{requires_power = 0})
+"e" = (/obj/machinery/gravity_generator{desc = "A piece of complex wires and machinery. There are lights lining the side of it which flicker constantly. You also have no idea what it does.; name = "machine"},/obj/structure/catwalk,/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission)
+"i" = (/obj/effect/forcefield,/turf/unsimulated/floor/fake_supermatter,/area/awaymission)
+"l" = (/obj/effect/step_trigger/thrower/north,/obj/machinery/conveyor/auto{dir = 1; invisibility = 60; movedir = 1},/turf/unsimulated/floor/fake_supermatter,/area/awaymission)
+"r" = (/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission)
+"s" = (/obj/machinery/gateway/center/away,/obj/structure/catwalk,/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission)
+"t" = (/turf/unsimulated/floor/fake_supermatter,/area/awaymission)
+"u" = (/obj/effect/step_trigger/thrower/north,/turf/unsimulated/floor/fake_supermatter,/area/awaymission)
+"v" = (/turf/space,/area)
+"w" = (/obj/machinery/gateway/away,/obj/structure/catwalk,/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission)
+"y" = (/turf/simulated/wall/invulnerable{desc = null; icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"},/area/awaymission)
+"D" = (/obj/structure/catwalk,/obj/structure/catwalk,/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission)
+"G" = (/obj/structure/catwalk,/obj/machinery/gravity_generator{desc = "A piece of complex wires and machinery. There are lights lining the side of it which flicker constantly. You also have no idea what it does.; name = "machine"},/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission)
+"L" = (/turf/simulated/floor/plating,/area/awaymission)
+"N" = (/turf/space,/area/awaymission)
+"Q" = (/obj/machinery/media/jukebox,/turf/simulated/floor/plating,/area/awaymission)
+"X" = (/obj/structure/catwalk,/turf/unsimulated/floor{icon = 'icons/turf/overlays.dmi'; icon_state = "black_box"; name = "???"; plane = -32771},/area/awaymission)
+
+(1,1,1) = {"
+aaaaavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiiiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aitiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiaLLLLLvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiaLLLLLvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiaLLQLLvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiaLLLLLvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiaLLLLLvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+aiuiaNyyyyyyyyyyyyyyyyyyyyyyyyyyyyyvvvvvvvvvvvvvvv
+aiuiaNyyyyyyyyyyyyyyyyyyyyyyyyyyyyyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrbrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrXrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrXsXrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrreXwXGrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrXDXrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrXrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiuiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+ailiaNyyrrrrrrrrrrrrrrrrrrrrrrrrryyvvvvvvvvvvvvvvv
+aiiiaNyyyyyyyyyyyyyyyyyyyyyyyyyyyyyvvvvvvvvvvvvvvv
+aaaaaNyyyyyyyyyyyyyyyyyyyyyyyyyyyyyvvvvvvvvvvvvvvv
+"}
