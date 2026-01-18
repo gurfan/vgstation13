@@ -1759,3 +1759,15 @@ to destroy them and players will be able to make replacements.
 		/obj/item/weapon/stock_parts/console_screen = 1,
 		/obj/item/weapon/stock_parts/capacitor = 2
 	)
+
+/obj/item/weapon/circuitboard/accounts
+	name = "Circuit board (Accounts Database)"
+	build_path = /obj/machinery/account_database
+	desc = "A circuit board used to build an accounts database."
+	board_type = MACHINE
+	origin_tech = Tc_PROGRAMMING + "=2;" + Tc_BLUESPACE + "=2"
+	req_components = list(
+		/obj/item/weapon/stock_parts/scanning_module = 3,
+		/obj/item/weapon/stock_parts/console_screen = 1,
+		/obj/item/weapon/stock_parts/capacitor = 1
+	)
